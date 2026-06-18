@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organizador de Horario — Ing. Mecánica UST</title>
+<style>
+  :root {
+    --azul: #1a3a5c;
+    --azul-med: #2563a8;
+    --azul-claro:#dbeafe;
+    --verde: #16a34a;
+    --verde-bg: #dcfce7;
+    --rojo: #dc2626;
+    --rojo-bg: #fee2e2;
+    --amarillo: #ca8a04;
+    --amarillo-bg:#fef9c3;
+    --gris: #f1f5f9;
+    --gris-med: #cbd5e1;
+    --blanco: #ffffff;
+    --texto: #1e293b;
+    --texto-suave:#64748b;
+    --radio: 6px;
+    --sombra: 0 2px 8px rgba(0,0,0,.10);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e8eef6;
+    color: var(--texto);
+    min-height: 100vh;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--azul) 0%, var(--azul-med) 100%);
+    color: white;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.25);
+  }
+  header .logo { font-size: 28px; line-height:1; }
+  header h1 { font-size: 17px; font-weight:700; line-height:1.25; }
+  header p  { font-size: 11px; opacity:.8; margin-top:2px; }
+
+  .app {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 16px;
+    padding: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .panel {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .panel-header {
+    background: var(--azul);
+    color: white;
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  .search-wrap {
+    padding: 10px 12px 6px;
+    border-bottom: 1px solid var(--gris);
+  }
+  .search-wrap input {
+    width: 100%;
+    border: 1px solid var(--gris-med);
+    border-radius: var(--radio);
+    padding: 7px 10px;
+    font-size: 13px;
+    outline: none;
+  }
+  .search-wrap input:focus { border-color: var(--azul-med); }
+
+  .filter-wrap {
+    padding: 6px 12px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    border-bottom: 1px solid var(--gris);
+  }
+  .nivel-btn {
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid var(--gris-med);
+    border-radius: 20px;
+    cursor: pointer;
+    background: var(--gris);
+    color: var(--texto-suave);
+  }
+  .nivel-btn.active {
+    background: var(--azul-med);
+    color: white;
+    border-color: var(--azul-med);
+  }
+
+  .materia-list {
+    overflow-y: auto;
+    flex: 1;
+    max-height: calc(100vh - 260px);
+  }
+  .materia-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0f4f8;
+    cursor: pointer;
+    position: relative;
+  }
+  .materia-item:hover { background: var(--azul-claro); }
+  .materia-item.added { background: var(--verde-bg); opacity: .7; pointer-events: none; }
+  .materia-item.conflict-preview { background: var(--rojo-bg); }
+
+  .nivel-badge {
+    min-width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--azul-med);
+    color: white;
+    font-size: 10px;
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink:0;
+  }
+  .materia-info { flex:1; min-width:0; }
+  .materia-nombre {
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .materia-meta {
+    font-size: 10px;
+    color: var(--texto-suave);
+    margin-top: 1px;
+  }
+  .add-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background: var(--azul-med);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height:1;
+  }
+  .add-btn.disabled { background: var(--gris-med); cursor: not-allowed; }
+
+  .content { display: flex; flex-direction: column; gap: 16px; }
+
+  .status-bar {
+    padding: 10px 16px;
+    border-radius: var(--radio);
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--gris);
+    color: var(--texto-suave);
+    border-left: 4px solid var(--gris-med);
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .status-bar.ok    { background: var(--verde-bg);    color: #15803d; border-color: var(--verde); }
+  .status-bar.error { background: var(--rojo-bg);     color: #b91c1c; border-color: var(--rojo); }
+  .status-bar.warn  { background: var(--amarillo-bg); color: var(--amarillo); border-color: #eab308; }
+
+  .horario-wrap {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: auto;
+  }
+  .horario-grid {
+    display: grid;
+    grid-template-columns: 60px repeat(5, 1fr);
+    min-width: 620px;
+  }
+
+  .grid-corner,
+  .grid-day-head {
+    background: var(--azul);
+    color: white;
+    font-size: 12px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 10px 4px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .grid-day-head { border-left: 1px solid rgba(255,255,255,.15); }
+
+  .grid-time {
+    background: var(--gris);
+    color: var(--texto-suave);
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e2e8f0;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-height: 20px;
+  }
+  .grid-time.hora-entera {
+    color: var(--texto);
+    border-top: 1px solid #b0bec5;
+    font-size: 11px;
+  }
+
+  .grid-cell {
+    border-left: 1px solid #e2e8f0;
+    border-top: 1px solid #e8eef6;
+    min-height: 20px;
+    position: relative;
+  }
+  .grid-cell.hora-entera { border-top-color: #b0bec5; }
+  .grid-cell.ocupado {
+    background: var(--verde);
+    border-color: #15803d;
+  }
+  .grid-cell.ocupado-top {
+    border-radius: 4px 4px 0 0;
+    display:flex;
+    align-items: flex-start;
+    padding: 3px 4px;
+  }
+  .cell-label {
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: none;
+  }
+  .ocupado-top .cell-label { display: block; }
+
+  .cell-remove {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.25);
+    color: white;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+  .ocupado-top:hover .cell-remove { display: flex; }
+
+  .selected-wrap {
+    background: var(--blanco);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+  }
+  .selected-header {
+    background: var(--azul);
+    color: white;
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing:.05em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .clear-btn {
+    background: rgba(255,255,255,.2);
+    color: white;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  .clear-btn:hover { background: var(--rojo); border-color: var(--rojo); }
+
+  .selected-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .selected-table th {
+    background: var(--gris);
+    padding: 6px 10px;
+    text-align: left;
+    font-size: 11px;
+    color: var(--texto-suave);
+    font-weight: 600;
+    border-bottom: 1px solid var(--gris-med);
+  }
+  .selected-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #f0f4f8;
+    vertical-align: middle;
+  }
+  .selected-table tr:last-child td { border-bottom: none; }
+  .selected-table tr:hover td { background: var(--gris); }
+  .remove-row-btn {
+    background: none;
+    border: 1px solid var(--rojo);
+    color: var(--rojo);
+    border-radius: 4px;
+    padding: 2px 7px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  .remove-row-btn:hover { background: var(--rojo); color: white; }
+
+  .empty-msg {
+    padding: 20px;
+    text-align: center;
+    color: var(--texto-suave);
+    font-size: 13px;
+  }
+
+  .summary-footer {
+    padding: 8px 14px;
+    background: var(--gris);
+    border-top: 1px solid var(--gris-med);
+    font-size: 12px;
+    color: var(--texto-suave);
+    display: flex;
+    gap: 20px;
+  }
+  .summary-footer strong { color: var(--texto); }
+
+  .tooltip {
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--azul);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    white-space: nowrap;
+    z-index: 100;
+    display: none;
+    pointer-events: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,.3);
+  }
+  .materia-item:hover .tooltip { display: block; }
+
+  @media (max-width: 1000px) {
+    .app { grid-template-columns: 1fr; }
+    .materia-list { max-height: 380px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📅</div>
+  <div>
+    <h1>Organizador de Horario — Ingeniería Mecánica</h1>
+    <p>Universidad Santo Tomás · Villavicencio · Periodo 20262 &nbsp;|&nbsp; Jornada Diurna</p>
+  </div>
+</header>
+
+<div class="app">
+  <div>
+    <div class="panel">
+      <div class="panel-header">📚 Materias disponibles</div>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Buscar materia…" oninput="filtrar()">
+      </div>
+      <div class="filter-wrap" id="nivelFilter">
+        <button class="nivel-btn active" onclick="setNivel(0,this)">Todos</button>
+        <button class="nivel-btn" onclick="setNivel(1,this)">Sem 1</button>
+        <button class="nivel-btn" onclick="setNivel(2,this)">Sem 2</button>
+        <button class="nivel-btn" onclick="setNivel(3,this)">Sem 3</button>
+        <button class="nivel-btn" onclick="setNivel(4,this)">Sem 4</button>
+        <button class="nivel-btn" onclick="setNivel(5,this)">Sem 5</button>
+        <button class="nivel-btn" onclick="setNivel(6,this)">Sem 6</button>
+        <button class="nivel-btn" onclick="setNivel(7,this)">Sem 7</button>
+        <button class="nivel-btn" onclick="setNivel(8,this)">Sem 8</button>
+        <button class="nivel-btn" onclick="setNivel(9,this)">Electivas</button>
+        <button class="nivel-btn" onclick="setNivel(10,this)">Humanidades</button>
+      </div>
+      <div class="materia-list" id="materiaList"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="status-bar" id="statusBar">💡 Selecciona una materia de la lista para agregarla al horario.</div>
+
+    <div class="horario-wrap">
+      <div class="horario-grid" id="horarioGrid"></div>
+    </div>
+
+    <div class="selected-wrap">
+      <div class="selected-header">
+        <span>✅ Mis materias seleccionadas</span>
+        <button class="clear-btn" onclick="limpiarTodo()">🗑️ Limpiar todo</button>
+      </div>
+      <div id="selectedBody">
+        <div class="empty-msg">No has agregado ninguna materia aún.</div>
+      </div>
+      <div class="summary-footer" id="summaryFooter" style="display:none">
+        <span>Materias: <strong id="cntMaterias">0</strong></span>
+        <span>Horas semanales: <strong id="cntHoras">0</strong></span>
+        <span>Créditos aprox.: <strong id="cntCreditos">0</strong></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const MATERIAS = [
+  { id:1,  nivel:1, nombre:"Expresión Gráfica", grupo:"MEC1A", slots:[{dia:"Mar",ini:8,fin:10},{dia:"Mie",ini:9,fin:12}] },
+  { id:2,  nivel:1, nombre:"Intro. a la Ingeniería Mecánica", grupo:"MEC1A", slots:[{dia:"Lun",ini:8,fin:10},{dia:"Vie",ini:8,fin:11}] },
+
+  { id:3,  nivel:2, nombre:"Ciencia de los Materiales", grupo:"MEC2A", slots:[{dia:"Lun",ini:14,fin:16},{dia:"Vie",ini:14,fin:17}] },
+  { id:4,  nivel:2, nombre:"Ciencia de los Materiales", grupo:"MEC2B", slots:[{dia:"Mar",ini:6,fin:8}, {dia:"Jue",ini:6,fin:9}] },
+  { id:5,  nivel:2, nombre:"Dibujo de Máquinas", grupo:"MEC2A", slots:[{dia:"Mar",ini:12,fin:14},{dia:"Jue",ini:14,fin:17}] },
+  { id:6,  nivel:2, nombre:"Dibujo de Máquinas", grupo:"MEC2B", slots:[{dia:"Mie",ini:16,fin:18},{dia:"Vie",ini:12,fin:15}] },
+  { id:7,  nivel:2, nombre:"Lógica Computacional", grupo:"MEC2A", slots:[{dia:"Lun",ini:16,fin:18},{dia:"Mie",ini:12,fin:14}] },
+  { id:8,  nivel:2, nombre:"Lógica Computacional", grupo:"MEC2B", slots:[{dia:"Mar",ini:12,fin:14},{dia:"Jue",ini:12,fin:14}] },
+
+  { id:9,  nivel:3, nombre:"Ingeniería de los Materiales", grupo:"MEC3A", slots:[{dia:"Mie",ini:6,fin:9},{dia:"Vie",ini:12,fin:14}] },
+  { id:10, nivel:3, nombre:"Ingeniería de los Materiales", grupo:"MEC3B", slots:[{dia:"Lun",ini:10,fin:13},{dia:"Vie",ini:10,fin:12}] },
+  { id:11, nivel:3, nombre:"Termodinámica", grupo:"MEC3A", slots:[{dia:"Lun",ini:6,fin:8},{dia:"Mie",ini:9,fin:12}] },
+  { id:12, nivel:3, nombre:"Termodinámica", grupo:"MEC3B", slots:[{dia:"Lun",ini:7,fin:10},{dia:"Vie",ini:8,fin:10}] },
+
+  { id:13, nivel:4, nombre:"Mecánica de Fluidos", grupo:"MEC4A", slots:[{dia:"Mar",ini:7,fin:10},{dia:"Vie",ini:10,fin:12}] },
+  { id:14, nivel:4, nombre:"Procesos de Manufactura I", grupo:"MEC4A", slots:[{dia:"Mie",ini:8,fin:11},{dia:"Jue",ini:16,fin:18}] },
+  { id:15, nivel:4, nombre:"Dinámica", grupo:"MEC3A", slots:[{dia:"Lun",ini:8,fin:10},{dia:"Vie",ini:8,fin:11}] },
+  { id:16, nivel:4, nombre:"Dinámica", grupo:"MEC3C", slots:[{dia:"Mar",ini:6,fin:9},{dia:"Vie",ini:6,fin:8}] },
+  { id:17, nivel:4, nombre:"Dinámica", grupo:"MEC4B", slots:[{dia:"Mar",ini:15,fin:18},{dia:"Jue",ini:14,fin:16}] },
+  { id:18, nivel:4, nombre:"Dinámica", grupo:"MEC4D", slots:[{dia:"Lun",ini:12,fin:14},{dia:"Mie",ini:12,fin:15}] },
+  { id:19, nivel:4, nombre:"Resistencia de Materiales", grupo:"MEC4A", slots:[{dia:"Lun",ini:8,fin:11},{dia:"Jue",ini:18,fin:20}] },
+  { id:20, nivel:4, nombre:"Resistencia de Materiales", grupo:"MEC4B", slots:[{dia:"Lun",ini:14,fin:16},{dia:"Mie",ini:15,fin:18}] },
+
+  { id:21, nivel:5, nombre:"Transferencia de Calor", grupo:"MEC5A", slots:[{dia:"Mie",ini:8,fin:11},{dia:"Vie",ini:8,fin:10}] },
+  { id:22, nivel:5, nombre:"Procesos de Manufactura II", grupo:"MEC5A", slots:[{dia:"Lun",ini:8,fin:10},{dia:"Mie",ini:11,fin:14}] },
+  { id:23, nivel:5, nombre:"Instalación de Máquinas Elec.", grupo:"MEC5A", slots:[{dia:"Mar",ini:7,fin:10},{dia:"Vie",ini:6,fin:8}] },
+  { id:24, nivel:5, nombre:"Mecanismos", grupo:"MEC5B", slots:[{dia:"Lun",ini:10,fin:13},{dia:"Vie",ini:10,fin:12}] },
+
+  { id:25, nivel:6, nombre:"Electrónica Industrial", grupo:"MEC6A", slots:[{dia:"Lun",ini:15,fin:18},{dia:"Jue",ini:12,fin:14}] },
+  { id:26, nivel:6, nombre:"Diseño de Máquinas I", grupo:"MEC6A", slots:[{dia:"Mar",ini:12,fin:15},{dia:"Jue",ini:14,fin:16}] },
+  { id:27, nivel:6, nombre:"Diseño de Máquinas I", grupo:"MEC6B", slots:[{dia:"Lun",ini:12,fin:14},{dia:"Jue",ini:12,fin:15}] },
+  { id:28, nivel:6, nombre:"Turbomáquinas", grupo:"MEC6A", slots:[{dia:"Mie",ini:12,fin:14},{dia:"Vie",ini:12,fin:15}] },
+  { id:29, nivel:6, nombre:"Turbomáquinas", grupo:"MEC6B", slots:[{dia:"Lun",ini:14,fin:16},{dia:"Jue",ini:15,fin:18}] },
+
+  { id:30, nivel:7, nombre:"Gestión del Mantenimiento", grupo:"MEC7A", slots:[{dia:"Vie",ini:11,fin:14}] },
+  { id:31, nivel:7, nombre:"Instrumentación y Automat.", grupo:"MEC7A", slots:[{dia:"Lun",ini:11,fin:14},{dia:"Vie",ini:8,fin:10}] },
+  { id:32, nivel:7, nombre:"Proyecto Integrador", grupo:"MEC7A", slots:[{dia:"Mar",ini:8,fin:12},{dia:"Mie",ini:11,fin:13}] },
+  { id:33, nivel:7, nombre:"Diseño de Máquinas II", grupo:"MEC7A", slots:[{dia:"Mie",ini:6,fin:8},{dia:"Jue",ini:9,fin:12}] },
+  { id:34, nivel:7, nombre:"Máquinas Térmicas", grupo:"MEC7A", slots:[{dia:"Mar",ini:6,fin:8},{dia:"Jue",ini:6,fin:9}] },
+
+  { id:35, nivel:8, nombre:"Opción de Grado", grupo:"MEC8A", slots:[{dia:"Lun",ini:10,fin:12},{dia:"Mie",ini:12,fin:14}] },
+  { id:36, nivel:8, nombre:"Project Management", grupo:"MEC8A", slots:[{dia:"Mie",ini:6,fin:9},{dia:"Vie",ini:12,fin:14}] },
+
+  { id:37, nivel:9, nombre:"Modelamiento Numérico (O)", grupo:"Electiva", slots:[{dia:"Mie",ini:14,fin:16},{dia:"Vie",ini:15,fin:18}] },
+  { id:38, nivel:9, nombre:"Ensayos No Destructivos (O)", grupo:"Electiva", slots:[{dia:"Mar",ini:15,fin:18},{dia:"Jue",ini:16,fin:18}] },
+  { id:39, nivel:9, nombre:"Energías Renovables (O)", grupo:"Electiva", slots:[{dia:"Lun",ini:8,fin:10},{dia:"Mie",ini:8,fin:11}] },
+  { id:40, nivel:9, nombre:"Refrigeración y Aire Acond. (O)", grupo:"Electiva", slots:[{dia:"Mar",ini:16,fin:18},{dia:"Vie",ini:14,fin:16}] },
+  { id:41, nivel:9, nombre:"Derecho Laboral (O)", grupo:"Electiva", slots:[{dia:"Lun",ini:14,fin:16},{dia:"Mar",ini:12,fin:14}] },
+
+  { id:42, nivel:10, nombre:"Cátedra La Ciencia, la Tecnología y la Bioética, ALBERTO MAGNO, O.P.", grupo:"CNP7A", slots:[{dia:"Jue",ini:6,fin:8},{dia:"Mar",ini:6,fin:8}] },
+  { id:43, nivel:10, nombre:"Cátedra Economía y Humanismo, LOUIS JOSEPH LEBRET, O.P.", grupo:"AEA7A", slots:[{dia:"Jue",ini:8,fin:10},{dia:"Lun",ini:8,fin:10}] },
+  { id:44, nivel:10, nombre:"Cátedra Identidades Culturales y Justicia Social, BARTOLOME DE LAS CASAS, O.P.", grupo:"NI6A", slots:[{dia:"Mie",ini:14,fin:16}] },
+  { id:45, nivel:10, nombre:"Cátedra Historia de Colombia: FRAY ALONSO DE ZAMORA", grupo:"NI6A", slots:[{dia:"Jue",ini:8,fin:10},{dia:"Lun",ini:8,fin:10}] },
+  { id:46, nivel:10, nombre:"Cátedra Derechos Humanos, FRANCISCO DE VITORIA, O.P.", grupo:"ARQ7A", slots:[{dia:"Vie",ini:10,fin:12},{dia:"Jue",ini:10,fin:12}] },
+  { id:47, nivel:10, nombre:"Cultura Teológica y Hecho Religioso", grupo:"MEC6B", slots:[{dia:"Lun",ini:12,fin:15}] },
+  { id:48, nivel:10, nombre:"Cultura Teológica", grupo:"AEA4A", slots:[{dia:"Vie",ini:16,fin:18},{dia:"Mar",ini:16,fin:18}] },
+  { id:49, nivel:10, nombre:"Cultura Teológica", grupo:"AEA4I", slots:[{dia:"Mie",ini:12,fin:14},{dia:"Lun",ini:12,fin:14}] },
+  { id:50, nivel:10, nombre:"Cultura Teológica", grupo:"CNP6C", slots:[{dia:"Mie",ini:6,fin:8},{dia:"Lun",ini:6,fin:8}] },
+  { id:51, nivel:10, nombre:"Cultura Teológica", grupo:"NI5G", slots:[{dia:"Mar",ini:10,fin:12},{dia:"Lun",ini:10,fin:12}] },
+  { id:52, nivel:10, nombre:"Cultura Teológica", grupo:"NI5P", slots:[{dia:"Mie",ini:8,fin:10},{dia:"Lun",ini:8,fin:10}] },
+];
+
+let added = [];
+let nivelFilter2 = 0;
+
+const DAYS = ["Lun","Mar","Mie","Jue","Vie"];
+const DAYS_FULL = {Lun:"Lunes",Mar:"Martes",Mie:"Miércoles",Jue:"Jueves",Vie:"Viernes"};
+const TIME_START = 6;
+const TIME_END = 20;
+const SLOT = 0.5;
+
+function slots() {
+  const s = [];
+  for (let t = TIME_START; t < TIME_END; t += SLOT) s.push(t);
+  return s;
+}
+
+function fmtTime(t) {
+  const h = Math.floor(t);
+  const m = t % 1 === 0 ? "00" : "30";
+  const ampm = h < 12 ? "am" : "pm";
+  const h12 = h > 12 ? h - 12 : h;
+  return `${h12}:${m}${ampm}`;
+}
+
+function buildGrid() {
+  const grid = document.getElementById("horarioGrid");
+  grid.innerHTML = "";
+  const corner = document.createElement("div");
+  corner.className = "grid-corner";
+  corner.textContent = "Hora";
+  grid.appendChild(corner);
+  DAYS.forEach(d => {
+    const dh = document.createElement("div");
+    dh.className = "grid-day-head";
+    dh.textContent = DAYS_FULL[d];
+    grid.appendChild(dh);
+  });
+  slots().forEach(t => {
+    const isHour = t % 1 === 0;
+    const tl = document.createElement("div");
+    tl.className = "grid-time" + (isHour ? " hora-entera" : "");
+    tl.textContent = fmtTime(t);
+    grid.appendChild(tl);
+    DAYS.forEach(d => {
+      const cell = document.createElement("div");
+      cell.className = "grid-cell" + (isHour ? " hora-entera" : "");
+      cell.id = `cell-${d}-${t}`;
+      grid.appendChild(cell);
+    });
+  });
+}
+
+function paintMateria(mat, paint=true) {
+  mat.slots.forEach(s => {
+    for (let t = s.ini; t < s.fin - 0.01; t += SLOT) {
+      const cell = document.getElementById(`cell-${s.dia}-${t}`);
+      if (!cell) continue;
+      if (paint) {
+        const isTop = Math.abs(t - s.ini) < 0.01;
+        cell.classList.add("ocupado");
+        if (isTop) cell.classList.add("ocupado-top");
+        cell.innerHTML = isTop
+          ? `<span class="cell-label">${mat.nombre}<br>${mat.grupo}</span><button class="cell-remove" title="Quitar" onclick="quitarById(${mat.id})">✕</button>`
+          : "";
+        cell.dataset.matId = mat.id;
+      } else {
+        cell.classList.remove("ocupado","ocupado-top");
+        cell.innerHTML = "";
+        delete cell.dataset.matId;
+      }
+    }
+  });
+}
+
+function overlaps(s1ini,s1fin,s2ini,s2fin) {
+  return s1ini < s2fin && s1fin > s2ini;
+}
+
+function getConflicts(mat) {
+  const conflicts = [];
+  for (const aid of added) {
+    const existing = MATERIAS.find(m => m.id === aid);
+    if (!existing) continue;
+    for (const ns of mat.slots) {
+      for (const es of existing.slots) {
+        if (ns.dia === es.dia && overlaps(ns.ini, ns.fin, es.ini, es.fin)) {
+          const text = `${existing.nombre} [${existing.grupo}]`;
+          if (!conflicts.includes(text)) conflicts.push(text);
+        }
+      }
+    }
+  }
+  return conflicts;
+}
+
+function agregarMateria(id) {
+  const mat = MATERIAS.find(m => m.id === id);
+  if (!mat) return;
+  if (added.includes(id)) {
+    setStatus("warn", `⚠️ "${mat.nombre} [${mat.grupo}]" ya está en tu horario.`);
+    return;
+  }
+  const conflicts = getConflicts(mat);
+  if (conflicts.length > 0) {
+    setStatus("error", `🚫 Conflicto con: ${conflicts.join(" · ")} — No se puede agregar.`);
+    return;
+  }
+  added.push(id);
+  paintMateria(mat, true);
+  renderList();
+  renderSelected();
+  setStatus("ok", `✅ Agregada: ${mat.nombre} [${mat.grupo}]`);
+}
+
+function quitarById(id) {
+  const mat = MATERIAS.find(m => m.id === id);
+  if (!mat) return;
+  added = added.filter(a => a !== id);
+  paintMateria(mat, false);
+  renderList();
+  renderSelected();
+  setStatus("warn", `🗑️ Quitada: ${mat.nombre} [${mat.grupo}]`);
+}
+
+function limpiarTodo() {
+  if (!confirm("¿Limpiar todo el horario?")) return;
+  added.forEach(id => {
+    const mat = MATERIAS.find(m => m.id === id);
+    if (mat) paintMateria(mat, false);
+  });
+  added = [];
+  renderList();
+  renderSelected();
+  setStatus("", "💡 Horario limpiado. Selecciona materias de la lista.");
+}
+
+function setStatus(type, msg) {
+  const bar = document.getElementById("statusBar");
+  bar.className = "status-bar" + (type ? " " + type : "");
+  bar.textContent = msg;
+}
+
+function setNivel(n, btn) {
+  nivelFilter2 = n;
+  document.querySelectorAll(".nivel-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  filtrar();
+}
+
+function filtrar() {
+  const q = document.getElementById("searchInput").value.toLowerCase();
+  renderList(q);
+}
+
+function fmtSlot(s) {
+  return `${s.dia} ${fmtTime(s.ini)}–${fmtTime(s.fin)}`;
+}
+
+function renderList(q="") {
+  const el = document.getElementById("materiaList");
+  el.innerHTML = "";
+  const visible = MATERIAS.filter(m => {
+    if (nivelFilter2 === 10) return m.nivel === 10;
+    if (nivelFilter2 === 9) return m.nivel === 9;
+    if (nivelFilter2 > 0) return m.nivel === nivelFilter2;
+    return true;
+  }).filter(m => !q || m.nombre.toLowerCase().includes(q) || m.grupo.toLowerCase().includes(q));
+
+  if (visible.length === 0) {
+    el.innerHTML = `<div class="empty-msg">Sin resultados.</div>`;
+    return;
+  }
+
+  visible.forEach(m => {
+    const isAdded = added.includes(m.id);
+    const conflicts = isAdded ? [] : getConflicts(m);
+    const hasConflict = conflicts.length > 0;
+    const item = document.createElement("div");
+    item.className = "materia-item" + (isAdded ? " added" : "") + (hasConflict ? " conflict-preview" : "");
+    const horario = m.slots.map(fmtSlot).join("  ·  ");
+    item.innerHTML = `
+      <div class="nivel-badge">${m.nivel === 10 ? "H" : m.nivel}</div>
+      <div class="materia-info">
+        <div class="materia-nombre">${m.nombre}</div>
+        <div class="materia-meta">${m.grupo} · ${horario}</div>
+      </div>
+      <button class="add-btn ${isAdded||hasConflict?"disabled":""}"
+        onclick="${isAdded||hasConflict?'void(0)':`agregarMateria(${m.id})`}"
+        title="${isAdded?"Ya agregada":hasConflict?"Conflicto con: "+conflicts.join(", "):"Agregar al horario"}"
+      >${isAdded?"✓":hasConflict?"✗":"+"}</button>
+      <div class="tooltip">${isAdded?"Ya en horario":hasConflict?"⚠ "+conflicts[0]:"Agregar · "+m.slots[0].dia+" "+fmtTime(m.slots[0].ini)}</div>
+    `;
+    if (!isAdded && !hasConflict) {
+      item.querySelector(".add-btn").addEventListener("click", (e) => {
+        e.stopPropagation();
+        agregarMateria(m.id);
+      });
+      item.addEventListener("click", () => agregarMateria(m.id));
+    }
+    el.appendChild(item);
+  });
+}
+
+function renderSelected() {
+  const body = document.getElementById("selectedBody");
+  const footer = document.getElementById("summaryFooter");
+
+  if (added.length === 0) {
+    body.innerHTML = `<div class="empty-msg">No has agregado ninguna materia aún.</div>`;
+    footer.style.display = "none";
+    return;
+  }
+
+  let totalHoras = 0;
+  const rows = added.map(id => {
+    const m = MATERIAS.find(x => x.id === id);
+    let horas = 0;
+    m.slots.forEach(s => horas += (s.fin - s.ini));
+    totalHoras += horas;
+    const horario = m.slots.map(fmtSlot).join("  |  ");
+    return `<tr>
+      <td><strong>${m.nivel === 10 ? "H" : m.nivel}</strong></td>
+      <td><code style="font-size:10px">${m.id}</code></td>
+      <td><strong>${m.nombre}</strong></td>
+      <td>${m.grupo}</td>
+      <td style="color:var(--texto-suave);font-size:11px">${horario}</td>
+      <td>${horas}h/sem</td>
+      <td><button class="remove-row-btn" onclick="quitarById(${id})">Quitar</button></td>
+    </tr>`;
+  }).join("");
+
+  body.innerHTML = `<table class="selected-table">
+    <thead><tr>
+      <th>Sem.</th><th>Código</th><th>Materia</th><th>Grupo</th><th>Horario</th><th>Horas</th><th></th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+
+  document.getElementById("cntMaterias").textContent = added.length;
+  document.getElementById("cntHoras").textContent = totalHoras;
+  document.getElementById("cntCreditos").textContent = Math.round(totalHoras * 0.6);
+  footer.style.display = "flex";
+}
+
+buildGrid();
+renderList();
+renderSelected();
+</script>
+</body>
+</html>
