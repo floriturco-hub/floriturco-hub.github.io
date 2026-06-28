@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuánto amo a Topoki 💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@300;400&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --rose:    #C2185B;
+    --blush:   #F48FB1;
+    --gold:    #FFD070;
+    --cream:   #FFF8F0;
+    --bg:      #08000F;
+    --card-bg: rgba(255,255,255,0.04);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ── STARS ── */
+  #stars-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* ── HERO ── */
+  #hero {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .eyebrow {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    letter-spacing: .3em;
+    font-size: .7rem;
+    color: var(--blush);
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.6rem, 7vw, 6rem);
+    line-height: 1.1;
+    color: var(--cream);
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .subtitle {
+    margin-top: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--blush);
+    opacity: .9;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+    font-size: .65rem;
+    letter-spacing: .2em;
+    color: var(--blush);
+    opacity: .5;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  .scroll-hint svg { width: 18px; }
+  @keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50%      { transform: translateY(6px); }
+  }
+
+  /* ── CHART SECTION ── */
+  #chart-section {
+    position: relative;
+    z-index: 1;
+    padding: 0 1rem 4rem;
+  }
+
+  .section-label {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: .65rem;
+    letter-spacing: .3em;
+    color: var(--blush);
+    text-transform: uppercase;
+    padding: 3rem 0 1rem;
+  }
+
+  /* Sticky axes wrapper */
+  #chart-wrap {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  /* Y-axis label (sticky) */
+  #y-label {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: .5rem 0;
+    background: linear-gradient(to bottom, var(--bg) 70%, transparent);
+    font-family: 'Lato', sans-serif;
+    font-size: .7rem;
+    letter-spacing: .15em;
+    color: var(--blush);
+    text-transform: uppercase;
+  }
+
+  /* The scrollable canvas area */
+  #canvas-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  canvas#chart {
+    display: block;
+    cursor: default;
+  }
+
+  /* X-axis label */
+  #x-label {
+    text-align: center;
+    margin-top: .5rem;
+    font-size: .7rem;
+    letter-spacing: .15em;
+    color: var(--blush);
+    text-transform: uppercase;
+  }
+
+  /* ── MESSAGES ── */
+  #messages {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .msg-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(244,143,177,.15);
+    border-radius: 1rem;
+    padding: 1.8rem 2rem;
+    backdrop-filter: blur(4px);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform .7s ease, opacity .7s ease;
+  }
+
+  .msg-card.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .msg-card .quote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--cream);
+  }
+
+  .msg-card .attr {
+    margin-top: .8rem;
+    font-size: .7rem;
+    letter-spacing: .2em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 3rem 1rem 4rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    color: var(--blush);
+  }
+
+  footer span { color: var(--gold); }
+
+  /* ── FLOATING HEARTS ── */
+  .heart-particle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+    font-size: 1.2rem;
+    animation: floatUp 3.5s ease-in forwards;
+    opacity: 0;
+  }
+  @keyframes floatUp {
+    0%   { transform: translateY(0) scale(.6); opacity: .9; }
+    80%  { opacity: .4; }
+    100% { transform: translateY(-60vh) scale(1.1); opacity: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .msg-card { transition: none; opacity: 1; transform: none; }
+    .heart-particle { display: none; }
+    .scroll-hint { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="stars-canvas"></canvas>
+
+<!-- HERO -->
+<section id="hero">
+  <p class="eyebrow">Una función matemática del corazón</p>
+  <h1>Te amo,<br><em>Topoki</em></h1>
+  <p class="subtitle">y este amor no tiene límite superior.</p>
+  <div class="scroll-hint">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+    <span>Desplázate</span>
+  </div>
+</section>
+
+<!-- CHART -->
+<section id="chart-section">
+  <p class="section-label">∞ · Amor vs Tiempo · ∞</p>
+
+  <div id="chart-wrap">
+    <div id="y-label">
+      ↑ &nbsp; Cuánto te amo &nbsp; ( ∞ )
+    </div>
+    <div id="canvas-scroll">
+      <canvas id="chart"></canvas>
+    </div>
+    <p id="x-label">Tiempo juntos →</p>
+  </div>
+</section>
+
+<!-- MESSAGES -->
+<section id="messages">
+  <div class="msg-card">
+    <p class="quote">"Desde el 16 de mayo de 2025, cada segundo contigo ha sido la prueba de que el amor no cabe en ninguna ecuación… pero igual lo intento."</p>
+    <p class="attr">— El que te ama ❤</p>
+  </div>
+  <div class="msg-card">
+    <p class="quote">"Si graficara todo lo que siento por ti, necesitaría papel infinito, tinta infinita y una vida infinita. Por suerte, planeo tenerla contigo."</p>
+    <p class="attr">— Siempre tuyo</p>
+  </div>
+  <div class="msg-card">
+    <p class="quote">"Eres la constante más hermosa en todas mis variables. Sin importar qué cambie a mi alrededor, tú siempre estás ahí, creciendo conmigo."</p>
+    <p class="attr">— Con todo mi amor</p>
+  </div>
+  <div class="msg-card">
+    <p class="quote">"Este amor no converge — diverge hacia infinito. Y no hay límite que lo detenga."</p>
+    <p class="attr">— Para Lauren, con el corazón lleno</p>
+  </div>
+  <div class="msg-card">
+    <p class="quote">"Cada día que pasa, la curva sube un poco más. Hoy te amo más que ayer, y mañana te amaré más que hoy. Así, sin fin."</p>
+    <p class="attr">— Kifiori 💕</p>
+  </div>
+</section>
+
+<footer>
+  Te amo hoy, mañana y <span>siempre</span>, Topoki. 💛
+</footer>
+
+<script>
+// ── STARS ──────────────────────────────────────────────
+const starsCanvas = document.getElementById('stars-canvas');
+const sCtx = starsCanvas.getContext('2d');
+let stars = [];
+
+function resizeStars() {
+  starsCanvas.width  = window.innerWidth;
+  starsCanvas.height = window.innerHeight;
+  stars = Array.from({length: 220}, () => ({
+    x: Math.random() * starsCanvas.width,
+    y: Math.random() * starsCanvas.height,
+    r: Math.random() * 1.2 + .2,
+    a: Math.random(),
+    speed: Math.random() * .004 + .001,
+    phase: Math.random() * Math.PI * 2
+  }));
+}
+
+let starsT = 0;
+function drawStars() {
+  sCtx.clearRect(0, 0, starsCanvas.width, starsCanvas.height);
+  starsT += .01;
+  stars.forEach(s => {
+    const alpha = .3 + .5 * Math.sin(starsT * s.speed * 100 + s.phase);
+    sCtx.beginPath();
+    sCtx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+    sCtx.fillStyle = `rgba(255,220,230,${alpha})`;
+    sCtx.fill();
+  });
+  requestAnimationFrame(drawStars);
+}
+resizeStars();
+drawStars();
+window.addEventListener('resize', resizeStars);
+
+// ── CHART ──────────────────────────────────────────────
+const chart     = document.getElementById('chart');
+const ctx       = chart.getContext('2d');
+const scrollBox = document.getElementById('canvas-scroll');
+
+const START_DATE = new Date('2025-05-16T00:00:00');
+
+// Layout
+const PL = 70, PR = 40, PT = 30, PB = 60;
+const H  = 320;
+
+// How many "screens" wide the chart is — effectively infinite
+// We render segments lazily
+const PIXELS_PER_DAY = 3.5;
+const DAYS_VISIBLE   = 200;       // initial render width in days
+let renderedDays     = DAYS_VISIBLE;
+
+function loveFunction(days) {
+  // Starts at 100, grows with log + sine micro-variations
+  const base = 100 + 60 * Math.log1p(days / 30);
+  const wave = 8  * Math.sin(days / 12)
+             + 4  * Math.sin(days / 5 + 1)
+             + 2  * Math.cos(days / 3 + 0.5);
+  return base + wave;
+}
+
+function daysBetween(d1, d2) {
+  return Math.max(0, (d2 - d1) / 86400000);
+}
+
+function formatDate(date) {
+  return date.toLocaleDateString('es-CO', { day:'numeric', month:'short', year:'numeric' });
+}
+
+function buildChart(totalDays) {
+  const W = Math.ceil(totalDays * PIXELS_PER_DAY) + PL + PR;
+  chart.width  = W;
+  chart.height = H + PT + PB;
+  ctx.clearRect(0, 0, chart.width, chart.height);
+
+  // Max love for Y scale
+  const maxLove = loveFunction(totalDays) * 1.1;
+
+  // ── Grid lines ──
+  ctx.strokeStyle = 'rgba(244,143,177,.1)';
+  ctx.lineWidth   = 1;
+  const yTicks = 5;
+  for (let i = 0; i <= yTicks; i++) {
+    const y = PT + H - (i / yTicks) * H;
+    ctx.beginPath();
+    ctx.moveTo(PL, y);
+    ctx.lineTo(W - PR, y);
+    ctx.stroke();
+    // Y tick label
+    const val = Math.round((i / yTicks) * maxLove);
+    ctx.fillStyle = 'rgba(244,143,177,.5)';
+    ctx.font = '10px Lato, sans-serif';
+    ctx.textAlign = 'right';
+    ctx.fillText(val === 0 ? '0' : (i === yTicks ? '∞' : val+''), PL - 8, y + 4);
+  }
+
+  // X ticks every 30 days
+  const tickInterval = 30;
+  for (let d = 0; d <= totalDays; d += tickInterval) {
+    const x = PL + d * PIXELS_PER_DAY;
+    ctx.strokeStyle = 'rgba(244,143,177,.08)';
+    ctx.lineWidth   = 1;
+    ctx.beginPath();
+    ctx.moveTo(x, PT);
+    ctx.lineTo(x, PT + H);
+    ctx.stroke();
+
+    const labelDate = new Date(START_DATE.getTime() + d * 86400000);
+    ctx.fillStyle = 'rgba(244,143,177,.4)';
+    ctx.font      = '9px Lato, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(formatDate(labelDate), x, PT + H + 18);
+    // days count
+    if (d > 0) {
+      ctx.fillStyle = 'rgba(255,208,112,.3)';
+      ctx.font = '8px Lato, sans-serif';
+      ctx.fillText(`${d}d`, x, PT + H + 30);
+    }
+  }
+
+  // ── Axes ──
+  ctx.strokeStyle = 'rgba(244,143,177,.6)';
+  ctx.lineWidth   = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(PL, PT);
+  ctx.lineTo(PL, PT + H + 1);
+  ctx.lineTo(W - PR, PT + H + 1);
+  ctx.stroke();
+
+  // Arrowheads
+  ctx.fillStyle = 'rgba(244,143,177,.6)';
+  // Y arrow
+  ctx.beginPath();
+  ctx.moveTo(PL, PT - 2);
+  ctx.lineTo(PL - 5, PT + 12);
+  ctx.lineTo(PL + 5, PT + 12);
+  ctx.closePath(); ctx.fill();
+  // X arrow
+  ctx.beginPath();
+  ctx.moveTo(W - PR + 2, PT + H + 1);
+  ctx.lineTo(W - PR - 10, PT + H - 4);
+  ctx.lineTo(W - PR - 10, PT + H + 6);
+  ctx.closePath(); ctx.fill();
+
+  // ── Love curve — filled ──
+  const grad = ctx.createLinearGradient(0, PT, 0, PT + H);
+  grad.addColorStop(0,   'rgba(194,24,91,.55)');
+  grad.addColorStop(.5,  'rgba(244,143,177,.25)');
+  grad.addColorStop(1,   'rgba(194,24,91,0)');
+
+  ctx.beginPath();
+  ctx.moveTo(PL, PT + H);
+  for (let d = 0; d <= totalDays; d += .5) {
+    const love = loveFunction(d);
+    const x = PL + d * PIXELS_PER_DAY;
+    const y = PT + H - (love / maxLove) * H;
+    ctx.lineTo(x, y);
+  }
+  ctx.lineTo(PL + totalDays * PIXELS_PER_DAY, PT + H);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // ── Love curve — stroke ──
+  ctx.beginPath();
+  for (let d = 0; d <= totalDays; d += .5) {
+    const love = loveFunction(d);
+    const x = PL + d * PIXELS_PER_DAY;
+    const y = PT + H - (love / maxLove) * H;
+    d === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  }
+  ctx.strokeStyle = '#F48FB1';
+  ctx.lineWidth   = 2.2;
+  ctx.shadowColor = '#C2185B';
+  ctx.shadowBlur  = 8;
+  ctx.stroke();
+  ctx.shadowBlur  = 0;
+
+  // ── "TODAY" marker ──
+  const todayDays = daysBetween(START_DATE, new Date());
+  if (todayDays <= totalDays) {
+    const tx = PL + todayDays * PIXELS_PER_DAY;
+    const love = loveFunction(todayDays);
+    const ty   = PT + H - (love / maxLove) * H;
+
+    ctx.strokeStyle = '#FFD070';
+    ctx.lineWidth   = 1.2;
+    ctx.setLineDash([4, 4]);
+    ctx.beginPath();
+    ctx.moveTo(tx, PT + H);
+    ctx.lineTo(tx, ty);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    ctx.beginPath();
+    ctx.arc(tx, ty, 5, 0, Math.PI*2);
+    ctx.fillStyle = '#FFD070';
+    ctx.shadowColor = '#FFD070';
+    ctx.shadowBlur  = 12;
+    ctx.fill();
+    ctx.shadowBlur = 0;
+
+    ctx.fillStyle = '#FFD070';
+    ctx.font = 'bold 10px Lato, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('Hoy ♡', tx, ty - 12);
+  }
+
+  // ── "∞" label at the end ──
+  ctx.fillStyle = 'rgba(244,143,177,.6)';
+  ctx.font = 'bold 18px Lato, sans-serif';
+  ctx.textAlign = 'left';
+  ctx.fillText('∞', W - PR - 2, PT + 16);
+}
+
+// Initial render
+buildChart(renderedDays);
+
+// Infinite scroll: extend chart when approaching end
+scrollBox.addEventListener('scroll', () => {
+  const nearEnd = scrollBox.scrollLeft + scrollBox.clientWidth >= chart.width - 100;
+  if (nearEnd) {
+    renderedDays += 180;
+    buildChart(renderedDays);
+  }
+});
+
+// ── INTERSECTION OBSERVER for msg cards ──
+const cards = document.querySelectorAll('.msg-card');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
+  });
+}, { threshold: .15 });
+cards.forEach(c => obs.observe(c));
+
+// ── FLOATING HEARTS on click / scroll ──
+const HEARTS = ['💕','💗','❤','💖','💘','🌸','✨','💛'];
+function spawnHeart(x, y) {
+  const el = document.createElement('div');
+  el.className = 'heart-particle';
+  el.textContent = HEARTS[Math.floor(Math.random() * HEARTS.length)];
+  el.style.left  = x + 'px';
+  el.style.top   = y + 'px';
+  el.style.fontSize = (0.9 + Math.random() * .8) + 'rem';
+  document.body.appendChild(el);
+  el.addEventListener('animationend', () => el.remove());
+}
+
+document.addEventListener('click', e => spawnHeart(e.clientX, e.clientY));
+
+let scrollTimer;
+window.addEventListener('scroll', () => {
+  clearTimeout(scrollTimer);
+  scrollTimer = setTimeout(() => {
+    for (let i = 0; i < 3; i++) {
+      spawnHeart(
+        Math.random() * window.innerWidth,
+        Math.random() * window.innerHeight
+      );
+    }
+  }, 120);
+}, { passive: true });
+</script>
+</body>
+</html>
+
