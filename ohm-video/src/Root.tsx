@@ -1,4 +1,5 @@
 import { Composition } from "remotion";
+import { AspiradoraVideo, DURACION_ASPIRADORA_S } from "./aspiradora/AspiradoraVideo";
 import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
@@ -44,6 +45,14 @@ export const RemotionRoot: React.FC = () => {
         id="PajaroCable"
         component={PajaroCable}
         durationInFrames={Math.round(DURACION_PAJARO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Aspiradora"
+        component={AspiradoraVideo}
+        durationInFrames={Math.round(DURACION_ASPIRADORA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
