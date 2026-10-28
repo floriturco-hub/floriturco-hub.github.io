@@ -5,6 +5,7 @@ import { LeyDeOhm } from "./LeyDeOhm";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
+import { CabezaPerfilPreview } from "./components/CabezaPerfil";
 import { DURACION_TINNITUS_S, Tinnitus } from "./tinnitus/Tinnitus";
 
 export const RemotionRoot: React.FC = () => {
@@ -62,6 +63,14 @@ export const RemotionRoot: React.FC = () => {
         id="Tinnitus"
         component={Tinnitus}
         durationInFrames={Math.round(DURACION_TINNITUS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CabezaPerfil"
+        component={CabezaPerfilPreview}
+        durationInFrames={30}
         fps={30}
         width={1080}
         height={1920}
