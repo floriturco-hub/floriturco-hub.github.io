@@ -74,3 +74,10 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
 - **Todo lo demás del vídeo de la ley de Ohm queda aprobado como plantilla:** etiquetas monoespaciadas en píldora, paleta (amarillo idea clave, cian electricidad, naranja calor), escenas que se encadenan con zoom de cámara, gráficas en tarjetas oscuras, voz acelerada ×1,1 (~180 palabras/min), destellos + "tic" en los choques, mezcla final a −14 LUFS.
 - **Cierre de canal obligatorio (aprobado tal cual) — logo "Frecuencia Cero":** marco redondeado blanco con una onda dentro y el texto "Frecuencia Cero" (sans geométrica tipo Montserrat, blanco sobre negro). Animación: la onda sigue avanzando hacia la derecha, pierde amplitud hasta quedar en **línea recta (frecuencia cero)**; a la vez aparece el texto con una pequeña animación + **efecto de sonido**, y el narrador dice **"Frecuencia Cero"**.
   - **El texto "Frecuencia Cero" se enciende como una bombilla:** a los 63,55 s parpadea (0 → 85 % → 10 % → 95 % → 25 % → 100 % → 70 % → 100 % en 0,52 s) y queda encendido con un halo cálido `#FFF1C9` (dos desenfoques: 16 y 55 px en el lienzo del logo) que se asienta al 55 %. Timing: marco 0,8 s, onda se aplana en 1,5 s, SFX al empezar a aplanarse, texto+voz al terminar.
+- **Proceso aprobado para todos los vídeos nuevos (confirmado el 2026-10-28, vídeo "Aspiradora"):**
+  - Guion en `guion/<tema>/guion.txt`, en el mismo tono y con la misma estructura: gancho, creencia, por qué falla, mecanismo, dato concreto, regla práctica y resumen en una frase.
+  - Voz: ElevenLabs, Pablo (`6X3rSPfxjGvtcD9GxQcW`), `eleven_v4`, acelerada ×1,1. Se descarga la toma A; la toma B queda en el flujo.
+  - Tiempos de escena y etiquetas sacados con Whisper `small` (palabra a palabra) sobre la narración final, no sobre el guion.
+  - Una sola escena-mundo recorrida con la cámara, etiquetas de 2 a 4 palabras, tarjetas oscuras con datos y cierre Frecuencia Cero.
+  - Mezcla final a −14 LUFS y render 1080×1920, 30 fps.
+  - Antes de dar el vídeo por bueno: fotogramas de prueba revisados, lint y `tsc` limpios, y después el render completo.
