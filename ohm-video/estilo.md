@@ -66,3 +66,7 @@ marcado con **[SUPOSICIÓN]**. Medidas en píxeles ya escaladas a nuestro lienzo
 
 ## 9. Preferencias del usuario (correcciones aprobadas)
 _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
+
+- **Sin subtítulos de narración: solo etiquetas-clave** (§4). Confirmado por el usuario.
+- **Voz:** ElevenLabs, voz "Pablo – Amigable y Explicativa" (`6X3rSPfxjGvtcD9GxQcW`, castellano peninsular), modelo `eleven_v4`.
+- **Cierre de canal obligatorio — logo "Frecuencia Cero":** marco redondeado blanco con una onda dentro y el texto "Frecuencia Cero" (sans geométrica tipo Montserrat, blanco sobre negro). Animación: la onda sigue avanzando hacia la derecha, pierde amplitud hasta quedar en **línea recta (frecuencia cero)**; a la vez aparece el texto con una pequeña animación + **efecto de sonido**, y el narrador dice **"Frecuencia Cero"**.
