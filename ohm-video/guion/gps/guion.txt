@@ -1,0 +1,9 @@
+Tu celular puede calcular dónde estás usando señales que viajaron miles de kilómetros. ¿Cómo calcula tu posición?
+Parece que el satélite te ve y te dice dónde estás. Pero el satélite no sabe que existes. Tu celular solo escucha.
+A veinte mil kilómetros hay unos treinta satélites GPS. Cada uno lleva relojes atómicos y repite sin parar: quién es, dónde está y a qué hora exacta envió el mensaje.
+La señal viaja a la velocidad de la luz y tarda unas siete centésimas de segundo. Con ese retraso, tu celular calcula la distancia.
+Con un satélite, sabes que estás en una esfera. Con dos, en un círculo. Con tres, quedan dos puntos, y uno está perdido en el espacio.
+Falta un cuarto, porque el reloj de tu celular no es atómico. Y cada error cuenta: una millonésima de segundo son trescientos metros.
+Hasta Einstein importa: allá arriba, los relojes adelantan treinta y ocho millonésimas al día. Sin corregirlo, el GPS se desviaría diez kilómetros diarios.
+Por eso en un túnel, o entre edificios altos, se pierde: necesita ver al menos cuatro satélites.
+Tu celular no pregunta dónde está. Lo calcula con tiempo. Cuatro relojes, una posición.

@@ -1,6 +1,7 @@
 import { Composition } from "remotion";
 import { AspiradoraVideo, DURACION_ASPIRADORA_S } from "./aspiradora/AspiradoraVideo";
 import { BateriaDescargada } from "./bateria/BateriaDescargada";
+import { DURACION_GPS_S, GpsVideo } from "./gps/GpsVideo";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { OllaPresion } from "./olla/OllaPresion";
@@ -53,6 +54,14 @@ export const RemotionRoot: React.FC = () => {
         id="Aspiradora"
         component={AspiradoraVideo}
         durationInFrames={Math.round(DURACION_ASPIRADORA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Gps"
+        component={GpsVideo}
+        durationInFrames={Math.round(DURACION_GPS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
