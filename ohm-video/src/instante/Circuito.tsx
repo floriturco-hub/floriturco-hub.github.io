@@ -197,6 +197,19 @@ export const Circuito: React.FC<{ readonly t0: number }> = ({ t0 }) => {
           strokeWidth={10}
           strokeLinecap="round"
         />
+        {/* "Ya están dentro de la bombilla": se resaltan los electrones que ya hay ahí */}
+        {t >= T.bombilla && t < T.pulsar + 0.5 ? (
+          <circle
+            cx={BOMBILLA.x}
+            cy={BOMBILLA.y}
+            r={110 + 8 * Math.sin(t * 6)}
+            fill="none"
+            stroke={C.yellow}
+            strokeWidth={5}
+            strokeDasharray="14 10"
+            opacity={interpolate(t, [T.bombilla, T.bombilla + 0.4, T.pulsar, T.pulsar + 0.5], [0, 1, 1, 0], clamp)}
+          />
+        ) : null}
         {/* Bombilla */}
         {luz > 0 ? <circle cx={BOMBILLA.x} cy={BOMBILLA.y} r={260} fill="url(#halo-bombilla)" opacity={luz} /> : null}
         <circle cx={BOMBILLA.x} cy={BOMBILLA.y} r={70} fill={luz > 0.5 ? "#FFF1C9" : "#1A1636"} stroke="#8C88A8" strokeWidth={6} opacity={0.95} />
