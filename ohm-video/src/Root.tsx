@@ -3,6 +3,7 @@ import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { OllaPresion } from "./olla/OllaPresion";
+import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -35,6 +36,14 @@ export const RemotionRoot: React.FC = () => {
         id="Microondas"
         component={MicroondasVideo}
         durationInFrames={2022}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PajaroCable"
+        component={PajaroCable}
+        durationInFrames={Math.round(DURACION_PAJARO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
