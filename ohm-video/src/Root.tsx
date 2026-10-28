@@ -6,6 +6,7 @@ import { LeyDeOhm } from "./LeyDeOhm";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { DURACION_NARIZ_S, NarizVideo } from "./nariz/NarizVideo";
 import { OllaPresion } from "./olla/OllaPresion";
+import { DURACION_PARALISIS_S, ParalisisVideo } from "./paralisis/ParalisisVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -80,6 +81,14 @@ export const RemotionRoot: React.FC = () => {
         id="Sacudida"
         component={SacudidaVideo}
         durationInFrames={Math.round(DURACION_SACUDIDA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Paralisis"
+        component={ParalisisVideo}
+        durationInFrames={Math.round(DURACION_PARALISIS_S * 30)}
         fps={30}
         width={1080}
         height={1920}

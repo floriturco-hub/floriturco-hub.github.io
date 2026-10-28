@@ -82,3 +82,8 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - Mezcla final a −14 LUFS y render 1080×1920, 30 fps.
   - Antes de dar el vídeo por bueno: fotogramas de prueba revisados, lint y `tsc` limpios, y después el render completo.
   - **Coste de voz (aprobado el 2026-10-28):** generar **una sola toma** (`generations_count: 1`). La segunda toma duplica el gasto y no se usó nunca. Antes de generar, estimar el coste con `estimate_only: true`. Si hay un error, revisarlo antes de volver a enviar la petición. Reutilizar el audio existente si el texto no ha cambiado.
+- **Caras de personas (corrección del 2026-10-28, vídeo "Parálisis"):** las caras de "Sacudida" y "Nariz" salían deformes: un óvalo con un triángulo suelto como nariz, y el ojo y la oreja flotando. A partir de ahora, toda persona usa el componente `src/components/Cara.tsx`:
+  - Perfil mirando a la derecha, dibujado como **un solo trazado continuo** (frente, puente, nariz, labios, barbilla, mandíbula y nuca), con pelo, oreja a media altura detrás del ojo, ceja y ojo dentro del contorno.
+  - Props: `ojos` (0 cerrado, 1 abierto), `miedo` (cejas arriba, ojo muy abierto, boca entreabierta), `giro` (−90 = tumbado boca arriba con la cabeza a la izquierda), `escala`, `piel`, `pelo`.
+  - Prohibido: cabezas hechas con óvalos más formas sueltas pegadas encima, o rasgos fuera del contorno de la cara.
+  - Antes de usar una cara nueva o modificada, revisarla en un fotograma de prueba a tamaño grande.
