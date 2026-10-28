@@ -42,8 +42,10 @@ const catmullRom = (u: number) => {
 const LONG_MARCO = 2 * (MARCO.w + MARCO.h) - (8 - 2 * Math.PI) * MARCO.r;
 const TEXTO = "Frecuencia Cero";
 
-export const Logo: React.FC<{ readonly t0: number }> = ({ t0 }) => {
-  const t = useT(t0);
+// Los tiempos internos están escritos para un cierre que empieza a los 61,5 s;
+// `inicio` desplaza la animación entera para reutilizarla en otros vídeos.
+export const Logo: React.FC<{ readonly t0: number; readonly inicio?: number }> = ({ t0, inicio = 61.5 }) => {
+  const t = useT(t0) - inicio + 61.5;
   const suave = { ...clamp, easing: Easing.inOut(Easing.cubic) };
 
   const marco = interpolate(t, [61.5, 62.3], [0, 1], suave);
