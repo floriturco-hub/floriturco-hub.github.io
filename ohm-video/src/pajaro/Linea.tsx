@@ -215,7 +215,7 @@ export const Linea: React.FC<{ readonly t0: number }> = ({ t0 }) => {
       </g>
 
       {/* Etiquetas de voltaje (tamaño constante en pantalla) */}
-      <Tag x={sx(120)} y={sy(cableA(120))} texto="10.000 V" color={C.yellow} o={tagCable} />
+      <Tag x={sx(240)} y={sy(cableA(240))} texto="10.000 V" color={C.yellow} o={tagCable} />
       <Tag x={sx(piesA[0])} y={sy(piesA[1])} dx={-170} dy={160} texto={precisos ? "10.000,000 V" : "10.000 V"} color={C.yellow} o={tagPatas} />
       <Tag x={sx(piesB[0])} y={sy(piesB[1])} dx={170} dy={260} texto={precisos ? "9.999,998 V" : "10.000 V"} color={C.yellow} o={tagPatas} />
       <Tag x={sx(punta[0])} y={sy(punta[1])} dx={-60} dy={-110} texto="10.000 V" color={C.yellow} o={tagPeligro} />
