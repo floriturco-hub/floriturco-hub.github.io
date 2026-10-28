@@ -1,0 +1,68 @@
+# estilo.md — guía de estilo extraída de `referencia.mp4`
+
+Fuente analizada: `referencia.mp4` (TikTok @1volt1amp, "pinzas de arranque"), 576×1024, 30 fps, 150,1 s
+(138,6 s de narración + 11,5 s de cierre). Fotogramas extraídos a 2 fps (300) + detección de cambio de plano
+(`select='gt(scene,0.25)'`), audio transcrito con Whisper `small` (es). Todo lo de abajo está medido salvo lo
+marcado con **[SUPOSICIÓN]**. Medidas en píxeles ya escaladas a nuestro lienzo 1080×1920 (factor ×1,875).
+
+## 1. Formato
+- Lienzo: 1080×1920, 30 fps.
+- Tipo de pieza: explainer de animación 2D vectorial (flat), sin persona en cámara, sin metraje real.
+- Una sola escena-mundo continua (dos coches en una calle de noche) que se recorre con la cámara.
+
+## 2. Ritmo de cortes y cámara
+- **Cortes duros: 2 en 138 s** (79,3 s y 100,5 s), ambos coinciden con un destello de explosión (flash blanco-amarillo de 1–2 fotogramas que tapa el corte).
+- El "montaje" real son **movimientos de cámara continuos** dentro de la misma ilustración: 15 encuadres en 138 s → **1 cambio de encuadre cada ~9 s** (rango 4–20 s).
+- Cada transición de encuadre = pan + zoom simultáneos de **~1,0 s (30 fotogramas)** con easing in-out [SUPOSICIÓN: cúbico/`Easing.inOut(Easing.cubic)`].
+- Niveles de zoom usados: **plano general 1×**, **plano medio ~2,2×**, **detalle ~4×** (pinza/borne).
+- Entre movimientos, la cámara nunca está 100 % quieta: deriva lenta de ~2–3 % de escala o ~20 px por cada 5 s [SUPOSICIÓN: Ken Burns lineal].
+- El encuadre cambia en el **punto/pausa de la frase** (las pausas >0,4 s de la voz, ~cada 4 s), no a mitad de palabra.
+
+## 3. Subtítulos
+- **No hay subtítulos de la narración.** 0 palabras de la locución transcritas en pantalla.
+- En su lugar hay **etiquetas-clave** (ver §4). Si se añaden subtítulos en nuestro vídeo, es una desviación consciente del estilo.
+
+## 4. Textos en pantalla (etiquetas)
+- **Fuente:** monoespaciada, peso bold/semibold [SUPOSICIÓN: JetBrains Mono / Fira Code; usar `JetBrains Mono` 700].
+- **Tamaño:** altura de bloque de texto 27 px en 576 → **~50 px en 1080 → `font-size: 44px`**, `letter-spacing: 0`.
+- **Fondo:** píldora `#080716` al ~85 % de opacidad, padding ≈ 10 px vertical / 18 px horizontal, `border-radius: 14px`. A veces sin píldora (texto blanco 70 % sobre fondo oscuro).
+- **Longitud:** **2–4 palabras** ("La última pinza", "Metal del motor", "Como en los dibujos", "Todo esto es el negativo", "Siempre en la última", "Donde no hay gas").
+- **Frecuencia:** ~1 etiqueta cada 6–10 s; duración en pantalla **2,5–7 s**.
+- **Posición:** anclada al objeto que nombra (no posición fija). En planos generales cae a **~43 % de la altura** (y≈830 px); en detalle, pegada al objeto con línea-guía de 1 px.
+- **Animación:** entrada fade + leve subida (~8 px) en **~0,4 s (12 f)**; salida fade **~0,4 s**. Sin rebote, sin escala, sin palabra a palabra.
+- **Colores según significado (palabra/etiqueta destacada):**
+  - Neutro/descriptivo: blanco `#E8E6F0` ("Metal del motor", "Como en los dibujos", "Abierto: no pasa nada").
+  - Regla clave / idea a recordar: amarillo **`#F8C848`** ("La última pinza", "Siempre en la última", "Donde no hay gas").
+  - Electricidad / circuito: cian **`#08D8E8`** ("Todo esto es el negativo", "Cerrado").
+  - Polo positivo / palabra "Rojo": rojo `#E8414F` [SUPOSICIÓN en el tono exacto].
+- **Listas** (pasos): checklist numerada con círculos de 26 px; los pasos inactivos al 25 % de opacidad y el activo al 100 %, se ilumina uno a uno sincronizado con la voz (~2 s por paso).
+- **Datos:** tarjeta oscura redondeada (`#0B091D`, borde 1 px blanco 8 %) con número grande amarillo (≈ 64 px) que **cuenta de 0 a N en ~4 s** mientras se rellena una retícula de puntos; fuente citada en 18 px gris abajo ("EE. UU., un año (NHTSA, 1993-94)"). Iconos repetidos para proporciones ("7 de cada 10" = 10 ojos, 7 en amarillo).
+
+## 5. B-roll / recursos visuales
+- No hay b-roll de stock. Todo es ilustración propia:
+  - **Lupa/callout circular** (radio ≈ 250 px, borde 3 px `#6A5A9A`) con línea fina al punto que amplía: se usa para mostrar el interior (celdas de la batería).
+  - **Corriente** = trazo discontinuo cian `#08D8E8` (dash ~20 px / gap ~14 px) que avanza a lo largo del cable ("hormigas en marcha", ~120 px/s [SUPOSICIÓN]).
+  - **Partículas:** chispas amarillo-naranja (30–60 segmentos que salen radialmente y caen con gravedad, 0,5–1 s), burbujas/gas como nube blanca difusa (blur ~20 px).
+  - **Medidor** vertical (barra con umbral marcado "4 % · Arde") que se llena en ~1 s.
+- Cada concepto de la narración tiene su representación visual en el mismo segundo en que se nombra.
+
+## 6. Transiciones
+- 0 transiciones tipo wipe/slide/zoom-blur. Solo: (a) movimiento de cámara de ~1 s, (b) fundidos de opacidad de elementos de 0,4 s, (c) 2 cortes disfrazados con flash.
+- Elementos superpuestos (tarjetas, lupas, listas) entran con fade 0,4–0,5 s y salen con fade 0,4 s.
+
+## 7. Color e iluminación
+- Fondo: noche azul-violeta muy oscura, **`#0B091D`** (dominante), negros `#01000F`; ciudad de fondo en `#2A2350`–`#3A2F6A` con ventanas `#F8C848` al 60 %.
+- Paleta de objetos saturada: morado `#582888`, verde azulado `#186878`, rojo cable `#E0303C`, cian `#08D8E8`, amarillo `#F8C848`.
+- Luz: cono de farola cálido (`#FFF2C8` al ~8–12 % de opacidad, gradiente), halos de faros con blur, suelo mojado con reflejo especular al 30 %.
+- Bajo contraste general (low-key), acentos de alto contraste solo en lo importante. Sin grano, sin LUT visible.
+
+## 8. Sonido
+- **Voz en off** masculina, castellano, tono cercano y explicativo. **173 palabras/min**. Frases de 2–5 s; 34 pausas >0,4 s (media 0,59 s).
+- Estructura del guion: gancho con contradicción (0–12 s) → creencia lógica → por qué falla → mecanismo físico → consecuencia/datos → regla práctica → resumen en 1 frase (repite la etiqueta clave).
+- **Música** de fondo continua, suave, de registro grave/tonal (visible en el espectro como bandas < 1 kHz): **voz ≈ −16 dB RMS, música en pausas ≈ −27/−31 dB → música ~12–15 dB por debajo de la voz**. [SUPOSICIÓN: lo-fi/ambient electrónico, sin percusión marcada].
+- Loudness integrado **−14 LUFS**.
+- SFX: chispazos sincronizados con las chispas visuales y un golpe en la explosión [SUPOSICIÓN: no aislables en el espectro por debajo de la voz].
+- Cierre: 11,5 s de tarjeta de marca (sin voz) sobre fondo `#0B091D`.
+
+## 9. Preferencias del usuario (correcciones aprobadas)
+_(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
