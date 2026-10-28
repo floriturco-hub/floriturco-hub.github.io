@@ -53,6 +53,13 @@ export const Logo: React.FC<{ readonly t0: number }> = ({ t0 }) => {
   // Pulso de luz que recorre la línea ya plana
   const pulso = interpolate(t, [63.6, 64.6], [X_INI - 200, X_FIN + 200], clamp);
   const salida = interpolate(t, [67.3, 68.0], [1, 0], clamp);
+  // Parpadeo de encendido (como un filamento que arranca) y luz estable
+  const encendido = t < 63.55 ? 0 : interpolate(
+    t - 63.55,
+    [0, 0.05, 0.11, 0.19, 0.25, 0.33, 0.4, 0.52],
+    [0, 0.85, 0.1, 0.95, 0.25, 1, 0.7, 1],
+    clamp,
+  );
 
   const xMax = X_INI + (X_FIN - X_INI) * revela;
   const trazo: string[] = [];
@@ -76,6 +83,15 @@ export const Logo: React.FC<{ readonly t0: number }> = ({ t0 }) => {
           </linearGradient>
           <filter id="halo" x="-20%" y="-200%" width="140%" height="500%">
             <feGaussianBlur stdDeviation="18" />
+          </filter>
+          <filter id="halo-texto" x="-20%" y="-80%" width="140%" height="260%">
+            <feGaussianBlur stdDeviation="16" result="cerca" />
+            <feGaussianBlur in="SourceGraphic" stdDeviation="55" result="lejos" />
+            <feMerge>
+              <feMergeNode in="lejos" />
+              <feMergeNode in="lejos" />
+              <feMergeNode in="cerca" />
+            </feMerge>
           </filter>
         </defs>
         <rect
@@ -111,6 +127,20 @@ export const Logo: React.FC<{ readonly t0: number }> = ({ t0 }) => {
             filter="url(#halo)"
           />
         ) : null}
+        {/* El texto se enciende como una bombilla: parpadea y queda con un halo cálido */}
+        <text
+          x={966}
+          y={1690}
+          textAnchor="middle"
+          fill="#FFF1C9"
+          fontFamily={montserrat}
+          fontSize={205}
+          fontWeight={400}
+          filter="url(#halo-texto)"
+          opacity={encendido * interpolate(t, [63.55, 64.1, 65.0], [0.6, 1, 0.55], clamp)}
+        >
+          {TEXTO}
+        </text>
         <text
           x={966}
           y={1690}
@@ -119,15 +149,9 @@ export const Logo: React.FC<{ readonly t0: number }> = ({ t0 }) => {
           fontFamily={montserrat}
           fontSize={205}
           fontWeight={400}
+          opacity={0.08 + 0.92 * encendido}
         >
-          {TEXTO.split("").map((letra, k) => {
-            const tl = 63.55 + k * 0.035;
-            return (
-              <tspan key={k} opacity={interpolate(t, [tl, tl + 0.3], [0, 1], clamp)}>
-                {letra}
-              </tspan>
-            );
-          })}
+          {TEXTO}
         </text>
       </svg>
     </AbsoluteFill>

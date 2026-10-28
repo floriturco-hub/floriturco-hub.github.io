@@ -8,7 +8,7 @@ const ESTRELLAS = new Array(70).fill(0).map((_, i) => ({
   fase: random(`ef${i}`) * Math.PI * 2,
 }));
 
-// Noche azul-violeta con estrellas y cono de luz cálido, como la referencia
+// Noche azul-violeta con estrellas (sin cono de luz: preferencia del usuario)
 export const Fondo: React.FC = () => {
   const frame = useCurrentFrame();
   return (
@@ -18,13 +18,6 @@ export const Fondo: React.FC = () => {
       }}
     >
       <svg width={W} height={H} style={{ position: "absolute" }}>
-        <defs>
-          <linearGradient id="cono" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#FFF2C8" stopOpacity={0.12} />
-            <stop offset="1" stopColor="#FFF2C8" stopOpacity={0} />
-          </linearGradient>
-        </defs>
-        <polygon points="440,0 640,0 1000,1920 80,1920" fill="url(#cono)" />
         {ESTRELLAS.map((e, i) => (
           <circle
             key={i}
