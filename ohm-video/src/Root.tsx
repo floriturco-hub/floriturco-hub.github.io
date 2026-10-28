@@ -4,6 +4,7 @@ import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { DURACION_GPS_S, GpsVideo } from "./gps/GpsVideo";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
+import { DURACION_NARIZ_S, NarizVideo } from "./nariz/NarizVideo";
 import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -62,6 +63,14 @@ export const RemotionRoot: React.FC = () => {
         id="Gps"
         component={GpsVideo}
         durationInFrames={Math.round(DURACION_GPS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Nariz"
+        component={NarizVideo}
+        durationInFrames={Math.round(DURACION_NARIZ_S * 30)}
         fps={30}
         width={1080}
         height={1920}
