@@ -87,3 +87,4 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - Props: `ojos` (0 cerrado, 1 abierto), `miedo` (cejas arriba, ojo muy abierto, boca entreabierta), `giro` (−90 = tumbado boca arriba con la cabeza a la izquierda), `escala`, `piel`, `pelo`.
   - Prohibido: cabezas hechas con óvalos más formas sueltas pegadas encima, o rasgos fuera del contorno de la cara.
   - Antes de usar una cara nueva o modificada, revisarla en un fotograma de prueba a tamaño grande.
+  - **Aprobado por el usuario el 2026-10-28:** "Las caras son perfectas". Este es el estándar de cara para todos los vídeos nuevos, sin cambios.
