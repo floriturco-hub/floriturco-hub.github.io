@@ -81,3 +81,4 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - Una sola escena-mundo recorrida con la cámara, etiquetas de 2 a 4 palabras, tarjetas oscuras con datos y cierre Frecuencia Cero.
   - Mezcla final a −14 LUFS y render 1080×1920, 30 fps.
   - Antes de dar el vídeo por bueno: fotogramas de prueba revisados, lint y `tsc` limpios, y después el render completo.
+  - **Coste de voz (aprobado el 2026-10-28):** generar **una sola toma** (`generations_count: 1`). La segunda toma duplica el gasto y no se usó nunca. Antes de generar, estimar el coste con `estimate_only: true`. Si hay un error, revisarlo antes de volver a enviar la petición. Reutilizar el audio existente si el texto no ha cambiado.
