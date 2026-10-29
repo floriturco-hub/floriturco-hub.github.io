@@ -12,6 +12,7 @@ import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_SMOOTHIE_S, SmoothieVideo } from "./smoothie/SmoothieVideo";
 import { DURACION_PARALISIS_S, ParalisisVideo } from "./paralisis/ParalisisVideo";
 import { DURACION_PECHO_S, PechoVideo } from "./pecho/PechoVideo";
+import { DURACION_PINA_S, PinaVideo } from "./pina/PinaVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -134,6 +135,14 @@ export const RemotionRoot: React.FC = () => {
         id="Pecho"
         component={PechoVideo}
         durationInFrames={Math.round(DURACION_PECHO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Pina"
+        component={PinaVideo}
+        durationInFrames={Math.round(DURACION_PINA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
