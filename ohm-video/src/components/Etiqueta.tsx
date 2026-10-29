@@ -28,6 +28,8 @@ export const Etiqueta: React.FC<Props> = ({
   if (t < desde || t > hasta) {
     return null;
   }
+  // Fundido de 0,4 s; en etiquetas muy breves se acorta para que quepa
+  const f = Math.min(0.4, (hasta - desde) / 2 - 0.01);
 
   return (
     <div
@@ -35,13 +37,13 @@ export const Etiqueta: React.FC<Props> = ({
         position: "absolute",
         left: x,
         top: y,
-        translate: `-50% ${interpolate(t, [desde, desde + 0.4], [8, 0], {
+        translate: `-50% ${interpolate(t, [desde, desde + f], [8, 0], {
           ...clamp,
           easing: Easing.out(Easing.cubic),
         })}px`,
         opacity: interpolate(
           t,
-          [desde, desde + 0.4, hasta - 0.4, hasta],
+          [desde, desde + f, hasta - f, hasta],
           [0, 1, 1, 0],
           clamp,
         ),
