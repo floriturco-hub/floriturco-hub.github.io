@@ -88,3 +88,9 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - Prohibido: cabezas hechas con óvalos más formas sueltas pegadas encima, o rasgos fuera del contorno de la cara.
   - Antes de usar una cara nueva o modificada, revisarla en un fotograma de prueba a tamaño grande.
   - **Aprobado por el usuario el 2026-10-28:** "Las caras son perfectas". Este es el estándar de cara para todos los vídeos nuevos, sin cambios.
+- **Cuerpos y ropa (corrección del 2026-10-29, vídeo "Cosquillas"):** los cuerpos salían demasiado grandes y la ropa sin detalle (una silueta lisa). Aplica a todos los vídeos nuevos, sin tocar los ya publicados:
+  - **Proporciones:** medir todo en "alturas de cabeza" (h). Cuerpo de pie o sentado: 7,5 h de alto total. Hombros a 1,3 h bajo la coronilla, con un ancho de hombro de ~2 h. Cintura a unas 3 h de la coronilla. Brazo: de hombro a muñeca ~3 h, la mano mide ~0,75 h. Cuello: ~0,4 h de ancho.
+  - **Tamaño en pantalla:** en planos medios, el torso ocupa como máximo la mitad inferior del encuadre; nunca debe llenar el ancho de la pantalla ni cortar la cabeza. Si el torso sale del borde, reducir la escala de la persona (no aumentar la cámara).
+  - **Ropa con detalle:** cada prenda necesita al menos tres elementos de definición: un pliegue o arruga en codo o cintura, una costura o borde (cuello, puño, dobladillo) en un tono más oscuro, y un punto de luz en el hombro o el pecho. Nada de un solo color plano.
+  - **Pelo y manos:** el pelo con dos tonos (base y reflejo) y la mano con cuatro dedos separados y pulgar; no bloques redondeados.
+  - **Revisión:** antes de renderizar, una imagen de prueba a tamaño grande de cada persona, comparando la altura de la cabeza con el torso.
