@@ -1,0 +1,9 @@
+Cada vez que abres el grifo, una pequeña turbina empieza a girar fuera de tu casa. Y de ella depende lo que pagas.
+Parece que te cobran una cuota fija por tener agua. Pero la mayor parte de la factura sale de un número: los metros cúbicos que marca el medidor.
+Dentro del medidor, el agua que pasa hace girar una turbina. Cada vuelta mueve unos engranajes y suma en el contador.
+Un metro cúbico son mil litros: unas diez duchas de diez minutos.
+Cada cierto tiempo, alguien lee el medidor, o lo hace un sistema a distancia. Lo que pagas es la diferencia entre la lectura nueva y la anterior.
+Y en muchas ciudades el precio va por tramos: los primeros metros cúbicos son más baratos, y si gastas mucho, cada metro extra cuesta más.
+A eso se suman un cargo fijo, el alcantarillado, que se lleva el agua usada, y los impuestos.
+Un truco: cierra todos los grifos y mira el medidor. Si la pequeña rueda sigue girando, tienes una fuga.
+No pagas por abrir el grifo: pagas por cada vuelta de esa turbina.

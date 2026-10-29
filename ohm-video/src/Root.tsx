@@ -1,4 +1,5 @@
 import { Composition } from "remotion";
+import { AguaVideo, DURACION_AGUA_S } from "./agua/AguaVideo";
 import { AspiradoraVideo, DURACION_ASPIRADORA_S } from "./aspiradora/AspiradoraVideo";
 import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { CosquillasVideo, DURACION_COSQUILLAS_S } from "./cosquillas/CosquillasVideo";
@@ -107,6 +108,14 @@ export const RemotionRoot: React.FC = () => {
         id="Cosquillas"
         component={CosquillasVideo}
         durationInFrames={Math.round(DURACION_COSQUILLAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Agua"
+        component={AguaVideo}
+        durationInFrames={Math.round(DURACION_AGUA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
