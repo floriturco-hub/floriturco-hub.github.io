@@ -1,4 +1,5 @@
 import { Composition } from "remotion";
+import { AntenaNasa, DURACION_ANTENA_S } from "./antena/AntenaNasa";
 import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
@@ -63,6 +64,14 @@ export const RemotionRoot: React.FC = () => {
         id="Tinnitus"
         component={Tinnitus}
         durationInFrames={Math.round(DURACION_TINNITUS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AntenaNasa"
+        component={AntenaNasa}
+        durationInFrames={Math.round(DURACION_ANTENA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
