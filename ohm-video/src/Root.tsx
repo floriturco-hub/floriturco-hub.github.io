@@ -1,4 +1,5 @@
 import { Composition } from "remotion";
+import { AguaCobro, DURACION_AGUA_S } from "./agua/AguaCobro";
 import { AntenaNasa, DURACION_ANTENA_S } from "./antena/AntenaNasa";
 import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
@@ -72,6 +73,14 @@ export const RemotionRoot: React.FC = () => {
         id="AntenaNasa"
         component={AntenaNasa}
         durationInFrames={Math.round(DURACION_ANTENA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AguaCobro"
+        component={AguaCobro}
+        durationInFrames={Math.round(DURACION_AGUA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
