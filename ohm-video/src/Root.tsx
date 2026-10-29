@@ -5,6 +5,7 @@ import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { CosquillasVideo, DURACION_COSQUILLAS_S } from "./cosquillas/CosquillasVideo";
 import { DURACION_GPS_S, GpsVideo } from "./gps/GpsVideo";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { DURACION_LUZ_S, LuzVideo } from "./luz/LuzVideo";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { DURACION_NARIZ_S, NarizVideo } from "./nariz/NarizVideo";
 import { OllaPresion } from "./olla/OllaPresion";
@@ -116,6 +117,14 @@ export const RemotionRoot: React.FC = () => {
         id="Agua"
         component={AguaVideo}
         durationInFrames={Math.round(DURACION_AGUA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Luz"
+        component={LuzVideo}
+        durationInFrames={Math.round(DURACION_LUZ_S * 30)}
         fps={30}
         width={1080}
         height={1920}

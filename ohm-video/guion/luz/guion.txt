@@ -1,0 +1,8 @@
+Tu factura de la luz no cobra la luz que ves: cobra energía. Y la cuenta un aparato que parpadea a la entrada de tu casa.
+Parece que pagas por tener cosas enchufadas. Pero lo que se mide es cuánta energía usas, y durante cuánto tiempo.
+La unidad es el kilovatio hora: mil vatios funcionando una hora. Un microondas de mil vatios encendido una hora gasta uno. Una bombilla LED de diez vatios necesita cien horas.
+El medidor vigila la corriente y el voltaje que entran a tu casa. Los antiguos tenían un disco que giraba más rápido cuanto más consumías. Los digitales encienden una lucecita: cada parpadeo suele ser un vatio hora.
+Igual que con el agua, pagas la diferencia entre la lectura nueva y la anterior, por el precio. Y en muchos sitios, el precio cambia según la hora del día.
+Se suma un cargo fijo, que en algunos países depende de la potencia contratada, y los impuestos.
+Un truco: apaga todo lo que puedas y mira el medidor. Si la luz sigue parpadeando, algo consume en silencio: el modo de espera.
+No pagas por la luz: pagas por cada parpadeo.
