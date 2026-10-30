@@ -1,6 +1,7 @@
 import { Composition } from "remotion";
 import { AguaCobro, DURACION_AGUA_S } from "./agua/AguaCobro";
 import { AntenaNasa, DURACION_ANTENA_S } from "./antena/AntenaNasa";
+import { DURACION_APPLE_S, PortatilTienda } from "./apple/PortatilTienda";
 import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
@@ -99,6 +100,14 @@ export const RemotionRoot: React.FC = () => {
         id="PinaMito"
         component={PinaMito}
         durationInFrames={Math.round(DURACION_PINA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PortatilTienda"
+        component={PortatilTienda}
+        durationInFrames={Math.round(DURACION_APPLE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
