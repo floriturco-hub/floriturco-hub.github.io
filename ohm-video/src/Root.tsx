@@ -7,6 +7,7 @@ import { LeyDeOhm } from "./LeyDeOhm";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
+import { DURACION_PINA_S, PinaMito } from "./pina/PinaMito";
 import { DURACION_RELOJ_S, RelojCuarzo } from "./reloj/RelojCuarzo";
 import { CabezaPerfilPreview } from "./components/CabezaPerfil";
 import { DURACION_TINNITUS_S, Tinnitus } from "./tinnitus/Tinnitus";
@@ -90,6 +91,14 @@ export const RemotionRoot: React.FC = () => {
         id="RelojCuarzo"
         component={RelojCuarzo}
         durationInFrames={Math.round(DURACION_RELOJ_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PinaMito"
+        component={PinaMito}
+        durationInFrames={Math.round(DURACION_PINA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
