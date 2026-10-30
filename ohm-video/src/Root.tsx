@@ -5,6 +5,7 @@ import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { CosquillasVideo, DURACION_COSQUILLAS_S } from "./cosquillas/CosquillasVideo";
 import { DURACION_GPS_S, GpsVideo } from "./gps/GpsVideo";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { DURACION_LIVE_S, LiveVideo } from "./live/LiveVideo";
 import { DURACION_LUZ_S, LuzVideo } from "./luz/LuzVideo";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { DURACION_NARIZ_S, NarizVideo } from "./nariz/NarizVideo";
@@ -143,6 +144,14 @@ export const RemotionRoot: React.FC = () => {
         id="Pina"
         component={PinaVideo}
         durationInFrames={Math.round(DURACION_PINA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Live"
+        component={LiveVideo}
+        durationInFrames={Math.round(DURACION_LIVE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
