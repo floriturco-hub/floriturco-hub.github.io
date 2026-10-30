@@ -5,6 +5,7 @@ import { DURACION_APPLE_S, PortatilTienda } from "./apple/PortatilTienda";
 import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
@@ -108,6 +109,14 @@ export const RemotionRoot: React.FC = () => {
         id="PortatilTienda"
         component={PortatilTienda}
         durationInFrames={Math.round(DURACION_APPLE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="InsertoVioleta"
+        component={InsertoVioleta}
+        durationInFrames={DURACION_INSERTO_S * 30}
         fps={30}
         width={1080}
         height={1920}
