@@ -12,6 +12,7 @@ import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 import { DURACION_PINA_S, PinaMito } from "./pina/PinaMito";
 import { DURACION_RELOJ_S, RelojCuarzo } from "./reloj/RelojCuarzo";
+import { DURACION_RIMEL_S, RimelBombeo } from "./rimel/RimelBombeo";
 import { CabezaPerfilPreview } from "./components/CabezaPerfil";
 import { DURACION_TINNITUS_S, Tinnitus } from "./tinnitus/Tinnitus";
 
@@ -118,6 +119,14 @@ export const RemotionRoot: React.FC = () => {
         id="ReglaCinco"
         component={ReglaCinco}
         durationInFrames={Math.round(DURACION_CINCO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RimelBombeo"
+        component={RimelBombeo}
+        durationInFrames={Math.round(DURACION_RIMEL_S * 30)}
         fps={30}
         width={1080}
         height={1920}
