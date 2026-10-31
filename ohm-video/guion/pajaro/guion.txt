@@ -1,0 +1,8 @@
+Ese cable lleva miles de voltios. Y el pájaro, tan tranquilo. ¿Por qué no se electrocuta?
+Porque el voltaje, por sí solo, no hace daño. Lo que importa es la diferencia de voltaje entre dos puntos: eso es lo que empuja la corriente.
+El pájaro tiene las dos patas en el mismo cable. Diez mil voltios en una pata, y diez mil en la otra.
+Entre ellas solo hay unos centímetros de metal grueso, así que la diferencia es de milésimas de voltio. Casi nada empuja corriente por su cuerpo.
+Además, la corriente prefiere el camino fácil. El cable conduce millones de veces mejor que el pájaro, así que sigue por el metal y pasa de largo.
+El peligro llega si toca dos cosas a distinto voltaje: un ala en un cable y la otra en el de al lado, o en el poste, que va a tierra. Ahí sí, la corriente atraviesa su cuerpo.
+Por eso las aves grandes, como las águilas, son las que más sufren, y muchos postes llevan protectores.
+Mismo voltaje, cero corriente. No es el voltaje: es la diferencia.

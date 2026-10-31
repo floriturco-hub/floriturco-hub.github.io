@@ -1,0 +1,8 @@
+# Material pesado / de terceros: se regenera con ffmpeg desde referencia.mp4
+referencia.mp4
+*.wav
+*.m4a
+frames_2fps/
+frames_cortes/
+detalle/
+scores.txt
