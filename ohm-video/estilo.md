@@ -95,3 +95,8 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - **Pelo y manos:** el pelo con dos tonos (base y reflejo) y la mano con cuatro dedos separados y pulgar; no bloques redondeados.
   - **Revisión:** antes de renderizar, una imagen de prueba a tamaño grande de cada persona, comparando la altura de la cabeza con el torso.
 - **Entregables de cada video (aprobado el 2026-10-30):** además del archivo `.mp4`, cada video se entrega con una **descripción llamativa para publicar**, con hashtags relevantes al tema (3 a 5, en español, sin mezclar otros idiomas salvo que el brief lo pida), una frase gancho de una línea y, si es contenido de marca, el rótulo de publicidad al inicio de la descripción. Los hashtags de marca (como #SMOOTHORIALS) se añaden solo cuando el brief los pide.
+- **Gancho en 3 segundos o menos (regla obligatoria, aprobada el 2026-10-31):** son vídeos de TikTok y Reels, así que la atención se gana en los primeros 3 segundos. Todo guion empieza con un gancho que lo consiga:
+  - **Primer fotograma:** ya debe mostrar algo visible y en movimiento, o un texto grande con una contradicción (no una pantalla vacía ni un título estático).
+  - **Primera frase de voz:** en 3 segundos o menos, con una pregunta, una afirmación que choque con lo que se cree o una cifra sorprendente. Nada de presentaciones ni "hoy te explico".
+  - **Estructura del guion:** gancho (0–3 s) → creencia lógica → por qué falla → mecanismo → dato → regla práctica → resumen. El gancho es lo primero que se escribe y se prueba.
+  - **Revisión:** antes de dar el vídeo por bueno, comprobar que el primer fotograma y la primera frase cumplen la regla. Si no, se reescribe el gancho antes de renderizar.
