@@ -5,6 +5,7 @@ import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { CosquillasVideo, DURACION_COSQUILLAS_S } from "./cosquillas/CosquillasVideo";
 import { DURACION_GPS_S, GpsVideo } from "./gps/GpsVideo";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { DURACION_MARTIN_S, MartingalaVideo } from "./martingala/MartingalaVideo";
 import { DURACION_LIVE_S, LiveVideo } from "./live/LiveVideo";
 import { DURACION_LUZ_S, LuzVideo } from "./luz/LuzVideo";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
@@ -152,6 +153,14 @@ export const RemotionRoot: React.FC = () => {
         id="Live"
         component={LiveVideo}
         durationInFrames={Math.round(DURACION_LIVE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Martingala"
+        component={MartingalaVideo}
+        durationInFrames={Math.round(DURACION_MARTIN_S * 30)}
         fps={30}
         width={1080}
         height={1920}

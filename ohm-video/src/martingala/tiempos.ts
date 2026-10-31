@@ -1,0 +1,35 @@
+// Instantes clave (s) de public/audio/martingala/narracion.wav, sacados con Whisper
+export const T = {
+  dicen: 0.0,
+  nuncaPierdes: 1.68,
+  mentira: 2.68,
+  trampa: 3.6,
+  doblas: 7.62,
+  salga: 8.48,
+  memoria: 12.22,
+  debe: 17.32,
+  racha: 18.7,
+  pierdes10: 21.76,
+  pierdes20: 22.88,
+  pierdes40: 23.58,
+  pierdes80: 24.32,
+  pierdes160: 25.12,
+  pierdes320: 26.3,
+  perdidos: 29.36,
+  siguiente: 31.62,
+  quedan: 34.68,
+  noPuedes: 37.42,
+  probabilidad: 38.2,
+  dosDeCada100: 41.58,
+  cero: 43.9,
+  dosSieteSeis: 47.74,
+  tope: 51.28,
+  quinientos: 54.06,
+  regla: 57.2,
+  casa: 61.86,
+  ayuda: 67.38,
+  fin: 69.4,
+};
+
+// Inicio de cada giro (ligeramente antes de la palabra que lo nombra)
+export const GIROS = [T.pierdes10, T.pierdes20, T.pierdes40, T.pierdes80, T.pierdes160, T.pierdes320].map((t) => t - 0.1);

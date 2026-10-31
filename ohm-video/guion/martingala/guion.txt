@@ -1,0 +1,10 @@
+Dicen que con la martingala nunca pierdes. Mentira.
+Parece una trampa perfecta: apuestas al rojo, y cada vez que pierdes, doblas. Cuando por fin salga rojo, recuperas todo y ganas diez euros.
+Pero la ruleta no tiene memoria. Que salgan cinco negros seguidos no significa que el rojo "deba" salir.
+Veamos una racha real. Empiezas con diez euros: pierdes 10, luego 20, 40, 80, 160 y 320. Seis negros seguidos, y llevas 630 euros perdidos.
+La siguiente apuesta sería de 640 euros. Si tienes 1.000, te quedan 370. No puedes.
+¿Y la probabilidad de seis negros seguidos? No es cero: casi 2 de cada 100 series.
+Además, la ruleta europea tiene un cero. Cada apuesta pierde, de media, un 2,7 %. La martingala no cambia eso.
+Y casi todas las mesas tienen un tope. Si el tope es de 500 euros, no puedes apostar 640.
+Regla práctica: si no tienes dinero para la racha más larga, no hay estrategia. Solo hay una casa que gana.
+La martingala no te hace ganar: solo cambia cuándo pierdes. Si el juego te preocupa, busca ayuda.
