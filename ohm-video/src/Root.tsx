@@ -10,6 +10,7 @@ import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
+import { DURACION_OJOS_S, OjosRojos } from "./ojos/OjosRojos";
 import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 import { DURACION_PINA_S, PinaMito } from "./pina/PinaMito";
@@ -145,6 +146,14 @@ export const RemotionRoot: React.FC = () => {
         id="EspejoMito"
         component={EspejoMito}
         durationInFrames={Math.round(DURACION_ESPEJO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="OjosRojos"
+        component={OjosRojos}
+        durationInFrames={Math.round(DURACION_OJOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
