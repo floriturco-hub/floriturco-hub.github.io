@@ -15,6 +15,7 @@ import { DURACION_SMOOTHIE_S, SmoothieVideo } from "./smoothie/SmoothieVideo";
 import { DURACION_PARALISIS_S, ParalisisVideo } from "./paralisis/ParalisisVideo";
 import { DURACION_PECHO_S, PechoVideo } from "./pecho/PechoVideo";
 import { DURACION_PINA_S, PinaVideo } from "./pina/PinaVideo";
+import { DURACION_PREMIUM_S, PremiumVideo } from "./premium/PremiumVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -161,6 +162,14 @@ export const RemotionRoot: React.FC = () => {
         id="Martingala"
         component={MartingalaVideo}
         durationInFrames={Math.round(DURACION_MARTIN_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Premium"
+        component={PremiumVideo}
+        durationInFrames={Math.round(DURACION_PREMIUM_S * 30)}
         fps={30}
         width={1080}
         height={1920}
