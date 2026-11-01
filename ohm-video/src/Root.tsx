@@ -17,6 +17,7 @@ import { DURACION_PINA_S, PinaMito } from "./pina/PinaMito";
 import { DURACION_RELOJ_S, RelojCuarzo } from "./reloj/RelojCuarzo";
 import { DURACION_RIMEL_S, RimelBombeo } from "./rimel/RimelBombeo";
 import { CabezaPerfilPreview } from "./components/CabezaPerfil";
+import { DURACION_TUNEL_S, TunelTierra } from "./tunel/TunelTierra";
 import { DURACION_TINNITUS_S, Tinnitus } from "./tinnitus/Tinnitus";
 
 export const RemotionRoot: React.FC = () => {
@@ -154,6 +155,14 @@ export const RemotionRoot: React.FC = () => {
         id="OjosRojos"
         component={OjosRojos}
         durationInFrames={Math.round(DURACION_OJOS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TunelTierra"
+        component={TunelTierra}
+        durationInFrames={Math.round(DURACION_TUNEL_S * 30)}
         fps={30}
         width={1080}
         height={1920}
