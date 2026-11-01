@@ -14,6 +14,7 @@ import { DURACION_OJOS_S, OjosRojos } from "./ojos/OjosRojos";
 import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 import { DURACION_PINA_S, PinaMito } from "./pina/PinaMito";
+import { DURACION_REGLA_S, ReglaSincronia } from "./regla/ReglaSincronia";
 import { DURACION_RELOJ_S, RelojCuarzo } from "./reloj/RelojCuarzo";
 import { DURACION_RIMEL_S, RimelBombeo } from "./rimel/RimelBombeo";
 import { CabezaPerfilPreview } from "./components/CabezaPerfil";
@@ -163,6 +164,14 @@ export const RemotionRoot: React.FC = () => {
         id="TunelTierra"
         component={TunelTierra}
         durationInFrames={Math.round(DURACION_TUNEL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ReglaSincronia"
+        component={ReglaSincronia}
+        durationInFrames={Math.round(DURACION_REGLA_S * 30)}
         fps={30}
         width={1080}
         height={1920}

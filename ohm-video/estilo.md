@@ -76,3 +76,18 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
 - **Cierre de canal obligatorio (aprobado tal cual) — logo "Frecuencia Cero":** marco redondeado blanco con una onda dentro y el texto "Frecuencia Cero" (sans geométrica tipo Montserrat, blanco sobre negro). Animación: la onda sigue avanzando hacia la derecha, pierde amplitud hasta quedar en **línea recta (frecuencia cero)**; a la vez aparece el texto con una pequeña animación + **efecto de sonido**, y el narrador dice **"Frecuencia Cero"**.
   - **El texto "Frecuencia Cero" se enciende como una bombilla:** a los 63,55 s parpadea (0 → 85 % → 10 % → 95 % → 25 % → 100 % → 70 % → 100 % en 0,52 s) y queda encendido con un halo cálido `#FFF1C9` (dos desenfoques: 16 y 55 px en el lienzo del logo) que se asienta al 55 %. Timing: marco 0,8 s, onda se aplana en 1,5 s, SFX al empezar a aplanarse, texto+voz al terminar.
 - **Cabeza de perfil: más real y detallada (corrección del vídeo de tinnitus).** La silueta de `src/tinnitus/Cabeza.tsx` se veía rara: frente plana, nariz y labios sin forma, mandíbula sin mentón. Para los próximos vídeos usar `CabezaPerfil` de `src/components/CabezaPerfil.tsx`: frente con arco, cejas, ojo almendrado con brillo, nariz con punta y aletas, labios separados, mentón, mandíbula, cuello, oreja con pliegues y pelo. Trazo `#8C88A8` de 8 px y relleno `#1A1636`. El vídeo de tinnitus ya grabado conserva la versión anterior y no se re-renderiza.
+- **Título y descripción (plantilla aprobada por el usuario, ejemplo del túnel).**
+  - **Título:** una pregunta que despierta curiosidad, en tono cercano, con 1-2 emojis al final. Ejemplo: «¿Qué pasaría si saltaras a un agujero que atraviesa toda la Tierra? 🌎🤯».
+  - **Descripción**, en este orden:
+    1. Gancho: «Imagina que…» o una situación personal, seguida de 2-3 preguntas retóricas y un emoji (😨).
+    2. Dos o tres párrafos cortos que explican el mecanismo con palabras sencillas.
+    3. El dato clave destacado (en el ejemplo, **42 minutos**), con el matiz necesario («en un modelo ideal…»).
+    4. Una línea de remate con emoji («🌎 ¡La Tierra podría convertirse en un gigantesco péndulo!»).
+    5. Línea de canal: «⚡ En **Frecuencia 0**, exploramos…» adaptada al tema.
+    6. Hashtags (6-8): el tema, más #Ciencia #Curiosidades #Frecuencia0.
+  - El ejemplo usa `**negrita**`: las plataformas no lo renderizan igual (TikTok e Instagram muestran los asteriscos). Preguntar al usuario si los deja.
+- **Flujo de publicación (obligatorio).** Al terminar cada vídeo:
+  1. Proponer título y descripción con la plantilla anterior y **preguntar si los aprueba**.
+  2. **Preguntar fecha y hora** de publicación.
+  3. Programar con **Metricool** en **todas las redes y siempre en formato corto**: YouTube (Short), Facebook (Reel), Instagram (Reel) y TikTok.
+  4. No publicar ni programar nada sin esa aprobación.
