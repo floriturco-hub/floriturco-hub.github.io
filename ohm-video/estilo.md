@@ -85,9 +85,13 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
     4. Una línea de remate con emoji («🌎 ¡La Tierra podría convertirse en un gigantesco péndulo!»).
     5. Línea de canal: «⚡ En **Frecuencia 0**, exploramos…» adaptada al tema.
     6. Hashtags (6-8): el tema, más #Ciencia #Curiosidades #Frecuencia0.
-  - El ejemplo usa `**negrita**`: las plataformas no lo renderizan igual (TikTok e Instagram muestran los asteriscos). Preguntar al usuario si los deja.
+  - **Sin asteriscos** (`**`): el usuario prefiere la descripción sin negritas de markdown. Confirmado en el vídeo de la regla.
 - **Flujo de publicación (obligatorio).** Al terminar cada vídeo:
   1. Proponer título y descripción con la plantilla anterior y **preguntar si los aprueba**.
   2. **Preguntar fecha y hora** de publicación.
   3. Programar con **Metricool** en **todas las redes y siempre en formato corto**: YouTube (Short), Facebook (Reel), Instagram (Reel) y TikTok.
   4. No publicar ni programar nada sin esa aprobación.
+  - Datos de Metricool: marca «Frecuencia Cero», blogId `7808440`, zona horaria `America/Bogota`. Redes: Facebook, Instagram `frecuencia_cero0`, TikTok `frecuencia_zero_` y YouTube.
+  - El vídeo se pasa como URL pública: el MP4 subido a la rama, en `https://raw.githubusercontent.com/floriturco-hub/floriturco-hub.github.io/<rama>/ohm-video/<archivo>.mp4`. Metricool lo copia a su almacenamiento al programar.
+  - TikTok exige `tiktokData.title`: usar el título aprobado. YouTube va como `type: short`, Facebook e Instagram como `REEL`. La descripción va en `text`.
+  - Guardar el estado de la publicación en `guion/<tema>/publicacion.md`.

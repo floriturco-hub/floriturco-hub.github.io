@@ -1,6 +1,8 @@
 # Publicación: regla-sincronia.mp4
 
-Estado: PENDIENTE DE APROBACIÓN del usuario (título, descripción, fecha y hora).
+Estado: APROBADO por el usuario (sin asteriscos) y PROGRAMADO en Metricool para el 2026-11-02 a las 20:00 (America/Bogota).
+Metricool: marca Frecuencia Cero (blogId 7808440), post id 413387975, uuid 5925204792309138546.
+Planner: https://app.metricool.com/planner/calendar?blogId=7808440&openWithPostUuid=5925204792309138546
 Redes: YouTube (Short), Facebook (Reel), Instagram (Reel), TikTok, vía Metricool.
 
 ## Título
@@ -13,10 +15,10 @@ La idea nació en 1971, cuando un estudio con 135 estudiantes de una residencia 
 
 Pero cuando otros investigadores repitieron el estudio, con más mujeres y durante más meses, la sincronía desaparecía. En 2016, un análisis con datos de una app de seguimiento menstrual siguió a 360 parejas: la mayoría, en vez de acercarse, se alejaban.
 
-¿Entonces por qué parece que pasa? Por matemáticas: si la regla dura unos 5 días en un ciclo de unos 28, solo por azar dos personas coinciden **más de un tercio de los meses**. Y como los ciclos no duran lo mismo, se van moviendo: unos meses coinciden… y luego se separan.
+¿Entonces por qué parece que pasa? Por matemáticas: si la regla dura unos 5 días en un ciclo de unos 28, solo por azar dos personas coinciden más de un tercio de los meses. Y como los ciclos no duran lo mismo, se van moviendo: unos meses coinciden… y luego se separan.
 
 📅 ¡No es que sus cuerpos hablen: es que el calendario hace trampas!
 
-⚡ En **Frecuencia 0**, desmontamos los mitos más curiosos de la ciencia y del cuerpo humano.
+⚡ En Frecuencia 0, desmontamos los mitos más curiosos de la ciencia y del cuerpo humano.
 
 #Ciencia #Menstruación #CicloMenstrual #Mitos #Salud #Curiosidades #Frecuencia0
