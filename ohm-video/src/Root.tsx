@@ -13,6 +13,7 @@ import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { DURACION_OJOS_S, OjosRojos } from "./ojos/OjosRojos";
 import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
+import { DURACION_PEDOS_S, PedosCiencia } from "./pedos/PedosCiencia";
 import { DURACION_PINA_S, PinaMito } from "./pina/PinaMito";
 import { DURACION_REGLA_S, ReglaSincronia } from "./regla/ReglaSincronia";
 import { DURACION_RELOJ_S, RelojCuarzo } from "./reloj/RelojCuarzo";
@@ -172,6 +173,14 @@ export const RemotionRoot: React.FC = () => {
         id="ReglaSincronia"
         component={ReglaSincronia}
         durationInFrames={Math.round(DURACION_REGLA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PedosCiencia"
+        component={PedosCiencia}
+        durationInFrames={Math.round(DURACION_PEDOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
