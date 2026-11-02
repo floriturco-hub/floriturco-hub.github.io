@@ -1,0 +1,9 @@
+Un segundo de luz blanca arruina la foto. Pero con luz roja… nada. ¿Por qué?
+Parece que el papel fotográfico reacciona a cualquier luz. Pero no: es sensible a unos colores y ciego a otros.
+El papel está cubierto de cristales diminutos de bromuro de plata. Cuando un fotón con suficiente energía choca contra un cristal, libera un electrón y empieza a formarse un puntito de plata: la imagen latente. Luego el revelador la vuelve negra.
+La clave está en la energía de cada color. La luz azul trae fotones con mucha energía: golpean fuerte y marcan el papel. La luz roja trae fotones con menos energía: chocan, pero no alcanzan para liberar el electrón.
+Y no es cuestión de cantidad: mil fotones rojos no hacen lo que hace uno azul. Es como saltar un muro: no importa cuántas veces lo intentes si no llegas a la altura.
+Por eso el papel en blanco y negro se fabrica ciego al rojo, y nosotros sí vemos con esa luz.
+Pero el carrete de la cámara sí ve el rojo: ese se revelaba a oscuras total.
+Y ojo: ninguna luz roja es perfecta. Siempre se cuela un poco de otros colores. Demasiado cerca o demasiado tiempo, y vela el papel.
+No es que el rojo sea débil: es que le falta energía.

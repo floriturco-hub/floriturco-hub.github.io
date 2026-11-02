@@ -21,6 +21,7 @@ import { DURACION_MANCHAS_S, ManchasVideo } from "./manchas/ManchasVideo";
 import { DURACION_VINO_S, VinoVideo } from "./vino/VinoVideo";
 import { BotonesVideo, DURACION_BOTONES_S } from "./botones/BotonesVideo";
 import { DURACION_PASTA_S, PastaVideo } from "./pasta/PastaVideo";
+import { DURACION_REVELADO_S, ReveladoVideo } from "./revelado/ReveladoVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -215,6 +216,14 @@ export const RemotionRoot: React.FC = () => {
         id="Pasta"
         component={PastaVideo}
         durationInFrames={Math.round(DURACION_PASTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Revelado"
+        component={ReveladoVideo}
+        durationInFrames={Math.round(DURACION_REVELADO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
