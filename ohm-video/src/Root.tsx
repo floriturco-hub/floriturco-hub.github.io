@@ -17,6 +17,7 @@ import { DURACION_PECHO_S, PechoVideo } from "./pecho/PechoVideo";
 import { DURACION_PINA_S, PinaVideo } from "./pina/PinaVideo";
 import { DURACION_PREMIUM_S, PremiumVideo } from "./premium/PremiumVideo";
 import { DURACION_ORINAR_S, OrinarVideo } from "./orinar/OrinarVideo";
+import { DURACION_MANCHAS_S, ManchasVideo } from "./manchas/ManchasVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -179,6 +180,14 @@ export const RemotionRoot: React.FC = () => {
         id="Orinar"
         component={OrinarVideo}
         durationInFrames={Math.round(DURACION_ORINAR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Manchas"
+        component={ManchasVideo}
+        durationInFrames={Math.round(DURACION_MANCHAS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
