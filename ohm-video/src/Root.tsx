@@ -14,6 +14,7 @@ import { DURACION_OJOS_S, OjosRojos } from "./ojos/OjosRojos";
 import { OllaPresion } from "./olla/OllaPresion";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 import { DURACION_PEDOS_S, PedosCiencia } from "./pedos/PedosCiencia";
+import { DURACION_PIE_S, PieMito } from "./pie/PieMito";
 import { DURACION_PINA_S, PinaMito } from "./pina/PinaMito";
 import { DURACION_REGLA_S, ReglaSincronia } from "./regla/ReglaSincronia";
 import { DURACION_RELOJ_S, RelojCuarzo } from "./reloj/RelojCuarzo";
@@ -190,6 +191,14 @@ export const RemotionRoot: React.FC = () => {
         id="VozGrabada"
         component={VozGrabada}
         durationInFrames={Math.round(DURACION_VOZ_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PieMito"
+        component={PieMito}
+        durationInFrames={Math.round(DURACION_PIE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
