@@ -20,6 +20,7 @@ import { DURACION_ORINAR_S, OrinarVideo } from "./orinar/OrinarVideo";
 import { DURACION_MANCHAS_S, ManchasVideo } from "./manchas/ManchasVideo";
 import { DURACION_VINO_S, VinoVideo } from "./vino/VinoVideo";
 import { BotonesVideo, DURACION_BOTONES_S } from "./botones/BotonesVideo";
+import { DURACION_PASTA_S, PastaVideo } from "./pasta/PastaVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -206,6 +207,14 @@ export const RemotionRoot: React.FC = () => {
         id="Botones"
         component={BotonesVideo}
         durationInFrames={Math.round(DURACION_BOTONES_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Pasta"
+        component={PastaVideo}
+        durationInFrames={Math.round(DURACION_PASTA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
