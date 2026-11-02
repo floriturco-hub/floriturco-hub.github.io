@@ -7,6 +7,7 @@ import { DURACION_CINCO_S, ReglaCinco } from "./cinco/ReglaCinco";
 import { DURACION_ESPEJO_S, EspejoMito } from "./espejo/EspejoMito";
 import { DURACION_IBU_S, IbuprofenoGenerico } from "./ibuprofeno/IbuprofenoGenerico";
 import { DURACION_GAS_S, GasolinaCorte } from "./gasolina/GasolinaCorte";
+import { DURACION_HUESOS_S, HuesosRenuevan } from "./huesos/HuesosRenuevan";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
@@ -208,6 +209,14 @@ export const RemotionRoot: React.FC = () => {
         id="GasolinaCorte"
         component={GasolinaCorte}
         durationInFrames={Math.round(DURACION_GAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HuesosRenuevan"
+        component={HuesosRenuevan}
+        durationInFrames={Math.round(DURACION_HUESOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
