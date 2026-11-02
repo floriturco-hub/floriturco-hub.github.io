@@ -6,6 +6,7 @@ import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { DURACION_CINCO_S, ReglaCinco } from "./cinco/ReglaCinco";
 import { DURACION_ESPEJO_S, EspejoMito } from "./espejo/EspejoMito";
 import { DURACION_IBU_S, IbuprofenoGenerico } from "./ibuprofeno/IbuprofenoGenerico";
+import { DURACION_GAS_S, GasolinaCorte } from "./gasolina/GasolinaCorte";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
@@ -199,6 +200,14 @@ export const RemotionRoot: React.FC = () => {
         id="PieMito"
         component={PieMito}
         durationInFrames={Math.round(DURACION_PIE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GasolinaCorte"
+        component={GasolinaCorte}
+        durationInFrames={Math.round(DURACION_GAS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
