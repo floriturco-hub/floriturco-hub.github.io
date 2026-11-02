@@ -35,7 +35,7 @@ export const VinoVideo: React.FC = () => {
       {/* Etiquetas-clave: 2–4 palabras. La primera ya está en el primer fotograma (gancho) */}
       <Etiqueta texto="¿Tinto? Es blanco teñido" desde={-0.4} hasta={T.burdeos - 0.1} y={1660} color={C.yellow} />
       <Etiqueta texto="Lo llamaron tinto" desde={T.tinto} hasta={T.parece - 0.1} y={1660} color={C.red} />
-      <Etiqueta texto="Está en tu cerebro" desde={T.cerebro} hasta={T.antes - 0.1} y={1660} color={C.yellow} />
+      <Etiqueta texto="Está en tu cerebro" desde={T.pero + 0.4} hasta={T.antes - 0.1} y={1660} color={C.yellow} />
       <Etiqueta texto="Rojo = tinto" desde={T.rojoTinto} hasta={T.ajusta - 0.1} y={1660} color={C.red} />
       <Etiqueta texto="El cerebro ajusta" desde={T.ajusta} hasta={T.etiqueta - 0.1} y={1660} color={C.yellow} />
       <Etiqueta texto="Mismo vino" desde={T.mismo} hasta={T.primero - 0.1} y={1660} color={C.white} />
