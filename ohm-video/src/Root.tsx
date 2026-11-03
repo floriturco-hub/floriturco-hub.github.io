@@ -23,6 +23,7 @@ import { BotonesVideo, DURACION_BOTONES_S } from "./botones/BotonesVideo";
 import { DURACION_PASTA_S, PastaVideo } from "./pasta/PastaVideo";
 import { DURACION_REVELADO_S, ReveladoVideo } from "./revelado/ReveladoVideo";
 import { DURACION_INTESTINO_S, IntestinoVideo } from "./intestino/IntestinoVideo";
+import { DedosVideo, DURACION_DEDOS_S } from "./dedos/DedosVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -233,6 +234,14 @@ export const RemotionRoot: React.FC = () => {
         id="Intestino"
         component={IntestinoVideo}
         durationInFrames={Math.round(DURACION_INTESTINO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DedosArrugados"
+        component={DedosVideo}
+        durationInFrames={Math.round(DURACION_DEDOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
