@@ -95,3 +95,6 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - El vídeo se pasa como URL pública: el MP4 subido a la rama, en `https://raw.githubusercontent.com/floriturco-hub/floriturco-hub.github.io/<rama>/ohm-video/<archivo>.mp4`. Metricool lo copia a su almacenamiento al programar.
   - TikTok exige `tiktokData.title`: usar el título aprobado. YouTube va como `type: short`, Facebook e Instagram como `REEL`. La descripción va en `text`.
   - Guardar el estado de la publicación en `guion/<tema>/publicacion.md`.
+- **Entrega en Google Drive (sin Make).** El usuario no usa los escenarios de Make: no ejecutarlos ni proponerlos. Cada video va a la carpeta **FrecuenciaCero** de Drive (id `1GQM8y3XHjGsG35J5BAyWlHWJF4J3lYM4`), en una **subcarpeta con el nombre del video** (el mismo nombre que el MP4 del repo, p. ej. `cobre-verde`). Dentro van `<nombre>.mp4` y `<nombre>.txt`. Nada de `video_001`, `video_002`, etc.
+  - El `.txt` lleva el título y la descripción aprobados, con el formato `TITULO: …` / `DESCRIP: …`, y se sube como texto plano (sin convertir a Google Docs).
+

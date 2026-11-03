@@ -1,6 +1,6 @@
 # Publicación: cobre-verde.mp4
 
-Estado: título y descripción listos. video_003.txt subido a Drive (carpeta FrecuenciaCero, id 19ASZzvrAyCoz1j3tEHXZ8Z1bbFm0lPfX).
-El MP4 no se subió a Drive: el usuario rechazó ejecutar el auxiliar de Make. Falta subir cobre-verde.mp4 como video_003.mp4 a mano.
-No ejecutar el escenario FrecuenciaCero sin permiso.
+Drive: carpeta FrecuenciaCero/cobre-verde (id 1KXsMHes_beOkk7Z4ftDMQktrCTfk81Gw).
+- cobre-verde.txt subido (id 19ASZzvrAyCoz1j3tEHXZ8Z1bbFm0lPfX).
+- cobre-verde.mp4 pendiente: el conector de Drive no admite archivos de ese tamaño; hay que subirlo a mano o con un token de Drive en el entorno.
 Título: ¿Por qué los techos de Europa y la Estatua de la Libertad se vuelven verdes? 🗽🟢
