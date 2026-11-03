@@ -11,6 +11,7 @@ import { DURACION_HUESOS_S, HuesosRenuevan } from "./huesos/HuesosRenuevan";
 import { DURACION_LENGUA_S, MapaLengua } from "./lengua/MapaLengua";
 import { DURACION_HIGADO_S, HigadoRegenera } from "./higado/HigadoRegenera";
 import { CobreVerde, DURACION_COBRE_S } from "./cobre/CobreVerde";
+import { BunuelosGiran, DURACION_BUNUELOS_S } from "./bunuelos/BunuelosGiran";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
@@ -244,6 +245,14 @@ export const RemotionRoot: React.FC = () => {
         id="CobreVerde"
         component={CobreVerde}
         durationInFrames={Math.round(DURACION_COBRE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BunuelosGiran"
+        component={BunuelosGiran}
+        durationInFrames={Math.round(DURACION_BUNUELOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
