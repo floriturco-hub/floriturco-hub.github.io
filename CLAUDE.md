@@ -19,7 +19,18 @@ Canal de Shorts de ciencia (TikTok, YouTube Shorts, Reels). Proyecto Remotion en
    - Cuesta unas 2 operaciones de Make; el plan gratuito trae 1.000 al mes.
    - Comprueba en Drive que el MP4 quedó en la subcarpeta. La búsqueda por `parentId` tarda en reflejarlo; busca por `title`.
 
+## Publicar con Make (solo cuando el usuario lo pida)
+
+El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **una** subcarpeta en YouTube (Short), Instagram (Reel), Facebook (Reel) y TikTok (vía Late), al momento.
+- Ejecútalo **solo si el usuario pide publicar ese video** y con el título y la descripción ya aprobados.
+- `scenarios_activate` → `scenarios_run` con `responsive: true` y `data: {"folder_id": "<id de la subcarpeta del video>"}` → `scenarios_deactivate`.
+- Pasa siempre `folder_id`. Si va vacío, el escenario toma la subcarpeta creada más recientemente en FrecuenciaCero.
+- Si en la subcarpeta falta el MP4 o el TXT, no publica nada y avisa por correo.
+- Cuesta unas 15 operaciones de Make por video.
+
+Para programar una hora: `scenarios_update` con `scheduling: {"type": "once", "date": "<ISO en UTC>"}`. Así publica la subcarpeta más reciente, que debe ser la del video. Después, vuelve a dejar el escenario en `on-demand`.
+
 ## Prohibido en Make
 
-- **No ejecutes el escenario «FrecuenciaCero» (id `6864241`)**, que publica en redes, ni crees escenarios nuevos. Make se usa **solo** para subir el MP4 a Drive.
+- No ejecutes «FrecuenciaCero» si el usuario no lo pidió, ni crees escenarios nuevos (el plan gratuito permite 2 y ya están los dos).
 - No numeres los archivos (`video_001`, etc.): usa el nombre del video.
