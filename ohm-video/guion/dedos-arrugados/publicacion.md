@@ -7,3 +7,9 @@
   - Ejecución automática 07:50:36 (e39392d7…): ÉXITO, 13 operaciones (YouTube, Instagram, Facebook, TikTok, espera y borrado en Cloudinary).
   - Posibles duplicados en YouTube e Instagram: revisar y borrar uno de cada.
 - Escenario devuelto a `on-demand` e inactivo.
+
+## Corrección del escenario (2026-11-03)
+- Cada red (YouTube, Instagram, Facebook, TikTok) tiene un manejador de errores: avisa por correo y sigue (Resume). Un fallo ya no deja la ejecución en error, así que Make no la repite.
+- Al final, la subcarpeta se mueve a `FrecuenciaCero/Publicados` (id `14sEl-T8PGei3jpmDlWfhlC-kq9_ML5Hk`); la búsqueda de "subcarpeta más reciente" excluye `Publicados`. Un reintento ya no vuelve a publicar.
+- Borrar de Cloudinary: si falla, se ignora.
+- `dedos-arrugados` ya se movió a mano a `Publicados`.
