@@ -96,5 +96,6 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - TikTok exige `tiktokData.title`: usar el título aprobado. YouTube va como `type: short`, Facebook e Instagram como `REEL`. La descripción va en `text`.
   - Guardar el estado de la publicación en `guion/<tema>/publicacion.md`.
 - **Entrega en Google Drive.** De Make solo se usa el escenario «Subir video a Drive (Claude)» (id `6866522`) para subir el MP4; el escenario «FrecuenciaCero» publica en las 4 redes el contenido de una subcarpeta y solo se ejecuta cuando el usuario pide publicar. Los pasos exactos están en `CLAUDE.md`, en la raíz del repo. Cada video va a la carpeta **FrecuenciaCero** de Drive (id `1GQM8y3XHjGsG35J5BAyWlHWJF4J3lYM4`), en una **subcarpeta con el nombre del video** (el mismo nombre que el MP4 del repo, p. ej. `cobre-verde`). Dentro van `<nombre>.mp4` y `<nombre>.txt`. Nada de `video_001`, `video_002`, etc.
+  - Los videos publicados por Make terminan en `FrecuenciaCero/Publicados` (id `14sEl-T8PGei3jpmDlWfhlC-kq9_ML5Hk`); las subcarpetas nuevas van siempre en la raíz de FrecuenciaCero.
   - El `.txt` lleva el título y la descripción aprobados, con el formato `TITULO: …` / `DESCRIP: …`, y se sube como texto plano (sin convertir a Google Docs).
 

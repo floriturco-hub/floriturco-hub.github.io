@@ -28,7 +28,24 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 - Si en la subcarpeta falta el MP4 o el TXT, no publica nada y avisa por correo.
 - Cuesta unas 15 operaciones de Make por video.
 
-Para programar una hora: `scenarios_update` con `scheduling: {"type": "once", "date": "<ISO en UTC>"}`. Así publica la subcarpeta más reciente, que debe ser la del video. Después, vuelve a dejar el escenario en `on-demand`.
+**Carpeta «Publicados»** (id `14sEl-T8PGei3jpmDlWfhlC-kq9_ML5Hk`, dentro de FrecuenciaCero):
+- Al terminar de publicar, el escenario mueve la subcarpeta del video a `FrecuenciaCero/Publicados` (módulo «Mover subcarpeta a Publicados»). Si el movimiento falla, llega un correo a floriturco@gmail.com para moverla a mano.
+- La búsqueda de «subcarpeta más reciente» excluye «Publicados». Sin `folder_id`, el escenario toma la subcarpeta más reciente que siga en FrecuenciaCero, o sea, una aún no publicada. Un video ya publicado no se vuelve a publicar.
+- Para volver a publicar un video a propósito, pasa su `folder_id` explícito o devuelve su carpeta a FrecuenciaCero.
+- No crees subcarpetas de videos dentro de «Publicados». Las nuevas van siempre en FrecuenciaCero (id `1GQM8y3XHjGsG35J5BAyWlHWJF4J3lYM4`).
+
+**Errores por red:** YouTube, Instagram, Facebook y TikTok tienen cada uno su manejador de errores (correo + Resume).
+- Si una red falla, llega un correo y el escenario sigue con las demás. La ejecución no termina en error, así que Make no la repite. Así se evitan duplicados como los del 2026-11-03: el video de los dedos arrugados se publicó dos veces porque Facebook falló, Make relanzó la ejecución y YouTube e Instagram se repitieron.
+- Si llega un correo de error de Facebook, revisa la página antes de volver a subir: a veces el Reel sí se publicó.
+- Si falla el borrado en Cloudinary, se ignora.
+
+**Programar a una hora:** `scenarios_update` con `scheduling: {"type": "once", "date": "<ISO en UTC>"}`. Publica la subcarpeta más reciente de FrecuenciaCero, que debe ser la del video. Tras la ejecución:
+1. Comprueba con `executions_list` que hubo **una sola** ejecución.
+2. Devuelve el escenario a `on-demand` y desactívalo.
+
+**Estado actual (2026-11-03):**
+- `dedos-arrugados` ya está en Publicados.
+- `cobre-verde` sigue en FrecuenciaCero porque no consta que se publicara. Es la subcarpeta que tomaría el escenario si se ejecuta sin `folder_id`.
 
 ## Prohibido en Make
 
