@@ -98,4 +98,9 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
 - **Entrega en Google Drive.** De Make solo se usa el escenario «Subir video a Drive (Claude)» (id `6866522`) para subir el MP4; el escenario «FrecuenciaCero» publica en las 4 redes el contenido de una subcarpeta y solo se ejecuta cuando el usuario pide publicar. Los pasos exactos están en `CLAUDE.md`, en la raíz del repo. Cada video va a la carpeta **FrecuenciaCero** de Drive (id `1GQM8y3XHjGsG35J5BAyWlHWJF4J3lYM4`), en una **subcarpeta con el nombre del video** (el mismo nombre que el MP4 del repo, p. ej. `cobre-verde`). Dentro van `<nombre>.mp4` y `<nombre>.txt`. Nada de `video_001`, `video_002`, etc.
   - Los videos publicados por Make terminan en `FrecuenciaCero/Publicados` (id `14sEl-T8PGei3jpmDlWfhlC-kq9_ML5Hk`); las subcarpetas nuevas van siempre en la raíz de FrecuenciaCero.
   - El `.txt` lleva el título y la descripción aprobados, con el formato `TITULO: …` / `DESCRIP: …`, y se sube como texto plano (sin convertir a Google Docs).
+- **Gancho de choque en los primeros 2 segundos (corrección del usuario tras el video del espejo espía).** La primera frase debe ser corta (3-6 palabras), directa al espectador y alarmante o sorprendente, y captar toda su atención en 2 s o menos, antes de cualquier explicación. Ejemplo del usuario: «¡Te espían por tu espejo!». Después ya puede venir el planteamiento («Pon el dedo sobre un espejo…»).
+  - Mal: «Pon el dedo sobre un espejo. Si la punta toca su reflejo…» (tarda demasiado en llegar al susto).
+  - Bien: «¡Te espían por tu espejo!» → planteamiento → explicación.
+  - Va en forma de exclamación o de afirmación tajante dirigida al espectador («tu», «te»). En pantalla, la etiqueta del gancho repite esa frase con letra grande desde el primer fotograma.
+  - Aplica a los próximos videos; los ya hechos (hasta `espejo-espia` incluido) no se corrigen.
 
