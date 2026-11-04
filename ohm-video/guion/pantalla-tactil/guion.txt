@@ -1,0 +1,9 @@
+Tu móvil obedece a una salchicha… pero ignora la punta de un lápiz.
+Parece que la pantalla siente la presión del dedo. Pero puedes apretar con un lápiz con toda tu fuerza y no pasa nada. Porque la pantalla no siente presión: siente electricidad.
+Bajo el cristal hay una rejilla invisible de cables transparentes, en filas y columnas. Entre ellos hay un pequeño campo eléctrico, y el teléfono lo mide en cada cruce, cientos de veces por segundo.
+Tu dedo está lleno de agua con sal: conduce la electricidad. Al acercarlo, se lleva parte de ese campo y la medida cambia justo en ese cruce. Así sabe dónde tocaste.
+La salchicha también es agua con sal: conduce. En Corea, en invierno, hubo gente que usó salchichas para manejar el móvil sin quitarse los guantes.
+La punta del lápiz es diminuta, y la madera la aísla de tu mano: el cambio es tan pequeño que el teléfono no lo nota.
+Y un guante de lana o de cuero es aislante: aleja tu dedo y corta el camino.
+Por eso los guantes táctiles llevan hilos conductores en la yema, y los lápices táctiles tienen la punta de goma conductora.
+Tu pantalla no te siente a ti: siente tu electricidad.
