@@ -16,6 +16,7 @@ import { DURACION_BIMETAL_S, TiraBimetalica } from "./bimetal/TiraBimetalica";
 import { DURACION_CONTACTLESS_S, TarjetaContactless } from "./contactless/TarjetaContactless";
 import { AmnesiaInfantil, DURACION_AMNESIA_S } from "./amnesia/AmnesiaInfantil";
 import { DURACION_ESPIA_S, EspejoEspia } from "./espejoespia/EspejoEspia";
+import { DURACION_MIMOSA_S, MimosaPudica } from "./mimosa/MimosaPudica";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
@@ -289,6 +290,14 @@ export const RemotionRoot: React.FC = () => {
         id="EspejoEspia"
         component={EspejoEspia}
         durationInFrames={Math.round(DURACION_ESPIA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MimosaPudica"
+        component={MimosaPudica}
+        durationInFrames={Math.round(DURACION_MIMOSA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
