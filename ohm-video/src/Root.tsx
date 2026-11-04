@@ -30,6 +30,7 @@ import { DURACION_TACTIL_S, TactilVideo } from "./tactil/TactilVideo";
 import { DURACION_INDUCCION_S, InduccionVideo } from "./induccion/InduccionVideo";
 import { DURACION_PLANTA_S, PlantaVideo } from "./planta/PlantaVideo";
 import { DURACION_GRILLO_S, GrilloVideo } from "./grillo/GrilloVideo";
+import { CamaronVideo, DURACION_CAMARON_S } from "./camaron/CamaronVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -296,6 +297,14 @@ export const RemotionRoot: React.FC = () => {
         id="GrilloTermometro"
         component={GrilloVideo}
         durationInFrames={Math.round(DURACION_GRILLO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CamaronMantis"
+        component={CamaronVideo}
+        durationInFrames={Math.round(DURACION_CAMARON_S * 30)}
         fps={30}
         width={1080}
         height={1920}
