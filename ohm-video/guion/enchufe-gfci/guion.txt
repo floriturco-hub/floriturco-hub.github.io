@@ -1,0 +1,9 @@
+Ese enchufe del baño con dos botones puede salvarte la vida en veinticinco milésimas de segundo.
+Si se te cae la secadora a la bañera, parece que el enchufe nota el agua. Pero no sabe nada del agua: solo cuenta corriente.
+Por un cable, la corriente va hacia la secadora. Por el otro, vuelve. Normalmente, lo que va es exactamente lo que vuelve.
+Dentro del enchufe, los dos cables pasan juntos por un anillo de hierro con una bobina. Si las dos corrientes son iguales, sus campos magnéticos se anulan y la bobina no nota nada.
+Pero si la secadora cae al agua, parte de la corriente se escapa por el agua… o por tu cuerpo, hacia el suelo. Ya no vuelve por el segundo cable. Esa diferencia, de solo unos cinco miliamperios, crea un campo en el anillo. La bobina lo detecta… y un relé corta la luz.
+Todo en unas veinticinco milésimas. La corriente sí te alcanza, pero se corta antes de durar lo suficiente para desordenar el ritmo de tu corazón.
+En muchos países va en el tablero: el diferencial, que salta con treinta miliamperios.
+El truco: aprieta el botón de prueba una vez al mes. Si no salta, cámbialo.
+No detecta el agua: detecta la corriente que no vuelve.
