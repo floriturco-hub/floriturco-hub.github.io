@@ -45,7 +45,7 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 
 **Estado actual (2026-11-03):**
 - `dedos-arrugados` ya está en Publicados.
-- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless` y `amnesia-infantil` siguen en FrecuenciaCero sin publicar. `amnesia-infantil` (creada el 2026-11-04) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
+- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil` y `espejo-espia` siguen en FrecuenciaCero sin publicar. `espejo-espia` (creada el 2026-11-04) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
 
 ## Prohibido en Make
 
