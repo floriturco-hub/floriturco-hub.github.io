@@ -29,6 +29,7 @@ import { DURACION_MIEL_S, MielVideo } from "./miel/MielVideo";
 import { DURACION_TACTIL_S, TactilVideo } from "./tactil/TactilVideo";
 import { DURACION_INDUCCION_S, InduccionVideo } from "./induccion/InduccionVideo";
 import { DURACION_PLANTA_S, PlantaVideo } from "./planta/PlantaVideo";
+import { DURACION_GRILLO_S, GrilloVideo } from "./grillo/GrilloVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -287,6 +288,14 @@ export const RemotionRoot: React.FC = () => {
         id="PlantaCarnivora"
         component={PlantaVideo}
         durationInFrames={Math.round(DURACION_PLANTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GrilloTermometro"
+        component={GrilloVideo}
+        durationInFrames={Math.round(DURACION_GRILLO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
