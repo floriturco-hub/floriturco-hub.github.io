@@ -18,6 +18,10 @@ import { AmnesiaInfantil, DURACION_AMNESIA_S } from "./amnesia/AmnesiaInfantil";
 import { DURACION_ESPIA_S, EspejoEspia } from "./espejoespia/EspejoEspia";
 import { DURACION_MIMOSA_S, MimosaPudica } from "./mimosa/MimosaPudica";
 import { CarpinteroG, DURACION_CARPINTERO_S } from "./carpintero/Carpintero";
+import { DURACION_LATA_S, LataAutocalentable } from "./lata/LataAutocalentable";
+import { DURACION_GRIPE_S, GripeSabor } from "./gripe/GripeSabor";
+import { DURACION_PETA_S, PetaZetas } from "./petazetas/PetaZetas";
+import { CinturonBloqueo, DURACION_CINTURON_S } from "./cinturon/CinturonBloqueo";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
@@ -307,6 +311,38 @@ export const RemotionRoot: React.FC = () => {
         id="CarpinteroG"
         component={CarpinteroG}
         durationInFrames={Math.round(DURACION_CARPINTERO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LataAutocalentable"
+        component={LataAutocalentable}
+        durationInFrames={Math.round(DURACION_LATA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GripeSabor"
+        component={GripeSabor}
+        durationInFrames={Math.round(DURACION_GRIPE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PetaZetas"
+        component={PetaZetas}
+        durationInFrames={Math.round(DURACION_PETA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CinturonBloqueo"
+        component={CinturonBloqueo}
+        durationInFrames={Math.round(DURACION_CINTURON_S * 30)}
         fps={30}
         width={1080}
         height={1920}
