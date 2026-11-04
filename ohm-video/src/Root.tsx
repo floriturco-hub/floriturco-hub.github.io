@@ -17,6 +17,7 @@ import { DURACION_CONTACTLESS_S, TarjetaContactless } from "./contactless/Tarjet
 import { AmnesiaInfantil, DURACION_AMNESIA_S } from "./amnesia/AmnesiaInfantil";
 import { DURACION_ESPIA_S, EspejoEspia } from "./espejoespia/EspejoEspia";
 import { DURACION_MIMOSA_S, MimosaPudica } from "./mimosa/MimosaPudica";
+import { CarpinteroG, DURACION_CARPINTERO_S } from "./carpintero/Carpintero";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
@@ -298,6 +299,14 @@ export const RemotionRoot: React.FC = () => {
         id="MimosaPudica"
         component={MimosaPudica}
         durationInFrames={Math.round(DURACION_MIMOSA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CarpinteroG"
+        component={CarpinteroG}
+        durationInFrames={Math.round(DURACION_CARPINTERO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
