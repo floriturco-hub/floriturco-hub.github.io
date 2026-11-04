@@ -47,7 +47,8 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 
 **Estado actual (2026-11-03):**
 - `dedos-arrugados` ya está en Publicados.
-- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil` y `espejo-espia` siguen en FrecuenciaCero sin publicar. `espejo-espia` (creada el 2026-11-04) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
+- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil`, `espejo-espia` y `mimosa-pudica` siguen en FrecuenciaCero sin publicar. `mimosa-pudica` (creada el 2026-11-04) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
+- Antes de subir un MP4 recién re-renderizado con Make, comprueba que la URL raw ya sirve el tamaño nuevo (`content-length`): la caché de GitHub tarda unos minutos.
 
 ## Prohibido en Make
 
