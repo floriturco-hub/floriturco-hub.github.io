@@ -37,6 +37,7 @@ import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 import { AnguilaVideo, DURACION_ANGUILA_S } from "./anguila/AnguilaVideo";
 import { DURACION_PASTILLA_S, PastillaVideo } from "./pastilla/PastillaVideo";
 import { DURACION_MORETON_S, MoretonVideo } from "./moreton/MoretonVideo";
+import { BracketsVideo, DURACION_BRACKETS_S } from "./brackets/BracketsVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -341,6 +342,14 @@ export const RemotionRoot: React.FC = () => {
         id="MoretonColores"
         component={MoretonVideo}
         durationInFrames={Math.round(DURACION_MORETON_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BracketsHueso"
+        component={BracketsVideo}
+        durationInFrames={Math.round(DURACION_BRACKETS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
