@@ -35,6 +35,7 @@ import { DURACION_MOSQUITO_S, MosquitoVideo } from "./mosquito/MosquitoVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 import { AnguilaVideo, DURACION_ANGUILA_S } from "./anguila/AnguilaVideo";
+import { DURACION_PASTILLA_S, PastillaVideo } from "./pastilla/PastillaVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -323,6 +324,14 @@ export const RemotionRoot: React.FC = () => {
         id="AnguilaElectrica"
         component={AnguilaVideo}
         durationInFrames={Math.round(DURACION_ANGUILA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PastillaDolor"
+        component={PastillaVideo}
+        durationInFrames={Math.round(DURACION_PASTILLA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
