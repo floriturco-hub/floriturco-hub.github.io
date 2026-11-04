@@ -27,6 +27,7 @@ import { DedosVideo, DURACION_DEDOS_S } from "./dedos/DedosVideo";
 import { DURACION_GFCI_S, GfciVideo } from "./gfci/GfciVideo";
 import { DURACION_MIEL_S, MielVideo } from "./miel/MielVideo";
 import { DURACION_TACTIL_S, TactilVideo } from "./tactil/TactilVideo";
+import { DURACION_INDUCCION_S, InduccionVideo } from "./induccion/InduccionVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
 
@@ -269,6 +270,14 @@ export const RemotionRoot: React.FC = () => {
         id="PantallaTactil"
         component={TactilVideo}
         durationInFrames={Math.round(DURACION_TACTIL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Induccion"
+        component={InduccionVideo}
+        durationInFrames={Math.round(DURACION_INDUCCION_S * 30)}
         fps={30}
         width={1080}
         height={1920}

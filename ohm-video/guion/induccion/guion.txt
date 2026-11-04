@@ -1,0 +1,7 @@
+Esta estufa hierve agua en minutos… y el vidrio de abajo apenas se calienta.
+Parece que bajo el vidrio hay una resistencia al rojo. Pero ahí no hay nada caliente: hay una bobina de cobre.
+Por la bobina pasa una corriente que cambia de sentido decenas de miles de veces por segundo. Eso crea un campo magnético que sube, atraviesa el vidrio… y entra en el fondo de la sartén.
+En el metal, ese campo mueve electrones en remolinos: corrientes inducidas. El metal se les resiste, y esa resistencia se convierte en calor. La sartén se calienta a sí misma.
+El vidrio no conduce: el campo lo atraviesa sin calentarlo. Solo se entibia por el contacto con la sartén, así que no lo toques justo después.
+Por eso necesita ollas de hierro o acero: si un imán se pega al fondo, sirve.
+No calienta la estufa: calienta la sartén.
