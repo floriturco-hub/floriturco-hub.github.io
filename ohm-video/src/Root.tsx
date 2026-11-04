@@ -34,6 +34,7 @@ import { CamaronVideo, DURACION_CAMARON_S } from "./camaron/CamaronVideo";
 import { DURACION_MOSQUITO_S, MosquitoVideo } from "./mosquito/MosquitoVideo";
 import { DURACION_SACUDIDA_S, SacudidaVideo } from "./sacudida/SacudidaVideo";
 import { DURACION_PAJARO_S, PajaroCable } from "./pajaro/PajaroCable";
+import { AnguilaVideo, DURACION_ANGUILA_S } from "./anguila/AnguilaVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -314,6 +315,14 @@ export const RemotionRoot: React.FC = () => {
         id="MosquitoAgujas"
         component={MosquitoVideo}
         durationInFrames={Math.round(DURACION_MOSQUITO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AnguilaElectrica"
+        component={AnguilaVideo}
+        durationInFrames={Math.round(DURACION_ANGUILA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
