@@ -43,6 +43,7 @@ import { DURACION_INTERNET_S, InternetVideo } from "./internet/InternetVideo";
 import { ConcretoVideo, DURACION_CONCRETO_S } from "./concreto/ConcretoVideo";
 import { DURACION_PILARES_S, PilaresVideo } from "./pilares/PilaresVideo";
 import { DURACION_EXTINTOR_S, ExtintorVideo } from "./extintor/ExtintorVideo";
+import { DURACION_OJOSGATO_S, OjosGatoVideo } from "./ojosgato/OjosGatoVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -395,6 +396,14 @@ export const RemotionRoot: React.FC = () => {
         id="ExtintorSarten"
         component={ExtintorVideo}
         durationInFrames={Math.round(DURACION_EXTINTOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="OjosGato"
+        component={OjosGatoVideo}
+        durationInFrames={Math.round(DURACION_OJOSGATO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
