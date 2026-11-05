@@ -5,7 +5,10 @@ import { DURACION_APPLE_S, PortatilTienda } from "./apple/PortatilTienda";
 import { BateriaDescargada } from "./bateria/BateriaDescargada";
 import { DURACION_CINCO_S, ReglaCinco } from "./cinco/ReglaCinco";
 import { DURACION_ESPEJO_S, EspejoMito } from "./espejo/EspejoMito";
-import { DURACION_IBU_S, IbuprofenoGenerico } from "./ibuprofeno/IbuprofenoGenerico";
+import {
+  DURACION_IBU_S,
+  IbuprofenoGenerico,
+} from "./ibuprofeno/IbuprofenoGenerico";
 import { DURACION_GAS_S, GasolinaCorte } from "./gasolina/GasolinaCorte";
 import { DURACION_HUESOS_S, HuesosRenuevan } from "./huesos/HuesosRenuevan";
 import { DURACION_LENGUA_S, MapaLengua } from "./lengua/MapaLengua";
@@ -13,7 +16,10 @@ import { DURACION_HIGADO_S, HigadoRegenera } from "./higado/HigadoRegenera";
 import { CobreVerde, DURACION_COBRE_S } from "./cobre/CobreVerde";
 import { BunuelosGiran, DURACION_BUNUELOS_S } from "./bunuelos/BunuelosGiran";
 import { DURACION_BIMETAL_S, TiraBimetalica } from "./bimetal/TiraBimetalica";
-import { DURACION_CONTACTLESS_S, TarjetaContactless } from "./contactless/TarjetaContactless";
+import {
+  DURACION_CONTACTLESS_S,
+  TarjetaContactless,
+} from "./contactless/TarjetaContactless";
 import { AmnesiaInfantil, DURACION_AMNESIA_S } from "./amnesia/AmnesiaInfantil";
 import { DURACION_ESPIA_S, EspejoEspia } from "./espejoespia/EspejoEspia";
 import { DURACION_MIMOSA_S, MimosaPudica } from "./mimosa/MimosaPudica";
@@ -21,13 +27,29 @@ import { CarpinteroG, DURACION_CARPINTERO_S } from "./carpintero/Carpintero";
 import { DURACION_LATA_S, LataAutocalentable } from "./lata/LataAutocalentable";
 import { DURACION_GRIPE_S, GripeSabor } from "./gripe/GripeSabor";
 import { DURACION_PETA_S, PetaZetas } from "./petazetas/PetaZetas";
-import { CinturonBloqueo, DURACION_CINTURON_S } from "./cinturon/CinturonBloqueo";
+import {
+  CinturonBloqueo,
+  DURACION_CINTURON_S,
+} from "./cinturon/CinturonBloqueo";
 import { ArenasMovedizas, DURACION_ARENAS_S } from "./arenas/ArenasMovedizas";
-import { Alcoholimetro, DURACION_ALCOHOL_S } from "./alcoholimetro/Alcoholimetro";
+import {
+  Alcoholimetro,
+  DURACION_ALCOHOL_S,
+} from "./alcoholimetro/Alcoholimetro";
 import { DURACION_SILEN_S, Silenciador } from "./silenciador/Silenciador";
-import { AsientoEyectable, DURACION_EYECT_S } from "./eyectable/AsientoEyectable";
+import {
+  AsientoEyectable,
+  DURACION_EYECT_S,
+} from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import {
+  CandadoCombinacion,
+  DURACION_CANDADO_S,
+} from "./candado/CandadoCombinacion";
+import { DURACION_LENTES3D_S, Lentes3D } from "./lentes3d/Lentes3D";
+import { DURACION_PLUMON_S, PlumonBillete } from "./plumon/PlumonBillete";
+import { DURACION_RAYOSX_S, RayosMaleta } from "./rayosx/RayosMaleta";
 import { DetectorHumo, DURACION_HUMO_S } from "./humo/DetectorHumo";
 import { DURACION_INMUNE_S, MemoriaInmune } from "./inmune/MemoriaInmune";
 import { DURACION_MONEDA_S, MonedaFalsa } from "./moneda/MonedaFalsa";
@@ -424,6 +446,38 @@ export const RemotionRoot: React.FC = () => {
         id="MonedaFalsa"
         component={MonedaFalsa}
         durationInFrames={Math.round(DURACION_MONEDA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CandadoCombinacion"
+        component={CandadoCombinacion}
+        durationInFrames={Math.round(DURACION_CANDADO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PlumonBillete"
+        component={PlumonBillete}
+        durationInFrames={Math.round(DURACION_PLUMON_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RayosMaleta"
+        component={RayosMaleta}
+        durationInFrames={Math.round(DURACION_RAYOSX_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Lentes3D"
+        component={Lentes3D}
+        durationInFrames={Math.round(DURACION_LENTES3D_S * 30)}
         fps={30}
         width={1080}
         height={1920}
