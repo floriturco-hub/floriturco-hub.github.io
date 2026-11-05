@@ -46,6 +46,7 @@ import { DURACION_EXTINTOR_S, ExtintorVideo } from "./extintor/ExtintorVideo";
 import { DURACION_OJOSGATO_S, OjosGatoVideo } from "./ojosgato/OjosGatoVideo";
 import { DURACION_POLILLA_S, PolillaVideo } from "./polilla/PolillaVideo";
 import { DURACION_IMPRESORA_S, ImpresoraVideo } from "./impresora/ImpresoraVideo";
+import { BrocheVideo, DURACION_BROCHE_S } from "./broche/BrocheVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -422,6 +423,14 @@ export const RemotionRoot: React.FC = () => {
         id="ImpresoraPuntos"
         component={ImpresoraVideo}
         durationInFrames={Math.round(DURACION_IMPRESORA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BrocheAntirrobo"
+        component={BrocheVideo}
+        durationInFrames={Math.round(DURACION_BROCHE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
