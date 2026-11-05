@@ -42,6 +42,7 @@ import { AgresionVideo, DURACION_AGRESION_S } from "./agresion/AgresionVideo";
 import { DURACION_INTERNET_S, InternetVideo } from "./internet/InternetVideo";
 import { ConcretoVideo, DURACION_CONCRETO_S } from "./concreto/ConcretoVideo";
 import { DURACION_PILARES_S, PilaresVideo } from "./pilares/PilaresVideo";
+import { DURACION_EXTINTOR_S, ExtintorVideo } from "./extintor/ExtintorVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -386,6 +387,14 @@ export const RemotionRoot: React.FC = () => {
         id="PilaresAgua"
         component={PilaresVideo}
         durationInFrames={Math.round(DURACION_PILARES_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ExtintorSarten"
+        component={ExtintorVideo}
+        durationInFrames={Math.round(DURACION_EXTINTOR_S * 30)}
         fps={30}
         width={1080}
         height={1920}
