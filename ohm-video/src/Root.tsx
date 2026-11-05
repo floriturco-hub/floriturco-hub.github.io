@@ -28,6 +28,11 @@ import { DURACION_SILEN_S, Silenciador } from "./silenciador/Silenciador";
 import { AsientoEyectable, DURACION_EYECT_S } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { DetectorHumo, DURACION_HUMO_S } from "./humo/DetectorHumo";
+import { DURACION_INMUNE_S, MemoriaInmune } from "./inmune/MemoriaInmune";
+import { DURACION_MONEDA_S, MonedaFalsa } from "./moneda/MonedaFalsa";
+import { DURACION_OIDOS_S, OidosTapados } from "./oidos/OidosTapados";
+import { DURACION_ORO_S, OroInvisible } from "./oro/OroInvisible";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
 import { MicroondasVideo } from "./microondas/MicroondasVideo";
 import { DURACION_OJOS_S, OjosRojos } from "./ojos/OjosRojos";
@@ -379,6 +384,46 @@ export const RemotionRoot: React.FC = () => {
         id="AsientoEyectable"
         component={AsientoEyectable}
         durationInFrames={Math.round(DURACION_EYECT_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="OroInvisible"
+        component={OroInvisible}
+        durationInFrames={Math.round(DURACION_ORO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MemoriaInmune"
+        component={MemoriaInmune}
+        durationInFrames={Math.round(DURACION_INMUNE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="OidosTapados"
+        component={OidosTapados}
+        durationInFrames={Math.round(DURACION_OIDOS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DetectorHumo"
+        component={DetectorHumo}
+        durationInFrames={Math.round(DURACION_HUMO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MonedaFalsa"
+        component={MonedaFalsa}
+        durationInFrames={Math.round(DURACION_MONEDA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
