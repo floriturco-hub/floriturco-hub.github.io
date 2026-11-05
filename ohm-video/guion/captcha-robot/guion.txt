@@ -1,0 +1,7 @@
+¡Te analiza antes del clic!
+La casilla de «No soy un robot» no se fija en el clic, sino en todo lo que pasa antes.
+Un robot mueve el ratón en línea recta, a velocidad perfecta, y hace clic justo en el centro. Tú tiemblas: tu cursor hace curvas, acelera, frena, se pasa un poquito y corrige.
+También mira cuánto tardaste, cómo te moviste por la página, y las huellas de tu navegador: cookies, tu historial con Google, el tipo de dispositivo, desde dónde te conectas.
+Con todo eso calcula una puntuación. Si pareces humano, pasas con un solo clic.
+Si tiene dudas, te pone a buscar semáforos o bicicletas, una prueba más difícil para una máquina… aunque cada vez menos.
+No eres humano por el clic: eres humano por tu imperfección.

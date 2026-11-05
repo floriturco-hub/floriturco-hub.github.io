@@ -47,6 +47,7 @@ import { DURACION_OJOSGATO_S, OjosGatoVideo } from "./ojosgato/OjosGatoVideo";
 import { DURACION_POLILLA_S, PolillaVideo } from "./polilla/PolillaVideo";
 import { DURACION_IMPRESORA_S, ImpresoraVideo } from "./impresora/ImpresoraVideo";
 import { BrocheVideo, DURACION_BROCHE_S } from "./broche/BrocheVideo";
+import { CaptchaVideo, DURACION_CAPTCHA_S } from "./captcha/CaptchaVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -431,6 +432,14 @@ export const RemotionRoot: React.FC = () => {
         id="BrocheAntirrobo"
         component={BrocheVideo}
         durationInFrames={Math.round(DURACION_BROCHE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CaptchaRobot"
+        component={CaptchaVideo}
+        durationInFrames={Math.round(DURACION_CAPTCHA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
