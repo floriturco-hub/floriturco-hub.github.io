@@ -49,7 +49,7 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 
 **Estado actual (2026-11-03):**
 - `dedos-arrugados` ya está en Publicados.
-- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil`, `espejo-espia`, `mimosa-pudica`, `carpintero-g`, `lata-autocalentable`, `gripe-sabor`, `peta-zetas`, `cinturon-bloqueo`, `arenas-movedizas`, `alcoholimetro`, `silenciador`, `asiento-eyectable`, `oro-invisible`, `memoria-inmune`, `oidos-tapados`, `detector-humo` y `moneda-falsa` siguen en FrecuenciaCero sin publicar. `moneda-falsa` (creada el 2026-11-05) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
+- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil`, `espejo-espia`, `mimosa-pudica`, `carpintero-g`, `lata-autocalentable`, `gripe-sabor`, `peta-zetas`, `cinturon-bloqueo`, `arenas-movedizas`, `alcoholimetro`, `silenciador`, `asiento-eyectable`, `oro-invisible`, `memoria-inmune`, `oidos-tapados`, `detector-humo`, `moneda-falsa`, `candado-combinacion`, `plumon-billete`, `rayos-maleta` y `lentes-3d` siguen en FrecuenciaCero sin publicar. `lentes-3d` (creada el 2026-11-05) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
 - Plantilla común para videos nuevos: `src/components/Short.tsx` (`Short`, `Lienzo`, `Texto`, `aparece`…); cada video solo define `Escenas.tsx` (con `T`) y una composición corta. Ejemplos: `src/oro`, `src/moneda`.
 - API REST de ElevenLabs (clave del usuario): máximo 3 peticiones a la vez; si no, devuelve 429.
 - Whisper: transcribe de uno en uno; cuatro en paralelo se atascan y no terminan.
