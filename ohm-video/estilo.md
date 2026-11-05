@@ -69,6 +69,7 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
 
 - **Sin subtítulos de narración: solo etiquetas-clave** (§4). Confirmado por el usuario.
 - **Voz:** ElevenLabs, voz "Pablo – Amigable y Explicativa" (`6X3rSPfxjGvtcD9GxQcW`, castellano peninsular), modelo `eleven_v4`.
+  - **Siempre `eleven_v4`, por su expresividad (indicación del usuario, 2026-11-05).** También cuando se use la API REST con la clave del usuario porque se agotaron los créditos del conector: `"model_id": "eleven_v4"`. Si v4 no está disponible, pregunta al usuario antes de usar otro modelo; no bajes a `eleven_v3` por tu cuenta. `silenciador` y `asiento-eyectable` se narraron con v3 por error y se dejan así.
 - **Fondo sin cono de luz.** Se elimina la luz de farola de la referencia (§7): solo noche azul-violeta `#0B091D` con degradado radial y estrellas que titilan.
 - **Música aprobada ("perfecta"):** instrumental ambient electrónico tranquilo, pads graves cálidos, bajo suave, arpegio pulsado sutil, sin batería marcada (ElevenLabs `eleven_music_v2_5`). Volumen **0,1 bajo la voz** (~20 dB por debajo), sube a **0,225 en el cierre** y se funde al final. Keyframes: `[0, 1.5, INICIO-0.3, INICIO+0.7, DUR-1.5, DUR] → [0, 0.1, 0.1, 0.225, 0.225, 0]`.
   - **Música 6 dB más baja (corrección del usuario tras el vídeo de los ojos rojos).** Antes era 0,2 bajo la voz y 0,45 en el cierre; −6 dB equivale a multiplicar por 0,5 en toda la pista. Aplica solo a los próximos vídeos: los ya grabados (hasta `OjosRojos` incluido) conservan 0,2/0,45 y no se re-renderizan.
