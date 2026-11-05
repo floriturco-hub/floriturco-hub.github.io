@@ -49,6 +49,7 @@ import { DURACION_IMPRESORA_S, ImpresoraVideo } from "./impresora/ImpresoraVideo
 import { BrocheVideo, DURACION_BROCHE_S } from "./broche/BrocheVideo";
 import { CaptchaVideo, DURACION_CAPTCHA_S } from "./captcha/CaptchaVideo";
 import { BoliVideo, DURACION_BOLI_S } from "./boli/BoliVideo";
+import { DURACION_SUPERP_S, SuperpVideo } from "./superp/SuperpVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -449,6 +450,14 @@ export const RemotionRoot: React.FC = () => {
         id="BoligrafoBola"
         component={BoliVideo}
         durationInFrames={Math.round(DURACION_BOLI_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Superpegamento"
+        component={SuperpVideo}
+        durationInFrames={Math.round(DURACION_SUPERP_S * 30)}
         fps={30}
         width={1080}
         height={1920}
