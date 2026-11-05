@@ -41,6 +41,7 @@ import { BracketsVideo, DURACION_BRACKETS_S } from "./brackets/BracketsVideo";
 import { AgresionVideo, DURACION_AGRESION_S } from "./agresion/AgresionVideo";
 import { DURACION_INTERNET_S, InternetVideo } from "./internet/InternetVideo";
 import { ConcretoVideo, DURACION_CONCRETO_S } from "./concreto/ConcretoVideo";
+import { DURACION_PILARES_S, PilaresVideo } from "./pilares/PilaresVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -377,6 +378,14 @@ export const RemotionRoot: React.FC = () => {
         id="ConcretoAcero"
         component={ConcretoVideo}
         durationInFrames={Math.round(DURACION_CONCRETO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PilaresAgua"
+        component={PilaresVideo}
+        durationInFrames={Math.round(DURACION_PILARES_S * 30)}
         fps={30}
         width={1080}
         height={1920}
