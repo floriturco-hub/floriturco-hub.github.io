@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { DURACION_JETFLORIDA_S, JetFlorida } from "./jetflorida/JetFlorida";
 import {
   Antitranspirante,
   DURACION_ANTI_S,
@@ -538,6 +539,14 @@ export const RemotionRoot: React.FC = () => {
         id="PilasRebote"
         component={PilasRebote}
         durationInFrames={Math.round(DURACION_PILAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="JetFlorida"
+        component={JetFlorida}
+        durationInFrames={Math.round(DURACION_JETFLORIDA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
