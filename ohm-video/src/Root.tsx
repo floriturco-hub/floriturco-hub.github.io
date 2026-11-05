@@ -50,6 +50,7 @@ import { BrocheVideo, DURACION_BROCHE_S } from "./broche/BrocheVideo";
 import { CaptchaVideo, DURACION_CAPTCHA_S } from "./captcha/CaptchaVideo";
 import { BoliVideo, DURACION_BOLI_S } from "./boli/BoliVideo";
 import { DURACION_SUPERP_S, SuperpVideo } from "./superp/SuperpVideo";
+import { DURACION_GOMA_S, GomaVideo } from "./goma/GomaVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -458,6 +459,14 @@ export const RemotionRoot: React.FC = () => {
         id="Superpegamento"
         component={SuperpVideo}
         durationInFrames={Math.round(DURACION_SUPERP_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GomaBorrar"
+        component={GomaVideo}
+        durationInFrames={Math.round(DURACION_GOMA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
