@@ -20,6 +20,7 @@ Canal de Shorts de ciencia (TikTok, YouTube Shorts, Reels). Proyecto Remotion en
 3. Sube `<nombre>.mp4` con **Make**, solo con el escenario **«Subir video a Drive (Claude)»** (id `6866522`, equipo `3341215`). El conector de Drive no admite archivos tan grandes.
    - Primero haz commit y push del MP4 a la rama y comprueba que la URL raw responde 200: `https://raw.githubusercontent.com/floriturco-hub/floriturco-hub.github.io/<rama>/ohm-video/<nombre>.mp4`
    - `scenarios_activate` → `scenarios_run` con `responsive: true` y `data: {"video_url": "<URL raw>", "folder_id": "<id de la subcarpeta>", "filename": "<nombre>.mp4"}` → `scenarios_deactivate`.
+   - Si `scenarios_activate` dice «already running» pero `scenarios_run` responde «not activated», vuelve a activarlo y repite la ejecución (pasó el 2026-11-05).
    - Cuesta unas 2 operaciones de Make; el plan gratuito trae 1.000 al mes.
    - Comprueba en Drive que el MP4 quedó en la subcarpeta. La búsqueda por `parentId` tarda en reflejarlo; busca por `title`.
 
@@ -49,7 +50,7 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 
 **Estado actual (2026-11-03):**
 - `dedos-arrugados` ya está en Publicados.
-- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil`, `espejo-espia`, `mimosa-pudica`, `carpintero-g`, `lata-autocalentable`, `gripe-sabor`, `peta-zetas`, `cinturon-bloqueo`, `arenas-movedizas`, `alcoholimetro`, `silenciador`, `asiento-eyectable`, `oro-invisible`, `memoria-inmune`, `oidos-tapados`, `detector-humo`, `moneda-falsa`, `candado-combinacion`, `plumon-billete`, `rayos-maleta` y `lentes-3d` siguen en FrecuenciaCero sin publicar. `lentes-3d` (creada el 2026-11-05) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
+- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil`, `espejo-espia`, `mimosa-pudica`, `carpintero-g`, `lata-autocalentable`, `gripe-sabor`, `peta-zetas`, `cinturon-bloqueo`, `arenas-movedizas`, `alcoholimetro`, `silenciador`, `asiento-eyectable`, `oro-invisible`, `memoria-inmune`, `oidos-tapados`, `detector-humo`, `moneda-falsa`, `candado-combinacion`, `plumon-billete`, `rayos-maleta`, `lentes-3d`, `antitranspirante`, `pluma-borrable`, `encendedor-piezo`, `presion-llanta`, `tronar-dedos` y `pilas-rebote` siguen en FrecuenciaCero sin publicar. `pilas-rebote` (creada el 2026-11-05) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
 - Plantilla común para videos nuevos: `src/components/Short.tsx` (`Short`, `Lienzo`, `Texto`, `aparece`…); cada video solo define `Escenas.tsx` (con `T`) y una composición corta. Ejemplos: `src/oro`, `src/moneda`.
 - API REST de ElevenLabs (clave del usuario): máximo 3 peticiones a la vez; si no, devuelve 429.
 - Whisper: transcribe de uno en uno; cuatro en paralelo se atascan y no terminan.
