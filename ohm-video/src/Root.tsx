@@ -38,6 +38,7 @@ import { AnguilaVideo, DURACION_ANGUILA_S } from "./anguila/AnguilaVideo";
 import { DURACION_PASTILLA_S, PastillaVideo } from "./pastilla/PastillaVideo";
 import { DURACION_MORETON_S, MoretonVideo } from "./moreton/MoretonVideo";
 import { BracketsVideo, DURACION_BRACKETS_S } from "./brackets/BracketsVideo";
+import { AgresionVideo, DURACION_AGRESION_S } from "./agresion/AgresionVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -350,6 +351,14 @@ export const RemotionRoot: React.FC = () => {
         id="BracketsHueso"
         component={BracketsVideo}
         durationInFrames={Math.round(DURACION_BRACKETS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AgresionTierna"
+        component={AgresionVideo}
+        durationInFrames={Math.round(DURACION_AGRESION_S * 30)}
         fps={30}
         width={1080}
         height={1920}
