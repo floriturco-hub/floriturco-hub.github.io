@@ -51,6 +51,7 @@ import { CaptchaVideo, DURACION_CAPTCHA_S } from "./captcha/CaptchaVideo";
 import { BoliVideo, DURACION_BOLI_S } from "./boli/BoliVideo";
 import { DURACION_SUPERP_S, SuperpVideo } from "./superp/SuperpVideo";
 import { DURACION_GOMA_S, GomaVideo } from "./goma/GomaVideo";
+import { CintaVideo, DURACION_CINTA_S } from "./cinta/CintaVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -467,6 +468,14 @@ export const RemotionRoot: React.FC = () => {
         id="GomaBorrar"
         component={GomaVideo}
         durationInFrames={Math.round(DURACION_GOMA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CintaAdhesiva"
+        component={CintaVideo}
+        durationInFrames={Math.round(DURACION_CINTA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
