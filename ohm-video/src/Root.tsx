@@ -22,6 +22,10 @@ import { DURACION_LATA_S, LataAutocalentable } from "./lata/LataAutocalentable";
 import { DURACION_GRIPE_S, GripeSabor } from "./gripe/GripeSabor";
 import { DURACION_PETA_S, PetaZetas } from "./petazetas/PetaZetas";
 import { CinturonBloqueo, DURACION_CINTURON_S } from "./cinturon/CinturonBloqueo";
+import { ArenasMovedizas, DURACION_ARENAS_S } from "./arenas/ArenasMovedizas";
+import { Alcoholimetro, DURACION_ALCOHOL_S } from "./alcoholimetro/Alcoholimetro";
+import { DURACION_SILEN_S, Silenciador } from "./silenciador/Silenciador";
+import { AsientoEyectable, DURACION_EYECT_S } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import { DURACION_INSERTO_S, InsertoVioleta } from "./luminous/InsertoVioleta";
@@ -343,6 +347,38 @@ export const RemotionRoot: React.FC = () => {
         id="CinturonBloqueo"
         component={CinturonBloqueo}
         durationInFrames={Math.round(DURACION_CINTURON_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ArenasMovedizas"
+        component={ArenasMovedizas}
+        durationInFrames={Math.round(DURACION_ARENAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Alcoholimetro"
+        component={Alcoholimetro}
+        durationInFrames={Math.round(DURACION_ALCOHOL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Silenciador"
+        component={Silenciador}
+        durationInFrames={Math.round(DURACION_SILEN_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AsientoEyectable"
+        component={AsientoEyectable}
+        durationInFrames={Math.round(DURACION_EYECT_S * 30)}
         fps={30}
         width={1080}
         height={1920}
