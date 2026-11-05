@@ -1,0 +1,7 @@
+¡Tu impresora te está delatando!
+Muchas impresoras láser a color imprimen, en cada hoja, una cuadrícula de puntitos amarillos. Cada uno mide una décima de milímetro: amarillo sobre blanco, tu ojo no los ve.
+Pero con una lupa y luz azul aparecen. Y no están al azar: forman un código que se repite por toda la página.
+Ese código guarda el número de serie de la impresora… y muchas veces la fecha y la hora de impresión.
+¿Para qué? Se pusieron para rastrear falsificaciones de billetes. Si alguien imprime dinero falso, se puede saber con qué máquina.
+En 2005, un grupo de activistas descifró el código. Y en 2017, esos puntitos ayudaron a identificar a una persona que filtró un documento secreto.
+No dicen tu nombre… pero sí qué impresora lo imprimió.
