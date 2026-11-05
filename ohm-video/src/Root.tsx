@@ -44,6 +44,18 @@ import {
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import {
+  Antitranspirante,
+  DURACION_ANTI_S,
+} from "./antitranspirante/Antitranspirante";
+import { PlumaBorrable, DURACION_PLUMA_S } from "./pluma/PlumaBorrable";
+import {
+  EncendedorPiezo,
+  DURACION_ENCENDEDOR_S,
+} from "./encendedor/EncendedorPiezo";
+import { PresionLlanta, DURACION_LLANTA_S } from "./llanta/PresionLlanta";
+import { TronarDedos, DURACION_DEDOS_S } from "./dedos/TronarDedos";
+import { PilasRebote, DURACION_PILAS_S } from "./pilas/PilasRebote";
+import {
   CandadoCombinacion,
   DURACION_CANDADO_S,
 } from "./candado/CandadoCombinacion";
@@ -478,6 +490,54 @@ export const RemotionRoot: React.FC = () => {
         id="Lentes3D"
         component={Lentes3D}
         durationInFrames={Math.round(DURACION_LENTES3D_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Antitranspirante"
+        component={Antitranspirante}
+        durationInFrames={Math.round(DURACION_ANTI_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PlumaBorrable"
+        component={PlumaBorrable}
+        durationInFrames={Math.round(DURACION_PLUMA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EncendedorPiezo"
+        component={EncendedorPiezo}
+        durationInFrames={Math.round(DURACION_ENCENDEDOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PresionLlanta"
+        component={PresionLlanta}
+        durationInFrames={Math.round(DURACION_LLANTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TronarDedos"
+        component={TronarDedos}
+        durationInFrames={Math.round(DURACION_DEDOS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PilasRebote"
+        component={PilasRebote}
+        durationInFrames={Math.round(DURACION_PILAS_S * 30)}
         fps={30}
         width={1080}
         height={1920}

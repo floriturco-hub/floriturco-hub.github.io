@@ -1,0 +1,6 @@
+¡Tu auto se apoya en aire!
+Una llanta de auto suele llevar unas treinta y dos libras por pulgada cuadrada: PSI. El aire empuja con treinta y dos libras sobre cada pulgada cuadrada de la llanta, por dentro. Ese empuje es el que sostiene tu auto.
+¿Cómo se mide? El medidor clásico de lápiz es pura mecánica: el aire entra, empuja un pistón contra un resorte, y el pistón saca una varilla con números. Más presión, más sale la varilla.
+El digital es más fino. Dentro tiene una membrana de silicio más delgada que un cabello, con resistencias eléctricas pegadas. El aire la dobla un poquito, las resistencias se estiran y su valor eléctrico cambia. Un chip convierte ese cambio en el número de la pantalla.
+Conviene medir con la llanta fría: al rodar, el aire se calienta, se expande y la lectura sube.
+Unas libras de aire, cargando todo tu auto.

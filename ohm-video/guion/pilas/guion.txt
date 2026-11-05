@@ -1,0 +1,7 @@
+¡Tu pila gastada rebota como pelota!
+Deja caer una pila alcalina nueva de pie sobre la mesa: hace tac y se queda quieta. Una gastada rebota y hasta se cae.
+La diferencia está dentro. Una pila nueva tiene en el centro un gel lleno de polvo de zinc. Ese gel es blando: cuando la pila golpea la mesa, absorbe la energía, como una bolsa de arena.
+Al usar la pila, el zinc reacciona y se convierte en óxido de zinc. Los granos de óxido se unen entre sí y forman una red sólida, como una esponja dura. El interior ya no amortigua, y la energía del golpe se devuelve: la pila rebota.
+En dos mil quince, un equipo de Princeton lo comprobó con rayos X, y encontró un detalle: el rebote crece rápido hasta que la pila va por la mitad, y luego casi no cambia.
+Así que te dice si la pila es nueva o usada, pero no cuánta carga le queda.
+Pila que rebota: pila que ya trabajó.
