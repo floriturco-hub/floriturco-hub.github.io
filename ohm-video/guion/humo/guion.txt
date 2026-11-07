@@ -1,0 +1,7 @@
+¡Hay algo radiactivo en tu techo!
+Muchos detectores de humo llevan dentro una pizca de americio doscientos cuarenta y uno: menos de una millonésima de gramo.
+El americio dispara partículas alfa en una pequeña cámara con dos placas de metal, una positiva y otra negativa. Esas partículas chocan con el aire y le arrancan electrones: el aire se llena de iones. Los iones viajan hacia las placas y forman una corriente eléctrica diminuta, pero constante. El detector la vigila todo el tiempo.
+Cuando se quema tu tostada, entra humo en la cámara. Los iones se pegan a las partículas de humo, se frenan y dejan de llegar a las placas. La corriente cae… y suena la alarma.
+¿Es peligroso? Las partículas alfa recorren solo unos centímetros en el aire, y una hoja de papel las detiene. Mientras no abras la cámara, no te llega nada.
+Otros detectores usan luz en vez de radiación, pero este truco lleva décadas salvando vidas.
+Un poco de radiación vigila tu sueño.

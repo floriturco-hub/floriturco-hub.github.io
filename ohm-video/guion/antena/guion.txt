@@ -1,0 +1,9 @@
+En 2006, la NASA mandó al espacio una antena que parece un clip doblado al azar. Y no la diseñó ninguna persona: la diseñó una computadora, imitando a la evolución.
+La misión, Space Technology 5, eran tres satélites diminutos. Necesitaban una antena que cupiera en unos pocos centímetros y captara la señal de la Tierra desde casi cualquier ángulo.
+Los ingenieros no dibujaron nada. Le dieron al programa las reglas, y este generó cientos de antenas al azar: alambres doblados de mil maneras. Cada diseño era una lista de instrucciones, como un ADN: avanza tanto, gira tanto, avanza otra vez.
+Cada una se probó en un simulador. Las que mejor captaban la señal sobrevivían; las demás se descartaban.
+Las ganadoras se mezclaban entre sí, con pequeñas mutaciones, y nacía una nueva generación. Y otra. Y otra.
+Generación tras generación, apareció esta: rara, asimétrica… y funcionaba mejor que la diseñada a mano.
+Cuando cambiaron los requisitos de la misión, el programa la rediseñó en pocas semanas.
+Fue la primera pieza creada por evolución artificial que voló al espacio.
+Nadie la inventó: sobrevivió.

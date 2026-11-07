@@ -1,0 +1,8 @@
+Pagas el agua por metros cúbicos. Pero, ¿quién cuenta cada litro que sale de tu grifo? Un aparato que casi nunca miras: el medidor.
+Dentro hay una pequeña turbina. El agua que entra a tu casa la hace girar, y cada vuelta equivale a un volumen exacto de agua.
+Esas vueltas mueven unos engranajes que van sumando, como el cuentakilómetros de un coche, pero en metros cúbicos. Un metro cúbico son mil litros.
+Cada mes, o cada dos, la empresa anota el número. Le resta la lectura anterior, y eso es lo que gastaste. Por ejemplo, de mil doscientos treinta y cuatro a mil doscientos cincuenta y dos: dieciocho metros cúbicos.
+Luego se multiplica por el precio. Y en muchos lugares va por tramos: los primeros metros son más baratos y, cuanto más gastas, más caro sale cada uno.
+A eso se suma un cargo fijo, el alcantarillado y los impuestos.
+Un truco: cierra todos los grifos y mira el medidor. Si la ruedita sigue girando, tienes una fuga.
+No pagas por abrir el grifo: pagas por cada vuelta.

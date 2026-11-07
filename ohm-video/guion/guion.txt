@@ -1,0 +1,11 @@
+La ley de Ohm dice que si duplicas el voltaje, se duplica la corriente. ¿Por qué un cable obedece una regla tan simple?
+Hagamos zoom dentro del cobre. Hay una red de átomos casi quietos y un mar de electrones que se mueven al azar, pero sin ir a ningún lado.
+Ahora conecta una pila. El voltaje crea un campo eléctrico que empuja a todos los electrones hacia el mismo lado.
+Cada electrón acelera… y choca con un átomo. Pierde lo que ganó y vuelve a empezar. Acelera, choca. Acelera, choca.
+Ese freno constante deja una velocidad media, la deriva: apenas milímetros por segundo.
+Y aquí está la clave: si empujas el doble, entre choque y choque ganan el doble de velocidad. Doble deriva, doble corriente. Eso es la ley de Ohm.
+La resistencia mide esos choques: un cable más largo tiene más; uno más grueso deja pasar más electrones a la vez.
+Pero no es una ley universal. Si el cable se calienta, los átomos vibran más, hay más choques, y la recta se curva.
+La ley de Ohm no es magia. Es tráfico con choques.
+
+Frecuencia Cero.

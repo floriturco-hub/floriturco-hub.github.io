@@ -1,0 +1,8 @@
+Tu tarjeta sin contacto tiene un pequeño computador adentro… pero ninguna batería. La energía la saca del aire, en el instante en que la acercas.
+Si alumbras una tarjeta con una linterna muy fuerte, a veces se ve: alrededor del borde hay una antena, un cable enrollado varias vueltas, conectado al chip.
+El datáfono crea un campo magnético que cambia de sentido trece millones y medio de veces por segundo. Cuando la antena entra en ese campo, por inducción se genera una pequeña corriente: la misma física de un cargador inalámbrico.
+Con esa corriente, el chip se enciende en milésimas de segundo.
+¿Y cómo responde, si no tiene con qué transmitir? Hace algo ingenioso: conecta y desconecta una carga muy rápido. Eso cambia cuánta energía absorbe, y el datáfono lee esos cambios como unos y ceros.
+Por eso solo funciona a pocos centímetros: el campo se debilita muy rápido con la distancia.
+Y en cada pago el chip calcula un código único. Aunque alguien copie la señal, no le sirve para repetir el cobro.
+Sin batería. Solo inducción.

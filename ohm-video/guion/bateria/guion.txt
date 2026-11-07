@@ -1,0 +1,9 @@
+Tu celular marca uno por ciento. ¿Qué significa realmente ese número?
+Primero: la batería no sabe nada. Quien lo calcula es un pequeño chip que la vigila.
+Dentro hay dos lados: grafito y un óxido metálico, separados por un líquido. Cargada, el grafito está lleno de iones de litio.
+Al usar el celular, esos iones cruzan al otro lado, y sus electrones dan la vuelta por el circuito. Esa es la corriente que enciende tu pantalla.
+La energía guardada es justo esa diferencia: litio donde no quiere estar. Cuanto más cruza, menos diferencia queda, y el voltaje baja.
+Llena, da unos cuatro coma dos voltios. Casi toda la descarga se queda cerca de tres coma siete. Y al final, cae en picado.
+El chip mide ese voltaje, cuenta los electrones que salen y vigila la temperatura. Con eso estima cuánto queda.
+Pero uno por ciento no es vacía. El celular se apaga a propósito, cerca de tres voltios, porque vaciarla del todo dañaría la química.
+Ese uno por ciento no es lo que queda en la batería. Es lo que queda antes de protegerla.

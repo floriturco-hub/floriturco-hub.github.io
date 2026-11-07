@@ -1,0 +1,7 @@
+¡Tu pulgar fabrica un rayo!
+Los encendedores de botón no tienen pila. La electricidad la pones tú.
+Dentro hay un cristal piezoeléctrico. Su magia: si lo aprietas de golpe, sus átomos se desplazan un poquito y las cargas eléctricas se separan. Un lado queda positivo y el otro negativo. Aparece un voltaje.
+Pero apretar despacio no basta. Por eso el botón es duro: al presionarlo, comprimes un resorte. Llega un punto en que el resorte se suelta y lanza un pequeño martillo contra el cristal. Ese es el clic que sientes.
+El golpe es tan rápido que el cristal genera miles de voltios por un instante. Muy poca energía, pero voltaje suficiente para que una chispa salte entre dos puntas de metal.
+Al mismo tiempo, el botón abre la válvula del gas. La chispa salta justo frente a la salida, y el gas se enciende.
+Sin pilas: solo un golpe, un cristal y tu pulgar.
