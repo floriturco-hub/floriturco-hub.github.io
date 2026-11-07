@@ -44,6 +44,10 @@ import {
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
 import {
+  DURACION_LLUVIACEREBRO_S,
+  LluviaCerebro,
+} from "./lluviacerebro/LluviaCerebro";
+import {
   DURACION_ASTRO_S,
   MusculosEspacio,
 } from "./astronautas/MusculosEspacio";
@@ -579,6 +583,14 @@ export const RemotionRoot: React.FC = () => {
         id="MusculosEspacio"
         component={MusculosEspacio}
         durationInFrames={Math.round(DURACION_ASTRO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LluviaCerebro"
+        component={LluviaCerebro}
+        durationInFrames={Math.round(DURACION_LLUVIACEREBRO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
