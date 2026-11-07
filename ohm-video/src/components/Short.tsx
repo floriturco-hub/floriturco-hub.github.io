@@ -124,7 +124,15 @@ export const Short: React.FC<{
   readonly escenas: readonly EscenaDef[];
   readonly etiquetas: readonly EtiquetaDef[];
   readonly tics: readonly number[];
-}> = ({ carpeta, fin, escenas, etiquetas, tics }) => {
+  readonly musica?: string;
+}> = ({
+  carpeta,
+  fin,
+  escenas,
+  etiquetas,
+  tics,
+  musica = "audio/musica.mp3",
+}) => {
   const { fps } = useVideoConfig();
   const inicio = fin + 0.5;
   const dur = duracionShort(fin);
@@ -160,7 +168,7 @@ export const Short: React.FC<{
 
       <Audio src={staticFile(`audio/${carpeta}/narracion.wav`)} />
       <Audio
-        src={staticFile("audio/musica.mp3")}
+        src={staticFile(musica)}
         volume={(f) =>
           interpolate(
             f / fps,

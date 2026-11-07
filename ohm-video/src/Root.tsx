@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { DURACION_RADIOLOFI_S, RadioLofi } from "./radiolofi/RadioLofi";
 import { ComposicionesLoFi } from "./lofi/LoFi";
 import { LluviaLoFi, LOOP_FRAMES } from "./lluvia/LluviaLoFi";
 import { DURACION_JETFLORIDA_S, JetFlorida } from "./jetflorida/JetFlorida";
@@ -562,6 +563,14 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
       />
       <ComposicionesLoFi />
+      <Composition
+        id="RadioLofi"
+        component={RadioLofi}
+        durationInFrames={Math.round(DURACION_RADIOLOFI_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
       <Composition
         id="InsertoVioleta"
         component={InsertoVioleta}
