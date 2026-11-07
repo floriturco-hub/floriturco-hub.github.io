@@ -43,6 +43,10 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import {
+  DURACION_ASTRO_S,
+  MusculosEspacio,
+} from "./astronautas/MusculosEspacio";
 import { DURACION_RADIOLOFI_S, RadioLofi } from "./radiolofi/RadioLofi";
 import { ComposicionesLoFi } from "./lofi/LoFi";
 import { LluviaLoFi, LOOP_FRAMES } from "./lluvia/LluviaLoFi";
@@ -567,6 +571,14 @@ export const RemotionRoot: React.FC = () => {
         id="RadioLofi"
         component={RadioLofi}
         durationInFrames={Math.round(DURACION_RADIOLOFI_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MusculosEspacio"
+        component={MusculosEspacio}
+        durationInFrames={Math.round(DURACION_ASTRO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
