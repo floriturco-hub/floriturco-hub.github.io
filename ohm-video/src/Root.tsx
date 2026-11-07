@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { ComposicionesLoFi } from "./lofi/LoFi";
 import { LluviaLoFi, LOOP_FRAMES } from "./lluvia/LluviaLoFi";
 import { DURACION_JETFLORIDA_S, JetFlorida } from "./jetflorida/JetFlorida";
 import {
@@ -560,6 +561,7 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
       />
+      <ComposicionesLoFi />
       <Composition
         id="InsertoVioleta"
         component={InsertoVioleta}

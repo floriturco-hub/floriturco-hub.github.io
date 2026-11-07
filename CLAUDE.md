@@ -56,6 +56,13 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 - Whisper: transcribe de uno en uno; cuatro en paralelo se atascan y no terminan.
 - Antes de subir un MP4 recién re-renderizado con Make, comprueba que la URL raw ya sirve el tamaño nuevo (`content-length`): la caché de GitHub tarda unos minutos.
 
+## Videos lo-fi horizontales (no son Shorts)
+
+- 1920×1080, en bucle perfecto, para dormir/estudiar. Código en `ohm-video/src/lofi/` (base común en `Base.tsx`) y `src/lluvia/`; MP4 en `ohm-video/lofi/` y `ohm-video/lluvia-lofi.mp4`.
+- Regla del bucle: todo movimiento hace un número entero de ciclos por bucle; las capas que se envuelven (nubes) se dibujan en 4 copias (−W, 0, W, 2W) para que no aparezcan de golpe en el borde.
+- Audio: música de ElevenLabs (`/v1/music`, `music_v1`, ~130 s) + ambiente en bucle (`/v1/sound-generation` con `loop: true`). La duración del bucle es un número entero de compases (tempo con librosa) con fundido cruzado de 2 compases; volumen −18 LUFS.
+- No se suben a la carpeta FrecuenciaCero de Drive: el escenario de publicación los tomaría como Short. Si el usuario los quiere en Drive, van en una carpeta aparte.
+
 ## Prohibido en Make
 
 - No ejecutes «FrecuenciaCero» si el usuario no lo pidió, ni crees escenarios nuevos (el plan gratuito permite 2 y ya están los dos).

@@ -76,7 +76,7 @@ const CapaNubes: React.FC<{
   const off = -frac(fase * n) * W;
   return (
     <g opacity={op}>
-      {[0, W].map((dx) => (
+      {[-W, 0, W, 2 * W].map((dx) => (
         <g key={dx} transform={`translate(${off + dx} 0)`}>
           {new Array(cuantas).fill(0).map((_, k) => (
             <Nube
