@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { LluviaLoFi, LOOP_FRAMES } from "./lluvia/LluviaLoFi";
 import { DURACION_JETFLORIDA_S, JetFlorida } from "./jetflorida/JetFlorida";
 import {
   Antitranspirante,
@@ -550,6 +551,14 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1080}
         height={1920}
+      />
+      <Composition
+        id="LluviaLoFi"
+        component={LluviaLoFi}
+        durationInFrames={LOOP_FRAMES}
+        fps={30}
+        width={1920}
+        height={1080}
       />
       <Composition
         id="InsertoVioleta"
