@@ -52,6 +52,7 @@ import { BoliVideo, DURACION_BOLI_S } from "./boli/BoliVideo";
 import { DURACION_SUPERP_S, SuperpVideo } from "./superp/SuperpVideo";
 import { DURACION_GOMA_S, GomaVideo } from "./goma/GomaVideo";
 import { CintaVideo, DURACION_CINTA_S } from "./cinta/CintaVideo";
+import { DURACION_PISA_S, PisaVideo } from "./pisa/PisaVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -476,6 +477,14 @@ export const RemotionRoot: React.FC = () => {
         id="CintaAdhesiva"
         component={CintaVideo}
         durationInFrames={Math.round(DURACION_CINTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TorrePisa"
+        component={PisaVideo}
+        durationInFrames={Math.round(DURACION_PISA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
