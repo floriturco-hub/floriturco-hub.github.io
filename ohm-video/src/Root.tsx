@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { ComidaTibia, DURACION_NEVERA_S } from "./nevera/ComidaTibia";
 import {
   DURACION_LLUVIACEREBRO_S,
   LluviaCerebro,
@@ -591,6 +592,14 @@ export const RemotionRoot: React.FC = () => {
         id="LluviaCerebro"
         component={LluviaCerebro}
         durationInFrames={Math.round(DURACION_LLUVIACEREBRO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ComidaTibia"
+        component={ComidaTibia}
+        durationInFrames={Math.round(DURACION_NEVERA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
