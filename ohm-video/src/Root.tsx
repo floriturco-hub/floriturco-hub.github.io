@@ -55,6 +55,7 @@ import {
 } from "./astronautas/MusculosEspacio";
 import { DURACION_RADIOLOFI_S, RadioLofi } from "./radiolofi/RadioLofi";
 import { ComposicionesLoFi } from "./lofi/LoFi";
+import { ComposicionesLoFi60 } from "./lofi60/LoFi60";
 import { LluviaLoFi, LOOP_FRAMES } from "./lluvia/LluviaLoFi";
 import { DURACION_JETFLORIDA_S, JetFlorida } from "./jetflorida/JetFlorida";
 import {
@@ -573,6 +574,7 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
       />
       <ComposicionesLoFi />
+      <ComposicionesLoFi60 />
       <Composition
         id="RadioLofi"
         component={RadioLofi}

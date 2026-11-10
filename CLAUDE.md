@@ -64,6 +64,17 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 - Audio: música de ElevenLabs (`/v1/music`, `music_v1`, ~130 s) + ambiente en bucle (`/v1/sound-generation` con `loop: true`). La duración del bucle es un número entero de compases (tempo con librosa) con fundido cruzado de 2 compases; volumen −18 LUFS.
 - No se suben a la carpeta FrecuenciaCero de Drive: el escenario de publicación los tomaría como Short. Si el usuario los quiere en Drive, van en una carpeta aparte.
 
+### Lo-fi a 60 fps (`src/lofi60/`, 2026-11-10)
+
+- Cuatro bucles nuevos, más ricos que los de `src/lofi/`: `dormir-lluvia-ventana`, `dormir-cabana-nieve`, `estudio-escritorio-noche` y `estudio-tren-atardecer`. En `ohm-video/lofi/` están el MP4 y el TXT (`TITULO:` / `DESCRIP:`) de cada uno.
+- 2560×1440 a 60 fps. Las escenas se dibujan en un lienzo de 1920×1080 y `LoFi60.tsx` las amplía (vectorial); para 4K se renderiza con `--scale=1.5`.
+- `Kit.tsx` trae lo común: `useBucle` (fase 0..1), `ruido`, `bulto` y `avance` (movimiento periódico), `golpe` y `vaiven` (ritmo). Todo depende de `fase`. Lo que va a compás usa `b = fase * PULSOS`: el bucle de audio empieza en un tiempo fuerte, así que el cabeceo, el altavoz, el ecualizador y los postes del tren caen con la música.
+- Rendimiento: a 1440p o 4K cada capa a pantalla completa cuesta aunque no cambie. Pocas capas, las fijas con `React.memo` y `<Capa fija>`, y sin filtros de desenfoque en las capas vivas. Dos renders en paralelo aprovechan mejor 4 núcleos que uno solo.
+- Audio: `scripts/lofi60/bucle.py` monta los bucles desde los originales guardados en `lofi/audio/` (pistas de 170 s y ambientes de 30 s). Las pistas se generaron por la API REST (`POST /v1/music`, `music_v2_5`, `force_instrumental`, `output_format=pcm_48000`; unos 2.125 créditos cada una) y salen clavadas al BPM pedido desde t=0, así que se cortan por compases exactos. Dormir a −18 LUFS, estudio a −16 LUFS. Los prompts están en `scripts/lofi60/prompts.json`.
+- Render y unión de audio: `scripts/lofi60/render.sh <IdComposicion> <nombre> <audio.wav>`.
+- Comprobar el bucle: la diferencia media entre el último fotograma y el primero debe ser igual a la de dos fotogramas seguidos cualesquiera (en las escenas a compás, igual a la de cualquier inicio de compás).
+- ElevenLabs: el conector no tenía saldo para música (2026-11-10). La clave quedó guardada como secreto de red del entorno «Predeterminado» para `api.elevenlabs.io`, así que `curl` a la API funciona sin escribirla; tras estos cuatro videos le quedaban 31.500 créditos.
+
 ## Prohibido en Make
 
 - No ejecutes «FrecuenciaCero» si el usuario no lo pidió, ni crees escenarios nuevos (el plan gratuito permite 2 y ya están los dos).

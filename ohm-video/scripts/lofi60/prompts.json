@@ -1,0 +1,34 @@
+{
+ "musica (POST /v1/music, output_format=pcm_48000)": {
+  "sleep-lluvia": {
+   "prompt": "Slow, dreamy lo-fi sleep instrumental at 62 BPM. Soft felt piano plays a simple, tender, memorable lullaby motif over lush jazzy major-seventh and minor-ninth chords, with a deep warm sub bass, airy pad swells and a very gentle brushed lo-fi beat (soft kick, quiet rim click). Light vinyl crackle and tape hiss, low-pass filtered and mellow. Steady tempo and the same calm energy from the first bar to the last: no intro build-up, no breakdowns, no drops, no fade-out, no vocals.",
+   "music_length_ms": 170000,
+   "model_id": "music_v2_5",
+   "force_instrumental": true
+  },
+  "sleep-nieve": {
+   "prompt": "Cozy ambient lo-fi lullaby at 66 BPM. Warm Rhodes electric piano with gentle tape wobble and soft nylon guitar arpeggios carry a nostalgic, hummable melody that keeps returning, over slow jazzy seventh chords, a deep soft bass and glowing analog pads. Very sparse, muffled lo-fi drums (soft kick, light shaker), subtle vinyl crackle, everything low-pass filtered and intimate like a winter night by the fire. Steady tempo and constant gentle energy throughout: no intro build-up, no breakdowns, no drops, no fade-out, no vocals.",
+   "music_length_ms": 170000,
+   "model_id": "music_v2_5",
+   "force_instrumental": true
+  },
+  "study-escritorio": {
+   "prompt": "Classic lo-fi hip hop study beat at 84 BPM. Jazzy Rhodes electric piano chords (maj7, min9) with a catchy, laid-back melodic hook that repeats, answered by mellow jazz guitar licks. Swung boom-bap drums with a dusty kick, soft crisp snare and shuffled hi-hats, a deep round sub bass with sidechain pump, warm vinyl crackle and tape saturation. Head-nodding, focused and steady with the full groove from the first bar to the last: no intro build-up, no breakdowns, no drops, no fade-out, no vocals.",
+   "music_length_ms": 170000,
+   "model_id": "music_v2_5",
+   "force_instrumental": true
+  },
+  "focus-tren": {
+   "prompt": "Chillhop lo-fi deep focus instrumental at 90 BPM. A smooth clean electric guitar riff and warm Wurlitzer chords over a tight, laid-back boom-bap groove: punchy soft kick, rimshot snare, steady shuffled hats and a mellow walking bass line, with a subtle analog synth lead as a recurring hook. Tape warmth and light vinyl crackle, optimistic sunset mood with flowing, steady momentum. Full groove and consistent energy from the first bar to the last: no intro build-up, no breakdowns, no drops, no fade-out, no vocals.",
+   "music_length_ms": 170000,
+   "model_id": "music_v2_5",
+   "force_instrumental": true
+  }
+ },
+ "ambientes (eleven_text_to_sound_v2, 30 s, loop, prompt_influence 0.5)": {
+  "lluvia": "Steady gentle rain falling on a window and a rooftop at night, soft and continuous, heard from inside a quiet bedroom. Even intensity, no thunder, no wind gusts, no voices, no music.",
+  "chimenea": "Cozy fireplace crackling softly with gentle wood pops, warm and close, continuous and even, with a very faint soft winter wind outside. No voices, no music, no loud bangs.",
+  "ciudad": "Quiet night city ambience heard from inside a room through a closed window: a very soft, distant, even traffic hum and faint room tone. Calm and continuous, no horns, no sirens, no voices, no music.",
+  "tren": "Inside a moving train carriage: a steady soft low rumble with a gentle, regular clickety-clack of the rails, smooth and continuous at constant speed. No voices, no announcements, no horn, no brakes, no music."
+ }
+}
