@@ -26,15 +26,21 @@ print(f"{os.path.basename(mp4)}: {v['codec_name']} {v['width']}x{v['height']} a 
       f"{float(info['format']['duration']):.4f} s, {int(info['format']['size'])/1e6:.1f} MB, "
       f"{int(info['format']['bit_rate'])/1e6:.2f} Mb/s; audio {a['codec_name']} {a['sample_rate']} Hz {int(a.get('bit_rate', 0))/1000:.0f} kb/s")
 
-# empalme de imagen: último -> primero frente a dos fotogramas seguidos
-def frame(k, nombre):
-    out = os.path.join(tmp, nombre)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", mp4, "-vf", f"select=eq(n\\,{k}),scale=1280:-1", "-frames:v", "1", out], check=True)
+# empalme de imagen: último -> primero frente a un fotograma clave interno.
+# El primer fotograma siempre es clave, así que la referencia justa es otro
+# fotograma clave del propio video (ahí el códec refresca la imagen igual).
+def frame(k):
+    out = os.path.join(tmp, f"{k}.png")
+    t = max(0.0, (k - 0.25) / fps)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.5f}", "-i", mp4, "-frames:v", "1", out], check=True)
     return np.asarray(Image.open(out).convert("RGB")).astype(np.int16)
 
-f0, f1, fu, fp = frame(0, "0.png"), frame(1, "1.png"), frame(n - 1, "u.png"), frame(n - 2, "p.png")
-d = lambda x, y: float(np.abs(x - y).mean())
-print(f"  imagen: penúltimo->último {d(fp, fu):.3f} | último->primero (empalme) {d(fu, f0):.3f} | primero->segundo {d(f0, f1):.3f}")
+
+d = lambda x, y: float(np.abs(frame(x) - frame(y)).mean())
+claves = run("ffprobe", "-v", "error", "-select_streams", "v", "-skip_frame", "nokey", "-show_entries", "frame=pts_time", "-of", "csv=p=0", mp4).split()
+claves = [round(float(t.strip(",")) * fps) for t in claves if t.strip(",")]
+kc = claves[len(claves) // 2]
+print(f"  imagen: dos fotogramas seguidos {d(kc + 40, kc + 41):.3f} | fotograma clave interno ({kc}) {d(kc - 1, kc):.3f} | último->primero (empalme) {d(n - 1, 0):.3f}")
 
 # audio: duración exacta y continuidad en el empalme
 pcm = os.path.join(tmp, "a.wav")
@@ -43,7 +49,7 @@ import soundfile as sf, pyloudnorm as pyln
 y, sr = sf.read(pcm, dtype="float64")
 esperado = n * sr // int(round(fps))
 print(f"  audio: {len(y)} muestras (esperadas {esperado}, diferencia {len(y) - esperado}), {pyln.Meter(sr).integrated_loudness(y):.2f} LUFS, pico {20*np.log10(np.abs(y).max()):.2f} dBFS")
-m = y.mean(axis=1)
+m = y.mean(axis=1)[:esperado]  # sin el relleno del último paquete AAC
 w = int(0.02 * sr)
 salto = abs(m[0] - m[-1])
 tip = np.percentile(np.abs(np.diff(m)), 99)
