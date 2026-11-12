@@ -53,6 +53,7 @@ import { DURACION_SUPERP_S, SuperpVideo } from "./superp/SuperpVideo";
 import { DURACION_GOMA_S, GomaVideo } from "./goma/GomaVideo";
 import { CintaVideo, DURACION_CINTA_S } from "./cinta/CintaVideo";
 import { DURACION_PISA_S, PisaVideo } from "./pisa/PisaVideo";
+import { DetectorVideo, DURACION_DETECTOR_S } from "./detector/DetectorVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -485,6 +486,14 @@ export const RemotionRoot: React.FC = () => {
         id="TorrePisa"
         component={PisaVideo}
         durationInFrames={Math.round(DURACION_PISA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DetectorMentiras"
+        component={DetectorVideo}
+        durationInFrames={Math.round(DURACION_DETECTOR_S * 30)}
         fps={30}
         width={1080}
         height={1920}
