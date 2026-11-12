@@ -1,0 +1,8 @@
+Los electrones de tus cables avanzan más despacio que un caracol. Entonces, ¿por qué la luz se enciende en cuanto pulsas el interruptor?
+Dentro del cable, cada electrón avanza una fracción de milímetro por segundo. Para cruzar tres metros de cable tardaría horas.
+El truco es que el cable ya está lleno de electrones. No tienen que viajar desde el interruptor: ya están dentro de la bombilla.
+Al pulsar, lo que viaja es el empujón: el campo eléctrico. Recorre el cable a casi la velocidad de la luz, y pone en marcha a todos los electrones a la vez, también a los de la bombilla.
+Es como una manguera llena de agua: abres el grifo y sale agua al instante, pero no es la misma que acaba de entrar.
+Y en casa es aún más raro. Con corriente alterna, los electrones solo se balancean adelante y atrás, cincuenta o sesenta veces por segundo. Nunca llegan a ninguna parte.
+La energía no la llevan ellos: viaja por el campo, alrededor del cable.
+No viajan los electrones. Viaja el empujón.
