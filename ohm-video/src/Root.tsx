@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { TicketTermico, DURACION_TICKET_S } from "./ticket/TicketTermico";
 import { CajeroBilletes, DURACION_CAJERO_S } from "./cajero/CajeroBilletes";
 import { PerroRastreador, DURACION_PERRO_S } from "./perro/PerroRastreador";
 import { CarbonActivado, DURACION_CARBON_S } from "./carbon/CarbonActivado";
@@ -663,6 +664,14 @@ export const RemotionRoot: React.FC = () => {
         id="CajeroBilletes"
         component={CajeroBilletes}
         durationInFrames={Math.round(DURACION_CAJERO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TicketTermico"
+        component={TicketTermico}
+        durationInFrames={Math.round(DURACION_TICKET_S * 30)}
         fps={30}
         width={1080}
         height={1920}
