@@ -1,0 +1,7 @@
+¡La puerta borra al huésped anterior!
+Y el secreto no está en la cerradura… está en tu tarjeta.
+En recepción, la máquina graba en tu tarjeta tres datos: el número de la habitación, la fecha y hora de salida, y un número de orden.
+La cerradura funciona con pilas, tiene su propio reloj y recuerda el último número que aceptó.
+Cuando acercas tu tarjeta nueva, ve un número mayor que el anterior: te abre… y desde ese momento rechaza cualquier tarjeta con un número más viejo.
+Y si nadie llega, la tarjeta del huésped anterior caduca sola a la hora de salida.
+Sin internet ni cables: el mensaje viaja… en tu tarjeta.
