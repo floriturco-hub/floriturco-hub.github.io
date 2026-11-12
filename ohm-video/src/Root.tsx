@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { ChileAgua, DURACION_CHILE_S } from "./chile/ChileAgua";
 import { CafeSueno, DURACION_CAFE_S } from "./cafe/CafeSueno";
 import { TicketTermico, DURACION_TICKET_S } from "./ticket/TicketTermico";
 import { CajeroBilletes, DURACION_CAJERO_S } from "./cajero/CajeroBilletes";
@@ -681,6 +682,14 @@ export const RemotionRoot: React.FC = () => {
         id="CafeSueno"
         component={CafeSueno}
         durationInFrames={Math.round(DURACION_CAFE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ChileAgua"
+        component={ChileAgua}
+        durationInFrames={Math.round(DURACION_CHILE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
