@@ -1,0 +1,6 @@
+¡Tu peso dobla el metal!
+Y al final verás cuánto se dobla de verdad.
+Dentro de la báscula hay unas piezas de metal llamadas celdas de carga. Al subirte, se doblan un poquito, como un trampolín.
+Pegado al metal va un hilo finísimo en zigzag: una galga. Cuando el metal se dobla, la galga se estira, se vuelve más larga y más delgada… y deja pasar la electricidad un poco peor.
+Ese cambio es diminuto, así que un circuito llamado puente de Wheatstone lo detecta, y un chip lo convierte en kilos.
+¿Y cuánto se dobló? Apenas una fracción de milímetro: invisible para ti… pero no para tu peso.

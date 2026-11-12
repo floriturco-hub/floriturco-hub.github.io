@@ -23,9 +23,11 @@ export const Subtitulos: React.FC<{ readonly palabras: readonly PalabraWh[]; rea
   }
   const g0 = i - (i % 3);
   const grupo = palabras.slice(g0, g0 + 3);
+  // La activa crece un 12 %: el hueco compensa la palabra más larga del grupo para que no se peguen
+  const hueco = 30 + Math.max(...grupo.map((p) => p.w.trim().length)) * 2.4;
   return (
     <AbsoluteFill style={{ alignItems: "center", top: 230 }}>
-      <div style={{ fontFamily: mono, fontWeight: 700, fontSize: 64, width: 960, lineHeight: 1.15, display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: 30 }}>
+      <div style={{ fontFamily: mono, fontWeight: 700, fontSize: 64, width: 960, lineHeight: 1.15, display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: hueco }}>
         {grupo.map((p, k) => {
           const activa = g0 + k === i;
           return (
