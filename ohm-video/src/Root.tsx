@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { DURACION_LUMINOL_S, LuminolSangre } from "./luminol/LuminolSangre";
 import { ComoImprime, DURACION_IMPRESORA_S } from "./impresora/ComoImprime";
 import { ComidaTibia, DURACION_NEVERA_S } from "./nevera/ComidaTibia";
 import {
@@ -609,6 +610,14 @@ export const RemotionRoot: React.FC = () => {
         id="ComoImprime"
         component={ComoImprime}
         durationInFrames={Math.round(DURACION_IMPRESORA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LuminolSangre"
+        component={LuminolSangre}
+        durationInFrames={Math.round(DURACION_LUMINOL_S * 30)}
         fps={30}
         width={1080}
         height={1920}

@@ -167,7 +167,7 @@ const Subtitulos: React.FC<{
                 color: activa ? C.yellow : C.white,
                 textShadow: "0 4px 0 #000, 0 0 18px #000",
                 display: "inline-block",
-                marginRight: 18,
+                margin: "0 22px",
                 transform: `scale(${activa ? 1.12 : 1})`,
               }}
             >
