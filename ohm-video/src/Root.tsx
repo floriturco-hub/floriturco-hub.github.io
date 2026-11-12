@@ -57,6 +57,7 @@ import { DetectorVideo, DURACION_DETECTOR_S } from "./detector/DetectorVideo";
 import { DURACION_SERIE_S, SerieVideo } from "./serie/SerieVideo";
 import { DURACION_BASCULA_S, BasculaVideo } from "./bascula/BasculaVideo";
 import { DURACION_CERRADURA_S, CerraduraVideo } from "./cerradura/CerraduraVideo";
+import { DURACION_ALGODON_S, AlgodonVideo } from "./algodon/AlgodonVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -521,6 +522,14 @@ export const RemotionRoot: React.FC = () => {
         id="CerraduraHotel"
         component={CerraduraVideo}
         durationInFrames={Math.round(DURACION_CERRADURA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AlgodonAzucar"
+        component={AlgodonVideo}
+        durationInFrames={Math.round(DURACION_ALGODON_S * 30)}
         fps={30}
         width={1080}
         height={1920}
