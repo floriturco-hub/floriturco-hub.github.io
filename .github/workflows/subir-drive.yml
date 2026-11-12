@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          filter: blob:none  # historial sin el contenido de los MP4 viejos: mucho más rápido
       - name: Elegir videos
         id: lista
         run: |
