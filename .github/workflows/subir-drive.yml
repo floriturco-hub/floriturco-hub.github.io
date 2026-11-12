@@ -1,13 +1,9 @@
-# Sube a Google Drive (FrecuenciaCero/<nombre>/) cada MP4 de Short nuevo o cambiado
-# en ohm-video/*.mp4, junto con su ohm-video/drive/<nombre>.txt. Gratis: sustituye a Make.
+# Sube a Google Drive (FrecuenciaCero/<nombre>/) los MP4 indicados. Solo manual (Run workflow):
+# desde el 2026-11-12 el usuario sube los MP4 a mano y Claude solo sube el TXT.
 # Secretos necesarios: GDRIVE_CLIENT_ID, GDRIVE_CLIENT_SECRET, GDRIVE_REFRESH_TOKEN.
 name: Subir videos a Drive
 
 on:
-  push:
-    paths:
-      - "ohm-video/*.mp4"
-      - "ohm-video/drive/*.txt"
   workflow_dispatch:
     inputs:
       nombres:

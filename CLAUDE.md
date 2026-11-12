@@ -19,12 +19,10 @@ Canal de Shorts de ciencia (TikTok, YouTube Shorts, Reels). Proyecto Remotion en
    DESCRIP:
    <descripción aprobada, sin asteriscos, con hashtags>
    ```
-3. **Sube el MP4 con la GitHub Action «Subir videos a Drive»** (`.github/workflows/subir-drive.yml` + `scripts/subir_drive.py`). Make ya no se usa para subir (se agotó el plan gratuito).
-   - Escribe también el TXT en `ohm-video/drive/<nombre>.txt` (mismo formato). Haz commit de `ohm-video/<nombre>.mp4` y `ohm-video/drive/<nombre>.txt` y push: la Action crea `FrecuenciaCero/<nombre>/` y sube los dos (si ya existían, los reemplaza). Con eso el paso 2 del conector es opcional.
-   - Necesita los secretos del repositorio `GDRIVE_CLIENT_ID`, `GDRIVE_CLIENT_SECRET` y `GDRIVE_REFRESH_TOKEN` (OAuth del usuario; una cuenta de servicio no sirve porque no tiene cuota en «Mi unidad»). Si faltan, la Action termina con un aviso y no sube nada.
-   - Para subir a mano: pestaña Actions → «Subir videos a Drive» → Run workflow → nombres separados por espacios.
-   - Comprueba en Drive (busca por `title`) que el MP4 quedó en la subcarpeta. Si la Action falló, mira su registro en la pestaña Actions de GitHub.
-   - Solo los Shorts verticales en `ohm-video/*.mp4`; los lo-fi de `ohm-video/lofi/` no se suben.
+3. **El MP4 lo sube el usuario a mano** a esa subcarpeta. Tú solo creas la subcarpeta y subes el TXT (pasos 1 y 2); no intentes subir el MP4 (ni con la GitHub Action ni con Make).
+   - Sigue haciendo commit y push de `ohm-video/<nombre>.mp4` y envíale el MP4 al usuario.
+   - La Action «Subir videos a Drive» (`.github/workflows/subir-drive.yml`) queda solo para lanzarla a mano desde la pestaña Actions, si algún día el usuario lo pide; ya no se ejecuta al hacer push.
+   - Solo los Shorts verticales; los lo-fi de `ohm-video/lofi/` no van a FrecuenciaCero.
 
 ## Publicar con Make (solo cuando el usuario lo pida)
 
@@ -52,7 +50,7 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 
 **Estado actual (2026-11-03):**
 - `dedos-arrugados` ya está en Publicados.
-- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil`, `espejo-espia`, `mimosa-pudica`, `carpintero-g`, `lata-autocalentable`, `gripe-sabor`, `peta-zetas`, `cinturon-bloqueo`, `arenas-movedizas`, `alcoholimetro`, `silenciador`, `asiento-eyectable`, `oro-invisible`, `memoria-inmune`, `oidos-tapados`, `detector-humo`, `moneda-falsa`, `candado-combinacion`, `plumon-billete`, `rayos-maleta`, `lentes-3d`, `antitranspirante`, `pluma-borrable`, `encendedor-piezo`, `presion-llanta`, `tronar-dedos`, `pilas-rebote`, `jet-florida`, `radio-lofi`, `musculos-espacio`, `lluvia-cerebro`, `comida-tibia`, `como-imprime`, `luminol-sangre` y `bala-firma` siguen en FrecuenciaCero sin publicar (a `luminol-sangre` y `bala-firma` les falta el MP4 hasta que la Action tenga sus secretos). `bala-firma` (creada el 2026-11-12) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
+- `cobre-verde`, `bunuelos-giran`, `tira-bimetalica`, `tarjeta-contactless`, `amnesia-infantil`, `espejo-espia`, `mimosa-pudica`, `carpintero-g`, `lata-autocalentable`, `gripe-sabor`, `peta-zetas`, `cinturon-bloqueo`, `arenas-movedizas`, `alcoholimetro`, `silenciador`, `asiento-eyectable`, `oro-invisible`, `memoria-inmune`, `oidos-tapados`, `detector-humo`, `moneda-falsa`, `candado-combinacion`, `plumon-billete`, `rayos-maleta`, `lentes-3d`, `antitranspirante`, `pluma-borrable`, `encendedor-piezo`, `presion-llanta`, `tronar-dedos`, `pilas-rebote`, `jet-florida`, `radio-lofi`, `musculos-espacio`, `lluvia-cerebro`, `comida-tibia`, `como-imprime`, `luminol-sangre` y `bala-firma` siguen en FrecuenciaCero sin publicar (el MP4 de `luminol-sangre` y `bala-firma` lo sube el usuario a mano). `bala-firma` (creada el 2026-11-12) es ahora la más reciente: es la que tomaría el escenario si se ejecuta sin `folder_id`.
 - Plantilla común para videos nuevos: `src/components/Short.tsx` (`Short`, `Lienzo`, `Texto`, `aparece`…); cada video solo define `Escenas.tsx` (con `T`) y una composición corta. Ejemplos: `src/oro`, `src/moneda`.
 - API REST de ElevenLabs (clave del usuario): máximo 3 peticiones a la vez; si no, devuelve 429.
 - Claves de ElevenLabs del usuario (plan Starter, 40.000 créditos cada una), en este orden: la actual termina en `…1be951`; cuando se agote, usar la que termina en `…013744` y después la que termina en `…a77513`. **Nunca escribas los valores en el repo ni en commits**: si no están en la conversación, pídeselos al usuario. Antes de generar, mira el saldo con `GET https://api.elevenlabs.io/v1/user/subscription` (cabecera `xi-api-key`; `character_limit - character_count`). Un Short de narración gasta unos 900 créditos; una pista de música de 130 s, unos 1.700.
