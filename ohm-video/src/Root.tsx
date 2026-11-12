@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { CilantroJabon, DURACION_CILANTRO_S } from "./cilantro/CilantroJabon";
 import { ApendiceBunker, DURACION_APENDICE_S } from "./apendice/ApendiceBunker";
 import { ChileAgua, DURACION_CHILE_S } from "./chile/ChileAgua";
 import { CafeSueno, DURACION_CAFE_S } from "./cafe/CafeSueno";
@@ -699,6 +700,14 @@ export const RemotionRoot: React.FC = () => {
         id="ApendiceBunker"
         component={ApendiceBunker}
         durationInFrames={Math.round(DURACION_APENDICE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CilantroJabon"
+        component={CilantroJabon}
+        durationInFrames={Math.round(DURACION_CILANTRO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
