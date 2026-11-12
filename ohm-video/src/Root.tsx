@@ -67,6 +67,7 @@ import { DURACION_FERRO_S, FerroVideo } from "./ferro/FerroVideo";
 import { DURACION_HIDRO_S, HidroVideo } from "./hidro/HidroVideo";
 import { DURACION_SOLDAR_S, SoldarVideo } from "./soldar/SoldarVideo";
 import { DURACION_GATO_S, GatoVideo } from "./gato/GatoVideo";
+import { DURACION_SANDIA_S, SandiaVideo } from "./sandia/SandiaVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -611,6 +612,14 @@ export const RemotionRoot: React.FC = () => {
         id="GatoHidraulico"
         component={GatoVideo}
         durationInFrames={Math.round(DURACION_GATO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SandiaSinSemillas"
+        component={SandiaVideo}
+        durationInFrames={Math.round(DURACION_SANDIA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
