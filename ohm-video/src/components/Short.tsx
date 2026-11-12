@@ -118,6 +118,8 @@ export type EtiquetaDef = readonly [string, number, number, string, number?];
 
 // cola = segundos de logo al final: 6,5 en los vídeos antiguos; 4 en los nuevos (retención)
 export const COLA_CORTA = 4;
+// Sin logo (desde el 2026-11-12): el video acaba al terminar la narración y empalma con el inicio
+export const SIN_LOGO = 0;
 export const duracionShort = (fin: number, cola = 6.5) => fin + 0.5 + cola;
 
 // Palabras de Whisper (guion/<tema>/narracion.json -> segments[].words[])
@@ -225,6 +227,7 @@ export const Short: React.FC<{
   const { fps } = useVideoConfig();
   const inicio = fin + 0.5;
   const dur = duracionShort(fin, cola);
+  const bucle = cola === SIN_LOGO;
   const D = inicio - 61.5;
   return (
     <AbsoluteFill style={{ backgroundColor: C.bg }}>
@@ -235,13 +238,17 @@ export const Short: React.FC<{
           nombre={e.nombre}
           desde={e.desde}
           hasta={k === escenas.length - 1 ? inicio : e.hasta}
+          entrada={!(bucle && k === 0)}
+          salida={!(bucle && k === escenas.length - 1)}
         >
           {e.render}
         </Escena>
       ))}
-      <Escena nombre="Logo" desde={inicio} hasta={dur}>
-        {(t0) => <Logo t0={t0} inicio={inicio} />}
-      </Escena>
+      {bucle ? null : (
+        <Escena nombre="Logo" desde={inicio} hasta={dur}>
+          {(t0) => <Logo t0={t0} inicio={inicio} />}
+        </Escena>
+      )}
 
       {palabras ? <Subtitulos palabras={palabras} fin={fin} /> : null}
       {cola < 6.5 ? <Progreso fin={fin} /> : null}
@@ -263,8 +270,10 @@ export const Short: React.FC<{
         volume={(f) =>
           interpolate(
             f / fps,
-            [0, 1.5, inicio - 0.3, inicio + 0.7, dur - 1.5, dur],
-            [0, 0.1, 0.1, 0.225, 0.225, 0],
+            bucle
+              ? [0, dur]
+              : [0, 1.5, inicio - 0.3, inicio + 0.7, dur - 1.5, dur],
+            bucle ? [0.1, 0.1] : [0, 0.1, 0.1, 0.225, 0.225, 0],
             clamp,
           )
         }
@@ -279,20 +288,24 @@ export const Short: React.FC<{
           <Audio src={staticFile("audio/choque.wav")} volume={0.45} />
         </Sequence>
       ))}
-      <Sequence
-        name="SFX logo"
-        from={Math.round((62.35 + D) * fps)}
-        durationInFrames={Math.round(2.9 * fps)}
-      >
-        <Audio src={staticFile("audio/sfx_logo.wav")} volume={0.7} />
-      </Sequence>
-      <Sequence
-        name="Voz: Frecuencia Cero"
-        from={Math.round((63.75 + D) * fps)}
-        durationInFrames={Math.round(1.7 * fps)}
-      >
-        <Audio src={staticFile("audio/frecuencia_cero.wav")} />
-      </Sequence>
+      {bucle ? null : (
+        <>
+          <Sequence
+            name="SFX logo"
+            from={Math.round((62.35 + D) * fps)}
+            durationInFrames={Math.round(2.9 * fps)}
+          >
+            <Audio src={staticFile("audio/sfx_logo.wav")} volume={0.7} />
+          </Sequence>
+          <Sequence
+            name="Voz: Frecuencia Cero"
+            from={Math.round((63.75 + D) * fps)}
+            durationInFrames={Math.round(1.7 * fps)}
+          >
+            <Audio src={staticFile("audio/frecuencia_cero.wav")} />
+          </Sequence>
+        </>
+      )}
     </AbsoluteFill>
   );
 };

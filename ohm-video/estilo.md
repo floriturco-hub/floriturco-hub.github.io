@@ -114,5 +114,5 @@ El usuario pidió subir la retención: la gente no ve los videos completos. Regl
 - **Cambio visual cada 2-3 s** (zoom, corte, destello, elemento nuevo). Ningún plano quieto más de 3 s.
 - **Final que enlaza con el inicio**: la última frase debe poder empalmar con la primera para que el video se repita solo.
 - **Subtítulos palabra a palabra** (se deja atrás la regla de §9 «sin subtítulos»): `palabras={palabrasDe(narracion)}` en `<Short>`, con `import narracion from "../../guion/<tema>/narracion.json"`. Van en la franja superior (y 230-330): las escenas nuevas no ponen nada en esa franja.
-- **Logo corto**: `cola={COLA_CORTA}` (4 s en vez de 6,5) y `duracionShort(T.fin, COLA_CORTA)`. Con cola corta aparece además una barra de progreso amarilla arriba.
+- **Sin logo (corrección del usuario, 2026-11-12):** el video termina al acabar la narración y empalma con el inicio. Usa `cola={SIN_LOGO}` y `duracionShort(T.fin, SIN_LOGO)`: no hay logo ni voz «Frecuencia Cero», la primera escena entra sin fundido, la última sale sin fundido y la música va a volumen constante. Diseña la última escena para que se parezca a la primera (bucle visual) y que la última frase empalme con la primera. Aparece además la barra de progreso amarilla arriba. (`COLA_CORTA` queda solo para `luminol-sangre`.)
 - Los videos ya hechos no se re-renderizan.

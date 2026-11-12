@@ -6,7 +6,7 @@ Canal de Shorts de ciencia (TikTok, YouTube Shorts, Reels). Proyecto Remotion en
 
 **Voz:** ElevenLabs, voz Pablo, **siempre con el modelo `eleven_v4`** por su expresividad, también si hay que usar la API REST con la clave del usuario. No uses `eleven_v3` ni otro modelo sin preguntar. Detalles en `estilo.md`.
 
-**Retención:** guiones de 30-40 s, bucle abierto, subtítulos y logo corto; ver `estilo.md`, §10.
+**Retención:** guiones de 30-40 s, bucle abierto, subtítulos y **sin logo final** (`cola={SIN_LOGO}`: el video acaba y empalma con el inicio en bucle); ver `estilo.md`, §10.
 
 **Gancho:** la primera frase del guion es un golpe de 3-6 palabras que capte toda la atención en 2 s o menos (p. ej. «¡Te espían por tu espejo!»). Detalles en `estilo.md`, §9.
 
