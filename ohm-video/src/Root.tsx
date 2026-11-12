@@ -62,6 +62,7 @@ import { DURACION_HELIO_S, HelioVideo } from "./helio/HelioVideo";
 import { DURACION_AUTOTUNE_S, AutoTuneVideo } from "./autotune/AutoTuneVideo";
 import { DURACION_SOBRE_S, SobreVideo } from "./sobre/SobreVideo";
 import { DURACION_NITINOL_S, NitinolVideo } from "./nitinol/NitinolVideo";
+import { DURACION_ACHOO_S, AchooVideo } from "./achoo/AchooVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -566,6 +567,14 @@ export const RemotionRoot: React.FC = () => {
         id="Nitinol"
         component={NitinolVideo}
         durationInFrames={Math.round(DURACION_NITINOL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EstornudoSol"
+        component={AchooVideo}
+        durationInFrames={Math.round(DURACION_ACHOO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
