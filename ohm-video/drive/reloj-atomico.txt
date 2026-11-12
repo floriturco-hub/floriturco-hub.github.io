@@ -1,0 +1,15 @@
+TITULO: ¿Cómo funciona un reloj atómico que no se atrasa ni un segundo en 100 millones de años? ⚛️⏱️
+DESCRIP:
+Existen relojes que tardarían cien millones de años en atrasarse un solo segundo. ¿Qué cuentan para ser tan exactos? 🤔
+
+Todo reloj cuenta algo que se repite: un péndulo, o un cristal de cuarzo que vibra. Pero el péndulo se desgasta y el cuarzo cambia con el calor.
+
+Un reloj atómico cuenta algo que nunca cambia: los átomos de cesio. Su electrón solo salta de nivel con una microonda exacta, de 9.192.631.770 vibraciones por segundo (así se define el segundo). El reloj ajusta su microonda hasta que los átomos saltan al máximo y, si se desvía, lo corrige al instante.
+
+Y el GPS de tu teléfono depende de los relojes atómicos que viajan en cada satélite.
+
+⏱️ ¡Este reloj no se atrasa jamás!
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#RelojAtómico #Física #Átomos #GPS #Ciencia #Curiosidades #Frecuencia0

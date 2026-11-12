@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { RelojAtomico, DURACION_ATOMICO_S } from "./atomico/RelojAtomico";
 import { AnestesiaDentista, DURACION_ANESTESIA_S } from "./anestesia/AnestesiaDentista";
 import { CilantroJabon, DURACION_CILANTRO_S } from "./cilantro/CilantroJabon";
 import { ApendiceBunker, DURACION_APENDICE_S } from "./apendice/ApendiceBunker";
@@ -717,6 +718,14 @@ export const RemotionRoot: React.FC = () => {
         id="AnestesiaDentista"
         component={AnestesiaDentista}
         durationInFrames={Math.round(DURACION_ANESTESIA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RelojAtomico"
+        component={RelojAtomico}
+        durationInFrames={Math.round(DURACION_ATOMICO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
