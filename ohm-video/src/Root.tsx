@@ -54,6 +54,7 @@ import { DURACION_GOMA_S, GomaVideo } from "./goma/GomaVideo";
 import { CintaVideo, DURACION_CINTA_S } from "./cinta/CintaVideo";
 import { DURACION_PISA_S, PisaVideo } from "./pisa/PisaVideo";
 import { DetectorVideo, DURACION_DETECTOR_S } from "./detector/DetectorVideo";
+import { DURACION_SERIE_S, SerieVideo } from "./serie/SerieVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -494,6 +495,14 @@ export const RemotionRoot: React.FC = () => {
         id="DetectorMentiras"
         component={DetectorVideo}
         durationInFrames={Math.round(DURACION_DETECTOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="NumeroSerie"
+        component={SerieVideo}
+        durationInFrames={Math.round(DURACION_SERIE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
