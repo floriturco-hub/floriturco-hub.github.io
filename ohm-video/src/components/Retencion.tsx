@@ -1,7 +1,9 @@
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, mono } from "../theme";
 
-// Piezas de retención (estilo.md §10): subtítulos palabra a palabra arriba, barra de progreso y logo corto.
+// Piezas de retención (estilo.md §10): subtítulos palabra a palabra arriba y barra de progreso.
+// Desde el 2026-11-12 los videos nuevos van SIN logo final (terminan con la narración y empalman con el gancho);
+// COLA_CORTA solo la usa detector-mentiras.
 // Adaptado de components/Short.tsx de la otra rama al formato de guion/<tema>/narracion.json de esta: words[] = {w, s, e}.
 export const COLA_CORTA = 4;
 

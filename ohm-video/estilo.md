@@ -107,3 +107,15 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - **Antes de programar, siempre preguntar y esperar la aprobación del usuario** del título, la descripción y la fecha y hora de publicación. No se programa nada sin esa respuesta.
   - **Redes (aprobado el 2026-11-01):** SIEMPRE en las cuatro redes de la marca "Frecuencia Cero" en Metricool, en formato vertical corto: **YouTube Short**, **Facebook Reel**, **Instagram Reel** y **TikTok**. Zona horaria de la marca: America/Bogota. El vídeo se sube por URL pública del `.mp4` en la rama (raw.githubusercontent.com). YouTube con categoría Ciencia y tecnología, "no es para niños", público. Título igual en YouTube, Facebook y TikTok; la descripción va como texto del post.
   - **Descripciones más largas (aprobado el 2026-11-01):** la descripción se alarga respecto al ejemplo: arranque de 2–3 frases con preguntas; **4 a 6 párrafos** de explicación (mecanismo, dato clave en negrita, un ejemplo cotidiano y la regla práctica); remate con emoji; línea de canal; unos 7 hashtags. Sin pasar de unos 1.800 caracteres para que quepa en todas las redes.
+
+## 10. Retención (desde el 2026-11-12, para todos los videos nuevos)
+
+El usuario pidió subir la retención: la gente no ve los videos completos. Reglas:
+- **Duración 30-40 s de narración** (guion de 90-115 palabras). Nada de 55-60 s.
+- **Gancho (≤2 s) + bucle abierto** en la segunda frase: una promesa que se cumple al final («…y al final verás cómo…»).
+- **Cambio visual cada 2-3 s** (zoom, corte, destello, elemento nuevo). Ningún plano quieto más de 3 s.
+- **Final que enlaza con el inicio**: la última frase empalma con la primera para que el video se repita solo.
+- **Subtítulos palabra a palabra** arriba (franja y ≈ 230-330), la palabra activa en amarillo: `<Subtitulos>` de `src/components/Retencion.tsx`. Las escenas no ponen nada importante en esa franja.
+- **Barra de progreso amarilla** arriba: `<Progreso>` de `src/components/Retencion.tsx`.
+- **Sin logo final (desde el 2026-11-12, petición del usuario):** el video termina justo al acabar la narración y empalma con el gancho para el bucle. Nada de escena «Logo», ni SFX del logo, ni la voz «Frecuencia Cero», ni subida de música al final. Duración de la composición ≈ `T.fin + 0.3` (un respiro mínimo para que el corte no se note); la música se funde en los últimos ~0,5 s o queda a 0,1 hasta el final.
+- Los videos ya hechos no se re-renderizan (el de `detector-mentiras` conserva su logo de 4 s).
