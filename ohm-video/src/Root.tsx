@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { VenenoSangre, DURACION_VENENO_S } from "./veneno/VenenoSangre";
 import { PerlaOstra, DURACION_PERLA_S } from "./perla/PerlaOstra";
 import { RelojAtomico, DURACION_ATOMICO_S } from "./atomico/RelojAtomico";
 import { AnestesiaDentista, DURACION_ANESTESIA_S } from "./anestesia/AnestesiaDentista";
@@ -735,6 +736,14 @@ export const RemotionRoot: React.FC = () => {
         id="PerlaOstra"
         component={PerlaOstra}
         durationInFrames={Math.round(DURACION_PERLA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="VenenoSangre"
+        component={VenenoSangre}
+        durationInFrames={Math.round(DURACION_VENENO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
