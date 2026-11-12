@@ -6,6 +6,8 @@ Canal de Shorts de ciencia (TikTok, YouTube Shorts, Reels). Proyecto Remotion en
 
 **Voz:** ElevenLabs, voz Pablo, **siempre con el modelo `eleven_v4`** por su expresividad, también si hay que usar la API REST con la clave del usuario. No uses `eleven_v3` ni otro modelo sin preguntar. Detalles en `estilo.md`.
 
+**Retención:** guiones de 30-40 s, bucle abierto, subtítulos y logo corto; ver `estilo.md`, §10.
+
 **Gancho:** la primera frase del guion es un golpe de 3-6 palabras que capte toda la atención en 2 s o menos (p. ej. «¡Te espían por tu espejo!»). Detalles en `estilo.md`, §9.
 
 ## Entrega en Google Drive (obligatorio al terminar cada video)
@@ -17,12 +19,12 @@ Canal de Shorts de ciencia (TikTok, YouTube Shorts, Reels). Proyecto Remotion en
    DESCRIP:
    <descripción aprobada, sin asteriscos, con hashtags>
    ```
-3. Sube `<nombre>.mp4` con **Make**, solo con el escenario **«Subir video a Drive (Claude)»** (id `6866522`, equipo `3341215`). El conector de Drive no admite archivos tan grandes.
-   - Primero haz commit y push del MP4 a la rama y comprueba que la URL raw responde 200: `https://raw.githubusercontent.com/floriturco-hub/floriturco-hub.github.io/<rama>/ohm-video/<nombre>.mp4`
-   - `scenarios_activate` → `scenarios_run` con `responsive: true` y `data: {"video_url": "<URL raw>", "folder_id": "<id de la subcarpeta>", "filename": "<nombre>.mp4"}` → `scenarios_deactivate`.
-   - Si `scenarios_activate` dice «already running» pero `scenarios_run` responde «not activated», vuelve a activarlo y repite la ejecución (pasó el 2026-11-05).
-   - Cuesta unas 2 operaciones de Make; el plan gratuito trae 1.000 al mes.
-   - Comprueba en Drive que el MP4 quedó en la subcarpeta. La búsqueda por `parentId` tarda en reflejarlo; busca por `title`.
+3. **Sube el MP4 con la GitHub Action «Subir videos a Drive»** (`.github/workflows/subir-drive.yml` + `scripts/subir_drive.py`). Make ya no se usa para subir (se agotó el plan gratuito).
+   - Escribe también el TXT en `ohm-video/drive/<nombre>.txt` (mismo formato). Haz commit de `ohm-video/<nombre>.mp4` y `ohm-video/drive/<nombre>.txt` y push: la Action crea `FrecuenciaCero/<nombre>/` y sube los dos (si ya existían, los reemplaza). Con eso el paso 2 del conector es opcional.
+   - Necesita los secretos del repositorio `GDRIVE_CLIENT_ID`, `GDRIVE_CLIENT_SECRET` y `GDRIVE_REFRESH_TOKEN` (OAuth del usuario; una cuenta de servicio no sirve porque no tiene cuota en «Mi unidad»). Si faltan, la Action termina con un aviso y no sube nada.
+   - Para subir a mano: pestaña Actions → «Subir videos a Drive» → Run workflow → nombres separados por espacios.
+   - Comprueba en Drive (busca por `title`) que el MP4 quedó en la subcarpeta. Si la Action falló, mira su registro en la pestaña Actions de GitHub.
+   - Solo los Shorts verticales en `ohm-video/*.mp4`; los lo-fi de `ohm-video/lofi/` no se suben.
 
 ## Publicar con Make (solo cuando el usuario lo pida)
 

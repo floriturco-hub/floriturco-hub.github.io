@@ -1,0 +1,49 @@
+# Sube a Google Drive (FrecuenciaCero/<nombre>/) cada MP4 de Short nuevo o cambiado
+# en ohm-video/*.mp4, junto con su ohm-video/drive/<nombre>.txt. Gratis: sustituye a Make.
+# Secretos necesarios: GDRIVE_CLIENT_ID, GDRIVE_CLIENT_SECRET, GDRIVE_REFRESH_TOKEN.
+name: Subir videos a Drive
+
+on:
+  push:
+    paths:
+      - "ohm-video/*.mp4"
+      - "ohm-video/drive/*.txt"
+  workflow_dispatch:
+    inputs:
+      nombres:
+        description: "Nombres de los videos separados por espacios (p. ej. cobre-verde como-imprime)"
+        required: true
+
+jobs:
+  subir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Elegir videos
+        id: lista
+        run: |
+          if [ -n "${{ github.event.inputs.nombres }}" ]; then
+            echo "nombres=${{ github.event.inputs.nombres }}" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          ANTES="${{ github.event.before }}"
+          if [ -z "$ANTES" ] || [ "$ANTES" = "0000000000000000000000000000000000000000" ]; then ANTES="HEAD~1"; fi
+          N=$(git diff --name-only --diff-filter=AM "$ANTES" "${{ github.sha }}" -- 'ohm-video/*.mp4' 'ohm-video/drive/*.txt' \
+              | grep -E '^ohm-video/([^/]+\.mp4|drive/[^/]+\.txt)$' \
+              | sed -E 's#^ohm-video/(drive/)?##; s#\.(mp4|txt)$##' | sort -u | tr '\n' ' ')
+          echo "nombres=$N" >> "$GITHUB_OUTPUT"
+          echo "Videos: $N"
+      - name: Subir a Drive
+        if: steps.lista.outputs.nombres != ''
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$GDRIVE_REFRESH_TOKEN" ]; then
+            echo "::warning::Faltan los secretos GDRIVE_* del repositorio; no se sube nada."
+            exit 0
+          fi
+          python3 scripts/subir_drive.py ${{ steps.lista.outputs.nombres }}

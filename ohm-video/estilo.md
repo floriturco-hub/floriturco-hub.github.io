@@ -105,3 +105,14 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - Va en forma de exclamación o de afirmación tajante dirigida al espectador («tu», «te»). En pantalla, la etiqueta del gancho repite esa frase con letra grande desde el primer fotograma.
   - Aplica a los próximos videos; los ya hechos (hasta `espejo-espia` incluido) no se corrigen.
 
+
+## 10. Retención (desde el 2026-11-12, para todos los videos nuevos)
+
+El usuario pidió subir la retención: la gente no ve los videos completos. Reglas:
+- **Duración 30-40 s de narración** (guion de 90-115 palabras, voz ~185 ppm). Nada de 55-60 s.
+- **Gancho (≤2 s) + bucle abierto** en la segunda frase: una promesa que se cumple al final («…y el último dato es el que nadie sabe», «al final verás por qué…»).
+- **Cambio visual cada 2-3 s** (zoom, corte, destello, elemento nuevo). Ningún plano quieto más de 3 s.
+- **Final que enlaza con el inicio**: la última frase debe poder empalmar con la primera para que el video se repita solo.
+- **Subtítulos palabra a palabra** (se deja atrás la regla de §9 «sin subtítulos»): `palabras={palabrasDe(narracion)}` en `<Short>`, con `import narracion from "../../guion/<tema>/narracion.json"`. Van en la franja superior (y 230-330): las escenas nuevas no ponen nada en esa franja.
+- **Logo corto**: `cola={COLA_CORTA}` (4 s en vez de 6,5) y `duracionShort(T.fin, COLA_CORTA)`. Con cola corta aparece además una barra de progreso amarilla arriba.
+- Los videos ya hechos no se re-renderizan.
