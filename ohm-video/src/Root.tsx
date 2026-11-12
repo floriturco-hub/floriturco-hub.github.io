@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { CafeSueno, DURACION_CAFE_S } from "./cafe/CafeSueno";
 import { TicketTermico, DURACION_TICKET_S } from "./ticket/TicketTermico";
 import { CajeroBilletes, DURACION_CAJERO_S } from "./cajero/CajeroBilletes";
 import { PerroRastreador, DURACION_PERRO_S } from "./perro/PerroRastreador";
@@ -672,6 +673,14 @@ export const RemotionRoot: React.FC = () => {
         id="TicketTermico"
         component={TicketTermico}
         durationInFrames={Math.round(DURACION_TICKET_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CafeSueno"
+        component={CafeSueno}
+        durationInFrames={Math.round(DURACION_CAFE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
