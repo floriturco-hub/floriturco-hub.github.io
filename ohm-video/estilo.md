@@ -119,3 +119,9 @@ El usuario pidió subir la retención: la gente no ve los videos completos. Regl
 - **Barra de progreso amarilla** arriba: `<Progreso>` de `src/components/Retencion.tsx`.
 - **Sin logo final (desde el 2026-11-12, petición del usuario):** el video termina justo al acabar la narración y empalma con el gancho para el bucle. Nada de escena «Logo», ni SFX del logo, ni la voz «Frecuencia Cero», ni subida de música al final. Duración de la composición ≈ `T.fin + 0.3` (un respiro mínimo para que el corte no se note); la música se funde en los últimos ~0,5 s o queda a 0,1 hasta el final.
 - Los videos ya hechos no se re-renderizan (el de `detector-mentiras` conserva su logo de 4 s).
+
+## 11. Entrega en Drive (desde el 2026-11-12, petición del usuario)
+
+- **El MP4 lo sube el usuario a mano.** No intentar subirlo: ni con Make (pausado), ni con la GitHub Action (quitada de esta rama), ni con el conector.
+- Claude solo crea la subcarpeta `FrecuenciaCero/<nombre>` (si no existe) y sube `<nombre>.txt` con el conector de Google Drive (`create_file`, `contentMimeType: text/plain`, `disableConversionToGoogleType: true`), con el formato `TITULO:` / `DESCRIP:` de siempre.
+- El MP4 se sigue haciendo commit y push en `ohm-video/<nombre>.mp4` y se le envía al usuario.
