@@ -65,6 +65,7 @@ import { DURACION_NITINOL_S, NitinolVideo } from "./nitinol/NitinolVideo";
 import { DURACION_ACHOO_S, AchooVideo } from "./achoo/AchooVideo";
 import { DURACION_FERRO_S, FerroVideo } from "./ferro/FerroVideo";
 import { DURACION_HIDRO_S, HidroVideo } from "./hidro/HidroVideo";
+import { DURACION_SOLDAR_S, SoldarVideo } from "./soldar/SoldarVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -593,6 +594,14 @@ export const RemotionRoot: React.FC = () => {
         id="Superhidrofobico"
         component={HidroVideo}
         durationInFrames={Math.round(DURACION_HIDRO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SoldaduraSubmarina"
+        component={SoldarVideo}
+        durationInFrames={Math.round(DURACION_SOLDAR_S * 30)}
         fps={30}
         width={1080}
         height={1920}
