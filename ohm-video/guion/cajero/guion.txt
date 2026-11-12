@@ -1,0 +1,9 @@
+¡El cajero desconfía de cada billete!
+Y si dos salen pegados, lo descubre al instante. Al final verás qué hace con ellos.
+Dentro hay casetes con cientos de billetes, y un rodillo de goma los arrastra uno por uno.
+Cada billete pasa entre sensores que miden su grosor, al centésimo de milímetro, y una luz que lo atraviesa.
+Si salen dos pegados, el grosor se duplica y pasa menos luz.
+También mide su largo, para saber si va torcido.
+Ese billete dudoso no te lo entrega: lo desvía a una caja de rechazo y saca otro.
+Todo, a varios billetes por segundo.
+Porque el cajero desconfía de cada billete.
