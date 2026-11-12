@@ -66,6 +66,7 @@ import { DURACION_ACHOO_S, AchooVideo } from "./achoo/AchooVideo";
 import { DURACION_FERRO_S, FerroVideo } from "./ferro/FerroVideo";
 import { DURACION_HIDRO_S, HidroVideo } from "./hidro/HidroVideo";
 import { DURACION_SOLDAR_S, SoldarVideo } from "./soldar/SoldarVideo";
+import { DURACION_GATO_S, GatoVideo } from "./gato/GatoVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -602,6 +603,14 @@ export const RemotionRoot: React.FC = () => {
         id="SoldaduraSubmarina"
         component={SoldarVideo}
         durationInFrames={Math.round(DURACION_SOLDAR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GatoHidraulico"
+        component={GatoVideo}
+        durationInFrames={Math.round(DURACION_GATO_S * 30)}
         fps={30}
         width={1080}
         height={1920}

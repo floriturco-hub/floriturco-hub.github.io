@@ -1,0 +1,7 @@
+¡Una mano levanta diez toneladas!
+Y al final verás el precio de esta fuerza.
+El gato tiene dos pistones unidos por aceite: uno delgado, donde empujas tú, y uno grueso, que levanta el camión.
+El aceite casi no se comprime: la presión que haces en el pistón delgado llega igual a todo el líquido. Eso es el principio de Pascal.
+Presión es fuerza dividida entre área. Si el pistón grueso tiene cien veces más área, recibe cien veces más fuerza.
+Con la palanca, empujas como si cargaras veinte kilos, el pistón delgado recibe cien… y el grueso, diez toneladas.
+¿El precio? Para subir el camión un centímetro, tu pistón debe bajar cien. Y así…
