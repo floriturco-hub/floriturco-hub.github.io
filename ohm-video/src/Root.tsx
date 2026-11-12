@@ -61,6 +61,7 @@ import { DURACION_ALGODON_S, AlgodonVideo } from "./algodon/AlgodonVideo";
 import { DURACION_HELIO_S, HelioVideo } from "./helio/HelioVideo";
 import { DURACION_AUTOTUNE_S, AutoTuneVideo } from "./autotune/AutoTuneVideo";
 import { DURACION_SOBRE_S, SobreVideo } from "./sobre/SobreVideo";
+import { DURACION_NITINOL_S, NitinolVideo } from "./nitinol/NitinolVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -557,6 +558,14 @@ export const RemotionRoot: React.FC = () => {
         id="AguaSobreenfriada"
         component={SobreVideo}
         durationInFrames={Math.round(DURACION_SOBRE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Nitinol"
+        component={NitinolVideo}
+        durationInFrames={Math.round(DURACION_NITINOL_S * 30)}
         fps={30}
         width={1080}
         height={1920}
