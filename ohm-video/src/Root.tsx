@@ -60,6 +60,7 @@ import { DURACION_CERRADURA_S, CerraduraVideo } from "./cerradura/CerraduraVideo
 import { DURACION_ALGODON_S, AlgodonVideo } from "./algodon/AlgodonVideo";
 import { DURACION_HELIO_S, HelioVideo } from "./helio/HelioVideo";
 import { DURACION_AUTOTUNE_S, AutoTuneVideo } from "./autotune/AutoTuneVideo";
+import { DURACION_SOBRE_S, SobreVideo } from "./sobre/SobreVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -548,6 +549,14 @@ export const RemotionRoot: React.FC = () => {
         id="AutoTune"
         component={AutoTuneVideo}
         durationInFrames={Math.round(DURACION_AUTOTUNE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AguaSobreenfriada"
+        component={SobreVideo}
+        durationInFrames={Math.round(DURACION_SOBRE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
