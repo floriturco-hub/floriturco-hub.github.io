@@ -70,6 +70,7 @@ import { DURACION_GATO_S, GatoVideo } from "./gato/GatoVideo";
 import { DURACION_SANDIA_S, SandiaVideo } from "./sandia/SandiaVideo";
 import { DURACION_SEMILLA_S, SemillaVideo } from "./semilla/SemillaVideo";
 import { DURACION_PANAMA_S, PanamaVideo } from "./panama/PanamaVideo";
+import { DURACION_ROMPE_S, RompeVideo } from "./rompe/RompeVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -638,6 +639,14 @@ export const RemotionRoot: React.FC = () => {
         id="CanalPanama"
         component={PanamaVideo}
         durationInFrames={Math.round(DURACION_PANAMA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Rompehielos"
+        component={RompeVideo}
+        durationInFrames={Math.round(DURACION_ROMPE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
