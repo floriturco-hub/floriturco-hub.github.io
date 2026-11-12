@@ -1,0 +1,8 @@
+¡Este programa nació buscando petróleo!
+Y al final verás por qué a veces suena a robot.
+Su inventor, Andy Hildebrand, analizaba ecos del subsuelo para encontrar petróleo. Usó las mismas matemáticas con la voz.
+El Auto-Tune corta tu voz en trocitos de milisegundos y busca el patrón que se repite: así sabe qué nota estás cantando.
+La compara con la nota correcta más cercana de la escala… y la sube o la baja justo lo necesario.
+Todo en unos pocos milisegundos, más rápido de lo que tu oído nota.
+¿Y lo robótico? Si la corrección es instantánea, la voz salta de nota en nota… como la de Cher en Believe.
+Todo empezó…

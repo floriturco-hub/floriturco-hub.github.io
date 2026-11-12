@@ -59,6 +59,7 @@ import { DURACION_BASCULA_S, BasculaVideo } from "./bascula/BasculaVideo";
 import { DURACION_CERRADURA_S, CerraduraVideo } from "./cerradura/CerraduraVideo";
 import { DURACION_ALGODON_S, AlgodonVideo } from "./algodon/AlgodonVideo";
 import { DURACION_HELIO_S, HelioVideo } from "./helio/HelioVideo";
+import { DURACION_AUTOTUNE_S, AutoTuneVideo } from "./autotune/AutoTuneVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -539,6 +540,14 @@ export const RemotionRoot: React.FC = () => {
         id="HelioVoz"
         component={HelioVideo}
         durationInFrames={Math.round(DURACION_HELIO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AutoTune"
+        component={AutoTuneVideo}
+        durationInFrames={Math.round(DURACION_AUTOTUNE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
