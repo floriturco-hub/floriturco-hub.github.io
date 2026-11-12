@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { MosquitoElige, DURACION_MOSQUITO_S } from "./mosquito/MosquitoElige";
 import { VenenoSangre, DURACION_VENENO_S } from "./veneno/VenenoSangre";
 import { PerlaOstra, DURACION_PERLA_S } from "./perla/PerlaOstra";
 import { RelojAtomico, DURACION_ATOMICO_S } from "./atomico/RelojAtomico";
@@ -744,6 +745,14 @@ export const RemotionRoot: React.FC = () => {
         id="VenenoSangre"
         component={VenenoSangre}
         durationInFrames={Math.round(DURACION_VENENO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MosquitoElige"
+        component={MosquitoElige}
+        durationInFrames={Math.round(DURACION_MOSQUITO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
