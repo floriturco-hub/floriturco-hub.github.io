@@ -104,6 +104,7 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
   - Bien: «¡Te espían por tu espejo!» → planteamiento → explicación.
   - Va en forma de exclamación o de afirmación tajante dirigida al espectador («tu», «te»). En pantalla, la etiqueta del gancho repite esa frase con letra grande desde el primer fotograma.
   - Aplica a los próximos videos; los ya hechos (hasta `espejo-espia` incluido) no se corrigen.
+- **El gancho plantea la pregunta, no la responde (corrección del 2026-11-15).** El público no conoce la pregunta del tema: el gancho tiene que hacer que la piense. Primera frase: pregunta corta (3-6 palabras) sobre algo que el espectador ha visto («¿Por qué esta lava nunca para?», «¿Cómo sabe tu inodoro cuándo parar?»), no una respuesta ni una afirmación que ya la resuelva. Luego el bucle abierto y la explicación. La última frase repite la idea del gancho para que el video empalme en bucle.
 
 
 ## 10. Retención (desde el 2026-11-12, para todos los videos nuevos)

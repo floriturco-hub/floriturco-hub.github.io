@@ -1,0 +1,9 @@
+¿Por qué ya no clonan tu tarjeta?
+Antes bastaba con pasarla por un aparato escondido. Al final verás qué sigue en riesgo.
+La banda negra guarda tus datos siempre iguales. Quien los copia puede fabricar otra tarjeta idéntica.
+El chip dorado es una pequeña computadora, con una clave secreta guardada dentro que nunca sale de él.
+En cada compra, el lector le manda un desafío, y el chip responde con un código único, firmado con esa clave.
+Ese código solo sirve una vez. Si alguien lo copia, ya no vale.
+Tu teléfono hace lo mismo, con un código nuevo en cada pago.
+Lo que sí sigue en riesgo son los datos que escribes en internet.
+Por eso ya no clonan tu tarjeta.

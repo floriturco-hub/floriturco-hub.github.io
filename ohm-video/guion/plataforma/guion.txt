@@ -1,0 +1,9 @@
+¿Cómo no se mueve esta plataforma?
+En pleno huracán, sobre tres mil metros de agua, y sin anclas. Al final verás qué pasa si el huracán gana.
+Algunas plataformas y barcos de perforación usan algo llamado posicionamiento dinámico.
+Debajo tienen hélices gigantes que pueden girar en cualquier dirección.
+Satélites y sensores miden cada movimiento, varias veces por segundo.
+Si una ola la empuja un metro, una computadora calcula al instante la fuerza contraria, y las hélices la devuelven a su sitio.
+Así se mantiene dentro de un círculo de pocos metros, aunque el mar se vuelva loco.
+Y si la tormenta es demasiado fuerte, se desconecta del pozo y se aleja.
+Por eso esta plataforma no se mueve.

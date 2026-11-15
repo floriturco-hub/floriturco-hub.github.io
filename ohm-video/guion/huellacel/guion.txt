@@ -1,0 +1,9 @@
+¿Cómo reconoce tu dedo el celular?
+Lo tocas medio segundo y ya sabe que eres tú. Al final verás por qué una foto de tu huella no lo engaña.
+Tu huella tiene crestas y valles diminutos.
+Muchos lectores tienen debajo miles de condensadores pequeñísimos, como una rejilla.
+Las crestas tocan el sensor y los valles dejan un hueco de aire, y cada condensador mide esa diferencia de carga eléctrica.
+Así dibuja un mapa de tu huella, punto a punto.
+Luego no guarda la foto: busca los puntos donde las líneas se cortan o terminan, y los compara con los que registraste.
+Una foto plana no tiene crestas ni valles, así que no lo engaña.
+Por eso tu celular reconoce tu dedo.

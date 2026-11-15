@@ -8,7 +8,7 @@ Canal de Shorts de ciencia (TikTok, YouTube Shorts, Reels). Proyecto Remotion en
 
 **Retención:** guiones de 30-40 s, bucle abierto, subtítulos y **sin logo final** (`cola={SIN_LOGO}`: el video acaba y empalma con el inicio en bucle); ver `estilo.md`, §10.
 
-**Gancho:** la primera frase del guion es un golpe de 3-6 palabras que capte toda la atención en 2 s o menos (p. ej. «¡Te espían por tu espejo!»). Detalles en `estilo.md`, §9.
+**Gancho:** la primera frase del guion es un golpe de 3-6 palabras que capte toda la atención en 2 s o menos. Desde el 2026-11-15 es una **pregunta que hace pensar al espectador en el tema** (no sabe cuál es la pregunta inicial), no la respuesta: p. ej. «¿Por qué esta lava nunca para?». Detalles en `estilo.md`, §9.
 
 ## Entrega en Google Drive (obligatorio al terminar cada video)
 
