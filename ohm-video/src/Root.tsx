@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { LamparaLava, DURACION_LAVA_S } from "./lava/LamparaLava";
 import { LentesPolarizados, DURACION_POLAR_S } from "./polar/LentesPolarizados";
 import { MosquitoElige, DURACION_MOSQUITO_S } from "./mosquito/MosquitoElige";
 import { VenenoSangre, DURACION_VENENO_S } from "./veneno/VenenoSangre";
@@ -762,6 +763,14 @@ export const RemotionRoot: React.FC = () => {
         id="LentesPolarizados"
         component={LentesPolarizados}
         durationInFrames={Math.round(DURACION_POLAR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LamparaLava"
+        component={LamparaLava}
+        durationInFrames={Math.round(DURACION_LAVA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
