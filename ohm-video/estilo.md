@@ -113,6 +113,7 @@ _(Se irán añadiendo aquí cuando me corrijas algo que te guste.)_
 El usuario pidió subir la retención: la gente no ve los videos completos. Reglas:
 - **Duración 30-40 s de narración** (guion de 90-115 palabras). Nada de 55-60 s.
 - **Gancho (≤2 s) + bucle abierto** en la segunda frase: una promesa que se cumple al final («…y al final verás cómo…»).
+- **El gancho plantea la pregunta, no la responde (desde el 2026-11-15, petición del usuario):** el video va dirigido a gente que no conoce la pregunta inicial. La primera frase hace que el espectador se haga la pregunta («¿Por qué la leche está al fondo?», «¿Se puede aterrizar en Júpiter?»), en vez de soltar la respuesta («¡La leche está al fondo para que compres más!»). La respuesta llega en el desarrollo, y la última frase vuelve a llevar a esa pregunta para el bucle.
 - **Cambio visual cada 2-3 s** (zoom, corte, destello, elemento nuevo). Ningún plano quieto más de 3 s.
 - **Final que enlaza con el inicio**: la última frase empalma con la primera para que el video se repita solo.
 - **Subtítulos palabra a palabra** arriba (franja y ≈ 230-330), la palabra activa en amarillo: `<Subtitulos>` de `src/components/Retencion.tsx`. Las escenas no ponen nada importante en esa franja.

@@ -67,4 +67,8 @@ export const Panel: React.FC<{ readonly x0: number; readonly y0: number; readonl
 );
 
 // Ventana de aparición: sube en `entra`, se mantiene y baja en `sale`
-export const ventanaEn = (t: number, a: number, b: number, entra = 0.4, sale = 0.4) => interpolate(t, [a, a + entra, b - sale, b], [0, 1, 1, 0], clamp);
+// (si la ventana es más corta que entra + sale, ambos se reducen en proporción para no romper el interpolate)
+export const ventanaEn = (t: number, a: number, b: number, entra = 0.4, sale = 0.4) => {
+  const k = Math.min(1, (b - a) / (entra + sale + 0.02));
+  return interpolate(t, [a, a + entra * k, b - sale * k, b], [0, 1, 1, 0], clamp);
+};
