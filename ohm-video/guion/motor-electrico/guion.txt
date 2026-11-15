@@ -1,0 +1,7 @@
+¿Cómo gira un motor eléctrico?
+Y al final verás su truco de cada media vuelta.
+Dentro hay imanes fijos y, en el centro, una bobina de cable que puede girar.
+Al pasar corriente, la bobina se vuelve un electroimán: su polo norte es atraído por el sur del imán, y empieza a girar.
+Pero al quedar frente a él, se detendría, atrapada para siempre.
+Aquí está el truco: un anillo partido, el conmutador, invierte la corriente justo en ese instante. Los polos de la bobina se intercambian, lo que la atraía ahora la empuja, y sigue girando.
+Cada media vuelta, otra vez: engaña al imán. Así…
