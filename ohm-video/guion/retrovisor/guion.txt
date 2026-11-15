@@ -1,0 +1,9 @@
+¿Cómo sabe tu espejo que te ciegan?
+El auto de atrás trae las luces altas, y tu retrovisor se oscurece solo. Al final verás qué esconde por dentro.
+El espejo tiene dos sensores de luz: uno mira hacia adelante, al camino, y otro hacia atrás.
+De noche, el de adelante detecta que todo está oscuro.
+Si el de atrás recibe mucha más luz, el espejo sabe que te están deslumbrando.
+Entonces manda una pequeña corriente a un gel especial, entre dos vidrios.
+Ese gel es electrocrómico: con electricidad se oscurece, como unas gafas de sol.
+El reflejo pierde fuerza. Cuando el auto pasa, la corriente se corta y el gel se aclara.
+Por eso tu espejo sabe que te ciegan.

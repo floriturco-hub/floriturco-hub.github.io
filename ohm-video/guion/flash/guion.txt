@@ -1,0 +1,8 @@
+¿Cómo recuerda una memoria sin electricidad?
+La desconectas durante años, y tus fotos siguen ahí. Al final verás por qué no dura para siempre.
+Por dentro tiene miles de millones de celdas, cada una con una pequeña jaula aislada.
+Para guardar un dato, un voltaje alto empuja electrones a través de una capa aislante finísima, y quedan atrapados en la jaula.
+Sin electricidad no tienen por dónde salir. Así se guarda el dato.
+Para leer, el chip mide si la jaula está llena o vacía.
+Pero el aislante se desgasta, y con los años algunos electrones escapan: copia tus archivos importantes de vez en cuando.
+Así recuerda una memoria sin electricidad.

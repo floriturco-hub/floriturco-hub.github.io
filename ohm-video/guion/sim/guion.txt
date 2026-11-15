@@ -1,0 +1,9 @@
+¿Qué esconde este chip diminuto?
+Lo cambias de teléfono y tu número se va con él. Al final verás por qué ya ni siquiera hace falta.
+La SIM es una pequeña computadora con una clave secreta grabada de fábrica. Tu operador guarda una copia exacta de esa clave.
+Cuando enciendes el teléfono, la red le manda a la SIM un número al azar, como un examen sorpresa.
+La SIM lo mezcla con su clave y devuelve la respuesta. La red hace el mismo cálculo y compara.
+Si coinciden, eres tú: te deja llamar y te cobra a tu línea.
+La clave nunca viaja por el aire, así que nadie puede copiarla escuchando.
+Hoy muchos teléfonos traen eSIM: el mismo chip, pero soldado por dentro.
+Eso esconde este chip diminuto.
