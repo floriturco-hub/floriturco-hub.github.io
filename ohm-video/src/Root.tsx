@@ -83,6 +83,7 @@ import { DURACION_MOTOR_S, MotorVideo } from "./motor/MotorVideo";
 import { DURACION_CONTRAPESO_S, ContrapesoVideo } from "./contrapeso/ContrapesoVideo";
 import { DURACION_SILICA_S, SilicaVideo } from "./silica/SilicaVideo";
 import { DURACION_PHOTO_S, PhotoVideo } from "./photo/PhotoVideo";
+import { DURACION_JUPITER_S, JupiterVideo } from "./jupiter/JupiterVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -755,6 +756,14 @@ export const RemotionRoot: React.FC = () => {
         id="PhotoFinish"
         component={PhotoVideo}
         durationInFrames={Math.round(DURACION_PHOTO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Jupiter"
+        component={JupiterVideo}
+        durationInFrames={Math.round(DURACION_JUPITER_S * 30)}
         fps={30}
         width={1080}
         height={1920}
