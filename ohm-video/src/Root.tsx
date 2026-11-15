@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { HumoRefresco, DURACION_HUMITO_S } from "./humito/HumoRefresco";
 import { HuellaCelular, DURACION_HUELLA_S } from "./huellacel/HuellaCelular";
 import { FibraCarbono, DURACION_FIBRA_S } from "./fibra/FibraCarbono";
 import { HieloResbala, DURACION_HIELO_S } from "./hielo/HieloResbala";
@@ -834,6 +835,14 @@ export const RemotionRoot: React.FC = () => {
         id="HuellaCelular"
         component={HuellaCelular}
         durationInFrames={Math.round(DURACION_HUELLA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HumoRefresco"
+        component={HumoRefresco}
+        durationInFrames={Math.round(DURACION_HUMITO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
