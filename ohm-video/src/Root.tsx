@@ -77,6 +77,7 @@ import { DURACION_SUSTO_S, SustoVideo } from "./susto/SustoVideo";
 import { DURACION_MAILLARD_S, MaillardVideo } from "./maillard/MaillardVideo";
 import { DURACION_TRIPLE_S, TripleVideo } from "./triple/TripleVideo";
 import { DURACION_KAMIOKA_S, KamiokaVideo } from "./kamioka/KamiokaVideo";
+import { DURACION_SAL_S, SalVideo } from "./sal/SalVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -701,6 +702,14 @@ export const RemotionRoot: React.FC = () => {
         id="SuperKamiokande"
         component={KamiokaVideo}
         durationInFrames={Math.round(DURACION_KAMIOKA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SalMesa"
+        component={SalVideo}
+        durationInFrames={Math.round(DURACION_SAL_S * 30)}
         fps={30}
         width={1080}
         height={1920}
