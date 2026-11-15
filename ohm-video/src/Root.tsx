@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { ChipTarjeta, DURACION_CHIP_S } from "./chip/ChipTarjeta";
 import { MoscaReflejos, DURACION_MOSCA_S } from "./mosca/MoscaReflejos";
 import { EscaleraElectrica, DURACION_ESCALERA_S } from "./escalera/EscaleraElectrica";
 import { HumoRefresco, DURACION_HUMITO_S } from "./humito/HumoRefresco";
@@ -861,6 +862,14 @@ export const RemotionRoot: React.FC = () => {
         id="MoscaReflejos"
         component={MoscaReflejos}
         durationInFrames={Math.round(DURACION_MOSCA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ChipTarjeta"
+        component={ChipTarjeta}
+        durationInFrames={Math.round(DURACION_CHIP_S * 30)}
         fps={30}
         width={1080}
         height={1920}

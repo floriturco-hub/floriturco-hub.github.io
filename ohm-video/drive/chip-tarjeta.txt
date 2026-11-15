@@ -1,0 +1,15 @@
+TITULO: ¿Por qué ya es casi imposible clonar una tarjeta con chip dorado? 💳🔐
+DESCRIP:
+Antes bastaba con pasar tu tarjeta por un aparato escondido para clonarla. Hoy, con el chip dorado, eso ya no funciona. ¿Por qué? 🤔
+
+La banda negra guarda tus datos siempre iguales: quien los copia puede fabricar otra tarjeta idéntica.
+
+El chip dorado es una pequeña computadora con una clave secreta guardada dentro, que nunca sale de él. En cada compra, el lector le manda un desafío y el chip responde con un código único, firmado con esa clave. Ese código solo sirve una vez: si alguien lo copia, ya no vale. Tu teléfono hace lo mismo, con un código nuevo en cada pago.
+
+Lo que sí sigue en riesgo son los datos que escribes en internet: compra solo en sitios de confianza.
+
+🔐 ¿Por qué ya no clonan tu tarjeta?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#TarjetaDeCrédito #ChipEMV #Seguridad #Tecnología #Ciencia #Curiosidades #Frecuencia0
