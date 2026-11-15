@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { PruebaEmbarazo, DURACION_EMBARAZO_S } from "./embarazo/PruebaEmbarazo";
 import { CaraLuna, DURACION_LUNA_S } from "./luna/CaraLuna";
 import { ChipTarjeta, DURACION_CHIP_S } from "./chip/ChipTarjeta";
 import { MoscaReflejos, DURACION_MOSCA_S } from "./mosca/MoscaReflejos";
@@ -879,6 +880,14 @@ export const RemotionRoot: React.FC = () => {
         id="CaraLuna"
         component={CaraLuna}
         durationInFrames={Math.round(DURACION_LUNA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PruebaEmbarazo"
+        component={PruebaEmbarazo}
+        durationInFrames={Math.round(DURACION_EMBARAZO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
