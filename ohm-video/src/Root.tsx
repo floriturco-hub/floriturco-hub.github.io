@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { FrotarGolpe, DURACION_COMPUERTA_S } from "./compuerta/FrotarGolpe";
 import { HelicopteroVuela, DURACION_HELICOPTERO_S } from "./helicoptero/HelicopteroVuela";
 import { BarcoFlota, DURACION_BARCO_S } from "./barco/BarcoFlota";
 import { ConvertidorCatalitico, DURACION_CATALIZADOR_S } from "./catalizador/ConvertidorCatalitico";
@@ -960,6 +961,14 @@ export const RemotionRoot: React.FC = () => {
         id="HelicopteroVuela"
         component={HelicopteroVuela}
         durationInFrames={Math.round(DURACION_HELICOPTERO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FrotarGolpe"
+        component={FrotarGolpe}
+        durationInFrames={Math.round(DURACION_COMPUERTA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
