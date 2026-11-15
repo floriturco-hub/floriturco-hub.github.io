@@ -78,6 +78,7 @@ import { DURACION_MAILLARD_S, MaillardVideo } from "./maillard/MaillardVideo";
 import { DURACION_TRIPLE_S, TripleVideo } from "./triple/TripleVideo";
 import { DURACION_KAMIOKA_S, KamiokaVideo } from "./kamioka/KamiokaVideo";
 import { DURACION_SAL_S, SalVideo } from "./sal/SalVideo";
+import { DURACION_SUENOS_S, SuenosVideo } from "./suenos/SuenosVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -710,6 +711,14 @@ export const RemotionRoot: React.FC = () => {
         id="SalMesa"
         component={SalVideo}
         durationInFrames={Math.round(DURACION_SAL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SuenosAlarma"
+        component={SuenosVideo}
+        durationInFrames={Math.round(DURACION_SUENOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
