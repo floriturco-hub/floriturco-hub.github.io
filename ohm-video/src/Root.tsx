@@ -80,6 +80,7 @@ import { DURACION_KAMIOKA_S, KamiokaVideo } from "./kamioka/KamiokaVideo";
 import { DURACION_SAL_S, SalVideo } from "./sal/SalVideo";
 import { DURACION_SUENOS_S, SuenosVideo } from "./suenos/SuenosVideo";
 import { DURACION_MOTOR_S, MotorVideo } from "./motor/MotorVideo";
+import { DURACION_CONTRAPESO_S, ContrapesoVideo } from "./contrapeso/ContrapesoVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -728,6 +729,14 @@ export const RemotionRoot: React.FC = () => {
         id="MotorElectrico"
         component={MotorVideo}
         durationInFrames={Math.round(DURACION_MOTOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Contrapeso"
+        component={ContrapesoVideo}
+        durationInFrames={Math.round(DURACION_CONTRAPESO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
