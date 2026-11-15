@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { RetrovisorAuto, DURACION_RETROVISOR_S } from "./retrovisor/RetrovisorAuto";
 import { LentesTransitions, DURACION_FOTOCROM_S } from "./fotocrom/LentesTransitions";
 import { LentesAgujeritos, DURACION_AGUJEROS_S } from "./agujeros/LentesAgujeritos";
 import { TarjetaSim, DURACION_SIM_S } from "./sim/TarjetaSim";
@@ -924,6 +925,14 @@ export const RemotionRoot: React.FC = () => {
         id="LentesTransitions"
         component={LentesTransitions}
         durationInFrames={Math.round(DURACION_FOTOCROM_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RetrovisorAuto"
+        component={RetrovisorAuto}
+        durationInFrames={Math.round(DURACION_RETROVISOR_S * 30)}
         fps={30}
         width={1080}
         height={1920}
