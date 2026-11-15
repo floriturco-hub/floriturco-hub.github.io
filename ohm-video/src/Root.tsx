@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { CaraLuna, DURACION_LUNA_S } from "./luna/CaraLuna";
 import { ChipTarjeta, DURACION_CHIP_S } from "./chip/ChipTarjeta";
 import { MoscaReflejos, DURACION_MOSCA_S } from "./mosca/MoscaReflejos";
 import { EscaleraElectrica, DURACION_ESCALERA_S } from "./escalera/EscaleraElectrica";
@@ -870,6 +871,14 @@ export const RemotionRoot: React.FC = () => {
         id="ChipTarjeta"
         component={ChipTarjeta}
         durationInFrames={Math.round(DURACION_CHIP_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CaraLuna"
+        component={CaraLuna}
+        durationInFrames={Math.round(DURACION_LUNA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
