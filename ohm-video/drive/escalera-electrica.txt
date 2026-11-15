@@ -1,0 +1,13 @@
+TITULO: ¿Dónde se esconden los escalones de una escalera eléctrica y cómo frena si se atora un zapato? 🪜⚙️
+DESCRIP:
+Llegas arriba y los escalones desaparecen bajo el piso. ¿A dónde van? ¿Y qué pasa si se atora un zapato? 🤔
+
+Cada escalón tiene dos pares de ruedas que van por dos rieles distintos. En la subida, los rieles se separan y el escalón queda horizontal, formando la escalera. Al llegar arriba, los rieles se juntan y los escalones se aplanan uno tras otro, como una cinta. Luego dan la vuelta por debajo, guiados por esos rieles, y regresan al inicio.
+
+Y hay sensores de seguridad, sobre todo en el peine de metal del final: si un zapato se atora y empuja el peine, un interruptor corta la corriente y un freno detiene la escalera.
+
+🪜 ¿Dónde se esconden estos escalones?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#EscaleraEléctrica #Ingeniería #Mecánica #Seguridad #Ciencia #Curiosidades #Frecuencia0
