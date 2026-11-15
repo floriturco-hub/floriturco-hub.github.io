@@ -82,6 +82,7 @@ import { DURACION_SUENOS_S, SuenosVideo } from "./suenos/SuenosVideo";
 import { DURACION_MOTOR_S, MotorVideo } from "./motor/MotorVideo";
 import { DURACION_CONTRAPESO_S, ContrapesoVideo } from "./contrapeso/ContrapesoVideo";
 import { DURACION_SILICA_S, SilicaVideo } from "./silica/SilicaVideo";
+import { DURACION_PHOTO_S, PhotoVideo } from "./photo/PhotoVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -746,6 +747,14 @@ export const RemotionRoot: React.FC = () => {
         id="SilicaGel"
         component={SilicaVideo}
         durationInFrames={Math.round(DURACION_SILICA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PhotoFinish"
+        component={PhotoVideo}
+        durationInFrames={Math.round(DURACION_PHOTO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
