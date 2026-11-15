@@ -73,6 +73,7 @@ import { DURACION_PANAMA_S, PanamaVideo } from "./panama/PanamaVideo";
 import { DURACION_ROMPE_S, RompeVideo } from "./rompe/RompeVideo";
 import { DURACION_SUPER_S, SuperVideo } from "./super/SuperVideo";
 import { DURACION_LECHEHIERVE_S, LecheHierveVideo } from "./lechehierve/LecheHierveVideo";
+import { DURACION_SUSTO_S, SustoVideo } from "./susto/SustoVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -665,6 +666,14 @@ export const RemotionRoot: React.FC = () => {
         id="LecheHierve"
         component={LecheHierveVideo}
         durationInFrames={Math.round(DURACION_LECHEHIERVE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SustoPalido"
+        component={SustoVideo}
+        durationInFrames={Math.round(DURACION_SUSTO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
