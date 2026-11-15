@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { LentesAgujeritos, DURACION_AGUJEROS_S } from "./agujeros/LentesAgujeritos";
 import { TarjetaSim, DURACION_SIM_S } from "./sim/TarjetaSim";
 import { AnillosTinta, DURACION_VORTICE_S } from "./vortice/AnillosTinta";
 import { PruebaEmbarazo, DURACION_EMBARAZO_S } from "./embarazo/PruebaEmbarazo";
@@ -906,6 +907,14 @@ export const RemotionRoot: React.FC = () => {
         id="TarjetaSim"
         component={TarjetaSim}
         durationInFrames={Math.round(DURACION_SIM_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LentesAgujeritos"
+        component={LentesAgujeritos}
+        durationInFrames={Math.round(DURACION_AGUJEROS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
