@@ -75,6 +75,7 @@ import { DURACION_SUPER_S, SuperVideo } from "./super/SuperVideo";
 import { DURACION_LECHEHIERVE_S, LecheHierveVideo } from "./lechehierve/LecheHierveVideo";
 import { DURACION_SUSTO_S, SustoVideo } from "./susto/SustoVideo";
 import { DURACION_MAILLARD_S, MaillardVideo } from "./maillard/MaillardVideo";
+import { DURACION_TRIPLE_S, TripleVideo } from "./triple/TripleVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -683,6 +684,14 @@ export const RemotionRoot: React.FC = () => {
         id="Maillard"
         component={MaillardVideo}
         durationInFrames={Math.round(DURACION_MAILLARD_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PuntoTriple"
+        component={TripleVideo}
+        durationInFrames={Math.round(DURACION_TRIPLE_S * 30)}
         fps={30}
         width={1080}
         height={1920}
