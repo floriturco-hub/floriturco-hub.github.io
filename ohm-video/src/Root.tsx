@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { TanqueInodoro, DURACION_INODORO_S } from "./inodoro/TanqueInodoro";
 import { EspejoEmpanado, DURACION_EMPANO_S } from "./empano/EspejoEmpanado";
 import { PlataformaHuracan, DURACION_PLATAFORMA_S } from "./plataforma/PlataformaHuracan";
 import { FacturaGratis, DURACION_FACTURA_S } from "./factura/FacturaGratis";
@@ -798,6 +799,14 @@ export const RemotionRoot: React.FC = () => {
         id="EspejoEmpanado"
         component={EspejoEmpanado}
         durationInFrames={Math.round(DURACION_EMPANO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TanqueInodoro"
+        component={TanqueInodoro}
+        durationInFrames={Math.round(DURACION_INODORO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
