@@ -1,0 +1,7 @@
+¿De dónde sale este cuadrito?
+Y al final verás un triángulo que engaña igual.
+Cortas la barra en diagonal, mueves las piezas… y sobra un cuadrito. ¿Chocolate infinito?
+No. Fíjate en la altura: la barra nueva es un poquito más baja.
+El corte en diagonal hace que cada fila pierda una tajada finísima, casi invisible. Sumadas, esas tajadas forman justo el cuadrito que sobra. El chocolate no aparece: solo se reparte distinto.
+Lo mismo pasa con el triángulo de Curry: las piezas parecen encajar perfecto, pero el borde no es una línea recta, se dobla un poquito.
+Así que la próxima vez, pregúntate:

@@ -84,6 +84,7 @@ import { DURACION_CONTRAPESO_S, ContrapesoVideo } from "./contrapeso/ContrapesoV
 import { DURACION_SILICA_S, SilicaVideo } from "./silica/SilicaVideo";
 import { DURACION_PHOTO_S, PhotoVideo } from "./photo/PhotoVideo";
 import { DURACION_JUPITER_S, JupiterVideo } from "./jupiter/JupiterVideo";
+import { DURACION_CUADRADO_S, CuadradoVideo } from "./cuadrado/CuadradoVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -764,6 +765,14 @@ export const RemotionRoot: React.FC = () => {
         id="Jupiter"
         component={JupiterVideo}
         durationInFrames={Math.round(DURACION_JUPITER_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CuadradoPerdido"
+        component={CuadradoVideo}
+        durationInFrames={Math.round(DURACION_CUADRADO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
