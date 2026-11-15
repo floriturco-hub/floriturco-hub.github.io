@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { BarcoFlota, DURACION_BARCO_S } from "./barco/BarcoFlota";
 import { ConvertidorCatalitico, DURACION_CATALIZADOR_S } from "./catalizador/ConvertidorCatalitico";
 import { RetrovisorAuto, DURACION_RETROVISOR_S } from "./retrovisor/RetrovisorAuto";
 import { LentesTransitions, DURACION_FOTOCROM_S } from "./fotocrom/LentesTransitions";
@@ -942,6 +943,14 @@ export const RemotionRoot: React.FC = () => {
         id="ConvertidorCatalitico"
         component={ConvertidorCatalitico}
         durationInFrames={Math.round(DURACION_CATALIZADOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BarcoFlota"
+        component={BarcoFlota}
+        durationInFrames={Math.round(DURACION_BARCO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
