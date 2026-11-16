@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { CaminarCirculos, DURACION_CIRCULOS_S } from "./circulos/CaminarCirculos";
 import { PlantaTrepadora, DURACION_TREPADORA_S } from "./trepadora/PlantaTrepadora";
 import { GuitarraAcustica, DURACION_GUITARRA_S } from "./guitarra/GuitarraAcustica";
 import { FrotarGolpe, DURACION_COMPUERTA_S } from "./compuerta/FrotarGolpe";
@@ -987,6 +988,14 @@ export const RemotionRoot: React.FC = () => {
         id="PlantaTrepadora"
         component={PlantaTrepadora}
         durationInFrames={Math.round(DURACION_TREPADORA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CaminarCirculos"
+        component={CaminarCirculos}
+        durationInFrames={Math.round(DURACION_CIRCULOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
