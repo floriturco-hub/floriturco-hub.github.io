@@ -1,0 +1,15 @@
+TITULO: ¿Cómo guarda tus fotos una memoria USB o un SSD durante años sin electricidad? 💾⚡
+DESCRIP:
+Desconectas una memoria USB durante años y tus fotos siguen ahí. ¿Cómo recuerda sin electricidad? 🤔
+
+Por dentro tiene miles de millones de celdas, cada una con una pequeña jaula aislada (la compuerta flotante). Para guardar un dato, un voltaje alto empuja electrones a través de una capa aislante finísima, y quedan atrapados en la jaula. Sin electricidad no tienen por dónde salir: así se guarda el dato.
+
+Para leer, el chip mide si la jaula está llena o vacía.
+
+Pero el aislante se desgasta, y con los años algunos electrones escapan. Por eso conviene copiar tus archivos importantes de vez en cuando.
+
+💾 ¿Cómo recuerda una memoria sin electricidad?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#MemoriaUSB #SSD #Tecnología #Electrónica #Ciencia #Curiosidades #Frecuencia0
