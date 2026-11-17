@@ -1,0 +1,13 @@
+TITULO: ¿Cómo corta el gas la estufa sola si el viento apaga la llama? (Termopar) 🔥🛑
+DESCRIP:
+Una corriente de aire apaga el fuego de la estufa y, en segundos, el gas se corta solo. 🤔
+
+Junto a la llama hay un termopar: una varilla con dos metales distintos unidos en la punta. Cuando esa unión se calienta, aparece un voltaje diminuto entre los dos metales (efecto Seebeck). Ese voltaje alimenta un pequeño electroimán que mantiene abierta la válvula del gas. Si la llama se apaga, la punta se enfría, la corriente desaparece y un resorte cierra la válvula.
+
+Por eso, al encenderla, sostienes la perilla unos segundos, hasta que el termopar se calienta.
+
+🔥 ¿Cómo sabe que se apagó la llama?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Estufa #Seguridad #Termopar #Física #Ciencia #Curiosidades #Frecuencia0

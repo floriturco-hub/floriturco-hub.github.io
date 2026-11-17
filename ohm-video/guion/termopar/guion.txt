@@ -1,0 +1,8 @@
+¿Cómo sabe que se apagó la llama?
+Una corriente de aire apaga el fuego de la estufa y, en segundos, el gas se corta solo. Al final verás por qué hay que sostener la perilla al encenderla.
+Junto a la llama hay una varilla metálica: un termopar. Tiene dos metales distintos unidos en la punta.
+Cuando esa unión se calienta, aparece un voltaje diminuto entre los dos metales.
+Ese voltaje alimenta un pequeño electroimán que mantiene abierta la válvula del gas.
+Si la llama se apaga, la punta se enfría, la corriente desaparece y un resorte cierra la válvula.
+Por eso, al encenderla, sostienes la perilla unos segundos, hasta que el termopar se calienta.
+Así sabe que se apagó la llama.

@@ -43,6 +43,16 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { LlaveStilson, DURACION_STILSON_S } from "./stilson/LlaveStilson";
+import { Amortiguador, DURACION_AMORTIGUADOR_S } from "./amortiguador/Amortiguador";
+import { VisorNocturno, DURACION_VISOR_S } from "./visor/VisorNocturno";
+import { BotellaPicada, DURACION_PICADA_S } from "./picada/BotellaPicada";
+import { DolorEspejo, DURACION_ESPEJODOLOR_S } from "./espejodolor/DolorEspejo";
+import { ChorroGotas, DURACION_CHORRO_S } from "./chorro/ChorroGotas";
+import { EfectoCoctel, DURACION_COCTEL_S } from "./coctel/EfectoCoctel";
+import { EstufaTermopar, DURACION_TERMOPAR_S } from "./termopar/EstufaTermopar";
+import { CafeDerrama, DURACION_CAFEOLA_S } from "./cafeola/CafeDerrama";
+import { SierraYeso, DURACION_YESO_S } from "./yeso/SierraYeso";
 import { PanalAbsorbe, DURACION_PANAL_S } from "./panal/PanalAbsorbe";
 import { MareoAuto, DURACION_MAREO_S } from "./mareo/MareoAuto";
 import { LectorQr, DURACION_LECTORQR_S } from "./lectorqr/LectorQr";
@@ -1716,6 +1726,86 @@ export const RemotionRoot: React.FC = () => {
         id="PanalAbsorbe"
         component={PanalAbsorbe}
         durationInFrames={Math.round(DURACION_PANAL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SierraYeso"
+        component={SierraYeso}
+        durationInFrames={Math.round(DURACION_YESO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CafeDerrama"
+        component={CafeDerrama}
+        durationInFrames={Math.round(DURACION_CAFEOLA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EstufaTermopar"
+        component={EstufaTermopar}
+        durationInFrames={Math.round(DURACION_TERMOPAR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EfectoCoctel"
+        component={EfectoCoctel}
+        durationInFrames={Math.round(DURACION_COCTEL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ChorroGotas"
+        component={ChorroGotas}
+        durationInFrames={Math.round(DURACION_CHORRO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DolorEspejo"
+        component={DolorEspejo}
+        durationInFrames={Math.round(DURACION_ESPEJODOLOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BotellaPicada"
+        component={BotellaPicada}
+        durationInFrames={Math.round(DURACION_PICADA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="VisorNocturno"
+        component={VisorNocturno}
+        durationInFrames={Math.round(DURACION_VISOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Amortiguador"
+        component={Amortiguador}
+        durationInFrames={Math.round(DURACION_AMORTIGUADOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LlaveStilson"
+        component={LlaveStilson}
+        durationInFrames={Math.round(DURACION_STILSON_S * 30)}
         fps={30}
         width={1080}
         height={1920}
