@@ -193,7 +193,8 @@ export const Conductor: React.FC<{ readonly t0: number }> = ({ t0 }) => {
       <path d={`M 540 1500 Q ${540 + curva} 1000 ${540 + curva * 1.6} 640`} stroke="#fff" strokeWidth={8} fill="none" strokeDasharray="40 30" strokeDashoffset={t * 300} />
       <g transform="translate(540 1560)">
         <circle cx={0} cy={0} r={140} fill="none" stroke="#5A5A66" strokeWidth={30} transform={`rotate(${curva * 0.4})`} />
-        <line x1={-140} y1={0} x2={140} y2={0} stroke="#5A5A66" strokeWidth={22} transform={`rotate(${curva * 0.4})`} />
+        <path d="M -140 0 L 140 0 M 0 0 L 0 140" stroke="#5A5A66" strokeWidth={22} transform={`rotate(${curva * 0.4})`} />
+        <circle cx={0} cy={0} r={34} fill="#5A5A66" />
       </g>
       <Texto x={540} y={560} size={38} color={C.white} op={aparece(t, T.carretera)}>
         mira la carretera

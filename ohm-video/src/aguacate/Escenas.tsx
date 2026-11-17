@@ -215,7 +215,7 @@ export const Remedios: React.FC<{ readonly t0: number }> = ({ t0 }) => {
 // F. La semilla solo protege la parte que tapa: el resto se pone café igual
 export const Semilla: React.FC<{ readonly t0: number }> = ({ t0 }) => {
   const t = useT(t0);
-  const quita = aparece(t, T.resto);
+  const quita = aparece(t, T.semilla + 0.6);
   return (
     <>
       <Lienzo zoom={interpolate(t, [T.semilla, T.porEso], [1, 1.04])}>
@@ -228,7 +228,7 @@ export const Semilla: React.FC<{ readonly t0: number }> = ({ t0 }) => {
           solo protege lo que tapa
         </Texto>
       </Lienzo>
-      <Flash t={t} d={T.resto} color={CAFE} />
+      <Flash t={t} d={T.semilla + 0.6} color={CAFE} />
     </>
   );
 };

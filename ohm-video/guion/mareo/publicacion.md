@@ -1,0 +1,18 @@
+# Publicación: mareo-auto.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué te mareas en el asiento de atrás pero el conductor no? 🚗🤢
+DESCRIP:
+Vas en el asiento de atrás leyendo el celular y te mareas, pero el conductor está perfecto. 🤔
+
+Tu oído interno siente las curvas, los frenazos y los baches, pero tus ojos, fijos en el celular o en el asiento, te dicen que estás quieto. Tu cerebro recibe dos señales que no coinciden; una teoría dice que lo toma como un envenenamiento y responde con náuseas. El conductor mira la carretera, así que sus ojos ven el mismo movimiento que siente su oído, y además decide cada curva y la anticipa.
+
+El truco: siéntate adelante y mira el horizonte.
+
+🤢 ¿Por qué el conductor no se marea?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Mareo #Cerebro #Equilibrio #Viajes #Ciencia #Curiosidades #Frecuencia0

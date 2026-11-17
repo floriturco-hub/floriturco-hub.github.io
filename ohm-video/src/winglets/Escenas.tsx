@@ -214,7 +214,7 @@ export const Ahorro: React.FC<{ readonly t0: number }> = ({ t0 }) => {
         <Texto x={540} y={640} size={38} color={C.white} op={aparece(t, T.resistencia)}>
           menos resistencia
         </Texto>
-        <Texto x={540} y={1340} size={60} color={C.yellow} op={aparece(t, T.cinco)}>
+        <Texto x={540} y={1340} size={50} color={C.yellow} op={aparece(t, T.cinco)}>
           hasta −5 % de combustible
         </Texto>
       </Lienzo>

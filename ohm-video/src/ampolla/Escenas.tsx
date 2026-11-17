@@ -98,13 +98,13 @@ export const Bucle: React.FC<{ readonly t0: number }> = ({ t0 }) => {
 // Corte de piel: capa superior (techo) que se separa; sep 0..1; liq 0..1
 const Corte: React.FC<{ readonly t: number; readonly sep: number; readonly liq: number; readonly roto?: number; readonly flechas?: number }> = ({ t, sep, liq, roto = 0, flechas = 0 }) => {
   const h = 160 * sep;
-  const techo = `M 140 ${760 - h * 0.2} Q 540 ${760 - h} 940 ${760 - h * 0.2}`;
+  const techo = `M 140 ${790 - h * 0.2} Q 540 ${790 - h} 940 ${790 - h * 0.2}`;
   return (
     <g>
       <rect x={140} y={900} width={800} height={500} fill="#D88A7A" />
       <rect x={140} y={820} width={800} height={80} fill="#F0B8A0" />
       {liq > 0 ? <path d={`M 160 ${820} Q 540 ${820 - h * 0.95} 920 820 Z`} fill={LIQ} opacity={liq * (1 - roto)} /> : null}
-      <path d={roto > 0 ? `M 140 760 L 440 760 M 640 ${760 - h * 0.6} Q 800 ${760 - h * 0.4} 940 760` : techo} stroke="#E8B898" strokeWidth={60} fill="none" strokeLinecap="round" />
+      <path d={roto > 0 ? `M 140 790 L 440 790 M 640 ${790 - h * 0.6} Q 800 ${790 - h * 0.4} 940 790` : techo} stroke="#E8B898" strokeWidth={60} fill="none" strokeLinecap="round" />
       {flechas > 0
         ? [300, 540, 780].map((x, k) => {
             const u = (t * 0.8 + k / 3) % 1;

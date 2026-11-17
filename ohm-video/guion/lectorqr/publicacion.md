@@ -1,0 +1,18 @@
+# Publicación: lector-qr.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo leen tan rápido los lectores de códigos QR del metro? 📲🚇
+DESCRIP:
+Acercas el celular al torniquete del metro y lee el código al instante, aunque la pantalla esté rayada. 🤔
+
+Los lectores viejos usaban un láser que barría una línea, y solo leían códigos de barras. Un código QR es un dibujo en dos dimensiones, así que hay que ver todo el cuadro: por eso estos lectores usan una cámara con sensor CMOS, como la de tu celular. El programa busca los tres cuadrados de las esquinas, y con ellos sabe dónde está el código y cómo está girado.
+
+Además, el código guarda datos de respaldo: aunque falte hasta un 30 %, los reconstruye.
+
+📲 ¿Cómo lee este código tan rápido?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#CódigoQR #Tecnología #Sensores #Metro #Ciencia #Curiosidades #Frecuencia0

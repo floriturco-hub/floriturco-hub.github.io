@@ -1,0 +1,13 @@
+TITULO: ¿Cómo funciona el cargador inalámbrico Qi o MagSafe del celular? 📱⚡
+DESCRIP:
+Dejas el celular sobre una base y carga, sin cable. 🤔
+
+Dentro de la base hay una bobina de cobre con corriente alterna, que crea un campo magnético que cambia de dirección miles de veces por segundo. Dentro del celular hay otra bobina: el campo variable la atraviesa e induce una corriente en ella, y un circuito la usa para cargar la batería. Las bobinas deben estar alineadas, y MagSafe usa un anillo de imanes para que encajen solas.
+
+Pero parte de la energía se pierde como calor: por eso carga más lento y se calienta.
+
+📱 ¿Cómo carga sin cable este celular?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#CargaInalámbrica #Inducción #Electromagnetismo #Tecnología #Ciencia #Curiosidades #Frecuencia0
