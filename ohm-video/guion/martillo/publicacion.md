@@ -1,0 +1,18 @@
+# Publicación: iman-martillo.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué un golpe debilita un imán, pero imanta una barra de hierro que apunta al norte? 🧲🔨
+DESCRIP:
+Si golpeas un imán con un martillo, se debilita. Pero si golpeas una barra de hierro que apunta al norte, se convierte en imán. 🤔
+
+Por dentro, el hierro está dividido en millones de dominios magnéticos: zonas diminutas que funcionan como pequeños imanes. En un imán casi todos apuntan hacia el mismo lado, y un golpe los sacude y los desordena. En una barra común ya están desordenados, pero el golpe los deja libres para girar por un instante.
+
+Si la barra apunta al norte, el campo magnético de la Tierra los alinea con él. Y se quedan así.
+
+🧲 ¿Por qué este golpe crea un imán?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Magnetismo #Imán #Física #CampoMagnético #Ciencia #Curiosidades #Frecuencia0

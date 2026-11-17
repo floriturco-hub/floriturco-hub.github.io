@@ -1,0 +1,13 @@
+TITULO: ¿Por qué chilla un micrófono cuando lo acercas a la bocina? (Efecto Larsen) 🎤🔊
+DESCRIP:
+Acercas el micrófono a la bocina y sale un pitido ensordecedor. 🤔
+
+El micrófono capta un sonido, el amplificador lo hace más fuerte y la bocina lo suelta. Si el micrófono está cerca, vuelve a captar ese sonido amplificado y lo amplifica otra vez, y otra. En ese bucle, ciertas frecuencias regresan justo a tiempo para sumarse y crecen sin control hasta el máximo del equipo. Es el efecto Larsen, o realimentación acústica.
+
+En los conciertos apuntan los micrófonos lejos de las bocinas y filtran esas frecuencias.
+
+🎤 ¿Por qué chilla este micrófono?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#EfectoLarsen #Sonido #Acústica #Física #Ciencia #Curiosidades #Frecuencia0

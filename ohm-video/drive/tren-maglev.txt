@@ -1,0 +1,13 @@
+TITULO: ¿Cómo flota y avanza un tren Maglev a 600 km/h sin tocar los rieles? 🚄🧲
+DESCRIP:
+Los imanes comunes no pueden hacer flotar algo de forma estable: se voltean o se pegan. 🤔
+
+El Maglev japonés lleva imanes superconductores muy potentes. Al pasar rápido junto a bobinas en las paredes de la vía, induce corrientes en ellas, y esas bobinas se vuelven imanes que lo empujan hacia arriba. Por eso, a baja velocidad, va sobre ruedas y despega pasando unos 150 km/h. Otros trenes usan electroimanes y sensores que corrigen la distancia miles de veces por segundo.
+
+Y un campo magnético que avanza por la vía lo jala hacia adelante.
+
+🚄 ¿Cómo flota este tren a seiscientos?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Maglev #Tren #Magnetismo #Ingeniería #Ciencia #Curiosidades #Frecuencia0

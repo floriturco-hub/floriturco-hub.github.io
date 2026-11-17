@@ -1,0 +1,18 @@
+# Publicación: reversores-empuje.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo frena un avión gigante? (Reversores de empuje) ✈️🛬
+DESCRIP:
+Un avión de 250 toneladas aterriza y, de pronto, sus motores rugen más fuerte. 🤔
+
+Al tocar la pista, la parte trasera de cada motor se desliza y deja al descubierto unas rejillas. Unas compuertas bloquean el aire que normalmente sale disparado hacia atrás, y ese aire sale por las rejillas desviado hacia adelante: el motor empuja en contra del movimiento. Son los reversores de empuje, y ayudan sobre todo en pistas mojadas, donde las ruedas resbalan.
+
+Pero el trabajo pesado lo hacen los frenos de las ruedas, junto con los spoilers que se levantan en las alas.
+
+✈️ ¿Cómo frena este avión gigante?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Aviones #Aviación #ReversoresDeEmpuje #Ingeniería #Ciencia #Curiosidades #Frecuencia0

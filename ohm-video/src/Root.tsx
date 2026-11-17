@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { Fosfenos, DURACION_FOSFENOS_S } from "./fosfenos/Fosfenos";
 import { EspaguetiTres, DURACION_ESPAGUETI_S } from "./espagueti/EspaguetiTres";
 import { ReversoresEmpuje, DURACION_REVERSORES_S } from "./reversores/ReversoresEmpuje";
 import { FlamencoRosa, DURACION_FLAMENCO_S } from "./flamenco/FlamencoRosa";
@@ -1536,6 +1537,14 @@ export const RemotionRoot: React.FC = () => {
         id="EspaguetiTres"
         component={EspaguetiTres}
         durationInFrames={Math.round(DURACION_ESPAGUETI_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Fosfenos"
+        component={Fosfenos}
+        durationInFrames={Math.round(DURACION_FOSFENOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
