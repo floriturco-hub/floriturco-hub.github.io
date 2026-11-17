@@ -43,6 +43,15 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { FrenosCarbono, DURACION_FRENOS_S } from "./frenos/FrenosCarbono";
+import { LunaAlejandose, DURACION_LUNALEJA_S } from "./lunaleja/LunaAlejandose";
+import { PantallaOreja, DURACION_PROXIMIDAD_S } from "./proximidad/PantallaOreja";
+import { Sifon, DURACION_SIFON_S } from "./sifon/Sifon";
+import { CloroManchas, DURACION_CLORO_S } from "./cloro/CloroManchas";
+import { PuertaSensor, DURACION_PUERTA_S } from "./puerta/PuertaSensor";
+import { BuhoSilencio, DURACION_BUHO_S } from "./buho/BuhoSilencio";
+import { EspejismoCarretera, DURACION_ESPEJISMO_S } from "./espejismo/EspejismoCarretera";
+import { TorresAltaTension, DURACION_TORRES_S } from "./torres/TorresAltaTension";
 import { PanzaRuge, DURACION_TRIPAS_S } from "./tripas/PanzaRuge";
 import { ZoomPeriscopio, DURACION_PERISCOPIO_S } from "./periscopio/ZoomPeriscopio";
 import { PlumaFuente, DURACION_ESTILOGRAFICA_S } from "./estilografica/PlumaFuente";
@@ -1167,6 +1176,78 @@ export const RemotionRoot: React.FC = () => {
         id="PanzaRuge"
         component={PanzaRuge}
         durationInFrames={Math.round(DURACION_TRIPAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TorresAltaTension"
+        component={TorresAltaTension}
+        durationInFrames={Math.round(DURACION_TORRES_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EspejismoCarretera"
+        component={EspejismoCarretera}
+        durationInFrames={Math.round(DURACION_ESPEJISMO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BuhoSilencio"
+        component={BuhoSilencio}
+        durationInFrames={Math.round(DURACION_BUHO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PuertaSensor"
+        component={PuertaSensor}
+        durationInFrames={Math.round(DURACION_PUERTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CloroManchas"
+        component={CloroManchas}
+        durationInFrames={Math.round(DURACION_CLORO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Sifon"
+        component={Sifon}
+        durationInFrames={Math.round(DURACION_SIFON_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PantallaOreja"
+        component={PantallaOreja}
+        durationInFrames={Math.round(DURACION_PROXIMIDAD_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LunaAlejandose"
+        component={LunaAlejandose}
+        durationInFrames={Math.round(DURACION_LUNALEJA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FrenosCarbono"
+        component={FrenosCarbono}
+        durationInFrames={Math.round(DURACION_FRENOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}

@@ -1,0 +1,8 @@
+¿Cómo te cobra el peaje sin parar?
+Pasas a ochenta por hora y el peaje te cobra a través del parabrisas. Al final verás por qué el chip no necesita batería.
+En tu parabrisas hay una etiqueta con un chip diminuto y una antena.
+La antena del peaje envía ondas de radio. Al llegar a tu antena, esas ondas inducen una pequeña corriente.
+Esa energía basta para despertar al chip, que responde con su número, modulando la misma onda que recibe.
+Todo ocurre en milésimas de segundo, mientras pasas. El sistema busca ese número y cobra a tu cuenta.
+El chip no necesita batería: lo alimenta la propia antena del peaje.
+Así te cobra el peaje sin parar.
