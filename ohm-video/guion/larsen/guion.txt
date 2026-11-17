@@ -1,0 +1,8 @@
+¿Por qué chilla este micrófono?
+Acercas el micrófono a la bocina y sale un pitido ensordecedor. Al final verás cómo lo evitan en los conciertos.
+El micrófono capta un sonido, el amplificador lo hace más fuerte, y la bocina lo suelta.
+Si el micrófono está cerca, vuelve a captar ese sonido amplificado, y lo amplifica otra vez. Y otra. Y otra.
+En ese bucle, cada vuelta suma volumen. Ciertas frecuencias regresan justo a tiempo para sumarse, y crecen sin control hasta el máximo del equipo.
+Es el efecto Larsen.
+En los conciertos apuntan los micrófonos lejos de las bocinas y filtran esas frecuencias.
+Por eso chilla este micrófono.

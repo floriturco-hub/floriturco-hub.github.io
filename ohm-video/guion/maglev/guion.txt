@@ -1,0 +1,8 @@
+¿Cómo flota este tren a seiscientos?
+Los imanes normales no pueden hacer flotar algo de forma estable: se voltean o se pegan. Al final verás cómo resuelven ese problema.
+El tren japonés lleva imanes superconductores muy potentes en sus vagones.
+Al pasar rápido junto a bobinas en las paredes de la vía, induce corrientes en ellas. Esas bobinas se vuelven imanes que lo empujan hacia arriba.
+Por eso, a poca velocidad, va sobre ruedas, y despega al pasar unos ciento cincuenta kilómetros por hora.
+Otros trenes usan electroimanes y sensores que corrigen la distancia miles de veces por segundo.
+Y un campo magnético que avanza por la vía lo jala hacia adelante.
+Así flota este tren a seiscientos.

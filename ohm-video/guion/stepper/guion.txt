@@ -1,0 +1,8 @@
+¿Cómo se mueve con tanta precisión?
+Una impresora 3D mueve su cabezal centésimas de milímetro sin equivocarse. Al final verás por qué no necesita mirar dónde está.
+Usa un motor de pasos. Por dentro tiene un rotor con dientes y, alrededor, varios electroimanes.
+En lugar de girar libre, el circuito enciende los electroimanes uno tras otro.
+Cada vez que cambia, el rotor salta a alinearse con el nuevo: un paso exacto, normalmente de uno coma ocho grados.
+Doscientos pasos son una vuelta. Un tornillo convierte esa vuelta en avance, así que cada paso son centésimas de milímetro.
+Como cada pulso es un paso fijo, basta con contarlos para saber dónde está.
+Así se mueve con tanta precisión.

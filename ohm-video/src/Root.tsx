@@ -43,6 +43,19 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { Cierrapuertas, DURACION_CIERRAPUERTAS_S } from "./cierrapuertas/Cierrapuertas";
+import { CortePapel, DURACION_PAPEL_S } from "./papel/CortePapel";
+import { TrenMaglev, DURACION_MAGLEV_S } from "./maglev/TrenMaglev";
+import { LecheUht, DURACION_LECHEUHT_S } from "./lecheuht/LecheUht";
+import { Cronostasis, DURACION_CRONOSTASIS_S } from "./cronostasis/Cronostasis";
+import { HeliceReves, DURACION_ESTROBOSCOPIO_S } from "./estroboscopio/HeliceReves";
+import { MotorPasos, DURACION_STEPPER_S } from "./stepper/MotorPasos";
+import { LlorarNariz, DURACION_LAGRIMAS_S } from "./lagrimas/LlorarNariz";
+import { CucharaOlla, DURACION_CUCHARA_S } from "./cuchara/CucharaOlla";
+import { CamaleonOjos, DURACION_CAMALEON_S } from "./camaleon/CamaleonOjos";
+import { ImanMartillo, DURACION_MARTILLO_S } from "./martillo/ImanMartillo";
+import { Taximetro, DURACION_TAXIMETRO_S } from "./taximetro/Taximetro";
+import { JugoNaranja, DURACION_NARANJA_S } from "./naranja/JugoNaranja";
 import { HologramaBillete, DURACION_HOLOGRAMA_S } from "./holograma/HologramaBillete";
 import { AlcantarillaRedonda, DURACION_ALCANTARILLA_S } from "./alcantarilla/AlcantarillaRedonda";
 import { GolpeBarbilla, DURACION_BARBILLA_S } from "./barbilla/GolpeBarbilla";
@@ -1320,6 +1333,110 @@ export const RemotionRoot: React.FC = () => {
         id="HologramaBillete"
         component={HologramaBillete}
         durationInFrames={Math.round(DURACION_HOLOGRAMA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="JugoNaranja"
+        component={JugoNaranja}
+        durationInFrames={Math.round(DURACION_NARANJA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Taximetro"
+        component={Taximetro}
+        durationInFrames={Math.round(DURACION_TAXIMETRO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ImanMartillo"
+        component={ImanMartillo}
+        durationInFrames={Math.round(DURACION_MARTILLO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CamaleonOjos"
+        component={CamaleonOjos}
+        durationInFrames={Math.round(DURACION_CAMALEON_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CucharaOlla"
+        component={CucharaOlla}
+        durationInFrames={Math.round(DURACION_CUCHARA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LlorarNariz"
+        component={LlorarNariz}
+        durationInFrames={Math.round(DURACION_LAGRIMAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MotorPasos"
+        component={MotorPasos}
+        durationInFrames={Math.round(DURACION_STEPPER_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HeliceReves"
+        component={HeliceReves}
+        durationInFrames={Math.round(DURACION_ESTROBOSCOPIO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Cronostasis"
+        component={Cronostasis}
+        durationInFrames={Math.round(DURACION_CRONOSTASIS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LecheUht"
+        component={LecheUht}
+        durationInFrames={Math.round(DURACION_LECHEUHT_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TrenMaglev"
+        component={TrenMaglev}
+        durationInFrames={Math.round(DURACION_MAGLEV_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CortePapel"
+        component={CortePapel}
+        durationInFrames={Math.round(DURACION_PAPEL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Cierrapuertas"
+        component={Cierrapuertas}
+        durationInFrames={Math.round(DURACION_CIERRAPUERTAS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
