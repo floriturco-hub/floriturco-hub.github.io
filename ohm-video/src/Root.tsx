@@ -43,6 +43,21 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { Bumeran, DURACION_BUMERAN_S } from "./bumeran/Bumeran";
+import { TipoSangre, DURACION_SANGRE_S } from "./sangretipo/TipoSangre";
+import { CalentadorManos, DURACION_CALENTADOR_S } from "./calentador/CalentadorManos";
+import { PuenteColgante, DURACION_PUENTE_S } from "./puente/PuenteColgante";
+import { SaciedadSemantica, DURACION_SACIEDAD_S } from "./saciedad/SaciedadSemantica";
+import { RadarPolicia, DURACION_RADAR_S } from "./radarpoli/RadarPolicia";
+import { PanDuro, DURACION_PANDURO_S } from "./panduro/PanDuro";
+import { CamaraClic, DURACION_OBTURADOR_S } from "./obturador/CamaraClic";
+import { GatoCae, DURACION_GATO_S } from "./gatocae/GatoCae";
+import { BotellaSoplado, DURACION_PREFORMA_S } from "./preforma/BotellaSoplado";
+import { MiembroFantasma, DURACION_FANTASMA_S } from "./fantasma/MiembroFantasma";
+import { CamaClavos, DURACION_CLAVOS_S } from "./clavos/CamaClavos";
+import { ControlRemoto, DURACION_CONTROL_S } from "./controlremoto/ControlRemoto";
+import { PiedraRebota, DURACION_PIEDRA_S } from "./piedrarebota/PiedraRebota";
+import { LlaveCerradura, DURACION_CERRADURA_S } from "./cerradura/LlaveCerradura";
 import { LlaveStilson, DURACION_STILSON_S } from "./stilson/LlaveStilson";
 import { Amortiguador, DURACION_AMORTIGUADOR_S } from "./amortiguador/Amortiguador";
 import { VisorNocturno, DURACION_VISOR_S } from "./visor/VisorNocturno";
@@ -1806,6 +1821,126 @@ export const RemotionRoot: React.FC = () => {
         id="LlaveStilson"
         component={LlaveStilson}
         durationInFrames={Math.round(DURACION_STILSON_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LlaveCerradura"
+        component={LlaveCerradura}
+        durationInFrames={Math.round(DURACION_CERRADURA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PiedraRebota"
+        component={PiedraRebota}
+        durationInFrames={Math.round(DURACION_PIEDRA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ControlRemoto"
+        component={ControlRemoto}
+        durationInFrames={Math.round(DURACION_CONTROL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CamaClavos"
+        component={CamaClavos}
+        durationInFrames={Math.round(DURACION_CLAVOS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MiembroFantasma"
+        component={MiembroFantasma}
+        durationInFrames={Math.round(DURACION_FANTASMA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BotellaSoplado"
+        component={BotellaSoplado}
+        durationInFrames={Math.round(DURACION_PREFORMA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GatoCae"
+        component={GatoCae}
+        durationInFrames={Math.round(DURACION_GATO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CamaraClic"
+        component={CamaraClic}
+        durationInFrames={Math.round(DURACION_OBTURADOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PanDuro"
+        component={PanDuro}
+        durationInFrames={Math.round(DURACION_PANDURO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RadarPolicia"
+        component={RadarPolicia}
+        durationInFrames={Math.round(DURACION_RADAR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SaciedadSemantica"
+        component={SaciedadSemantica}
+        durationInFrames={Math.round(DURACION_SACIEDAD_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PuenteColgante"
+        component={PuenteColgante}
+        durationInFrames={Math.round(DURACION_PUENTE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CalentadorManos"
+        component={CalentadorManos}
+        durationInFrames={Math.round(DURACION_CALENTADOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TipoSangre"
+        component={TipoSangre}
+        durationInFrames={Math.round(DURACION_SANGRE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Bumeran"
+        component={Bumeran}
+        durationInFrames={Math.round(DURACION_BUMERAN_S * 30)}
         fps={30}
         width={1080}
         height={1920}

@@ -1,0 +1,18 @@
+# Publicación: bumeran.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué regresa el bumerán a tus manos? 🪃🔄
+DESCRIP:
+Lanzas un bumerán, da una vuelta en el aire y regresa a tus manos. 🤔
+
+Cada brazo tiene forma de ala de avión: al girar, cada uno genera sustentación. Pero el bumerán gira mientras avanza: el brazo de arriba se mueve a favor del vuelo y corta el aire más rápido que el de abajo. Más velocidad, más sustentación: la parte de arriba recibe un empujón lateral más fuerte. Como gira, ese empujón no lo voltea: lo hace cambiar de dirección poco a poco, como un trompo inclinado. Es la precesión.
+
+Por eso hay que lanzarlo casi vertical, con mucho giro, y no acostado como un frisbi.
+
+🪃 ¿Cómo sabe volver este bumerán?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Bumerán #Física #Aerodinámica #Giroscopio #Ciencia #Curiosidades #Frecuencia0

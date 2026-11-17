@@ -1,0 +1,18 @@
+# Publicación: pan-duro.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué el pan se pone duro, y más rápido en el refrigerador? 🍞❄️
+DESCRIP:
+El pan recién hecho es suave, pero a los dos días está duro, aunque no se haya secado. 🤔
+
+La harina tiene almidón: cadenas largas que en el horno absorben agua, se hinchan y se desordenan. Eso lo hace suave. Al enfriarse, esas cadenas se reacomodan poco a poco en cristales ordenados que atrapan el agua: se llama retrogradación. El pan no perdió agua; la tiene presa en cristales duros. En el refrigerador, los cristales se forman hasta tres veces más rápido; en el congelador, casi se detienen.
+
+Para revivirlo, caliéntalo: el calor derrite los cristales y se ablanda por un rato.
+
+🍞 ¿Por qué este pan se endureció?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Pan #Cocina #Química #Alimentos #Ciencia #Curiosidades #Frecuencia0

@@ -1,0 +1,18 @@
+# Publicación: tipo-sangre.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Qué significan los tipos de sangre A, B, AB y O, positivo y negativo? 🩸🧬
+DESCRIP:
+Tu sangre es A, B, AB u O, positiva o negativa. Y si recibes la equivocada, tus defensas atacan. 🤔
+
+Tus glóbulos rojos llevan marcas, como banderas: marca A, eres A; marca B, eres B; ambas, AB; ninguna, O. Positivo o negativo es otra marca, el factor Rh. Tu plasma tiene anticuerpos contra las marcas que no tienes: si eres A y te ponen sangre B, esos anticuerpos atacan los glóbulos extraños y los revientan.
+
+Los glóbulos O negativo no tienen marcas: les sirven a casi cualquiera. Por eso son tan valiosos en una emergencia. Las transfusiones siempre las decide personal de salud.
+
+🩸 ¿Qué significan estas letras?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Sangre #Medicina #Biología #Salud #Ciencia #Curiosidades #Frecuencia0
