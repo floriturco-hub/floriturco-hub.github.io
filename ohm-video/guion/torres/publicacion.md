@@ -1,0 +1,18 @@
+# Publicación: torres-alta-tension.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué las torres de alta tensión llevan 3 cables y para qué son las pelotas naranjas? 🗼⚡
+DESCRIP:
+En casa bastan dos cables, pero las torres de alta tensión llevan tres, o seis. 🤔
+
+Por ellas viaja corriente alterna trifásica: tres corrientes que suben y bajan desfasadas, como tres pistones. En cada instante, lo que va por un cable vuelve por los otros dos. Así no hace falta un cable de regreso, y se lleva más energía con menos metal. Por eso van en grupos de tres: seis cables son dos circuitos.
+
+Y las pelotas naranjas son marcadores, para que los pilotos de avionetas y helicópteros vean los cables.
+
+🗼 ¿Por qué estas torres llevan tres cables?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#AltaTensión #Electricidad #Física #Ingeniería #Ciencia #Curiosidades #Frecuencia0

@@ -1,0 +1,18 @@
+# Publicación: luna-alejandose.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué la Luna se aleja 3,8 cm cada año y cómo alarga nuestros días? 🌕🌍
+DESCRIP:
+Cada año, la Luna se aleja casi cuatro centímetros. 🤔
+
+Su gravedad estira los océanos y forma dos abultamientos: las mareas. Pero la Tierra gira más rápido de lo que la Luna da la vuelta, así que arrastra esos bultos un poco por delante de ella. Ese bulto adelantado tira de la Luna hacia adelante, le da energía y la sube a una órbita más alta.
+
+A cambio, el roce de las mareas frena a la Tierra: los días se alargan un par de milisegundos por siglo. Hace unos cuatrocientos millones de años, un día duraba solo unas veintidós horas.
+
+🌕 ¿Por qué la Luna se nos escapa?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Luna #Mareas #Astronomía #Física #Ciencia #Curiosidades #Frecuencia0

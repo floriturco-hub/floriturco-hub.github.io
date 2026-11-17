@@ -1,0 +1,18 @@
+# Publicación: puerta-sensor.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo sabe la puerta del ascensor o el portón del garaje que metiste la mano? 🛗🐕
+DESCRIP:
+Metes la mano y la puerta del ascensor se abre al instante. 🤔
+
+A los lados hay una cortina de luz infrarroja: decenas de rayos invisibles que van de un emisor a un receptor. Si algo corta un solo rayo, tu mano o tu perro, el motor se invierte. Los portones de garaje usan lo mismo: un rayo infrarrojo cerca del suelo.
+
+Y por si falla, el motor mide su esfuerzo: si empuja algo y le cuesta más, se detiene y retrocede. Los ascensores viejos solo tenían una barra que tenía que tocarte para reaccionar.
+
+🛗 ¿Cómo sabe esta puerta que estás ahí?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Sensores #Infrarrojo #Tecnología #Ascensor #Ciencia #Curiosidades #Frecuencia0

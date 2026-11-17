@@ -1,0 +1,18 @@
+# Publicación: carbon-sin-llama.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué la madera arde con llamas y el carbón brilla al rojo sin llama? 🪵🔥
+DESCRIP:
+La madera arde con llamas amarillas y humo, y el carbón solo brilla al rojo. Pero vienen de lo mismo. 🤔
+
+Al calentarse, la madera suelta gases: vapor, alquitranes y otros compuestos. Esos gases son los que arden en el aire y forman la llama. El amarillo es hollín al rojo vivo, y el humo es lo que no alcanzó a quemarse.
+
+El carbón vegetal se hace calentando madera sin oxígeno, para expulsar esos gases antes. Queda casi solo carbono. Al quemarlo, el oxígeno reacciona directamente en su superficie. Sin gases, casi no hay llama: solo brilla.
+
+🔥 ¿Por qué el carbón no hace llama?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Fuego #Combustión #Química #Carbón #Ciencia #Curiosidades #Frecuencia0

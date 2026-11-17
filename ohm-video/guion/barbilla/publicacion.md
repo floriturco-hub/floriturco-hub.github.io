@@ -1,0 +1,18 @@
+# Publicación: golpe-barbilla.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué un golpe en la barbilla deja inconsciente a un boxeador al instante? 🥊🧠
+DESCRIP:
+Un golpe en la barbilla y el boxeador cae al instante, inconsciente. 🤔
+
+La barbilla es la punta de una palanca larga: la mandíbula. Un golpe ahí hace girar la cabeza de golpe sobre el cuello, mucho más rápido que un golpe en la frente. El cerebro flota dentro del cráneo: cuando la cabeza gira bruscamente, se queda atrás un instante y se tuerce.
+
+Esa torsión sacude el tronco cerebral, que mantiene el estado de alerta, y la conciencia se apaga. No importa tanto la fuerza, sino el giro. Y por eso es tan peligroso.
+
+🥊 ¿Por qué este golpe apaga a cualquiera?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Boxeo #Cerebro #Física #Neurociencia #Ciencia #Curiosidades #Frecuencia0
