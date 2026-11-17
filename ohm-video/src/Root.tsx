@@ -43,6 +43,9 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { SudorNervios, DURACION_SUDORNERVIOS_S } from "./sudornervios/SudorNervios";
+import { DardoNerf, DURACION_NERF_S } from "./nerf/DardoNerf";
+import { DetectorCO, DURACION_DETECTORCO_S } from "./detectorco/DetectorCO";
 import { Rotomartillo, DURACION_ROTOMARTILLO_S } from "./rotomartillo/Rotomartillo";
 import { CabezaExplosiva, DURACION_CABEZAEXPLOSIVA_S } from "./cabezaexplosiva/CabezaExplosiva";
 import { EsferasAsteroides, DURACION_ESFERAS_S } from "./esferas/EsferasAsteroides";
@@ -1464,6 +1467,30 @@ export const RemotionRoot: React.FC = () => {
         id="Rotomartillo"
         component={Rotomartillo}
         durationInFrames={Math.round(DURACION_ROTOMARTILLO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DetectorCO"
+        component={DetectorCO}
+        durationInFrames={Math.round(DURACION_DETECTORCO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DardoNerf"
+        component={DardoNerf}
+        durationInFrames={Math.round(DURACION_NERF_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SudorNervios"
+        component={SudorNervios}
+        durationInFrames={Math.round(DURACION_SUDORNERVIOS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
