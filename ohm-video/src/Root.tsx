@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { EsferasAsteroides, DURACION_ESFERAS_S } from "./esferas/EsferasAsteroides";
 import { Cierrapuertas, DURACION_CIERRAPUERTAS_S } from "./cierrapuertas/Cierrapuertas";
 import { CortePapel, DURACION_PAPEL_S } from "./papel/CortePapel";
 import { TrenMaglev, DURACION_MAGLEV_S } from "./maglev/TrenMaglev";
@@ -1437,6 +1438,14 @@ export const RemotionRoot: React.FC = () => {
         id="Cierrapuertas"
         component={Cierrapuertas}
         durationInFrames={Math.round(DURACION_CIERRAPUERTAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EsferasAsteroides"
+        component={EsferasAsteroides}
+        durationInFrames={Math.round(DURACION_ESFERAS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
