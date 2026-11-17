@@ -43,6 +43,25 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { PanalAbsorbe, DURACION_PANAL_S } from "./panal/PanalAbsorbe";
+import { MareoAuto, DURACION_MAREO_S } from "./mareo/MareoAuto";
+import { LectorQr, DURACION_LECTORQR_S } from "./lectorqr/LectorQr";
+import { AguacateCafe, DURACION_AGUACATE_S } from "./aguacate/AguacateCafe";
+import { EstornudoOjos, DURACION_ESTORNUDO_S } from "./estornudo/EstornudoOjos";
+import { Winglets, DURACION_WINGLETS_S } from "./winglets/Winglets";
+import { Ampollas, DURACION_AMPOLLA_S } from "./ampolla/Ampollas";
+import { SalOsmosis, DURACION_OSMOSIS_S } from "./osmosis/SalOsmosis";
+import { BuscaPolos, DURACION_BUSCAPOLOS_S } from "./buscapolos/BuscaPolos";
+import { ViajeVuelta, DURACION_VUELTA_S } from "./vuelta/ViajeVuelta";
+import { MotorDiesel, DURACION_DIESEL_S } from "./diesel/MotorDiesel";
+import { FrenosAbs, DURACION_ABS_S } from "./abs/FrenosAbs";
+import { BolsaPapas, DURACION_PAPAS_S } from "./papas/BolsaPapas";
+import { QuesoDerretido, DURACION_QUESO_S } from "./queso/QuesoDerretido";
+import { CargaInalambrica, DURACION_QI_S } from "./qi/CargaInalambrica";
+import { JuegosFeria, DURACION_FERIA_S } from "./feria/JuegosFeria";
+import { EstrellaFugaz, DURACION_ESTRELLAFUGAZ_S } from "./estrellafugaz/EstrellaFugaz";
+import { RopaMojada, DURACION_ROPAMOJADA_S } from "./ropamojada/RopaMojada";
+import { AceiteOlas, DURACION_ACEITE_S } from "./aceite/AceiteOlas";
 import { Fosfenos, DURACION_FOSFENOS_S } from "./fosfenos/Fosfenos";
 import { EspaguetiTres, DURACION_ESPAGUETI_S } from "./espagueti/EspaguetiTres";
 import { ReversoresEmpuje, DURACION_REVERSORES_S } from "./reversores/ReversoresEmpuje";
@@ -1545,6 +1564,158 @@ export const RemotionRoot: React.FC = () => {
         id="Fosfenos"
         component={Fosfenos}
         durationInFrames={Math.round(DURACION_FOSFENOS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AceiteOlas"
+        component={AceiteOlas}
+        durationInFrames={Math.round(DURACION_ACEITE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RopaMojada"
+        component={RopaMojada}
+        durationInFrames={Math.round(DURACION_ROPAMOJADA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EstrellaFugaz"
+        component={EstrellaFugaz}
+        durationInFrames={Math.round(DURACION_ESTRELLAFUGAZ_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="JuegosFeria"
+        component={JuegosFeria}
+        durationInFrames={Math.round(DURACION_FERIA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CargaInalambrica"
+        component={CargaInalambrica}
+        durationInFrames={Math.round(DURACION_QI_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="QuesoDerretido"
+        component={QuesoDerretido}
+        durationInFrames={Math.round(DURACION_QUESO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BolsaPapas"
+        component={BolsaPapas}
+        durationInFrames={Math.round(DURACION_PAPAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FrenosAbs"
+        component={FrenosAbs}
+        durationInFrames={Math.round(DURACION_ABS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MotorDiesel"
+        component={MotorDiesel}
+        durationInFrames={Math.round(DURACION_DIESEL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ViajeVuelta"
+        component={ViajeVuelta}
+        durationInFrames={Math.round(DURACION_VUELTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BuscaPolos"
+        component={BuscaPolos}
+        durationInFrames={Math.round(DURACION_BUSCAPOLOS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SalOsmosis"
+        component={SalOsmosis}
+        durationInFrames={Math.round(DURACION_OSMOSIS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Ampollas"
+        component={Ampollas}
+        durationInFrames={Math.round(DURACION_AMPOLLA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Winglets"
+        component={Winglets}
+        durationInFrames={Math.round(DURACION_WINGLETS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EstornudoOjos"
+        component={EstornudoOjos}
+        durationInFrames={Math.round(DURACION_ESTORNUDO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AguacateCafe"
+        component={AguacateCafe}
+        durationInFrames={Math.round(DURACION_AGUACATE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LectorQr"
+        component={LectorQr}
+        durationInFrames={Math.round(DURACION_LECTORQR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MareoAuto"
+        component={MareoAuto}
+        durationInFrames={Math.round(DURACION_MAREO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PanalAbsorbe"
+        component={PanalAbsorbe}
+        durationInFrames={Math.round(DURACION_PANAL_S * 30)}
         fps={30}
         width={1080}
         height={1920}
