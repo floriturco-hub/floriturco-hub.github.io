@@ -43,6 +43,8 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { EspaguetiTres, DURACION_ESPAGUETI_S } from "./espagueti/EspaguetiTres";
+import { ReversoresEmpuje, DURACION_REVERSORES_S } from "./reversores/ReversoresEmpuje";
 import { FlamencoRosa, DURACION_FLAMENCO_S } from "./flamenco/FlamencoRosa";
 import { EfectoLarsen, DURACION_LARSEN_S } from "./larsen/EfectoLarsen";
 import { NivelBurbuja, DURACION_NIVEL_S } from "./nivel/NivelBurbuja";
@@ -1518,6 +1520,22 @@ export const RemotionRoot: React.FC = () => {
         id="FlamencoRosa"
         component={FlamencoRosa}
         durationInFrames={Math.round(DURACION_FLAMENCO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ReversoresEmpuje"
+        component={ReversoresEmpuje}
+        durationInFrames={Math.round(DURACION_REVERSORES_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EspaguetiTres"
+        component={EspaguetiTres}
+        durationInFrames={Math.round(DURACION_ESPAGUETI_S * 30)}
         fps={30}
         width={1080}
         height={1920}
