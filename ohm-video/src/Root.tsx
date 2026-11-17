@@ -43,6 +43,8 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { FlamencoRosa, DURACION_FLAMENCO_S } from "./flamenco/FlamencoRosa";
+import { EfectoLarsen, DURACION_LARSEN_S } from "./larsen/EfectoLarsen";
 import { NivelBurbuja, DURACION_NIVEL_S } from "./nivel/NivelBurbuja";
 import { SudorNervios, DURACION_SUDORNERVIOS_S } from "./sudornervios/SudorNervios";
 import { DardoNerf, DURACION_NERF_S } from "./nerf/DardoNerf";
@@ -1500,6 +1502,22 @@ export const RemotionRoot: React.FC = () => {
         id="NivelBurbuja"
         component={NivelBurbuja}
         durationInFrames={Math.round(DURACION_NIVEL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EfectoLarsen"
+        component={EfectoLarsen}
+        durationInFrames={Math.round(DURACION_LARSEN_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FlamencoRosa"
+        component={FlamencoRosa}
+        durationInFrames={Math.round(DURACION_FLAMENCO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
