@@ -43,6 +43,7 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { NivelBurbuja, DURACION_NIVEL_S } from "./nivel/NivelBurbuja";
 import { SudorNervios, DURACION_SUDORNERVIOS_S } from "./sudornervios/SudorNervios";
 import { DardoNerf, DURACION_NERF_S } from "./nerf/DardoNerf";
 import { DetectorCO, DURACION_DETECTORCO_S } from "./detectorco/DetectorCO";
@@ -1491,6 +1492,14 @@ export const RemotionRoot: React.FC = () => {
         id="SudorNervios"
         component={SudorNervios}
         durationInFrames={Math.round(DURACION_SUDORNERVIOS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="NivelBurbuja"
+        component={NivelBurbuja}
+        durationInFrames={Math.round(DURACION_NIVEL_S * 30)}
         fps={30}
         width={1080}
         height={1920}
