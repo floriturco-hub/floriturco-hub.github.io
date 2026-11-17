@@ -1,0 +1,20 @@
+# Publicación: torquimetro.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo sabe una llave dinamométrica cuándo hacer ¡CLIC! con la fuerza exacta? 🔧⚙️
+DESCRIP:
+Aprietas el tornillo y, justo en la fuerza exacta, suena clic. 🤔
+
+Dentro del mango hay un resorte que empuja un pequeño bloque contra la cabeza de la llave. Girando la perilla comprimes más o menos el resorte: así eliges la fuerza.
+
+Mientras aprietas, el resorte aguanta. Cuando la fuerza lo supera, el bloque se desliza y la cabeza da un pequeño salto: ese es el clic.
+
+Si la guardas con el resorte apretado, se cansa y pierde precisión. Por eso hay que dejarla en el mínimo.
+
+🔧 ¿Cómo sabe esta llave cuándo parar?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Torquímetro #Herramientas #Mecánica #Física #Ciencia #Curiosidades #Frecuencia0

@@ -5,25 +5,25 @@ import { C, clamp, useT } from "../theme";
 // Instantes clave (s) de public/audio/cortaunas/narracion.wav (voz x1,10), sacados con Whisper.
 // La franja y 230-330 queda libre para los subtítulos.
 export const T = {
-  una: 0, // una
-  queratina: 0, // queratina
-  dedos: 0, // dedos
-  final: 0, // final
-  secreto: 0, // secreto
-  punta: 0, // punta
-  apoyo: 0, // apoyo
-  cerca: 0, // cerca
-  multiplica: 0, // multiplica
-  hojas: 0, // hojas
-  bisagra: 0, // bisagra
-  esa: 0, // esa
-  lleva: 0, // lleva
-  diminuto: 0, // diminuto
-  concentra: 0, // concentra
-  finisima: 0, // finisima
-  presion: 0, // presion
-  porEso: 0, // por
-  fin: 0, // FIN
+  una: 2.52, // una
+  queratina: 3.28, // queratina
+  dedos: 5.72, // dedos
+  final: 6.66, // final
+  secreto: 9.82, // secreto
+  punta: 12.48, // punta
+  apoyo: 13.50, // apoyo
+  cerca: 15.18, // cerca
+  multiplica: 16.36, // multiplica
+  hojas: 18.80, // hojas
+  bisagra: 21.06, // bisagra
+  esa: 22.50, // esa
+  lleva: 23.94, // lleva
+  diminuto: 26.38, // diminuto
+  concentra: 27.22, // concentra
+  finisima: 29.16, // finisima
+  presion: 30.48, // presion
+  porEso: 32.04, // por
+  fin: 34.30, // FIN
 };
 
 const ACERO = "#B8B8CC";

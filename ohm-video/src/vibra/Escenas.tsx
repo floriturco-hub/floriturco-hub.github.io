@@ -80,7 +80,7 @@ const Inicio: React.FC<{ readonly q: number; readonly t: number }> = ({ q, t }) 
       <Celular x={540} y={960} s={1.15} />
     </g>
     <Ondas x={540} y={960} op={1} t={t} />
-    <Texto x={540} y={620} size={130} color={C.yellow} op={q}>
+    <Texto x={870} y={640} size={130} color={C.yellow} op={q}>
       ?
     </Texto>
   </>

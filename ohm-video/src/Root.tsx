@@ -43,6 +43,18 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { PanzaRuge, DURACION_TRIPAS_S } from "./tripas/PanzaRuge";
+import { ZoomPeriscopio, DURACION_PERISCOPIO_S } from "./periscopio/ZoomPeriscopio";
+import { PlumaFuente, DURACION_ESTILOGRAFICA_S } from "./estilografica/PlumaFuente";
+import { VisionNocturna, DURACION_OSCURO_S } from "./oscuro/VisionNocturna";
+import { EncendedorPlasma, DURACION_PLASMA_S } from "./plasma/EncendedorPlasma";
+import { LataAgitada, DURACION_REFRESCO_S } from "./refresco/LataAgitada";
+import { SirenaDoppler, DURACION_DOPPLER_S } from "./doppler/SirenaDoppler";
+import { Oximetro, DURACION_OXIMETRO_S } from "./oximetro/Oximetro";
+import { Dialisis, DURACION_DIALISIS_S } from "./dialisis/Dialisis";
+import { Cortaunas, DURACION_CORTAUNAS_S } from "./cortaunas/Cortaunas";
+import { PistolaSilicona, DURACION_SILICONA_S } from "./silicona/PistolaSilicona";
+import { TermometroInfrarrojo, DURACION_INFRARROJO_S } from "./infrarrojo/TermometroInfrarrojo";
 import { CelularVibra, DURACION_VIBRA_S } from "./vibra/CelularVibra";
 import { Limpiaparabrisas, DURACION_PARABRISAS_S } from "./parabrisas/Limpiaparabrisas";
 import { Torquimetro, DURACION_TORQUE_S } from "./torque/Torquimetro";
@@ -1059,6 +1071,102 @@ export const RemotionRoot: React.FC = () => {
         id="CelularVibra"
         component={CelularVibra}
         durationInFrames={Math.round(DURACION_VIBRA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TermometroInfrarrojo"
+        component={TermometroInfrarrojo}
+        durationInFrames={Math.round(DURACION_INFRARROJO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PistolaSilicona"
+        component={PistolaSilicona}
+        durationInFrames={Math.round(DURACION_SILICONA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Cortaunas"
+        component={Cortaunas}
+        durationInFrames={Math.round(DURACION_CORTAUNAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Dialisis"
+        component={Dialisis}
+        durationInFrames={Math.round(DURACION_DIALISIS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Oximetro"
+        component={Oximetro}
+        durationInFrames={Math.round(DURACION_OXIMETRO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SirenaDoppler"
+        component={SirenaDoppler}
+        durationInFrames={Math.round(DURACION_DOPPLER_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LataAgitada"
+        component={LataAgitada}
+        durationInFrames={Math.round(DURACION_REFRESCO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="EncendedorPlasma"
+        component={EncendedorPlasma}
+        durationInFrames={Math.round(DURACION_PLASMA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="VisionNocturna"
+        component={VisionNocturna}
+        durationInFrames={Math.round(DURACION_OSCURO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PlumaFuente"
+        component={PlumaFuente}
+        durationInFrames={Math.round(DURACION_ESTILOGRAFICA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ZoomPeriscopio"
+        component={ZoomPeriscopio}
+        durationInFrames={Math.round(DURACION_PERISCOPIO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PanzaRuge"
+        component={PanzaRuge}
+        durationInFrames={Math.round(DURACION_TRIPAS_S * 30)}
         fps={30}
         width={1080}
         height={1920}
