@@ -43,6 +43,8 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { Rotomartillo, DURACION_ROTOMARTILLO_S } from "./rotomartillo/Rotomartillo";
+import { CabezaExplosiva, DURACION_CABEZAEXPLOSIVA_S } from "./cabezaexplosiva/CabezaExplosiva";
 import { EsferasAsteroides, DURACION_ESFERAS_S } from "./esferas/EsferasAsteroides";
 import { Cierrapuertas, DURACION_CIERRAPUERTAS_S } from "./cierrapuertas/Cierrapuertas";
 import { CortePapel, DURACION_PAPEL_S } from "./papel/CortePapel";
@@ -1446,6 +1448,22 @@ export const RemotionRoot: React.FC = () => {
         id="EsferasAsteroides"
         component={EsferasAsteroides}
         durationInFrames={Math.round(DURACION_ESFERAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CabezaExplosiva"
+        component={CabezaExplosiva}
+        durationInFrames={Math.round(DURACION_CABEZAEXPLOSIVA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Rotomartillo"
+        component={Rotomartillo}
+        durationInFrames={Math.round(DURACION_ROTOMARTILLO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
