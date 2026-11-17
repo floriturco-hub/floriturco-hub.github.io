@@ -43,6 +43,14 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { HologramaBillete, DURACION_HOLOGRAMA_S } from "./holograma/HologramaBillete";
+import { AlcantarillaRedonda, DURACION_ALCANTARILLA_S } from "./alcantarilla/AlcantarillaRedonda";
+import { GolpeBarbilla, DURACION_BARBILLA_S } from "./barbilla/GolpeBarbilla";
+import { CarbonSinLlama, DURACION_BRASAS_S } from "./brasas/CarbonSinLlama";
+import { PeajeRfid, DURACION_RFID_S } from "./rfid/PeajeRfid";
+import { AguaOido, DURACION_GOTA_S } from "./gota/AguaOido";
+import { SierraSawstop, DURACION_SAWSTOP_S } from "./sawstop/SierraSawstop";
+import { ChocolateCristales, DURACION_CHOCOLATE_S } from "./chocolate/ChocolateCristales";
 import { FrenosCarbono, DURACION_FRENOS_S } from "./frenos/FrenosCarbono";
 import { LunaAlejandose, DURACION_LUNALEJA_S } from "./lunaleja/LunaAlejandose";
 import { PantallaOreja, DURACION_PROXIMIDAD_S } from "./proximidad/PantallaOreja";
@@ -1248,6 +1256,70 @@ export const RemotionRoot: React.FC = () => {
         id="FrenosCarbono"
         component={FrenosCarbono}
         durationInFrames={Math.round(DURACION_FRENOS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ChocolateCristales"
+        component={ChocolateCristales}
+        durationInFrames={Math.round(DURACION_CHOCOLATE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="SierraSawstop"
+        component={SierraSawstop}
+        durationInFrames={Math.round(DURACION_SAWSTOP_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AguaOido"
+        component={AguaOido}
+        durationInFrames={Math.round(DURACION_GOTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PeajeRfid"
+        component={PeajeRfid}
+        durationInFrames={Math.round(DURACION_RFID_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CarbonSinLlama"
+        component={CarbonSinLlama}
+        durationInFrames={Math.round(DURACION_BRASAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="GolpeBarbilla"
+        component={GolpeBarbilla}
+        durationInFrames={Math.round(DURACION_BARBILLA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AlcantarillaRedonda"
+        component={AlcantarillaRedonda}
+        durationInFrames={Math.round(DURACION_ALCANTARILLA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HologramaBillete"
+        component={HologramaBillete}
+        durationInFrames={Math.round(DURACION_HOLOGRAMA_S * 30)}
         fps={30}
         width={1080}
         height={1920}
