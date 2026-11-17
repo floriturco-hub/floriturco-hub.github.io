@@ -1,0 +1,7 @@
+¿Cómo ve tu sangre esta pinza?
+Te la pones en el dedo y en segundos sabe cuánto oxígeno llevas. Al final verás por qué falla con uñas pintadas.
+De un lado tiene dos luces: una roja y una infrarroja. Del otro, un sensor que mide cuánta luz atraviesa tu dedo.
+La hemoglobina con oxígeno absorbe más infrarrojo y deja pasar el rojo. La que no tiene oxígeno hace lo contrario.
+Con cada latido llega más sangre y la luz cambia. Comparando ese pulso en los dos colores, calcula el porcentaje de oxígeno.
+El esmalte oscuro bloquea parte de la luz y puede engañarlo.
+Así ve tu sangre esta pinza.

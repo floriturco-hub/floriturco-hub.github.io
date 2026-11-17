@@ -43,6 +43,11 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { CelularVibra, DURACION_VIBRA_S } from "./vibra/CelularVibra";
+import { Limpiaparabrisas, DURACION_PARABRISAS_S } from "./parabrisas/Limpiaparabrisas";
+import { Torquimetro, DURACION_TORQUE_S } from "./torque/Torquimetro";
+import { MetalMemoria, DURACION_NITINOL_S } from "./nitinol/MetalMemoria";
+import { LataAire, DURACION_AIRE_S } from "./aire/LataAire";
 import { BateriaLenta, DURACION_BATERIA_S } from "./bateria/BateriaLenta";
 import { MemoriaUsb, DURACION_FLASH_S } from "./flash/MemoriaUsb";
 import { CaminarCirculos, DURACION_CIRCULOS_S } from "./circulos/CaminarCirculos";
@@ -1014,6 +1019,46 @@ export const RemotionRoot: React.FC = () => {
         id="BateriaLenta"
         component={BateriaLenta}
         durationInFrames={Math.round(DURACION_BATERIA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LataAire"
+        component={LataAire}
+        durationInFrames={Math.round(DURACION_AIRE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MetalMemoria"
+        component={MetalMemoria}
+        durationInFrames={Math.round(DURACION_NITINOL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Torquimetro"
+        component={Torquimetro}
+        durationInFrames={Math.round(DURACION_TORQUE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Limpiaparabrisas"
+        component={Limpiaparabrisas}
+        durationInFrames={Math.round(DURACION_PARABRISAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CelularVibra"
+        component={CelularVibra}
+        durationInFrames={Math.round(DURACION_VIBRA_S * 30)}
         fps={30}
         width={1080}
         height={1920}

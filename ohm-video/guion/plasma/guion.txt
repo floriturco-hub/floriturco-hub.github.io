@@ -1,0 +1,7 @@
+¿Cómo enciende fuego sin llama?
+Este encendedor no tiene gas ni piedra, solo un arco morado. Al final verás por qué no le afecta el viento.
+Dentro tiene una batería y un pequeño circuito que eleva su voltaje miles de veces.
+Ese voltaje se aplica entre dos puntas muy cercanas. El aire normalmente aísla, pero con tanto voltaje se rompe: los electrones arrancan otros electrones a los átomos y el aire se vuelve conductor.
+Así nace un arco de plasma, tan caliente que enciende la mecha al instante.
+Como no hay llama, el viento no lo apaga.
+Así enciende fuego sin llama.
