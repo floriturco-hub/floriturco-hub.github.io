@@ -1,0 +1,8 @@
+¡Tu candado esconde tres ruedas secretas!
+Por fuera solo ves una rueda con números. Por dentro hay tres discos metálicos en el mismo eje, uno detrás de otro, y cada uno tiene una muesca.
+El truco son unos pequeños dientes. La rueda que giras arrastra al disco más cercano; tras una vuelta, ese disco engancha al del medio, y el del medio al más lejano. Como un tren que arrastra sus vagones.
+Por eso primero giras a la derecha varias vueltas: arrastras los tres y dejas el más lejano en el primer número.
+Luego giras a la izquierda, con una vuelta completa: el lejano se queda quieto y colocas el del medio en el segundo número.
+Al final, otra vez a la derecha, mueves solo el disco más cercano hasta el tercer número.
+Ahora las tres muescas están alineadas. Una pequeña barra cae dentro de ellas, libera el gancho… y el candado se abre.
+Tres discos, una sola rueda.

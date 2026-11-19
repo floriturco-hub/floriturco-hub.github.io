@@ -1,0 +1,18 @@
+# Publicación: miembro-fantasma.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué duele una mano que ya no existe? (Miembro fantasma) 🧠🪞
+DESCRIP:
+Quien pierde un brazo a veces sigue sintiendo la mano: la mueve, le pica y hasta le duele. 🤔
+
+Tu cerebro tiene un mapa de todo tu cuerpo. Cuando falta la mano, su zona en el mapa sigue ahí y sigue produciendo sensaciones. Además, la mano está junto a la cara en ese mapa: tocar la mejilla puede sentirse en la mano fantasma. Y el cerebro sigue mandando órdenes a una mano que no responde, y a veces lo siente como un calambre que no se suelta.
+
+El neurólogo Ramachandran puso un espejo entre los brazos: el reflejo de la mano sana parecía la perdida, y en muchos pacientes el dolor bajó.
+
+🪞 ¿Cómo duele una mano que no existe?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Cerebro #Neurociencia #MiembroFantasma #Medicina #Ciencia #Curiosidades #Frecuencia0

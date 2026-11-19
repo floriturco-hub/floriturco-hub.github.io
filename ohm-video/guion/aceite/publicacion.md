@@ -1,0 +1,18 @@
+# Publicación: aceite-olas.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué los marineros tiraban aceite al mar para calmar las olas? 🌊🛢️
+DESCRIP:
+En las tormentas, los marineros tiraban aceite al mar, y el agua alrededor del barco se calmaba. 🤔
+
+El aceite se extiende en una capa finísima que frena las ondas diminutas, las arrugas que el viento levanta en la superficie. Esas arrugas son justo las que el viento usa para agarrar el agua y empujarla. Sin ellas, el viento resbala, las olas crecen menos y sus crestas no rompen en espuma.
+
+En 1773, Benjamin Franklin echó una cucharada de aceite en un estanque y calmó un área como media cancha de fútbol.
+
+🌊 ¿Cómo calma el aceite estas olas?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Física #Océano #TensiónSuperficial #Historia #Ciencia #Curiosidades #Frecuencia0

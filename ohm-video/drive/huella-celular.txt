@@ -1,0 +1,13 @@
+TITULO: ¿Cómo reconoce tu huella el celular en medio segundo? Así funciona el lector 📱👆
+DESCRIP:
+Tocas el lector medio segundo y el celular ya sabe que eres tú. ¿Cómo lo hace? 🤔
+
+Tu huella tiene crestas y valles diminutos. Muchos lectores tienen debajo miles de condensadores pequeñísimos, como una rejilla. Las crestas tocan el sensor y los valles dejan un hueco de aire, y cada condensador mide esa diferencia de carga eléctrica. Así dibuja un mapa de tu huella, punto a punto.
+
+Luego no guarda la foto: busca los puntos donde las líneas se cortan o terminan (minucias) y los compara con los que registraste. Una foto plana no tiene crestas ni valles, así que no lo engaña.
+
+👆 ¿Cómo reconoce tu dedo el celular?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#HuellaDactilar #Celular #Tecnología #Seguridad #Ciencia #Curiosidades #Frecuencia0

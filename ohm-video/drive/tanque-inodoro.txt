@@ -1,0 +1,15 @@
+TITULO: ¿Cómo sabe el tanque del inodoro cuándo dejar de llenarse sin sensores? 🚽⚙️
+DESCRIP:
+Jalas la palanca, el tanque se vacía, se vuelve a llenar solo… y se detiene justo a tiempo, sin un solo cable. ¿Cómo lo sabe? 🤔
+
+Dentro del tanque hay un flotador conectado a una válvula de entrada. Cuando jalas la palanca, se levanta un tapón de goma, el agua cae a la taza y el nivel baja. Al bajar, el flotador baja también y abre la válvula: entra agua nueva.
+
+El tapón vuelve a cerrar, el tanque se llena y el flotador sube con el agua. Cuando llega a la altura justa, empuja la válvula y la cierra. Así de simple.
+
+Si algo falla, el agua sigue entrando, pero se va por un tubo de rebose, para que nunca se desborde.
+
+🚽 ¿Cómo sabe tu inodoro cuándo parar?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Inodoro #Ingeniería #Física #Hogar #Ciencia #Curiosidades #Frecuencia0

@@ -1,0 +1,18 @@
+# Publicación: bolsa-papas.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué las bolsas de papas hacen tanto ruido? 🥔🔊
+DESCRIP:
+Intentas abrir una bolsa de papas en silencio, de noche, y suena como un trueno. 🤔
+
+La bolsa tiene varias capas, una de ellas de aluminio, para bloquear la luz y el oxígeno. Esas capas la hacen rígida: al doblarla no se curva suave, se pandea de golpe con un chasquido. Cada arruga es un pequeño salto, y miles de saltos seguidos suenan como un crujido. De noche, con todo en silencio, tu oído lo nota todavía más.
+
+Y está inflada con nitrógeno, que no reacciona con el aceite y mantiene las papas crujientes.
+
+🥔 ¿Por qué esta bolsa suena tanto?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Papas #Sonido #Física #Empaques #Ciencia #Curiosidades #Frecuencia0

@@ -1,0 +1,18 @@
+# Publicación: cabeza-explosiva.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Qué es el síndrome de la cabeza explosiva y por qué oyes una explosión al dormirte? 💥😴
+DESCRIP:
+Te estás quedando dormido y oyes un portazo o una explosión fortísima, pero nadie más la oyó. 🤔
+
+Se llama síndrome de la cabeza explosiva. Al dormirte, el cerebro va apagando sus zonas como las luces de un edificio, también las del oído. Se cree que a veces, en lugar de apagarse en orden, un grupo de neuronas auditivas se dispara de golpe. El cerebro interpreta esa descarga como un ruido enorme y te despierta sobresaltado.
+
+Es más común con estrés y falta de sueño. Asusta, pero es inofensivo: no hay ningún daño en tu cabeza.
+
+💥 ¿Qué fue ese estruendo?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Sueño #Cerebro #Neurociencia #Salud #Ciencia #Curiosidades #Frecuencia0

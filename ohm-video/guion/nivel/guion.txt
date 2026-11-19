@@ -1,0 +1,7 @@
+¿Por qué este tubo no es recto?
+El tubito del nivel de burbuja parece recto, pero está curvado, como un plátano. Al final verás qué decide su precisión.
+La burbuja es aire, más liviano que el líquido: siempre sube al punto más alto del tubo.
+Si el tubo fuera recto y estuviera horizontal, no habría un punto más alto, y la burbuja se iría hacia cualquier lado.
+Con la curva, el punto más alto queda justo en el centro cuando la superficie está nivelada. Si se inclina un poco, ese punto se mueve, y la burbuja con él.
+Cuanto más suave es la curva, más se mueve la burbuja con una inclinación mínima: más preciso es el nivel.
+Por eso este tubo no es recto.

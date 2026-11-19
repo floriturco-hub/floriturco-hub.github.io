@@ -1,0 +1,20 @@
+# Publicación: cortaunas.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo multiplica la fuerza de tus dedos un cortaúñas común? 💅⚙️
+DESCRIP:
+Una uña es queratina dura, y aun así la cortas con dos dedos. 🤔
+
+El secreto es la palanca de arriba: empujas en su punta, lejos del apoyo, y ella presiona muy cerca de él. Eso multiplica tu fuerza varias veces.
+
+Las hojas son otra palanca, unidas por una bisagra en el otro extremo. Esa no multiplica: solo lleva la fuerza hasta el filo.
+
+Y el filo es diminuto: concentra toda esa fuerza en una línea finísima, así que la presión es enorme.
+
+💅 ¿Por qué este cortaúñas corta tan fácil?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Palancas #Física #Mecánica #Ciencia #Curiosidades #Cortaúñas #Frecuencia0

@@ -1,0 +1,15 @@
+TITULO: ¿Por qué una guitarra acústica suena mucho más fuerte que una eléctrica desconectada? 🎸🔊
+DESCRIP:
+Usan las mismas cuerdas, pero la eléctrica desconectada apenas se oye. ¿Qué hace la acústica para sonar tan fuerte? 🤔
+
+Una cuerda sola es muy delgada: casi no mueve aire, así que suena bajito. En la acústica, la cuerda pasa por el puente y hace vibrar la tapa de madera, delgada y grande. Esa tapa mueve muchísimo más aire, como el parche de un tambor, y el cuerpo hueco funciona como una caja de resonancia que amplifica ciertas notas.
+
+El agujero deja que el aire de dentro entre y salga, y refuerza los graves.
+
+La eléctrica tiene un cuerpo macizo que casi no vibra: su sonido lo captan los imanes (las pastillas) y lo saca el amplificador.
+
+🎸 ¿Por qué esta guitarra suena más fuerte?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Guitarra #Música #Física #Sonido #Ciencia #Curiosidades #Frecuencia0

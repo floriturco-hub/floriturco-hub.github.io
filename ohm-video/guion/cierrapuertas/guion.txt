@@ -1,0 +1,8 @@
+¿Por qué esta puerta se cierra suave?
+Sueltas un portón pesado de golpe y, en vez de azotar, se cierra despacio y en silencio. Al final verás para qué es el empujón final.
+Arriba hay un cierrapuertas: una caja con un resorte y un pistón metido en aceite.
+Al abrir la puerta, comprimes el resorte. Al soltarla, el resorte quiere cerrarla de golpe.
+Pero para moverse, el pistón tiene que empujar el aceite por unos agujeros diminutos.
+El aceite pasa despacio, y frena el movimiento. Un tornillo regula cuánto aceite deja pasar, y con eso la velocidad.
+Al final, otra válvula deja que la puerta acelere un poco, para que la cerradura encaje.
+Por eso esta puerta se cierra suave.

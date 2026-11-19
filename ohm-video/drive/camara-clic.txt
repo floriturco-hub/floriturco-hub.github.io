@@ -1,0 +1,13 @@
+TITULO: ¿Por qué suena clic la cámara del celular si no tiene piezas que se muevan? 📸🔊
+DESCRIP:
+Tomas una foto y suena un clic, pero tu celular no tiene piezas que se muevan. 🤔
+
+En una cámara antigua, una cortinilla se abría y cerraba para dejar pasar la luz: ese era el clic. Tu celular usa un obturador electrónico: los millones de píxeles del sensor empiezan a contar luz, y un chip los lee fila por fila, en milésimas de segundo. Todo pasa en silencio. El clic es una grabación: el teléfono reproduce el sonido de una cámara vieja para que sepas que la foto se tomó.
+
+En Japón y Corea del Sur no se puede apagar, para evitar fotos a escondidas.
+
+📸 ¿De dónde sale este clic?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Celular #Cámara #Fotografía #Tecnología #Ciencia #Curiosidades #Frecuencia0

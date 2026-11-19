@@ -1,0 +1,8 @@
+¿Cómo sabe esta puerta que estás ahí?
+Metes la mano y la puerta del ascensor se abre al instante. Al final verás por qué antes te golpeaba.
+A los lados hay una cortina de luz infrarroja: decenas de rayos invisibles que van de un emisor a un receptor.
+Si algo corta un solo rayo, tu mano o tu perro, el receptor deja de recibirlo y el motor se invierte.
+Los portones de garaje usan lo mismo: un rayo infrarrojo cerca del suelo, de lado a lado.
+Y por si falla, el motor mide su esfuerzo: si empuja algo y le cuesta más, se detiene y retrocede.
+Los ascensores viejos solo tenían una barra que tenía que tocarte para reaccionar.
+Así sabe esta puerta que estás ahí.

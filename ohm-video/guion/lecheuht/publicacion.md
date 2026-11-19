@@ -1,0 +1,18 @@
+# Publicación: leche-uht.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo dura meses sin nevera la leche en caja UHT? 🥛📦
+DESCRIP:
+La leche en caja aguanta meses fuera de la nevera, sin conservadores. 🤔
+
+UHT significa ultra alta temperatura: la calientan a unos 135 grados durante solo dos a cuatro segundos. Ese calor mata todas las bacterias e incluso sus esporas, que sobreviven a la pasteurización normal. Luego la envasan en un ambiente estéril, sin que la toque el aire.
+
+La caja tiene seis capas: cartón, plástico y una lámina de aluminio que bloquea la luz y el oxígeno. Sin microbios y sin nada que entre, no tiene cómo echarse a perder.
+
+🥛 ¿Cómo dura meses sin refrigerar?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Leche #UHT #Alimentos #Microbiología #Ciencia #Curiosidades #Frecuencia0

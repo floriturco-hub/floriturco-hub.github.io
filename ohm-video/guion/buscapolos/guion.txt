@@ -1,0 +1,8 @@
+¿Cómo sabe cuál cable da corriente?
+Tocas un cable con este destornillador y se enciende una lucecita, aunque no hay ningún cable conectado a él. Al final verás por qué no te electrocuta.
+Dentro del mango hay una bombillita de neón y una resistencia enorme, de millones de ohmios.
+Al tocar la fase y poner tu dedo atrás, se forma un circuito: la corriente pasa por la punta, la resistencia, el neón, y por tu cuerpo hacia el suelo.
+El neón se enciende con muy poca corriente, si hay suficiente voltaje.
+El cable neutro casi no tiene voltaje, así que no enciende.
+Y la resistencia deja pasar una corriente tan diminuta que ni la sientes.
+Así sabe cuál cable da corriente.

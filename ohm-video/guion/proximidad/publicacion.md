@@ -1,0 +1,18 @@
+# Publicación: pantalla-oreja.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué la pantalla del celular se apaga sola cuando lo acercas a la oreja? 📱👂
+DESCRIP:
+Llamas, lo pegas a la oreja y la pantalla se apaga sola. 🤔
+
+Junto a la cámara de arriba hay un sensor de proximidad. Dispara pulsos de luz infrarroja, invisibles para ti, y mide cuánta luz rebota de vuelta. Lejos de tu cara, casi nada regresa. Cuando acercas la oreja, la luz rebota en tu piel y vuelve mucha.
+
+Al pasar cierto límite, el teléfono apaga la pantalla y bloquea el tacto, para que tu mejilla no cuelgue. Si un protector o la suciedad tapan el sensor, la pantalla se queda negra.
+
+📱 ¿Cómo sabe tu celular que lo acercas?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Celular #Sensores #Infrarrojo #Tecnología #Ciencia #Curiosidades #Frecuencia0

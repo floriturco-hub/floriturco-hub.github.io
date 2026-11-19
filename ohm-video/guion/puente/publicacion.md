@@ -1,0 +1,18 @@
+# Publicación: puente-colgante.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo aguanta el Golden Gate colgado de solo dos cables? 🌉🔩
+DESCRIP:
+El Golden Gate sostiene miles de autos colgado de solo dos cables. 🤔
+
+Cada cable mide casi un metro de grosor, pero por dentro son más de 27.000 alambres de acero, delgados como un lápiz, apretados juntos. Juntos reparten la carga, y si uno falla, los demás siguen. La calzada cuelga de cientos de cables verticales que pasan el peso a los dos cables grandes. Esos cables pasan sobre las torres y trabajan estirados: el acero es fortísimo cuando lo jalas.
+
+En cada extremo, se hunden en bloques de concreto gigantes enterrados en la tierra, que los sostienen como anclas.
+
+🌉 ¿Cómo aguanta este puente colgado?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Puentes #Ingeniería #GoldenGate #Física #Ciencia #Curiosidades #Frecuencia0

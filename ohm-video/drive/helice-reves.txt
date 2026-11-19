@@ -1,0 +1,13 @@
+TITULO: ¿Por qué en video las ruedas y las hélices parecen girar al revés? 🚁🎥
+DESCRIP:
+En video, las ruedas o las hélices parecen girar hacia atrás, o quedarse quietas. 🤔
+
+La cámara no graba movimiento continuo: toma unas treinta fotos por segundo. Si entre foto y foto la rueda da justo una vuelta, en cada foto sale igual y parece quieta. Si da un poquito menos de una vuelta, cada foto la muestra un poco más atrás y parece girar al revés. Es el efecto estroboscópico.
+
+Además, muchas cámaras de celular leen la imagen línea por línea, de arriba abajo. Mientras tanto la hélice sigue girando, y sale doblada: es el rolling shutter.
+
+🚁 ¿Por qué esta hélice parece girar al revés?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#EfectoEstroboscópico #RollingShutter #Cámara #Física #Ciencia #Curiosidades #Frecuencia0

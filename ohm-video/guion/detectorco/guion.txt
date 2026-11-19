@@ -1,0 +1,8 @@
+¿Cómo detecta este gas invisible?
+El monóxido de carbono no tiene olor ni color, y puede matarte dormido. Al final verás por qué el detector de humo no sirve.
+El detector de monóxido tiene una celda electroquímica: dos electrodos en un gel, como una pila diminuta.
+Cuando entra monóxido, reacciona en un electrodo con agua y se convierte en dióxido de carbono, soltando electrones.
+Esos electrones generan una corriente. Cuanto más monóxido, más corriente.
+Un chip la mide, y suena la alarma según cuánto gas hay y durante cuánto tiempo.
+El detector de humo, en cambio, busca partículas de humo. El monóxido es un gas sin partículas: pasaría sin ser visto.
+Así detecta este gas invisible.

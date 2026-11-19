@@ -1,0 +1,18 @@
+# Publicación: juegos-feria.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué los juegos de feria son casi imposibles de ganar? 🎪🏀
+DESCRIP:
+En la feria parece fácil tumbar las botellas o encestar, pero casi nadie gana. 🤔
+
+En el de las botellas, la pelota puede ser liviana y las botellas de abajo más pesadas: la pelota no lleva suficiente impulso para tumbarlas todas. En el de los aros, el aro apenas es más ancho que el cuello de la botella; tiene que caer perfecto y, si toca el vidrio, rebota. Y en el de baloncesto, el aro suele ser más pequeño y ovalado, y la pelota va inflada de más, así que rebota en vez de entrar.
+
+No es mala suerte: es física.
+
+🎪 ¿Por qué casi nadie gana este juego?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Feria #Física #Trucos #Impulso #Ciencia #Curiosidades #Frecuencia0

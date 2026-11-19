@@ -1,0 +1,13 @@
+TITULO: ¿Cómo se queda quieta una plataforma petrolera en pleno huracán sin anclas? 🛢️🌊
+DESCRIP:
+En pleno huracán, sobre 3.000 metros de agua y sin anclas… y aun así no se mueve de su sitio. ¿Cómo lo logra? 🤔
+
+Algunas plataformas y barcos de perforación usan algo llamado posicionamiento dinámico. Debajo tienen hélices gigantes que pueden girar en cualquier dirección, y satélites y sensores miden cada movimiento varias veces por segundo.
+
+Si una ola la empuja un metro, una computadora calcula al instante la fuerza contraria y las hélices la devuelven a su sitio. Así se mantiene dentro de un círculo de pocos metros, aunque el mar se vuelva loco. Y si la tormenta es demasiado fuerte, se desconecta del pozo y se aleja.
+
+🌊 ¿Cómo no se mueve esta plataforma?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#PlataformaPetrolera #Ingeniería #Huracán #Océano #Ciencia #Curiosidades #Frecuencia0

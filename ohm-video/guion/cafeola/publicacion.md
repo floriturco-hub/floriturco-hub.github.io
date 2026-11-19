@@ -1,0 +1,18 @@
+# Publicación: cafe-derrama.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué el café se derrama al caminar entre el paso 7 y el 10? (Resonancia) ☕🚶
+DESCRIP:
+Caminas con una taza de café llena y, casi siempre, se derrama entre el paso siete y el diez. 🤔
+
+El café dentro de la taza tiene un ritmo propio: si lo mueves, chapotea de lado a lado a una frecuencia natural. En una taza normal, esa frecuencia se parece al ritmo de tus pasos, unos dos por segundo. Cada paso empuja el café justo cuando ya iba hacia ese lado, y la ola crece: es resonancia. Tras siete a diez pasos, la ola se sale por el borde.
+
+El truco: camina más despacio, no la llenes hasta arriba, o tómala desde arriba, con los dedos en el borde.
+
+☕ ¿Por qué siempre se derrama aquí?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Café #Resonancia #Física #Ondas #Ciencia #Curiosidades #Frecuencia0

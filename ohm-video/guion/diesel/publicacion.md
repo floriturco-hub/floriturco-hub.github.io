@@ -1,0 +1,18 @@
+# Publicación: motor-diesel.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo funciona un motor diésel sin bujías? 🚛🔥
+DESCRIP:
+Un motor de gasolina usa bujías para encender el combustible. El diésel, no. 🤔
+
+El truco es la compresión: el pistón aprieta el aire hasta unas veinte veces menos volumen, y al comprimirse se calienta a más de 500 °C. Justo entonces el inyector rocía el diésel en gotas finísimas, que se encienden solas al tocar el aire caliente. La gasolina no aguantaría tanta compresión: explotaría antes de tiempo.
+
+En frío, el aire no se calienta lo suficiente: las bujías de precalentamiento calientan la cámara para arrancar.
+
+🔥 ¿Cómo explota sin chispa?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Diésel #Motores #Termodinámica #Autos #Ciencia #Curiosidades #Frecuencia0
