@@ -58,6 +58,12 @@ El escenario **«FrecuenciaCero»** (id `6864241`) publica el MP4 y el TXT de **
 - Whisper: transcribe de uno en uno; cuatro en paralelo se atascan y no terminan. No le pases `--initial_prompt` con el guion: se salta segmentos. No juntes Whisper con un render: el contenedor se queda sin memoria y se reinicia.
 - Antes de subir un MP4 recién re-renderizado con Make, comprueba que la URL raw ya sirve el tamaño nuevo (`content-length`): la caché de GitHub tarda unos minutos.
 
+## Campañas de marca (contenido pagado)
+
+- No van a FrecuenciaCero (Make las publicaría sin aprobación ni etiqueta de contenido pagado). Van en la carpeta de Drive **«Campañas»** (id `17mfwszeIc9gg2lhI1bwk1cenPQOyawL2`, en Mi unidad), una subcarpeta por video con su TXT; el MP4 lo sube el usuario a mano (el conector no admite archivos de más de ~3 MB).
+- TXT en `ohm-video/campanas/<nombre>.txt`. Respeta al pie de la letra el brief (palabras, colores y marcas prohibidas, hashtags y cuentas obligatorias).
+- Hechas: `tigo-velocidad` (fondo `fondo="azul"`, sin morado ni rojo; falta el hashtag oficial de Tigo: `#HASHTAG_OFICIAL_TIGO` en el TXT) y `coffee-delight` (empaque ilustrado; #CoffeeDelightLover, @mi_colombina).
+
 ## Videos lo-fi horizontales (no son Shorts)
 
 - 1920×1080, en bucle perfecto, para dormir/estudiar. Código en `ohm-video/src/lofi/` (base común en `Base.tsx`) y `src/lluvia/`; MP4 en `ohm-video/lofi/` y `ohm-video/lluvia-lofi.mp4`.

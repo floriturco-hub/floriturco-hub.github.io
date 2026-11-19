@@ -43,6 +43,8 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { CoffeeDelight, DURACION_COFFEE_S } from "./coffeedelight/CoffeeDelight";
+import { TigoVelocidad, DURACION_TIGO_S } from "./tigo/TigoVelocidad";
 import { Bumeran, DURACION_BUMERAN_S } from "./bumeran/Bumeran";
 import { TipoSangre, DURACION_SANGRE_S } from "./sangretipo/TipoSangre";
 import { CalentadorManos, DURACION_CALENTADOR_S } from "./calentador/CalentadorManos";
@@ -1941,6 +1943,22 @@ export const RemotionRoot: React.FC = () => {
         id="Bumeran"
         component={Bumeran}
         durationInFrames={Math.round(DURACION_BUMERAN_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TigoVelocidad"
+        component={TigoVelocidad}
+        durationInFrames={Math.round(DURACION_TIGO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CoffeeDelight"
+        component={CoffeeDelight}
+        durationInFrames={Math.round(DURACION_COFFEE_S * 30)}
         fps={30}
         width={1080}
         height={1920}

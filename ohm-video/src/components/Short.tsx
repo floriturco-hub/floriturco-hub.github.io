@@ -12,7 +12,7 @@ import { Logo } from "../scenes/Logo";
 import { C, clamp, H, mono, W } from "../theme";
 import { Escena } from "./Escena";
 import { Etiqueta } from "./Etiqueta";
-import { Fondo } from "./Fondo";
+import { Fondo, FONDOS } from "./Fondo";
 
 // Piezas comunes de los Shorts a partir de oro/inmune/oidos/humo/moneda.
 // Los vídeos anteriores conservan sus copias locales de estas funciones.
@@ -214,6 +214,7 @@ export const Short: React.FC<{
   readonly musica?: string;
   readonly cola?: number;
   readonly palabras?: readonly Palabra[];
+  readonly fondo?: keyof typeof FONDOS;
 }> = ({
   carpeta,
   fin,
@@ -223,6 +224,7 @@ export const Short: React.FC<{
   musica = "audio/musica.mp3",
   cola = 6.5,
   palabras,
+  fondo = "noche",
 }) => {
   const { fps } = useVideoConfig();
   const inicio = fin + 0.5;
@@ -230,8 +232,8 @@ export const Short: React.FC<{
   const bucle = cola === SIN_LOGO;
   const D = inicio - 61.5;
   return (
-    <AbsoluteFill style={{ backgroundColor: C.bg }}>
-      <Fondo />
+    <AbsoluteFill style={{ backgroundColor: FONDOS[fondo][1] }}>
+      <Fondo tono={fondo} />
       {escenas.map((e, k) => (
         <Escena
           key={e.nombre}
