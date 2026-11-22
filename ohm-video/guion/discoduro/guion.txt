@@ -1,0 +1,7 @@
+¿Cómo lee este disco sin tocarlo?
+Un disco duro guarda tus archivos en platos que giran a miles de vueltas por minuto. Al final verás qué hace cuando lo apagas.
+El plato tiene una capa magnética dividida en zonas diminutas. Cada una apunta al norte o al sur: unos y ceros.
+La cabeza lectora va en la punta de un brazo. El giro arrastra una capa de aire que la levanta, y vuela a unos pocos nanómetros del plato, sin tocarlo.
+Al pasar, siente los cambios magnéticos y los convierte en señales eléctricas, millones por segundo.
+Al apagarlo, el brazo se estaciona en una rampa fuera del plato, para no aterrizar sobre tus datos.
+Así lee este disco sin tocarlo.

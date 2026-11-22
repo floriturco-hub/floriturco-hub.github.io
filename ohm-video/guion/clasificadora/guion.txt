@@ -1,0 +1,7 @@
+¿Cómo encuentra esta papa podrida?
+Una clasificadora revisa toneladas de papas y saca la mala con un chorro de aire. Al final verás qué tan rápido dispara.
+Las papas salen de una banda y caen en el aire formando una cortina.
+Cámaras ultrarrápidas la escanean miles de veces por segundo, en color y en infrarrojo, que revela golpes que el ojo no ve.
+Una computadora compara cada punto con el color de una papa buena. Si encuentra una mancha, calcula en qué instante esa papa pasará frente a una fila de boquillas.
+Entonces abre una válvula durante unas milésimas de segundo, y el chorro desvía solo esa papa.
+Así encuentra esta papa podrida.

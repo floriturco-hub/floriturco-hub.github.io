@@ -1,0 +1,8 @@
+¿Por qué este molino tiene tres aspas?
+Casi todos los aerogeneradores tienen tres aspas. Al final verás qué pasa con los de dos.
+Más aspas no dan mucha más energía: cada una revuelve el aire para la siguiente, y con tres ya se aprovecha casi todo.
+Cuatro o más agregan peso y costo por muy poco.
+Con dos, el problema es el equilibrio. En vertical, una pasa frente a la torre y la otra arriba, donde el viento sopla más. El rotor se sacude.
+Tres aspas reparten el peso igual en cualquier posición: el giro es suave.
+Los de dos aspas sí existen, pero giran más rápido, hacen más ruido y vibran más.
+Por eso este molino tiene tres aspas.

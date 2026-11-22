@@ -1,0 +1,18 @@
+# Publicación: formula-humano.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Se puede escribir a un ser humano como una fórmula química? 🧪🧍‍♂️
+DESCRIP:
+¿Se puede escribir a un ser humano como una sola fórmula? Más o menos. 🤔
+
+Por peso, eres sobre todo oxígeno, carbono, hidrógeno y nitrógeno. Pero contando átomos, gana el hidrógeno: más o menos 6 de cada 10 átomos de tu cuerpo. Unos científicos escribieron todos tus elementos en proporción, como una fórmula empírica. Pero no es una molécula: eres una mezcla de miles de moléculas distintas, y la fórmula no dice cómo se unen.
+
+En esa fórmula, el cobalto, de tu vitamina B12, aparece con un solo átomo, contra cientos de millones de hidrógenos.
+
+🧪 ¿Cuál es tu fórmula química?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Química #CuerpoHumano #Elementos #Biología #Ciencia #Curiosidades #Frecuencia0

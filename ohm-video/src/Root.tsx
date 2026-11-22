@@ -43,6 +43,25 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { HuesosBebe, DURACION_HUESOSBEBE_S } from "./huesosbebe/HuesosBebe";
+import { CuchilloCeramica, DURACION_CERAMICA_S } from "./ceramica/CuchilloCeramica";
+import { TresAspas, DURACION_ASPAS_S } from "./aspas/TresAspas";
+import { PapelAceite, DURACION_PAPELACEITE_S } from "./papelaceite/PapelAceite";
+import { MandarinaGajos, DURACION_MANDARINA_S } from "./mandarina/MandarinaGajos";
+import { CongeladorLleno, DURACION_CONGELADOR_S } from "./congelador/CongeladorLleno";
+import { BotoxVeneno, DURACION_BOTOX_S } from "./botox/BotoxVeneno";
+import { TiburonGroenlandia, DURACION_TIBURON_S } from "./tiburon/TiburonGroenlandia";
+import { FormulaHumano, DURACION_FORMULA_S } from "./formulahumano/FormulaHumano";
+import { AguaTibia, DURACION_ADAPTACION_S } from "./adaptacion/AguaTibia";
+import { CintaMetrica, DURACION_CINTA_S } from "./cintametrica/CintaMetrica";
+import { Fluxometro, DURACION_FLUXOMETRO_S } from "./fluxometro/Fluxometro";
+import { ReflejoRodilla, DURACION_RODILLA_S } from "./rodilla/ReflejoRodilla";
+import { AguaAzul, DURACION_AGUAAZUL_S } from "./aguaazul/AguaAzul";
+import { ClasificadoraPapas, DURACION_CLASIFICADORA_S } from "./clasificadora/ClasificadoraPapas";
+import { PieSeis, DURACION_PIESEIS_S } from "./pieseis/PieSeis";
+import { BolsaCuello, DURACION_BOLSA_S } from "./bolsaplastico/BolsaCuello";
+import { TenedorMicroondas, DURACION_TENEDOR_S } from "./tenedor/TenedorMicroondas";
+import { DiscoDuro, DURACION_DISCODURO_S } from "./discoduro/DiscoDuro";
 import { CoffeeDelight, DURACION_COFFEE_S } from "./coffeedelight/CoffeeDelight";
 import { TigoVelocidad, DURACION_TIGO_S } from "./tigo/TigoVelocidad";
 import { Bumeran, DURACION_BUMERAN_S } from "./bumeran/Bumeran";
@@ -1959,6 +1978,158 @@ export const RemotionRoot: React.FC = () => {
         id="CoffeeDelight"
         component={CoffeeDelight}
         durationInFrames={Math.round(DURACION_COFFEE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DiscoDuro"
+        component={DiscoDuro}
+        durationInFrames={Math.round(DURACION_DISCODURO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TenedorMicroondas"
+        component={TenedorMicroondas}
+        durationInFrames={Math.round(DURACION_TENEDOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BolsaCuello"
+        component={BolsaCuello}
+        durationInFrames={Math.round(DURACION_BOLSA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PieSeis"
+        component={PieSeis}
+        durationInFrames={Math.round(DURACION_PIESEIS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ClasificadoraPapas"
+        component={ClasificadoraPapas}
+        durationInFrames={Math.round(DURACION_CLASIFICADORA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AguaAzul"
+        component={AguaAzul}
+        durationInFrames={Math.round(DURACION_AGUAAZUL_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ReflejoRodilla"
+        component={ReflejoRodilla}
+        durationInFrames={Math.round(DURACION_RODILLA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Fluxometro"
+        component={Fluxometro}
+        durationInFrames={Math.round(DURACION_FLUXOMETRO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CintaMetrica"
+        component={CintaMetrica}
+        durationInFrames={Math.round(DURACION_CINTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AguaTibia"
+        component={AguaTibia}
+        durationInFrames={Math.round(DURACION_ADAPTACION_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FormulaHumano"
+        component={FormulaHumano}
+        durationInFrames={Math.round(DURACION_FORMULA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TiburonGroenlandia"
+        component={TiburonGroenlandia}
+        durationInFrames={Math.round(DURACION_TIBURON_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BotoxVeneno"
+        component={BotoxVeneno}
+        durationInFrames={Math.round(DURACION_BOTOX_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CongeladorLleno"
+        component={CongeladorLleno}
+        durationInFrames={Math.round(DURACION_CONGELADOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MandarinaGajos"
+        component={MandarinaGajos}
+        durationInFrames={Math.round(DURACION_MANDARINA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PapelAceite"
+        component={PapelAceite}
+        durationInFrames={Math.round(DURACION_PAPELACEITE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TresAspas"
+        component={TresAspas}
+        durationInFrames={Math.round(DURACION_ASPAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CuchilloCeramica"
+        component={CuchilloCeramica}
+        durationInFrames={Math.round(DURACION_CERAMICA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HuesosBebe"
+        component={HuesosBebe}
+        durationInFrames={Math.round(DURACION_HUESOSBEBE_S * 30)}
         fps={30}
         width={1080}
         height={1920}

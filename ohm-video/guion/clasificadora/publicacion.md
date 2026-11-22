@@ -1,0 +1,18 @@
+# Publicación: clasificadora-papas.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo encuentra una máquina una sola papa podrida entre miles y la saca con un chorro de aire? 🍟🎯
+DESCRIP:
+Una clasificadora revisa toneladas de papas y saca la mala con un chorro de aire. 🤔
+
+Las papas caen de una banda formando una cortina. Cámaras ultrarrápidas la escanean miles de veces por segundo, en color y en infrarrojo, que revela golpes que el ojo no ve. Una computadora compara cada punto con el color de una papa buena; si encuentra una mancha, calcula en qué instante esa papa pasará frente a una fila de boquillas.
+
+Entonces abre una válvula durante unas milésimas de segundo, y el chorro desvía solo esa papa.
+
+🎯 ¿Cómo encuentra esta papa podrida?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Tecnología #Industria #Alimentos #VisiónArtificial #Ciencia #Curiosidades #Frecuencia0

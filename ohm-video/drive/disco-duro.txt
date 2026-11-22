@@ -1,0 +1,13 @@
+TITULO: ¿Cómo lee un disco duro sin tocar el plato? (Una cabeza que vuela a nanómetros) 💻💿
+DESCRIP:
+Un disco duro guarda tus archivos en platos que giran a miles de vueltas por minuto. 🤔
+
+El plato tiene una capa magnética dividida en zonas diminutas, y cada una apunta al norte o al sur: unos y ceros. La cabeza lectora va en la punta de un brazo y nunca toca el plato: el giro arrastra una capa de aire que la levanta, y vuela a unos pocos nanómetros. Al pasar, siente los cambios magnéticos y los convierte en señales eléctricas, millones por segundo.
+
+Al apagarlo, el brazo se estaciona en una rampa fuera del plato, para no aterrizar sobre tus datos.
+
+💿 ¿Cómo lee este disco sin tocarlo?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Tecnología #Computación #DiscoDuro #Física #Ciencia #Curiosidades #Frecuencia0
