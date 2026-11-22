@@ -132,10 +132,10 @@ export const Cerrada: React.FC<{ readonly t0: number }> = ({ t0 }) => {
       <Texto x={540} y={640} size={38} color={C.white} op={aparece(t, T.valvula)}>
         una válvula entre motor y radiador
       </Texto>
-      <Texto x={760} y={1220} size={30} color={CERA} op={aparece(t, T.capsula)}>
+      <Texto x={540} y={1395} size={32} color={CERA} op={aparece(t, T.capsula)}>
         cápsula de cera
       </Texto>
-      <Texto x={540} y={1420} size={36} color={FRIA} op={aparece(t, T.frio)}>
+      <Texto x={540} y={1465} size={36} color={FRIA} op={aparece(t, T.frio)}>
         frío: cera sólida, válvula cerrada
       </Texto>
     </Lienzo>
@@ -154,10 +154,10 @@ export const Abre: React.FC<{ readonly t0: number }> = ({ t0 }) => {
         <Texto x={540} y={640} size={40} color={CALIENTE} op={aparece(t, T.agua)}>
           agua a ~90 °C
         </Texto>
-        <Texto x={760} y={1220} size={30} color={CERA} op={aparece(t, T.derrite)}>
+        <Texto x={540} y={1395} size={32} color={CERA} op={aparece(t, T.derrite)}>
           se derrite y se expande
         </Texto>
-        <Texto x={540} y={1420} size={36} color={C.yellow} op={aparece(t, T.perno)}>
+        <Texto x={540} y={1465} size={36} color={C.yellow} op={aparece(t, T.perno)}>
           empuja el perno: se abre
         </Texto>
       </Lienzo>
