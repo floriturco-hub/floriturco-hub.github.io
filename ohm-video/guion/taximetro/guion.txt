@@ -1,0 +1,7 @@
+¿Cómo sabe el taxi cuánto cobrarte?
+El taxímetro sube andando, y también parado en el tráfico. Al final verás por qué nunca cobra las dos cosas a la vez.
+Está conectado al auto, que le envía pulsos mientras las ruedas giran: tantos pulsos por kilómetro.
+Cuenta esos pulsos y, cada cierta distancia, suma una ficha.
+Pero si el auto va muy despacio o está detenido, casi no llegan pulsos. Entonces cambia de modo: cuenta el tiempo con un reloj interno y suma fichas por minuto de espera.
+El cambio ocurre a una velocidad fija: la que hace que los dos modos cobren lo mismo.
+Así sabe el taxi cuánto cobrarte.

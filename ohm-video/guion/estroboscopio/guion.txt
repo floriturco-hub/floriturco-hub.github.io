@@ -1,0 +1,7 @@
+¿Por qué esta hélice parece girar al revés?
+En video, las ruedas o las hélices parecen girar hacia atrás, o quedarse quietas. Al final verás por qué las hélices se doblan.
+La cámara no graba movimiento continuo: toma fotos, unas treinta por segundo.
+Si entre foto y foto la rueda da justo una vuelta completa, en cada foto aparece igual. Parece quieta.
+Si da un poquito menos de una vuelta, cada foto la muestra un poco más atrás, y parece girar al revés.
+Y muchas cámaras de celular no toman la foto de golpe: la leen línea por línea, de arriba abajo. Mientras tanto la hélice sigue girando, y sale doblada.
+Por eso esta hélice parece girar al revés.

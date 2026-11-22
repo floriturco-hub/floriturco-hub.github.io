@@ -1,0 +1,13 @@
+TITULO: ¿Cómo sabe el retrovisor de tu auto que te deslumbran y se oscurece solo? 🚗🪞
+DESCRIP:
+El auto de atrás trae las luces altas y, de repente, tu retrovisor se oscurece solo para no cegarte. ¿Cómo lo sabe? 🤔
+
+El espejo tiene dos sensores de luz: uno mira hacia adelante, al camino, y otro hacia atrás. De noche, el de adelante detecta que todo está oscuro. Si el de atrás recibe mucha más luz, el espejo sabe que te están deslumbrando.
+
+Entonces manda una pequeña corriente a un gel especial que hay entre dos vidrios. Ese gel es electrocrómico: con electricidad se oscurece, como unas gafas de sol. El reflejo pierde fuerza, y cuando el auto pasa, la corriente se corta y el gel se aclara.
+
+🪞 ¿Cómo sabe tu espejo que te ciegan?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Autos #Retrovisor #Tecnología #Química #Ciencia #Curiosidades #Frecuencia0

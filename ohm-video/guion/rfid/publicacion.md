@@ -1,0 +1,18 @@
+# Publicación: peaje-rfid.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo te cobra el peaje a 80 km/h sin que el chip tenga batería? (RFID) 🛣️📡
+DESCRIP:
+Pasas a ochenta por hora y el peaje te cobra a través del parabrisas. 🤔
+
+En tu parabrisas hay una etiqueta con un chip diminuto y una antena. La antena del peaje envía ondas de radio que, al llegar a tu antena, inducen una pequeña corriente. Esa energía basta para despertar al chip, que responde con su número, modulando la misma onda que recibe.
+
+Todo ocurre en milésimas de segundo. El sistema busca ese número y cobra a tu cuenta. El chip no necesita batería: lo alimenta la propia antena del peaje.
+
+📡 ¿Cómo te cobra el peaje sin parar?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#RFID #Peaje #Tecnología #Electrónica #Ciencia #Curiosidades #Frecuencia0

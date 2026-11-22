@@ -1,0 +1,20 @@
+# Publicación: termometro-infrarrojo.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo mide la temperatura a distancia un termómetro infrarrojo si el láser NO mide nada? 🍕🌡️
+DESCRIP:
+Apuntas a una pizza y te da su temperatura sin tocarla. 🤔
+
+El láser no mide nada: solo marca hacia dónde apuntas. Todo objeto brilla con luz infrarroja, invisible para ti, y cuanto más caliente, más brilla.
+
+Una lente reúne esa luz sobre un sensor, una termopila, que se calienta un poco y produce un voltaje. Un chip convierte ese voltaje en temperatura.
+
+Pero el metal brillante emite poco y refleja mucho, así que engaña al termómetro y marca menos.
+
+🌡️ ¿Qué mide realmente este láser rojo?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Infrarrojo #Termómetro #Física #Óptica #Ciencia #Curiosidades #Frecuencia0

@@ -1,0 +1,8 @@
+¿Cómo sabe tu celular que lo acercas?
+Llamas, lo pegas a la oreja y la pantalla se apaga sola. Al final verás por qué a veces se queda negra.
+Junto a la cámara de arriba hay un sensor de proximidad.
+Dispara pulsos de luz infrarroja, invisibles para ti, y mide cuánta luz rebota de vuelta.
+Lejos de tu cara, casi nada regresa. Cuando acercas la oreja, la luz rebota en tu piel y vuelve mucha.
+Al pasar cierto límite, el teléfono apaga la pantalla y bloquea el tacto, para que tu mejilla no cuelgue.
+Si un protector o la suciedad tapan el sensor, la luz rebota todo el tiempo, y la pantalla se queda negra.
+Así sabe tu celular que lo acercas.

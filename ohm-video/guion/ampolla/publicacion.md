@@ -1,0 +1,18 @@
+# Publicación: ampollas.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué salen ampollas y por qué no debes reventarlas? 👟💧
+DESCRIP:
+Unos zapatos nuevos te rozan todo el día y aparece una burbuja llena de líquido. 🤔
+
+La piel tiene varias capas, y el roce repetido las arrastra en sentidos distintos hasta que se separan. El hueco se llena de un líquido transparente que sale de los tejidos de alrededor. Esa ampolla es un vendaje natural: el techo protege la piel nueva de abajo y el líquido es estéril. Si la revientas, abres la puerta a las bacterias y dejas la herida en carne viva.
+
+Solo si es grande y duele mucho, se drena con una aguja esterilizada, dejando el techo de piel en su lugar. Ante dudas, consulta a un profesional de salud.
+
+👟 ¿Por qué sale esta burbuja?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Ampollas #Piel #Salud #CuerpoHumano #Ciencia #Curiosidades #Frecuencia0

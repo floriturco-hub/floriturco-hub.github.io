@@ -1,0 +1,8 @@
+Tu plancha vieja no tiene ni un solo chip… y aun así sabe exactamente cuándo apagarse. El secreto: dos metales pegados que se pelean.
+Se llama tira bimetálica. Es una lámina hecha de dos metales distintos, por ejemplo latón y acero, unidos a lo largo.
+Con el calor, todos los metales se dilatan. Pero no por igual: el latón crece bastante más que el acero. Como están pegados, no pueden estirarse cada uno por su lado… así que la tira se curva hacia el lado del acero.
+En la plancha, la corriente pasa por un contacto que toca esa tira. Cuando la base llega a la temperatura, la tira se dobla, se separa del contacto… y clic: la resistencia se apaga.
+Al enfriarse, la tira se endereza, vuelve a tocar el contacto y se enciende otra vez. Ese clic que oyes de vez en cuando es justo eso.
+¿Y la perilla? Solo acerca o aleja el contacto: cuanto más lejos, más tiene que doblarse la tira, y más caliente queda la plancha.
+Los termostatos antiguos usan el mismo truco, enrollado en espiral.
+Sin electrónica. Solo física.

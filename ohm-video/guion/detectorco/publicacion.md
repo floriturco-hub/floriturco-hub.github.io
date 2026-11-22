@@ -1,0 +1,18 @@
+# Publicación: detector-monoxido.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo detecta el monóxido de carbono un detector si es un gas invisible y sin olor? 🚨☠️
+DESCRIP:
+El monóxido de carbono no tiene olor ni color, y puede matarte mientras duermes. 🤔
+
+El detector tiene una celda electroquímica: dos electrodos en un gel, como una pila diminuta. Cuando entra monóxido, reacciona con agua en un electrodo, se convierte en dióxido de carbono y suelta electrones. Esos electrones generan una corriente: cuanto más monóxido, más corriente. Un chip la mide y hace sonar la alarma según cuánto gas hay y durante cuánto tiempo.
+
+Un detector de humo no sirve para esto: busca partículas, y el monóxido es un gas sin partículas.
+
+🚨 ¿Cómo detecta este gas invisible?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#MonóxidoDeCarbono #Seguridad #Química #Electroquímica #Ciencia #Curiosidades #Frecuencia0

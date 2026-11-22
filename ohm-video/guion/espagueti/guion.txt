@@ -1,0 +1,8 @@
+¿Por qué este espagueti se rompe en tres?
+Doblas un espagueti crudo y casi nunca se parte en dos: salen tres pedazos o más. Al final verás el truco del MIT.
+Cuando se rompe la primera vez, cada mitad estaba muy doblada, y de golpe queda libre.
+Se endereza tan rápido que la sacudida viaja por el espagueti como una onda, y lo dobla de más en otro punto.
+Ahí se rompe otra vez. Por eso salen tres pedazos o más.
+En dos mil dieciocho, investigadores del MIT encontraron el truco: torcerlo unas tres cuartas de vuelta antes de doblarlo.
+Al soltarse, la torsión se libera primero y gasta la energía de la sacudida. Así se rompe en solo dos.
+Por eso este espagueti se rompe en tres.

@@ -1,0 +1,8 @@
+¿Qué mide realmente este láser rojo?
+Apuntas a una pizza y te da su temperatura sin tocarla. Al final verás por qué falla con el metal brillante.
+El láser no mide nada: solo marca hacia dónde apuntas.
+Todo objeto brilla con luz infrarroja, invisible para ti. Cuanto más caliente, más brilla.
+Una lente reúne esa luz sobre un sensor, una termopila, que se calienta un poco y produce un voltaje.
+Un chip convierte ese voltaje en temperatura.
+Pero el metal brillante emite poco y refleja mucho, así que engaña al termómetro y marca menos.
+Así que este láser rojo no mide nada.

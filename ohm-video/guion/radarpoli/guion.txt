@@ -1,0 +1,8 @@
+¿Cómo sabe a qué velocidad vienes?
+Un policía apunta un aparato a tu auto y, en menos de un segundo, sabe tu velocidad. Al final verás cuál es más preciso.
+El radar lanza ondas de radio que rebotan en tu auto y regresan.
+Si te acercas, las ondas vuelven más apretadas, con más frecuencia. Es el efecto Doppler, el mismo de la sirena de una ambulancia.
+De esa diferencia sale tu velocidad.
+La pistola láser, en cambio, dispara pulsos de luz infrarroja y mide cuánto tardan en volver. Así sabe la distancia.
+Repite la medida cientos de veces por segundo: si la distancia baja rápido, vienes rápido. Y su rayo es tan fino que apunta a un solo auto.
+Así sabe a qué velocidad vienes.

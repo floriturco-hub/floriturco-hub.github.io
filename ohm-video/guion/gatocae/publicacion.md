@@ -1,0 +1,18 @@
+# Publicación: gato-cae.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo hace un gato para caer siempre de pie? 🐈🔄
+DESCRIP:
+Sueltas un gato patas arriba, sin nada de dónde empujarse, y aun así cae de pie. 🤔
+
+Su oído interno detecta al instante que está de cabeza. Entonces se dobla por la cintura, como si fuera dos mitades: encoge las patas delanteras y estira las traseras. La mitad delantera, compacta, gira rápido; la trasera, extendida, apenas gira un poco al revés. Luego invierte el truco: estira las delanteras, encoge las traseras y ahora gira la mitad de atrás. Cada mitad compensa el giro de la otra y termina de pie.
+
+Le bastan unos 30 centímetros de caída. Aun así, las caídas desde mucha altura sí pueden lastimarlo.
+
+🐈 ¿Cómo se gira este gato?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Gatos #Física #Animales #MomentoAngular #Ciencia #Curiosidades #Frecuencia0

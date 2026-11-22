@@ -1,0 +1,18 @@
+# Publicación: chocolate-cristales.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué el chocolate se derrite en tu boca pero no en tu mano? (Los 6 cristales) 🍫🔬
+DESCRIP:
+El buen chocolate se funde en tu lengua, pero no en tu mano. 🤔
+
+La manteca de cacao puede cristalizar de seis formas distintas, cada una con su punto de fusión. La buena es la forma cinco: funde a unos treinta y cuatro grados, justo por debajo de la temperatura de tu boca. Por eso el chocolatero lo templa: lo calienta y lo enfría con precisión para que solo se formen esos cristales. Así queda brillante y cruje al partirlo.
+
+Si en la tienda se calienta y se vuelve a enfriar, la grasa sube a la superficie y cristaliza mal. Esa capa blanca es grasa, no moho. Se puede comer.
+
+🍫 ¿Por qué se derrite en tu boca?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Chocolate #Química #Cristales #Cocina #Ciencia #Curiosidades #Frecuencia0

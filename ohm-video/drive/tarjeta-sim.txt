@@ -1,0 +1,13 @@
+TITULO: ¿Qué esconde el chip de la tarjeta SIM? Así sabe la red que eres tú 📱🔑
+DESCRIP:
+Cambias la SIM de teléfono y tu número se va con ella. ¿Qué tiene ese chip diminuto? 🤔
+
+La SIM es una pequeña computadora con una clave secreta grabada de fábrica, y tu operador guarda una copia exacta de esa clave. Cuando enciendes el teléfono, la red le manda a la SIM un número al azar, como un examen sorpresa. La SIM lo mezcla con su clave y devuelve la respuesta; la red hace el mismo cálculo y compara. Si coinciden, eres tú: te deja llamar y te cobra a tu línea.
+
+La clave nunca viaja por el aire, así que nadie puede copiarla escuchando. Y hoy muchos teléfonos traen eSIM: el mismo chip, pero soldado por dentro.
+
+🔑 ¿Qué esconde este chip diminuto?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#SIM #eSIM #Celular #Tecnología #Ciencia #Curiosidades #Frecuencia0

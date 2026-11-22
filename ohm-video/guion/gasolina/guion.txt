@@ -1,0 +1,9 @@
+La pistola de la gasolinera no tiene ni un solo sensor electrónico… y aun así sabe exactamente cuándo parar.
+El secreto está en un agujerito en la punta. De ahí sale un tubo finísimo que recorre la boquilla por dentro.
+Mientras echas gasolina, el combustible pasa por un estrechamiento, y al acelerar ahí, su presión baja. Es el efecto Venturi. Esa succión tira de aire a través del agujerito de la punta, sin parar.
+Mientras entre aire, todo sigue igual.
+Pero cuando el tanque se llena, la gasolina sube y tapa el agujerito. Ya no entra aire, y la succión queda atrapada en una pequeña cámara con una membrana.
+La membrana se hunde, suelta un pestillo… y la palanca se dispara. Clac.
+Todo en menos de un segundo, solo con presión de aire y un muelle.
+Por eso no conviene seguir echando a toquecitos después del clac: puedes llenar de más y derramar.
+No es electrónica. Es pura física.

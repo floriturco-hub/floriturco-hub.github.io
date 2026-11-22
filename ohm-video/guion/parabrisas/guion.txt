@@ -1,0 +1,7 @@
+¿Cómo sabe tu auto que está lloviendo?
+Cae una gota y el limpiaparabrisas se enciende solo. Al final verás por qué no raya el vidrio.
+Detrás del espejo hay un sensor que dispara luz infrarroja hacia el vidrio, en ángulo.
+Con el vidrio seco, la luz rebota por dentro como en un espejo y vuelve completa al sensor.
+Pero una gota deja escapar parte de esa luz hacia afuera. Llega menos luz, y el auto sabe que llueve.
+La escobilla es de goma blanda: se inclina y arrastra el agua como una espátula. Es más blanda que el vidrio, por eso no lo raya; la arena atrapada, sí.
+Así sabe tu auto que está lloviendo.

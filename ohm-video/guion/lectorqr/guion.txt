@@ -1,0 +1,8 @@
+¿Cómo lee este código tan rápido?
+Acercas el celular al torniquete del metro y lee el código al instante, aunque la pantalla esté rayada. Al final verás por qué.
+Los lectores viejos usaban un láser que barría una línea: solo leían códigos de barras.
+Pero un código QR es un dibujo en dos dimensiones. Para leerlo hay que ver todo el cuadro.
+Por eso estos lectores usan una cámara con sensor CMOS, como la de tu celular.
+El programa busca los tres cuadrados de las esquinas, y con ellos sabe dónde está el código y cómo está girado.
+Y el código guarda datos de respaldo: aunque falte hasta un treinta por ciento, los reconstruye.
+Así lee este código tan rápido.

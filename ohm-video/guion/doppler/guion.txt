@@ -1,0 +1,7 @@
+¿Por qué cambia el sonido de la sirena?
+Viene aguda, pasa a tu lado y de golpe se vuelve grave. Al final verás que la sirena nunca cambió.
+El sonido son ondas, como anillos en el agua.
+Cuando la ambulancia se acerca, cada onda sale un poco más cerca de ti que la anterior. Llegan apretadas, más seguidas, y oyes un tono más agudo.
+Cuando se aleja, cada onda sale más lejos. Llegan estiradas, y el tono se vuelve grave.
+Es el efecto Doppler. Y el conductor, que viaja con la sirena, oye siempre el mismo tono.
+Por eso cambia el sonido de la sirena.

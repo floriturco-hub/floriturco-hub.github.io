@@ -1,0 +1,18 @@
+# Publicación: lactosa-adultos.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué la mayoría de los adultos no digiere bien la leche? 🥛🧬
+DESCRIP:
+De bebés todos digerimos leche, pero la mayoría de los adultos se vuelven intolerantes. 🤔
+
+La leche tiene un azúcar, la lactosa, que se corta en dos con una enzima: la lactasa. En casi todos los mamíferos, el cuerpo deja de fabricar lactasa después del destete. Sin ella, la lactosa llega al intestino grueso y las bacterias la fermentan: gases y dolor. Hace unos 7.000 años, en pueblos que criaban vacas y cabras, se extendió una mutación que mantiene la lactasa toda la vida.
+
+Por eso en el norte de Europa casi todos digieren leche, y en el este de Asia, muy pocos.
+
+🥛 ¿Por qué esta leche te cae mal?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Leche #Digestión #Evolución #Genética #Ciencia #Curiosidades #Frecuencia0

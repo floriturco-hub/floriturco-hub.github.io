@@ -1,0 +1,7 @@
+¿Por qué estas torres llevan tres cables?
+En casa bastan dos, pero las torres llevan tres, o seis. Al final verás para qué son esas pelotas naranjas.
+Por ellas viaja corriente alterna trifásica: tres corrientes que suben y bajan desfasadas, como tres pistones.
+En cada instante, lo que va por un cable vuelve por los otros dos. Así no hace falta un cable de regreso, y se lleva más energía con menos metal.
+Por eso van en grupos de tres: seis cables son dos circuitos.
+Y las pelotas naranjas son marcadores, para que los pilotos de avionetas y helicópteros vean los cables.
+Por eso estas torres llevan tres cables.

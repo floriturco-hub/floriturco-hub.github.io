@@ -1,0 +1,18 @@
+# Publicación: turbo-auto.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo funciona el turbo de un auto usando los gases del escape? 🏎️🌀
+DESCRIP:
+Un turbo le da más potencia al motor con los gases que iban a salir por el escape. 🤔
+
+Los gases del escape hacen girar una turbina a decenas de miles de vueltas por minuto. Esa turbina está unida por un eje a otra rueda, el compresor, del lado de la entrada de aire. El compresor aprieta el aire y mete más en cada cilindro. Más aire significa más oxígeno, y con más oxígeno el motor puede quemar más combustible en cada explosión: más potencia.
+
+Pero si aceleras de golpe, primero debe haber gases que giren la turbina. Ese retraso se llama turbo lag.
+
+🌀 ¿Cómo usa este turbo el humo?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Autos #Motores #Ingeniería #Mecánica #Ciencia #Curiosidades #Frecuencia0

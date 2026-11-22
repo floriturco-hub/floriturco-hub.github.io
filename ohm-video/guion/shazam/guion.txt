@@ -1,0 +1,8 @@
+¿Cómo reconoce esta canción?
+En un bar ruidoso, una app escucha unos segundos y te dice qué canción suena. Al final verás por qué el ruido no la confunde.
+Primero convierte el sonido en un mapa: el tiempo en un eje y las frecuencias en el otro.
+De ese mapa solo guarda los puntos más fuertes, los picos, como estrellas en el cielo.
+Luego une los picos en parejas, con el tiempo que hay entre ellos. Cada pareja se vuelve un código, una huella.
+Compara esas huellas con las de millones de canciones y busca la que coincide en orden.
+El ruido del bar casi nunca supera a los picos más fuertes de la música, así que las huellas sobreviven.
+Así reconoce esta canción.

@@ -1,0 +1,18 @@
+# Publicación: tiburon-groenlandia.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo saben que el tiburón de Groenlandia vive unos 400 años? 🦈⏳
+DESCRIP:
+El tiburón de Groenlandia podría vivir unos 400 años. Pero nadie lo vio nacer. 🤔
+
+La respuesta está en sus ojos. El centro del cristalino se forma antes de nacer y nunca se renueva: ahí queda guardado carbono de esa época, y con radiocarbono se estima cuándo se formó. Para calibrar usaron una marca en el tiempo: las pruebas nucleares de los años 60 dejaron un pico de carbono 14 en el mar. El más grande medido tendría unos 400 años, con un margen de más de un siglo.
+
+Crece un centímetro al año y tendría sus primeras crías hacia los 150 años.
+
+🦈 ¿Cuántos años tiene este tiburón?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Tiburones #Animales #Océano #Biología #Ciencia #Curiosidades #Frecuencia0

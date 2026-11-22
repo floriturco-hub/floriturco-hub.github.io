@@ -1,0 +1,18 @@
+# Publicación: tres-aspas.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué casi todos los aerogeneradores tienen 3 aspas y no 2 ni 4? 🌬️⚡
+DESCRIP:
+Casi todos los aerogeneradores tienen tres aspas. 🤔
+
+Más aspas no dan mucha más energía: cada una revuelve el aire para la siguiente, y con tres ya se aprovecha casi todo. Cuatro o más agregan peso y costo por muy poco. Con dos, el problema es el equilibrio: en vertical, una pasa frente a la torre y la otra arriba, donde el viento sopla más, y el rotor se sacude. Tres aspas reparten el peso igual en cualquier posición, y el giro es suave.
+
+Los de dos aspas sí existen, pero giran más rápido, hacen más ruido y vibran más.
+
+🌬️ ¿Por qué este molino tiene tres aspas?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Energía #EnergíaEólica #Ingeniería #Física #Ciencia #Curiosidades #Frecuencia0

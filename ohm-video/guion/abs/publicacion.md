@@ -1,0 +1,18 @@
+# Publicación: frenos-abs.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué vibra el pedal del freno con ABS y cómo funciona? 🚗🛑
+DESCRIP:
+Frenas de golpe y el pedal vibra bajo tu pie. 🤔
+
+Si una rueda se bloquea, patina: agarra menos y ya no puedes girar el volante. El ABS tiene un sensor en cada rueda que mide qué tan rápido gira. Si una rueda frena demasiado rápido, una válvula suelta la presión del freno y la vuelve a aplicar, hasta quince veces por segundo: eso es lo que sientes en el pedal. Así la rueda se queda al borde del agarre y puedes esquivar mientras frenas.
+
+No sueltes el pedal: mantenlo pisado a fondo.
+
+🛑 ¿Por qué este pedal tiembla?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#ABS #Frenos #Autos #SeguridadVial #Ciencia #Curiosidades #Frecuencia0

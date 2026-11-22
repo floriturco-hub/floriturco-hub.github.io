@@ -1,0 +1,8 @@
+¿Por qué esta cinta se mantiene rígida?
+Sacas un metro de cinta métrica y se queda derecha en el aire. Pero en cuanto se dobla, hace clac y cae. Al final verás un juguete que usa el mismo truco.
+La cinta no es plana: está curvada de lado, como una canaleta.
+Para doblarla a lo largo, tendría que curvarse en dos direcciones a la vez. Y eso obliga a estirar y comprimir el acero, que se resiste muchísimo.
+Por eso aguanta su peso.
+Pero si la fuerza es suficiente, la canaleta se aplana en un punto. Ya plana, doblarla es facilísimo, y se cae.
+Tiene dos estados estables, curvada o aplanada, y salta de uno a otro. Las pulseras de golpe usan lo mismo.
+Por eso esta cinta se mantiene rígida.

@@ -1,0 +1,18 @@
+# Publicación: estornudo-ojos.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué cerramos los ojos al estornudar? 🤧👀
+DESCRIP:
+Cada vez que estornudas, los ojos se te cierran solos. 🤔
+
+El estornudo es un reflejo: lo dispara el tronco del cerebro cuando algo irrita tu nariz. Activa a la vez un montón de músculos, el pecho, la garganta, la cara y también los párpados. Cerrar los ojos viene en el mismo paquete, quizá para protegerlos de lo que sale disparado.
+
+Pero no se te saldrían si los dejaras abiertos: la presión del estornudo está en el pecho y las vías respiratorias, no detrás de los ojos. Algunas personas incluso logran estornudar con los ojos abiertos.
+
+🤧 ¿Por qué se cierran estos ojos?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Estornudo #Reflejos #CuerpoHumano #Mitos #Ciencia #Curiosidades #Frecuencia0

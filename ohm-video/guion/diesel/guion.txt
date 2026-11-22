@@ -1,0 +1,8 @@
+¿Cómo explota sin chispa?
+Un motor de gasolina usa bujías para encender el combustible. El diésel, no. Al final verás para qué sirven sus bujías de precalentamiento.
+El truco es la compresión. El pistón aprieta el aire hasta unas veinte veces menos volumen.
+Al comprimir un gas, se calienta. Ese aire llega a más de quinientos grados.
+Justo entonces, el inyector rocía el diésel en gotas finísimas, y se enciende solo al tocar el aire caliente.
+La gasolina no aguantaría tanta compresión: explotaría antes de tiempo.
+Pero en frío, el aire no se calienta lo suficiente: las bujías de precalentamiento calientan la cámara para arrancar.
+Así explota sin chispa.

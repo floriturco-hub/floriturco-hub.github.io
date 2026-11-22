@@ -1,0 +1,8 @@
+¿Por qué este chorro se rompe?
+Abres la llave a chorrito: el agua se hace cada vez más delgada al caer, y abajo se rompe en gotas. Al final verás qué máquina usa este truco.
+Al caer, el agua acelera, y como pasa la misma cantidad cada segundo, el chorro se adelgaza.
+Pero el agua tiene tensión superficial: su superficie tira hacia adentro, como una piel elástica.
+Para un chorro largo y delgado, es mejor partirse en esferas. Cualquier ondulación diminuta crece hasta estrangularlo en gotas.
+Se llama inestabilidad de Plateau-Rayleigh.
+Las impresoras de inyección de tinta la usan para fabricar gotas idénticas.
+Por eso este chorro se rompe.

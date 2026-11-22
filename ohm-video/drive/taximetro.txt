@@ -1,0 +1,13 @@
+TITULO: ¿Cómo calcula el taxímetro lo que pagas cuando vas andando y cuando estás parado? 🚕💰
+DESCRIP:
+El taxímetro sube cuando el taxi avanza y también cuando está parado en el tráfico. 🤔
+
+Está conectado al auto, que le manda pulsos mientras giran las ruedas: un número fijo por kilómetro. El taxímetro cuenta esos pulsos y suma una ficha cada cierta distancia. Si el auto va muy despacio o se detiene, casi no llegan pulsos, así que cambia de modo: cuenta el tiempo con un reloj interno y cobra por minuto de espera.
+
+El cambio ocurre a una velocidad fija, la que hace que los dos modos cobren lo mismo. Por eso nunca te cobra las dos cosas a la vez.
+
+🚕 ¿Cómo sabe el taxi cuánto cobrarte?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Taxi #Taxímetro #Tecnología #Física #Ciencia #Curiosidades #Frecuencia0

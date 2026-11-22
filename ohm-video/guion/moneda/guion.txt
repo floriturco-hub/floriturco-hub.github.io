@@ -1,0 +1,7 @@
+¡La máquina sabe que es falsa!
+Metes una moneda y, en menos de un segundo, la máquina decide si es real. No la mira: la mide.
+Primero, el tamaño. Unos sensores de luz miden su diámetro y su grosor mientras rueda. Si no cuadra, fuera.
+Pero un disco de metal del mismo tamaño pasaría esa prueba. Ahí viene la parte clave: unas bobinas crean un campo magnético que cambia muy rápido. Al cruzarlo, dentro de la moneda nacen remolinos de corriente eléctrica. Y cada aleación reacciona distinto: el cobre, el níquel o el acero dejan su propia huella en el campo.
+La máquina compara esa huella con la que tiene guardada para cada moneda. Las más antiguas usaban un imán: frenaba las monedas buenas a una velocidad exacta, y el hierro se quedaba pegado.
+Si todo coincide, una compuerta la deja pasar a la caja. Si no, te la devuelve.
+Tu moneda acaba de aprobar un examen de física.

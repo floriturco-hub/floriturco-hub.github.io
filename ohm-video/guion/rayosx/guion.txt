@@ -1,0 +1,7 @@
+¡Tu maleta no tiene secretos!
+En la pantalla del aeropuerto, tu maleta sale pintada de naranja, verde y azul. Pero los rayos X no tienen color. ¿Entonces?
+Los rayos X atraviesan la maleta y llegan a unos detectores. Cuanto más denso es un objeto, más rayos frena y más oscuro se ve.
+El truco es mirar con dos energías a la vez. Los rayos de baja energía los frenan mucho los átomos pesados, como el hierro; los de alta energía pasan casi igual por todo. Comparando cuánto se pierde de cada uno, la máquina calcula qué tipo de átomos tiene cada objeto.
+Y le pone un color. Naranja para lo orgánico, hecho de átomos ligeros como carbono e hidrógeno: comida, ropa, plástico… y también explosivos. Verde para lo intermedio, como el aluminio o el vidrio. Azul para metales como el acero.
+Si algo es tan denso que los rayos no lo atraviesan, sale negro, y te revisan la maleta a mano.
+Tu maleta, traducida a colores.

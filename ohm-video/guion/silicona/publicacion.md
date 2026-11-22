@@ -1,0 +1,18 @@
+# Publicación: pistola-silicona.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo sabe una pistola de silicona a qué temperatura calentar sin termostato? (Termistor PTC) 🔫🔥
+DESCRIP:
+No tiene termostato ni partes móviles, y aun así se queda a la temperatura justa. 🤔
+
+El calentador es una pastilla de cerámica especial, llamada PTC. En frío deja pasar mucha corriente y se calienta rápido. Pero al llegar a cierta temperatura, su estructura cambia y su resistencia se dispara, cientos de veces.
+
+Pasa menos corriente y deja de calentar. Si se enfría un poco, la resistencia baja y vuelve a calentar. Así se regula sola: aunque la dejes horas enchufada, se queda en su punto.
+
+🔥 ¿Por qué esta pistola nunca se sobrecalienta?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#TermistorPTC #Electrónica #Física #Ciencia #Curiosidades #Herramientas #Frecuencia0

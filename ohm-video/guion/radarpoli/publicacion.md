@@ -1,0 +1,18 @@
+# Publicación: radar-policia.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo mide tu velocidad el radar de la policía? (Doppler vs. láser) 🚓📡
+DESCRIP:
+Un policía apunta un aparato a tu auto y, en menos de un segundo, sabe tu velocidad. 🤔
+
+El radar lanza ondas de radio que rebotan en tu auto y regresan. Si te acercas, las ondas vuelven más apretadas, con más frecuencia: es el efecto Doppler, el mismo de la sirena de una ambulancia. De esa diferencia sale tu velocidad. La pistola láser (LiDAR), en cambio, dispara pulsos de luz infrarroja y mide cuánto tardan en volver: así sabe la distancia. Repite la medida cientos de veces por segundo; si la distancia baja rápido, vienes rápido.
+
+Y su rayo es tan fino que apunta a un solo auto: por eso es el más preciso.
+
+🚓 ¿Cómo sabe a qué velocidad vienes?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Radar #Doppler #Láser #Física #Ciencia #Curiosidades #Frecuencia0

@@ -1,0 +1,18 @@
+# Publicación: reloj-automatico.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo funciona un reloj automático sin pila y sin darle cuerda? ⌚⚙️
+DESCRIP:
+Un reloj automático no usa batería y nunca le das cuerda a mano. 🤔
+
+Por dentro, una pieza en forma de media luna, el rotor, gira cada vez que mueves la muñeca. Con engranes, ese giro enrolla un resorte en espiral: la cuerda, donde se guarda la energía. El escape deja salir esa energía poco a poco y hace oscilar un volante varias veces por segundo: ese tic tac mueve las manecillas. Cuando la cuerda está llena, un embrague resbala para no romper el resorte.
+
+Si te lo quitas, suele aguantar unos dos días.
+
+⌚ ¿Cómo funciona este reloj sin pila?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Relojes #Mecánica #Ingeniería #Inventos #Ciencia #Curiosidades #Frecuencia0

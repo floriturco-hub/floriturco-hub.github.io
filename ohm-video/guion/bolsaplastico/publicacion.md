@@ -1,0 +1,18 @@
+# Publicación: bolsa-cuello.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué una bolsa de plástico se adelgaza y luego se pone durísima al estirarla? 🛍️
+DESCRIP:
+Estiras una bolsa: primero resiste, luego se adelgaza en una franja y de pronto se pone durísima. 🤔
+
+El plástico está hecho de cadenas larguísimas de moléculas, enredadas como espagueti. Al principio solo se estiran un poco. Luego, en un punto débil, empiezan a desenredarse y esa zona se adelgaza: es el cuello. Mientras más jalas, más cadenas quedan alineadas, como cuerdas paralelas, y ahora la fuerza la cargan las cadenas mismas: la bolsa se vuelve durísima.
+
+Las fábricas estiran fibras y películas de plástico a propósito para hacerlas más fuertes.
+
+🛍️ ¿Por qué esta bolsa se endurece?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Plástico #Polímeros #Química #Materiales #Ciencia #Curiosidades #Frecuencia0

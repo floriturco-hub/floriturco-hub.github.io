@@ -1,0 +1,18 @@
+# Publicación: saciedad-semantica.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué una palabra se ve rara si la repites muchas veces? (Saciedad semántica) 🧠🔤
+DESCRIP:
+Escribes la misma palabra 30 veces y, de pronto, parece mal escrita, como de otro idioma. 🤔
+
+Se llama saciedad semántica. Cuando lees o dices una palabra, un grupo de neuronas conecta su forma con su significado. Si la repites una y otra vez, esas neuronas se cansan: cada vez responden con menos fuerza. El significado se apaga y solo te quedan letras y sonidos sueltos. Basta descansar unos segundos para que se recuperen.
+
+Algunos terapeutas lo usan: repetir en voz alta una palabra que te angustia le quita parte de su fuerza.
+
+🔤 ¿Por qué esta palabra se ve rara?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Cerebro #Psicología #Lenguaje #Neurociencia #Ciencia #Curiosidades #Frecuencia0
