@@ -1,0 +1,18 @@
+# Publicación: olla-seguros.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué las ollas de presión modernas ya no explotan? Sus 4 seguros 🍲⚠️
+DESCRIP:
+Las ollas de presión viejas a veces explotaban. Las modernas tienen varios seguros. 🤔
+
+Al cerrar la olla, el vapor no puede escapar y la presión sube; con más presión, el agua hierve a unos 120 grados en lugar de 100 y la comida se cocina más rápido. La válvula de arriba es el primer seguro: deja salir vapor cuando la presión llega al límite. Si se tapa, una segunda válvula se abre sola. Y si todo falla, el empaque de hule se deforma por una ventana y suelta el vapor.
+
+El más importante: la tapa se traba y no se puede abrir mientras hay presión adentro.
+
+🍲 ¿Por qué esta olla ya no explota?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Cocina #Física #Seguridad #Ingeniería #Ciencia #Curiosidades #Frecuencia0

@@ -1,0 +1,18 @@
+# Publicación: astronauta-crece.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué los astronautas regresan más altos del espacio? 🧑‍🚀📏
+DESCRIP:
+Después de meses en el espacio, un astronauta puede regresar hasta 5 cm más alto. 🤔
+
+Tu columna tiene vértebras separadas por discos blandos, como cojines con líquido. En la Tierra, la gravedad aplasta esos discos todo el día. En el espacio no hay ese peso: los discos absorben líquido, se hinchan y la columna se estira, lo que puede causar dolor de espalda. Al volver, la gravedad los comprime y recupera su altura normal.
+
+Y a ti te pasa cada noche: al acostarte tus discos se recuperan y por la mañana eres un poco más alto.
+
+🧑‍🚀 ¿Por qué este astronauta creció?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Espacio #Astronautas #CuerpoHumano #Columna #Ciencia #Curiosidades #Frecuencia0

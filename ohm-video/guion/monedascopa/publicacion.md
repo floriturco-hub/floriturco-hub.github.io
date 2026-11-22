@@ -1,0 +1,18 @@
+# Publicación: monedas-copa.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué una copa llena hasta el borde no se derrama al meterle monedas? 🥂🪙
+DESCRIP:
+Llenas una copa hasta el borde y le metes monedas: el agua sube, pero no se derrama. 🤔
+
+Las moléculas de agua se atraen entre sí. Pero en la superficie solo tienen vecinas abajo y a los lados; esas fuerzas las jalan hacia adentro y la superficie se comporta como una piel elástica: es la tensión superficial. Con cada moneda, el agua sube y esa piel se estira por encima del borde, formando un domo, hasta que su peso vence a la tensión y se desborda.
+
+Y una gota de jabón debilita esa piel: el domo se derrama de golpe.
+
+🥂 ¿Por qué esta copa no se derrama?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Física #Agua #Experimentos #TensiónSuperficial #Ciencia #Curiosidades #Frecuencia0

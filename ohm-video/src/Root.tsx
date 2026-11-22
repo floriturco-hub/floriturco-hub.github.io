@@ -43,6 +43,26 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { VelaEspacio, DURACION_VELAESPACIO_S } from "./velaespacio/VelaEspacio";
+import { OllaSeguros, DURACION_OLLASEGUROS_S } from "./ollapresion/OllaSeguros";
+import { BurbujasRedondas, DURACION_BURBUJAS_S } from "./burbujas/BurbujasRedondas";
+import { ColumnasBasalto, DURACION_BASALTO_S } from "./basalto/ColumnasBasalto";
+import { HojasOtono, DURACION_OTONO_S } from "./otono/HojasOtono";
+import { DesiertoNoche, DURACION_DESIERTO_S } from "./desierto/DesiertoNoche";
+import { MonedasCopa, DURACION_MONEDASCOPA_S } from "./monedascopa/MonedasCopa";
+import { ReflejoInmersion, DURACION_INMERSION_S } from "./inmersion/ReflejoInmersion";
+import { HieloFlota, DURACION_HIELOFLOTA_S } from "./hieloflota/HieloFlota";
+import { LactosaAdultos, DURACION_LACTOSA_S } from "./lactosa/LactosaAdultos";
+import { PalomitasGranos, DURACION_PALOMITAS_S } from "./palomitas/PalomitasGranos";
+import { TermostatoCera, DURACION_TERMOSTATO_S } from "./termostato/TermostatoCera";
+import { AstronautaCrece, DURACION_ASTRONAUTA_S } from "./astronauta/AstronautaCrece";
+import { PuenteCongela, DURACION_PUENTEHIELO_S } from "./puentehielo/PuenteCongela";
+import { RuborHumano, DURACION_RUBOR_S } from "./rubor/RuborHumano";
+import { FrutaMadura, DURACION_ETILENO_S } from "./etileno/FrutaMadura";
+import { OlorRecuerdo, DURACION_OLORREC_S } from "./olorrecuerdo/OlorRecuerdo";
+import { VidrioLiquido, DURACION_VIDRIOLIQ_S } from "./vidrioliquido/VidrioLiquido";
+import { HieloTransparente, DURACION_HIELOTRANSP_S } from "./hielotransparente/HieloTransparente";
+import { Titilan, DURACION_TITILAN_S } from "./titilan/Titilan";
 import { HuevoCocido, DURACION_HUEVO_S } from "./huevococido/HuevoCocido";
 import { RelojAutomatico, DURACION_RELOJAUTO_S } from "./relojauto/RelojAutomatico";
 import { HuellasGemelos, DURACION_HUELLAS_S } from "./huellas/HuellasGemelos";
@@ -2220,6 +2240,166 @@ export const RemotionRoot: React.FC = () => {
         id="HuevoCocido"
         component={HuevoCocido}
         durationInFrames={Math.round(DURACION_HUEVO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="Titilan"
+        component={Titilan}
+        durationInFrames={Math.round(DURACION_TITILAN_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HieloTransparente"
+        component={HieloTransparente}
+        durationInFrames={Math.round(DURACION_HIELOTRANSP_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="VidrioLiquido"
+        component={VidrioLiquido}
+        durationInFrames={Math.round(DURACION_VIDRIOLIQ_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="OlorRecuerdo"
+        component={OlorRecuerdo}
+        durationInFrames={Math.round(DURACION_OLORREC_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FrutaMadura"
+        component={FrutaMadura}
+        durationInFrames={Math.round(DURACION_ETILENO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RuborHumano"
+        component={RuborHumano}
+        durationInFrames={Math.round(DURACION_RUBOR_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PuenteCongela"
+        component={PuenteCongela}
+        durationInFrames={Math.round(DURACION_PUENTEHIELO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="AstronautaCrece"
+        component={AstronautaCrece}
+        durationInFrames={Math.round(DURACION_ASTRONAUTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TermostatoCera"
+        component={TermostatoCera}
+        durationInFrames={Math.round(DURACION_TERMOSTATO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="PalomitasGranos"
+        component={PalomitasGranos}
+        durationInFrames={Math.round(DURACION_PALOMITAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="LactosaAdultos"
+        component={LactosaAdultos}
+        durationInFrames={Math.round(DURACION_LACTOSA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HieloFlota"
+        component={HieloFlota}
+        durationInFrames={Math.round(DURACION_HIELOFLOTA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ReflejoInmersion"
+        component={ReflejoInmersion}
+        durationInFrames={Math.round(DURACION_INMERSION_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MonedasCopa"
+        component={MonedasCopa}
+        durationInFrames={Math.round(DURACION_MONEDASCOPA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="DesiertoNoche"
+        component={DesiertoNoche}
+        durationInFrames={Math.round(DURACION_DESIERTO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HojasOtono"
+        component={HojasOtono}
+        durationInFrames={Math.round(DURACION_OTONO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ColumnasBasalto"
+        component={ColumnasBasalto}
+        durationInFrames={Math.round(DURACION_BASALTO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BurbujasRedondas"
+        component={BurbujasRedondas}
+        durationInFrames={Math.round(DURACION_BURBUJAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="OllaSeguros"
+        component={OllaSeguros}
+        durationInFrames={Math.round(DURACION_OLLASEGUROS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="VelaEspacio"
+        component={VelaEspacio}
+        durationInFrames={Math.round(DURACION_VELAESPACIO_S * 30)}
         fps={30}
         width={1080}
         height={1920}

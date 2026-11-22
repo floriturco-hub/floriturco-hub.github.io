@@ -1,0 +1,9 @@
+¿Cómo sabe este termostato cuándo abrir?
+El motor de tu auto decide cuándo mandar agua al radiador con una pastilla de cera, sin chips. Al final verás qué pasa si se atasca.
+El termostato es una válvula entre el motor y el radiador.
+Dentro tiene una cápsula con una cera especial.
+Con el motor frío, la cera está sólida y un resorte mantiene la válvula cerrada.
+Cuando el agua llega a unos noventa grados, la cera se derrite y se expande. Empuja un perno que abre la válvula, y el agua va al radiador.
+Si se enfría, la cera se encoge y el resorte cierra.
+Si se atasca cerrada, el motor se sobrecalienta.
+Así sabe este termostato cuándo abrir.

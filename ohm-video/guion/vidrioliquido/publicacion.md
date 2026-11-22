@@ -1,0 +1,18 @@
+# Publicación: vidrio-liquido.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿El vidrio es un líquido que fluye lentísimo? El mito de las ventanas antiguas 🪟🔍
+DESCRIP:
+Dicen que el vidrio es un líquido lentísimo y que por eso las ventanas antiguas son más gruesas abajo. 🤔
+
+Es falso. El vidrio es un sólido amorfo: sus átomos están desordenados como en un líquido, pero no se mueven. Para que fluyera algo visible harían falta más años que la edad del universo. ¿Y las ventanas? Antes los vidrios se hacían girando vidrio fundido y salían disparejos; se solía poner la parte gruesa abajo, pero en algunas ventanas está arriba.
+
+Y hay copas romanas de 2.000 años que no se han deformado nada.
+
+🪟 ¿Este vidrio se está derritiendo?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Vidrio #Mitos #Física #Materiales #Ciencia #Curiosidades #Frecuencia0

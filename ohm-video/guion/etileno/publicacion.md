@@ -1,0 +1,18 @@
+# Publicación: fruta-madura.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué un plátano maduro hace madurar más rápido al aguacate? 🍌🥑
+DESCRIP:
+Si guardas un aguacate verde en una bolsa de papel con un plátano maduro, madura mucho más rápido. 🤔
+
+El plátano maduro suelta etileno, un gas invisible que funciona como una hormona de las plantas. El etileno le ordena a otra fruta madurar: el almidón se vuelve azúcar y la pulpa se ablanda. Y esa fruta, al madurar, suelta más etileno: es una reacción en cadena. La bolsa de papel atrapa el gas alrededor de la fruta, pero deja escapar la humedad; en una de plástico se pudriría.
+
+La manzana también suelta mucho etileno.
+
+🍌 ¿Por qué este plátano acelera al aguacate?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Frutas #Cocina #Química #Plantas #Ciencia #Curiosidades #Frecuencia0

@@ -1,0 +1,18 @@
+# Publicación: hielo-flota.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Por qué el hielo flota si casi todo sólido se hunde? 🧊🐟
+DESCRIP:
+Casi todas las sustancias, al congelarse, se hunden en su propio líquido. El hielo no. 🤔
+
+Al enfriarse, casi todo se encoge: las moléculas se juntan más y el sólido queda más denso. El agua es rara: sus moléculas se atraen por un lado y se repelen por otro. Al congelarse se acomodan en una red de hexágonos con huecos en medio, y esos huecos hacen que el hielo ocupe más espacio que el agua: por eso flota.
+
+Y por eso los lagos se congelan de arriba hacia abajo: el hielo aísla el agua de abajo y los peces sobreviven.
+
+🧊 ¿Por qué este hielo flota?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Agua #Hielo #Química #Física #Ciencia #Curiosidades #Frecuencia0

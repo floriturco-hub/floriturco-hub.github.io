@@ -1,0 +1,18 @@
+# Publicación: termostato-cera.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo sabe el termostato de tu auto cuándo abrir? Una pastilla de cera 🚗🌡️
+DESCRIP:
+El motor de tu auto decide cuándo mandar agua al radiador con una pastilla de cera, sin chips. 🤔
+
+El termostato es una válvula entre el motor y el radiador. Dentro tiene una cápsula con una cera especial. Con el motor frío, la cera está sólida y un resorte mantiene la válvula cerrada. Cuando el agua llega a unos 90 grados, la cera se derrite y se expande: empuja un perno que abre la válvula y el agua va al radiador. Si se enfría, la cera se encoge y el resorte cierra.
+
+Si se atasca cerrado, el motor se sobrecalienta.
+
+🌡️ ¿Cómo sabe este termostato cuándo abrir?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Autos #Mecánica #Motor #Ingeniería #Ciencia #Curiosidades #Frecuencia0
