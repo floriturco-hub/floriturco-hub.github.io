@@ -109,8 +109,8 @@ export const Bucle: React.FC<{ readonly t0: number }> = ({ t0 }) => {
   return (
     <Lienzo zoom={interpolate(t, [T.hacer, T.grano], [1, 1.04])}>
       <Olla t={t} />
-      <circle cx={540} cy={1340} r={120} fill="none" stroke={C.yellow} strokeWidth={6} strokeDasharray="14 10" opacity={aparece(t, T.abrir)} />
-      <Texto x={540} y={1480} size={38} color={C.yellow} op={aparece(t, T.abrir)}>
+      <circle cx={540} cy={1335} r={95} fill="none" stroke={C.yellow} strokeWidth={6} strokeDasharray="14 10" opacity={aparece(t, T.abrir)} />
+      <Texto x={540} y={1500} size={38} color={C.yellow} op={aparece(t, T.abrir)}>
         granos sin abrir
       </Texto>
       <g opacity={aparece(t, T.final)}>
