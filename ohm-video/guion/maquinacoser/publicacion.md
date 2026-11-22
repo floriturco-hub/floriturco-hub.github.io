@@ -1,0 +1,18 @@
+# Publicación: maquina-coser.mp4
+
+Estado: TXT en Drive; el MP4 lo sube el usuario a mano.
+Narración: ElevenLabs, voz Pablo, modelo eleven_v4. Retención: sin logo, en bucle, con subtítulos.
+
+TITULO: ¿Cómo cose una máquina de coser con dos hilos si la aguja nunca cruza la tela? 🧵⚙️
+DESCRIP:
+Una máquina de coser une la tela con dos hilos, pero la aguja nunca pasa al otro lado de la bobina. 🤔
+
+La aguja tiene el ojo en la punta. Baja, atraviesa la tela y, al subir un poco, el hilo forma una pequeña lazada abajo. Ahí entra un gancho giratorio que atrapa la lazada y la pasa alrededor de la bobina, donde está el segundo hilo. Al subir la aguja, los dos hilos se tensan y quedan entrelazados dentro de la tela: es la puntada.
+
+Y todo se repite sin parar: una máquina doméstica da cientos de puntadas por minuto.
+
+🧵 ¿Cómo cose esta máquina sin atravesar?
+
+⚡ En Frecuencia 0, explicamos la ciencia que hay detrás de lo cotidiano.
+
+#Ingeniería #Mecánica #Costura #Inventos #Ciencia #Curiosidades #Frecuencia0

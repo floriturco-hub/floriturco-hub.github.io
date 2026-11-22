@@ -43,6 +43,16 @@ import {
 } from "./eyectable/AsientoEyectable";
 import { DURACION_INSTANTE_S, LuzInstante } from "./instante/LuzInstante";
 import { LeyDeOhm } from "./LeyDeOhm";
+import { HuevoCocido, DURACION_HUEVO_S } from "./huevococido/HuevoCocido";
+import { RelojAutomatico, DURACION_RELOJAUTO_S } from "./relojauto/RelojAutomatico";
+import { HuellasGemelos, DURACION_HUELLAS_S } from "./huellas/HuellasGemelos";
+import { TurboAuto, DURACION_TURBO_S } from "./turbo/TurboAuto";
+import { CorazonCansa, DURACION_CORAZON_S } from "./corazon/CorazonCansa";
+import { NubePesa, DURACION_NUBEPESA_S } from "./nubepesa/NubePesa";
+import { ShazamCancion, DURACION_SHAZAM_S } from "./shazam/ShazamCancion";
+import { FrenosAire, DURACION_FRENOSAIRE_S } from "./frenosaire/FrenosAire";
+import { CafeBano, DURACION_CAFEBANO_S } from "./cafebano/CafeBano";
+import { MaquinaCoser, DURACION_MAQUINACOSER_S } from "./maquinacoser/MaquinaCoser";
 import { HuesosBebe, DURACION_HUESOSBEBE_S } from "./huesosbebe/HuesosBebe";
 import { CuchilloCeramica, DURACION_CERAMICA_S } from "./ceramica/CuchilloCeramica";
 import { TresAspas, DURACION_ASPAS_S } from "./aspas/TresAspas";
@@ -2130,6 +2140,86 @@ export const RemotionRoot: React.FC = () => {
         id="HuesosBebe"
         component={HuesosBebe}
         durationInFrames={Math.round(DURACION_HUESOSBEBE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="MaquinaCoser"
+        component={MaquinaCoser}
+        durationInFrames={Math.round(DURACION_MAQUINACOSER_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CafeBano"
+        component={CafeBano}
+        durationInFrames={Math.round(DURACION_CAFEBANO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="FrenosAire"
+        component={FrenosAire}
+        durationInFrames={Math.round(DURACION_FRENOSAIRE_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ShazamCancion"
+        component={ShazamCancion}
+        durationInFrames={Math.round(DURACION_SHAZAM_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="NubePesa"
+        component={NubePesa}
+        durationInFrames={Math.round(DURACION_NUBEPESA_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CorazonCansa"
+        component={CorazonCansa}
+        durationInFrames={Math.round(DURACION_CORAZON_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="TurboAuto"
+        component={TurboAuto}
+        durationInFrames={Math.round(DURACION_TURBO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HuellasGemelos"
+        component={HuellasGemelos}
+        durationInFrames={Math.round(DURACION_HUELLAS_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="RelojAutomatico"
+        component={RelojAutomatico}
+        durationInFrames={Math.round(DURACION_RELOJAUTO_S * 30)}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="HuevoCocido"
+        component={HuevoCocido}
+        durationInFrames={Math.round(DURACION_HUEVO_S * 30)}
         fps={30}
         width={1080}
         height={1920}
