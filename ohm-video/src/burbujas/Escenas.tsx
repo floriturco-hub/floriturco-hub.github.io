@@ -86,8 +86,8 @@ export const Bucle: React.FC<{ readonly t0: number }> = ({ t0 }) => {
   const sube = (k: number) => ((t - T.redondas) * 0.25 + k * 0.3) % 1;
   return (
     <Lienzo zoom={interpolate(t, [T.soplas, T.pelicula], [1, 1.04])}>
-      <rect x={180} y={1160} width={200} height={200} fill="none" stroke="#E8C040" strokeWidth={10} opacity={aparece(t, T.aro)} />
-      <line x1={280} y1={1360} x2={280} y2={1520} stroke="#E8C040" strokeWidth={10} opacity={aparece(t, T.aro)} />
+      <rect x={180} y={1160} width={200} height={200} fill="none" stroke="#E8C040" strokeWidth={10} opacity={0.3 + 0.7 * aparece(t, T.aro)} />
+      <line x1={280} y1={1360} x2={280} y2={1520} stroke="#E8C040" strokeWidth={10} opacity={0.3 + 0.7 * aparece(t, T.aro)} />
       <g opacity={aparece(t, T.estrella)}>
         <Estrella x={800} y={1260} r={120} />
         <line x1={800} y1={1380} x2={800} y2={1520} stroke="#E8C040" strokeWidth={10} />
@@ -118,21 +118,21 @@ export const Pelicula: React.FC<{ readonly t0: number }> = ({ t0 }) => {
   return (
     <>
       <Lienzo zoom={interpolate(t, [T.pelicula, T.aire], [1, 1.04])}>
-        <Burbuja x={540} y={1000} r={300} t={t} />
+        <Burbuja x={540} y={1060} r={250} t={t} />
         <g transform="translate(540 700)">
           <rect x={-200} y={-50} width={400} height={100} rx={20} fill="#1A1A2A" stroke="#DDF4FF" strokeWidth={4} />
           {new Array(8).fill(0).map((_, k) => (
             <circle key={k} cx={-160 + k * 46} cy={0} r={k % 3 === 1 ? 18 : 12} fill={k % 3 === 1 ? "#F0C070" : "#3A8AD8"} />
           ))}
         </g>
-        <Texto x={540} y={600} size={34} color={C.white} op={aparece(t, T.jabon)}>
+        <Texto x={540} y={610} size={34} color={C.white} op={aparece(t, T.jabon)}>
           agua con jabón, delgadísima
         </Texto>
         {enc > 0
           ? [0, 60, 120, 180, 240, 300].map((a) => {
               const r = (a * Math.PI) / 180;
               const p = 0.5 + 0.5 * Math.sin(t * 4);
-              return <line key={a} x1={540 + Math.cos(r) * 340} y1={1000 + Math.sin(r) * 340} x2={540 + Math.cos(r) * (300 - 20 * p)} y2={1000 + Math.sin(r) * (300 - 20 * p)} stroke={C.yellow} strokeWidth={6} opacity={enc} />;
+              return <line key={a} x1={540 + Math.cos(r) * 290} y1={1060 + Math.sin(r) * 290} x2={540 + Math.cos(r) * (250 - 20 * p)} y2={1060 + Math.sin(r) * (250 - 20 * p)} stroke={C.yellow} strokeWidth={6} opacity={enc} />;
             })
           : null}
         <Texto x={540} y={1420} size={38} color={C.yellow} op={aparece(t, T.tension)}>
@@ -210,7 +210,7 @@ export const Cubo: React.FC<{ readonly t0: number }> = ({ t0 }) => {
           ].map(([a, b], k) => (
             <line key={k} x1={a + o * 0.5} y1={b - o * 0.5} x2={(a + o * 0.5) * 0.35} y2={(b - o * 0.5) * 0.35} stroke="#70C0F0" strokeWidth={3} opacity={0.7} />
           ))}
-          <rect x={-55 + o * 0.5 * 0.35} y={-55 - o * 0.5 * 0.35} width={110} height={110} fill="#DDF4FF" opacity={0.25 * aparece(t, T.cuadrada2) + 0.05} stroke="#F070C0" strokeWidth={5} />
+          <rect x={-55 + o * 0.5 * 0.35} y={-55 - o * 0.5 * 0.35} width={110} height={110} fill="#DDF4FF" opacity={0.45 * aparece(t, T.cuadrada2) + 0.05} stroke="#F070C0" strokeWidth={5} />
         </g>
         <Texto x={540} y={620} size={36} color={C.white} op={aparece(t, T.alambre)}>
           un cubo de alambre en jabón
