@@ -175,7 +175,7 @@ export const Ahorra: React.FC<{ readonly t0: number }> = ({ t0 }) => {
         <Texto x={540} y={620} size={38} color={C.white} op={aparece(t, T.frena2)}>
           el corazón se frena: ahorra oxígeno
         </Texto>
-        <Texto x={800} y={1180} size={30} color={C.orange} op={aparece(t, T.vasos)}>
+        <Texto x={540} y={1470} size={32} color={C.orange} op={aparece(t, T.vasos)}>
           brazos y piernas: se cierran
         </Texto>
       </Lienzo>

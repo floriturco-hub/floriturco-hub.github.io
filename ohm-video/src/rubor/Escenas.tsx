@@ -129,8 +129,7 @@ export const Senal: React.FC<{ readonly t0: number }> = ({ t0 }) => {
       <Cara x={330} y={980} s={0.7} rubor={1} t={t} />
       <g opacity={aparece(t, T.perdonan)}>
         <Cara x={780} y={980} s={0.7} rubor={0} t={t} />
-        <path d="M 520 950 Q 560 900 600 950" stroke="#5AD08A" strokeWidth={8} fill="none" />
-        <Texto x={560} y={880} size={40} color="#5AD08A">
+        <Texto x={555} y={960} size={64} color="#5AD08A">
           ✓
         </Texto>
       </g>
