@@ -42,7 +42,7 @@ const Paisaje: React.FC<{ readonly t: number; readonly hielo: number; readonly c
     {[600, 900].map((x) => (
       <rect key={x} x={x - 18} y={1134} width={36} height={470} fill="#8A8A96" />
     ))}
-    <rect x={460} y={1072} width={620} height={10} fill={HIELO} opacity={hielo} />
+    <rect x={460} y={1062} width={620} height={22} rx={6} fill={HIELO} opacity={hielo} />
     {/* calor que sube del suelo bajo la carretera */}
     {calor > 0
       ? [0, 1, 2, 3].map((k) => <path key={k} d={`M ${80 + k * 100} ${1500 - ((t * 60 + k * 30) % 300)} l 0 -40 m -12 12 l 12 -12 l 12 12`} stroke={TIBIO} strokeWidth={6} fill="none" opacity={calor} />)
