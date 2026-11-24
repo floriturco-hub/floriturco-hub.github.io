@@ -1,0 +1,170 @@
+!=====================================================================
+! Sistema agrivoltaico 3D - conduccion estacionaria aire + suelo
+! Mechanical APDL (File > Read Input from... o /INPUT,agrivoltaico_3d,inp)
+!
+! Ejes: X horizontal (largo del panel), Y profundidad (extrusion 3D),
+!       Z vertical (z = 0 en la superficie del suelo)
+!=====================================================================
+FINISH
+/CLEAR,START
+/TITLE,Agrivoltaico 3D - cavidad de aire + suelo
+/PREP7
+
+!---------------- Parametros (Tabla 1 del informe) -------------------
+PI   = ACOS(-1)
+LPV  = 1.00                 ! longitud del panel [m]
+BETA = 5.0*PI/180           ! inclinacion del panel
+LX   = LPV*COS(BETA)        ! 0.9962 m
+H1   = 2.00                 ! altura menor [m]
+H2   = H1 + LPV*SIN(BETA)   ! 2.0872 m
+HG   = 1.00                 ! profundidad del suelo [m]
+W    = 1.00                 ! ancho en Y (dimension 3D) [m]  <-- cambiar
+TINF = 27.0                 ! T ambiente [C]
+TH   = 25.0                 ! T profunda del suelo [C]
+KA   = 0.0263               ! k aire [W/m K]
+KG   = 2.20                 ! k suelo [W/m K]
+GBN  = 459.39               ! [W/m2]
+GDH  = 270.62               ! [W/m2]
+THZ  = 59.4*PI/180          ! angulo cenital
+FPV  = 0.00217              ! fraccion que entra al aire bajo el panel
+FSKY = 0.5
+ALFG = 0.05                 ! absortividad efectiva del suelo
+GBP  = GBN*COS(THZ)         ! 233.85 W/m2
+QPV  = FPV*(GBP+GDH)        ! ~1.095 W/m2 (cara inferior del panel)
+QDIF = ALFG*GDH*FSKY        ! ~6.77 W/m2 (superficie del suelo)
+
+! Caras en Y del aire:
+!   EXTREMOS = 0 -> adiabaticas (simetria, reproduce exactamente el 2D)
+!   EXTREMOS = 1 -> abiertas a TINF (mesa agrivoltaica finita, efecto 3D real)
+EXTREMOS = 0
+
+! El flujo difuso en z=0 es una interfaz interna aire-suelo. Para no
+! aplicarlo dos veces (a las caras del aire y del suelo) se modela como
+! generacion volumetrica en una capa delgada de suelo de espesor TC:
+! HGEN = QDIF/TC  (equivalente al flujo superficial cuando TC -> 0)
+TC   = 0.01
+
+! Divisiones de malla
+NX  = 25                    ! en X
+NY  = 20                    ! en Y
+NZG = 25                    ! suelo en Z
+NZA = 50                    ! aire en Z
+
+!---------------- Elementos y materiales -----------------------------
+ET,1,SOLID70                ! solido termico 3D de 8 nodos
+MP,KXX,1,KA                 ! material 1 = aire
+MP,KXX,2,KG                 ! material 2 = suelo
+
+!---------------- Geometria ------------------------------------------
+BLOCK,0,LX,0,W,-HG,-TC      ! suelo
+BLOCK,0,LX,0,W,-TC,0        ! capa delgada del suelo (recibe q''dif)
+
+K,101,0 ,0,0                ! cavidad de aire: prisma trapezoidal
+K,102,LX,0,0
+K,103,LX,0,H2
+K,104,0 ,0,H1
+K,105,0 ,W,0
+K,106,LX,W,0
+K,107,LX,W,H2
+K,108,0 ,W,H1
+V,101,102,103,104,105,106,107,108
+
+VGLUE,ALL                   ! continuidad de T en las interfaces
+
+VSEL,S,LOC,Z,-HG,0
+VATT,2,,1                   ! suelo
+VSEL,S,LOC,Z,0.5,H2
+VATT,1,,1                   ! aire
+ALLSEL
+
+!---------------- Malla mapeada hexaedrica ---------------------------
+LSEL,S,LOC,X,LX/2           ! lineas en X (incluida la inclinada)
+LESIZE,ALL,,,NX
+LSEL,S,LOC,Y,W/2            ! lineas en Y
+LESIZE,ALL,,,NY
+LSEL,S,LOC,Z,-HG+TC,-2*TC   ! verticales del suelo
+LESIZE,ALL,,,NZG
+LSEL,S,LOC,Z,-0.75*TC,-0.25*TC ! verticales de la capa delgada
+LESIZE,ALL,,,1
+LSEL,S,LOC,Z,0.1,1.5        ! verticales del aire
+LESIZE,ALL,,,NZA
+ALLSEL
+
+MSHAPE,0,3D
+MSHKEY,1
+VMESH,ALL
+FINISH
+
+!---------------- Condiciones de frontera ----------------------------
+/SOLU
+ANTYPE,STATIC
+
+! Fondo del suelo, z = -1 m: Dirichlet TH
+NSEL,S,LOC,Z,-HG
+D,ALL,TEMP,TH
+
+! Caras laterales del aire, x = 0 y x = Lx: Dirichlet TINF
+NSEL,S,LOC,X,0
+NSEL,A,LOC,X,LX
+NSEL,R,LOC,Z,0,H2
+D,ALL,TEMP,TINF
+
+*IF,EXTREMOS,EQ,1,THEN
+  NSEL,S,LOC,Y,0
+  NSEL,A,LOC,Y,W
+  NSEL,R,LOC,Z,0,H2
+  D,ALL,TEMP,TINF
+*ENDIF
+
+! Cara inferior del panel (techo inclinado del aire): Neumann q''PV
+KSEL,S,LOC,Z,H1,H2
+ASLK,S,1                    ! area cuyos keypoints estan todos en el techo
+NSLA,S,1
+SF,ALL,HFLUX,QPV
+ALLSEL
+
+! Superficie del suelo: q''dif como generacion en la capa delgada
+VSEL,S,LOC,Z,-0.75*TC,-0.25*TC
+BFV,ALL,HGEN,QDIF/TC
+ALLSEL
+
+! Laterales del suelo y resto de caras: adiabaticas (por defecto)
+
+SOLVE
+FINISH
+
+!---------------- Post-proceso ---------------------------------------
+/POST1
+SET,LAST
+
+! T media en la interfaz aire-suelo
+NSEL,S,LOC,Z,0
+*GET,NN,NODE,0,COUNT
+SUMT = 0
+ND   = 0
+*DO,I,1,NN
+  ND   = NDNEXT(ND)
+  SUMT = SUMT + TEMP(ND)
+*ENDDO
+TINT = SUMT/NN
+
+! T maxima bajo el panel
+ALLSEL
+NSORT,TEMP
+*GET,TMAX,SORT,0,MAX
+NUSORT
+
+*MSG,INFO,QPV,QDIF,TINT,TMAX
+q''PV = %G W/m2, q''dif = %G W/m2 %/T media interfaz z=0: %G C %/T maxima del dominio: %G C
+
+! Perfil vertical en el centro (x = Lx/2, y = W/2)
+PATH,VERT,2,,100
+PPATH,1,,LX/2,W/2,-HG
+PPATH,2,,LX/2,W/2,H1+(LX/2)*TAN(BETA)
+PDEF,T_CENTRO,TEMP
+PLPATH,T_CENTRO
+
+! Campo 3D de temperaturas
+/VIEW,1,1,-1,1
+/CONTOUR,ALL,18
+PLNSOL,TEMP
