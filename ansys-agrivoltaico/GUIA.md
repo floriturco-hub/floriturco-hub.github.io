@@ -55,6 +55,34 @@ Parámetros que puedes cambiar al inicio del archivo:
 
 ---
 
+## Las dos simulaciones pedidas (techo con flujo y techo con temperatura)
+
+| | Caso 1: flujo en el techo | Caso 2: temperatura en el techo |
+|---|---|---|
+| Techo inclinado | Heat Flux = 1,095 W/m² | Temperature = 42,45 °C (T de la cara inferior del panel del informe) |
+| Todo lo demás | igual | igual |
+
+### En Workbench (en tu proyecto Thermal)
+1. En el **Project Schematic** está tu sistema *Steady-State Thermal* (A). Llámalo "Caso 1 – Flujo".
+2. Arrastra un nuevo **Steady-State Thermal** desde Toolbox y suéltalo **sobre la celda Model (A4)** del sistema A. Se crea el sistema B, que comparte materiales, geometría y malla. Llámalo "Caso 2 – Temperatura".
+3. Abre **Setup** del sistema B. Ahí:
+   - Pon las mismas cargas que en el caso 1, excepto el techo. Puedes copiarlas: clic derecho en cada carga de A → Copy, y Paste en el Steady-State Thermal de B.
+   - En lugar del Heat Flux del techo, pon **Temperature** de 42,45 °C en la cara superior inclinada del aire.
+4. En **Solution** de B agrega:
+   - Temperature.
+   - **Probe → Reaction** en la cara del techo. Esa reacción es el calor que el panel entrega al aire. Divídela entre el área del techo (1,0 × W m²) y compárala con los 1,095 W/m² del caso 1.
+5. Haz **Update Project** para resolver los dos casos.
+
+### Con el script APDL
+Cambia `CASO = 1` o `CASO = 2` al inicio de `agrivoltaico_3d.inp` y córrelo una vez por cada caso. En el caso 2, el mensaje final también imprime el flujo medio por el techo (el signo indica el sentido).
+
+### Qué comparar en el informe
+- Perfil T(z) en el centro de los dos casos, superpuestos.
+- T media de la superficie del suelo (z = 0).
+- El caso 1 deja que la temperatura del panel salga como resultado. El caso 2 la fija y deja que el flujo salga como resultado. Si los dos son consistentes, la T del techo en el caso 1 debería parecerse a 42,45 °C y el flujo del caso 2 a 1,095 W/m². Si no se parecen, coméntalo como discusión: el 42,45 °C viene de la red de resistencias 1D del panel.
+
+---
+
 ## Validación
 
 Con `EXTREMOS = 0`, el corte y = W/2 debe coincidir con tu solución 2D de Python (Liebmann o LU). En el informe, la superficie del suelo queda cerca de 27,8 °C. Para comparar, calcula la diferencia nodo a nodo o compara el perfil vertical del centro.

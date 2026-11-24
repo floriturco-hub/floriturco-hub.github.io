@@ -33,6 +33,12 @@ GBP  = GBN*COS(THZ)         ! 233.85 W/m2
 QPV  = FPV*(GBP+GDH)        ! ~1.095 W/m2 (cara inferior del panel)
 QDIF = ALFG*GDH*FSKY        ! ~6.77 W/m2 (superficie del suelo)
 
+! Condicion de frontera en el techo (cara inferior del panel):
+!   CASO = 1 -> flujo de calor prescrito q''PV        (Neumann)
+!   CASO = 2 -> temperatura prescrita TPANEL          (Dirichlet)
+CASO   = 1
+TPANEL = 42.45              ! T cara inferior del panel [C] (informe, Sec. 3)
+
 ! Caras en Y del aire:
 !   EXTREMOS = 0 -> adiabaticas (simetria, reproduce exactamente el 2D)
 !   EXTREMOS = 1 -> abiertas a TINF (mesa agrivoltaica finita, efecto 3D real)
@@ -103,7 +109,19 @@ ANTYPE,STATIC
 NSEL,S,LOC,Z,-HG
 D,ALL,TEMP,TH
 
+! Techo inclinado del aire (cara inferior del panel)
+KSEL,S,LOC,Z,H1,H2
+ASLK,S,1                    ! area cuyos keypoints estan todos en el techo
+NSLA,S,1
+*IF,CASO,EQ,1,THEN
+  SF,ALL,HFLUX,QPV          ! Caso 1: flujo de calor
+*ELSE
+  D,ALL,TEMP,TPANEL         ! Caso 2: temperatura
+*ENDIF
+ALLSEL
+
 ! Caras laterales del aire, x = 0 y x = Lx: Dirichlet TINF
+! (se aplican despues del techo: en las aristas comunes manda TINF, ec. 4)
 NSEL,S,LOC,X,0
 NSEL,A,LOC,X,LX
 NSEL,R,LOC,Z,0,H2
@@ -115,13 +133,6 @@ D,ALL,TEMP,TINF
   NSEL,R,LOC,Z,0,H2
   D,ALL,TEMP,TINF
 *ENDIF
-
-! Cara inferior del panel (techo inclinado del aire): Neumann q''PV
-KSEL,S,LOC,Z,H1,H2
-ASLK,S,1                    ! area cuyos keypoints estan todos en el techo
-NSLA,S,1
-SF,ALL,HFLUX,QPV
-ALLSEL
 
 ! Superficie del suelo: q''dif como generacion en la capa delgada
 VSEL,S,LOC,Z,-0.75*TC,-0.25*TC
@@ -154,8 +165,21 @@ NSORT,TEMP
 *GET,TMAX,SORT,0,MAX
 NUSORT
 
-*MSG,INFO,QPV,QDIF,TINT,TMAX
-q''PV = %G W/m2, q''dif = %G W/m2 %/T media interfaz z=0: %G C %/T maxima del dominio: %G C
+*MSG,INFO,CASO,QDIF,TINT,TMAX
+CASO %I  q''dif = %G W/m2 %/T media interfaz z=0: %G C %/T maxima del dominio: %G C
+
+! Caso 2: flujo que el panel entrega al aire (reaccion en los nodos del techo)
+*IF,CASO,EQ,2,THEN
+  KSEL,S,LOC,Z,H1,H2
+  ASLK,S,1
+  NSLA,S,1
+  FSUM
+  *GET,QTECHO,FSUM,0,ITEM,HEAT
+  QTECHO = QTECHO/(LPV*W)
+  *MSG,INFO,QTECHO,QPV
+  Flujo medio por el techo (caso 2): %G W/m2   (caso 1 imponia %G W/m2)
+  ALLSEL
+*ENDIF
 
 ! Perfil vertical en el centro (x = Lx/2, y = W/2)
 PATH,VERT,2,,100
