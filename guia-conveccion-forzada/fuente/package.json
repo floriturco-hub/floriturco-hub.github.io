@@ -5,6 +5,8 @@
   "dependencies": {
     "katex": "0.16.11",
     "@fontsource/source-serif-4": "^5.0.0",
-    "playwright": "^1.40.0"
+    "playwright": "^1.40.0",
+    "@fontsource/indie-flower": "^5.0.0",
+    "@fontsource/playpen-sans": "^5.0.0"
   }
 }
